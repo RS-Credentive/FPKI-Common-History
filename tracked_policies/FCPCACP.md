@@ -8,9 +8,9 @@
 
 **Common Policy Framework**
 
-Version 1.22
+Version 1.23
 
-December 2, 2013
+May 5, 2014
 
 **Signature Page**
 
@@ -25,7 +25,7 @@ Chair, Federal Public Key Infrastructure Policy Authority DATE
 <colgroup>
 <col style="width: 23%" />
 <col style="width: 28%" />
-<col style="width: 47%" />
+<col style="width: 48%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -176,6 +176,12 @@ Clarify division of responsibilities between trusted roles (Section5.2.1); clari
 <p><strong>2013-02.</strong>
 Remove SHA-1 policies from Common Policy.</p></td>
 </tr>
+<tr class="even">
+<td>1.23</td>
+<td>May5, 2014</td>
+<td><strong>2013-03.</strong>
+Require PIV Cards to be on the GSA Approved Products List (APL) Prior to Issuance and require annual PIV card testing.</td>
+</tr>
 </tbody>
 </table>
 
@@ -314,9 +320,9 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [3.2.3.2 Authentication of Devices [20](#authentication-of-devices)](#authentication-of-devices)
 
-[3.2.4 Non-verified Subscriber Information [20](#non-verified-subscriber-information)](#non-verified-subscriber-information)
+[3.2.4 Non-verified Subscriber Information [21](#non-verified-subscriber-information)](#non-verified-subscriber-information)
 
-[3.2.5 Validation of Authority [20](#validation-of-authority)](#validation-of-authority)
+[3.2.5 Validation of Authority [21](#validation-of-authority)](#validation-of-authority)
 
 [3.2.6 Criteria for Interoperation [21](#criteria-for-interoperation)](#criteria-for-interoperation)
 
@@ -326,505 +332,505 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [3.3.2 Identification and Authentication for Re-key after Revocation [21](#identification-and-authentication-for-re-key-after-revocation)](#identification-and-authentication-for-re-key-after-revocation)
 
-[3.4 Identification and Authentication for Revocation Request [21](#identification-and-authentication-for-revocation-request)](#identification-and-authentication-for-revocation-request)
+[3.4 Identification and Authentication for Revocation Request [22](#identification-and-authentication-for-revocation-request)](#identification-and-authentication-for-revocation-request)
 
-[4. Certificate Life-Cycle Operational Requirements [22](#certificate-life-cycle-operational-requirements)](#certificate-life-cycle-operational-requirements)
+[4. Certificate Life-Cycle Operational Requirements [23](#certificate-life-cycle-operational-requirements)](#certificate-life-cycle-operational-requirements)
 
-[4.1 Certificate Application [22](#certificate-application)](#certificate-application)
+[4.1 Certificate Application [23](#certificate-application)](#certificate-application)
 
-[4.1.1 Who Can Submit a Certificate Application [22](#who-can-submit-a-certificate-application)](#who-can-submit-a-certificate-application)
+[4.1.1 Who Can Submit a Certificate Application [23](#who-can-submit-a-certificate-application)](#who-can-submit-a-certificate-application)
 
-[4.1.1.1 CA Certificates [22](#ca-certificates)](#ca-certificates)
+[4.1.1.1 CA Certificates [23](#ca-certificates)](#ca-certificates)
 
-[4.1.1.2 User Certificates [22](#user-certificates)](#user-certificates)
+[4.1.1.2 User Certificates [23](#user-certificates)](#user-certificates)
 
-[4.1.1.3 Device Certificates [22](#device-certificates)](#device-certificates)
+[4.1.1.3 Device Certificates [23](#device-certificates)](#device-certificates)
 
-[4.1.1.4 Code Signing Certificates [22](#code-signing-certificates)](#code-signing-certificates)
+[4.1.1.4 Code Signing Certificates [23](#code-signing-certificates)](#code-signing-certificates)
 
-[4.1.2 Enrollment Process and Responsibilities [22](#enrollment-process-and-responsibilities)](#enrollment-process-and-responsibilities)
+[4.1.2 Enrollment Process and Responsibilities [23](#enrollment-process-and-responsibilities)](#enrollment-process-and-responsibilities)
 
-[4.2 Certificate Application Processing [23](#certificate-application-processing)](#certificate-application-processing)
+[4.2 Certificate Application Processing [24](#certificate-application-processing)](#certificate-application-processing)
 
-[4.2.1 Performing Identification and Authentication Functions [23](#performing-identification-and-authentication-functions)](#performing-identification-and-authentication-functions)
+[4.2.1 Performing Identification and Authentication Functions [24](#performing-identification-and-authentication-functions)](#performing-identification-and-authentication-functions)
 
-[4.2.2 Approval or Rejection of Certificate Applications [23](#approval-or-rejection-of-certificate-applications)](#approval-or-rejection-of-certificate-applications)
+[4.2.2 Approval or Rejection of Certificate Applications [24](#approval-or-rejection-of-certificate-applications)](#approval-or-rejection-of-certificate-applications)
 
-[4.2.3 Time to Process Certificate Applications [23](#time-to-process-certificate-applications)](#time-to-process-certificate-applications)
+[4.2.3 Time to Process Certificate Applications [24](#time-to-process-certificate-applications)](#time-to-process-certificate-applications)
 
-[4.3 Certificate Issuance [23](#certificate-issuance)](#certificate-issuance)
+[4.3 Certificate Issuance [24](#certificate-issuance)](#certificate-issuance)
 
-[4.3.1 CA Actions During Certificate Issuance [23](#ca-actions-during-certificate-issuance)](#ca-actions-during-certificate-issuance)
+[4.3.1 CA Actions During Certificate Issuance [24](#ca-actions-during-certificate-issuance)](#ca-actions-during-certificate-issuance)
 
-[4.3.2 Notification to Subscriber by the CA of Issuance of Certificate [24](#notification-to-subscriber-by-the-ca-of-issuance-of-certificate)](#notification-to-subscriber-by-the-ca-of-issuance-of-certificate)
+[4.3.2 Notification to Subscriber by the CA of Issuance of Certificate [25](#notification-to-subscriber-by-the-ca-of-issuance-of-certificate)](#notification-to-subscriber-by-the-ca-of-issuance-of-certificate)
 
-[4.4 Certificate Acceptance [24](#certificate-acceptance)](#certificate-acceptance)
+[4.4 Certificate Acceptance [25](#certificate-acceptance)](#certificate-acceptance)
 
-[4.4.1 Conduct Constituting Certificate Acceptance [24](#conduct-constituting-certificate-acceptance)](#conduct-constituting-certificate-acceptance)
+[4.4.1 Conduct Constituting Certificate Acceptance [25](#conduct-constituting-certificate-acceptance)](#conduct-constituting-certificate-acceptance)
 
-[4.4.2 Publication of the Certificate by the CA [24](#publication-of-the-certificate-by-the-ca)](#publication-of-the-certificate-by-the-ca)
+[4.4.2 Publication of the Certificate by the CA [25](#publication-of-the-certificate-by-the-ca)](#publication-of-the-certificate-by-the-ca)
 
-[4.4.3 Notification of Certificate Issuance by the CA to Other Entities [24](#notification-of-certificate-issuance-by-the-ca-to-other-entities)](#notification-of-certificate-issuance-by-the-ca-to-other-entities)
+[4.4.3 Notification of Certificate Issuance by the CA to Other Entities [25](#notification-of-certificate-issuance-by-the-ca-to-other-entities)](#notification-of-certificate-issuance-by-the-ca-to-other-entities)
 
-[4.5 Key Pair and Certificate Usage [24](#key-pair-and-certificate-usage)](#key-pair-and-certificate-usage)
+[4.5 Key Pair and Certificate Usage [25](#key-pair-and-certificate-usage)](#key-pair-and-certificate-usage)
 
-[4.5.1 Subscriber Private Key and Certificate Usage [24](#subscriber-private-key-and-certificate-usage)](#subscriber-private-key-and-certificate-usage)
+[4.5.1 Subscriber Private Key and Certificate Usage [25](#subscriber-private-key-and-certificate-usage)](#subscriber-private-key-and-certificate-usage)
 
-[4.5.2 Relying Party Public key and Certificate Usage [24](#relying-party-public-key-and-certificate-usage)](#relying-party-public-key-and-certificate-usage)
+[4.5.2 Relying Party Public key and Certificate Usage [25](#relying-party-public-key-and-certificate-usage)](#relying-party-public-key-and-certificate-usage)
 
-[4.6 Certificate Renewal [24](#certificate-renewal)](#certificate-renewal)
+[4.6 Certificate Renewal [25](#certificate-renewal)](#certificate-renewal)
 
-[4.6.1 Circumstance for Certificate Renewal [25](#circumstance-for-certificate-renewal)](#circumstance-for-certificate-renewal)
+[4.6.1 Circumstance for Certificate Renewal [26](#circumstance-for-certificate-renewal)](#circumstance-for-certificate-renewal)
 
-[4.6.2 Who May Request Renewal [25](#who-may-request-renewal)](#who-may-request-renewal)
+[4.6.2 Who May Request Renewal [26](#who-may-request-renewal)](#who-may-request-renewal)
 
-[4.6.3 Processing Certificate Renewal Requests [25](#processing-certificate-renewal-requests)](#processing-certificate-renewal-requests)
+[4.6.3 Processing Certificate Renewal Requests [26](#processing-certificate-renewal-requests)](#processing-certificate-renewal-requests)
 
-[4.6.4 Notification of New Certificate Issuance to Subscriber [25](#notification-of-new-certificate-issuance-to-subscriber)](#notification-of-new-certificate-issuance-to-subscriber)
+[4.6.4 Notification of New Certificate Issuance to Subscriber [26](#notification-of-new-certificate-issuance-to-subscriber)](#notification-of-new-certificate-issuance-to-subscriber)
 
-[4.6.5 Conduct Constituting Acceptance of a Renewal Certificate [25](#conduct-constituting-acceptance-of-a-renewal-certificate)](#conduct-constituting-acceptance-of-a-renewal-certificate)
+[4.6.5 Conduct Constituting Acceptance of a Renewal Certificate [26](#conduct-constituting-acceptance-of-a-renewal-certificate)](#conduct-constituting-acceptance-of-a-renewal-certificate)
 
-[4.6.6 Publication of the Renewal Certificate by the CA [25](#publication-of-the-renewal-certificate-by-the-ca)](#publication-of-the-renewal-certificate-by-the-ca)
+[4.6.6 Publication of the Renewal Certificate by the CA [26](#publication-of-the-renewal-certificate-by-the-ca)](#publication-of-the-renewal-certificate-by-the-ca)
 
-[4.6.7 Notification of Certificate Issuance by the CA to Other Entities [25](#notification-of-certificate-issuance-by-the-ca-to-other-entities-1)](#notification-of-certificate-issuance-by-the-ca-to-other-entities-1)
+[4.6.7 Notification of Certificate Issuance by the CA to Other Entities [26](#notification-of-certificate-issuance-by-the-ca-to-other-entities-1)](#notification-of-certificate-issuance-by-the-ca-to-other-entities-1)
 
-[4.7 Certificate Re-key [25](#certificate-re-key)](#certificate-re-key)
+[4.7 Certificate Re-key [26](#certificate-re-key)](#certificate-re-key)
 
-[4.7.1 Circumstance for Certificate Re-key [26](#circumstance-for-certificate-re-key)](#circumstance-for-certificate-re-key)
+[4.7.1 Circumstance for Certificate Re-key [27](#circumstance-for-certificate-re-key)](#circumstance-for-certificate-re-key)
 
-[4.7.2 Who May Request Certification of a New Public Key [26](#who-may-request-certification-of-a-new-public-key)](#who-may-request-certification-of-a-new-public-key)
+[4.7.2 Who May Request Certification of a New Public Key [27](#who-may-request-certification-of-a-new-public-key)](#who-may-request-certification-of-a-new-public-key)
 
-[4.7.3 Processing Certificate Re-keying Requests [26](#processing-certificate-re-keying-requests)](#processing-certificate-re-keying-requests)
+[4.7.3 Processing Certificate Re-keying Requests [27](#processing-certificate-re-keying-requests)](#processing-certificate-re-keying-requests)
 
-[4.7.4 Notification of New Certificate Issuance to Subscriber [26](#notification-of-new-certificate-issuance-to-subscriber-1)](#notification-of-new-certificate-issuance-to-subscriber-1)
+[4.7.4 Notification of New Certificate Issuance to Subscriber [27](#notification-of-new-certificate-issuance-to-subscriber-1)](#notification-of-new-certificate-issuance-to-subscriber-1)
 
-[4.7.5 Conduct Constituting Acceptance of a Re-keyed Certificate [26](#conduct-constituting-acceptance-of-a-re-keyed-certificate)](#conduct-constituting-acceptance-of-a-re-keyed-certificate)
+[4.7.5 Conduct Constituting Acceptance of a Re-keyed Certificate [27](#conduct-constituting-acceptance-of-a-re-keyed-certificate)](#conduct-constituting-acceptance-of-a-re-keyed-certificate)
 
-[4.7.6 Publication of the Re-keyed Certificate by the CA [26](#publication-of-the-re-keyed-certificate-by-the-ca)](#publication-of-the-re-keyed-certificate-by-the-ca)
+[4.7.6 Publication of the Re-keyed Certificate by the CA [27](#publication-of-the-re-keyed-certificate-by-the-ca)](#publication-of-the-re-keyed-certificate-by-the-ca)
 
-[4.7.7 Notification of Certificate Issuance by the CA to Other Entities [26](#notification-of-certificate-issuance-by-the-ca-to-other-entities-2)](#notification-of-certificate-issuance-by-the-ca-to-other-entities-2)
+[4.7.7 Notification of Certificate Issuance by the CA to Other Entities [27](#notification-of-certificate-issuance-by-the-ca-to-other-entities-2)](#notification-of-certificate-issuance-by-the-ca-to-other-entities-2)
 
-[4.8 Certificate Modification [27](#certificate-modification)](#certificate-modification)
+[4.8 Certificate Modification [28](#certificate-modification)](#certificate-modification)
 
-[4.8.1 Circumstance for Certificate Modification [27](#circumstance-for-certificate-modification)](#circumstance-for-certificate-modification)
+[4.8.1 Circumstance for Certificate Modification [28](#circumstance-for-certificate-modification)](#circumstance-for-certificate-modification)
 
-[4.8.2 Who May Request Certificate Modification [27](#who-may-request-certificate-modification)](#who-may-request-certificate-modification)
+[4.8.2 Who May Request Certificate Modification [28](#who-may-request-certificate-modification)](#who-may-request-certificate-modification)
 
-[4.8.3 Processing Certificate Modification Requests [27](#processing-certificate-modification-requests)](#processing-certificate-modification-requests)
+[4.8.3 Processing Certificate Modification Requests [28](#processing-certificate-modification-requests)](#processing-certificate-modification-requests)
 
-[4.8.4 Notification of New Certificate Issuance to Subscriber [27](#notification-of-new-certificate-issuance-to-subscriber-2)](#notification-of-new-certificate-issuance-to-subscriber-2)
+[4.8.4 Notification of New Certificate Issuance to Subscriber [28](#notification-of-new-certificate-issuance-to-subscriber-2)](#notification-of-new-certificate-issuance-to-subscriber-2)
 
-[4.8.5 Conduct Constituting Acceptance of Modified Certificate [27](#conduct-constituting-acceptance-of-modified-certificate)](#conduct-constituting-acceptance-of-modified-certificate)
+[4.8.5 Conduct Constituting Acceptance of Modified Certificate [28](#conduct-constituting-acceptance-of-modified-certificate)](#conduct-constituting-acceptance-of-modified-certificate)
 
-[4.8.6 Publication of the Modified Certificate by the CA [27](#publication-of-the-modified-certificate-by-the-ca)](#publication-of-the-modified-certificate-by-the-ca)
+[4.8.6 Publication of the Modified Certificate by the CA [28](#publication-of-the-modified-certificate-by-the-ca)](#publication-of-the-modified-certificate-by-the-ca)
 
-[4.8.7 Notification of Certificate Issuance by the CA to Other Entities [28](#notification-of-certificate-issuance-by-the-ca-to-other-entities-3)](#notification-of-certificate-issuance-by-the-ca-to-other-entities-3)
+[4.8.7 Notification of Certificate Issuance by the CA to Other Entities [29](#notification-of-certificate-issuance-by-the-ca-to-other-entities-3)](#notification-of-certificate-issuance-by-the-ca-to-other-entities-3)
 
-[4.9 Certificate Revocation and Suspension [28](#certificate-revocation-and-suspension)](#certificate-revocation-and-suspension)
+[4.9 Certificate Revocation and Suspension [29](#certificate-revocation-and-suspension)](#certificate-revocation-and-suspension)
 
-[4.9.1 Circumstances for Revocation [28](#circumstances-for-revocation)](#circumstances-for-revocation)
+[4.9.1 Circumstances for Revocation [29](#circumstances-for-revocation)](#circumstances-for-revocation)
 
-[4.9.2 Who Can Request Revocation [28](#who-can-request-revocation)](#who-can-request-revocation)
+[4.9.2 Who Can Request Revocation [29](#who-can-request-revocation)](#who-can-request-revocation)
 
-[4.9.3 Procedure for Revocation Request [29](#procedure-for-revocation-request)](#procedure-for-revocation-request)
+[4.9.3 Procedure for Revocation Request [30](#procedure-for-revocation-request)](#procedure-for-revocation-request)
 
-[4.9.4 Revocation Request Grace Period [29](#revocation-request-grace-period)](#revocation-request-grace-period)
+[4.9.4 Revocation Request Grace Period [30](#revocation-request-grace-period)](#revocation-request-grace-period)
 
-[4.9.5 Time within which CA must Process the Revocation Request [29](#time-within-which-ca-must-process-the-revocation-request)](#time-within-which-ca-must-process-the-revocation-request)
+[4.9.5 Time within which CA must Process the Revocation Request [30](#time-within-which-ca-must-process-the-revocation-request)](#time-within-which-ca-must-process-the-revocation-request)
 
-[4.9.6 Revocation Checking Requirements for Relying Parties [29](#revocation-checking-requirements-for-relying-parties)](#revocation-checking-requirements-for-relying-parties)
+[4.9.6 Revocation Checking Requirements for Relying Parties [30](#revocation-checking-requirements-for-relying-parties)](#revocation-checking-requirements-for-relying-parties)
 
-[4.9.7 CRL Issuance Frequency [29](#crl-issuance-frequency)](#crl-issuance-frequency)
+[4.9.7 CRL Issuance Frequency [30](#crl-issuance-frequency)](#crl-issuance-frequency)
 
-[4.9.8 Maximum Latency for CRLs [30](#maximum-latency-for-crls)](#maximum-latency-for-crls)
+[4.9.8 Maximum Latency for CRLs [31](#maximum-latency-for-crls)](#maximum-latency-for-crls)
 
-[4.9.9 On-line Revocation/Status Checking Availability [30](#on-line-revocationstatus-checking-availability)](#on-line-revocationstatus-checking-availability)
+[4.9.9 On-line Revocation/Status Checking Availability [31](#on-line-revocationstatus-checking-availability)](#on-line-revocationstatus-checking-availability)
 
-[4.9.10 On-line Revocation Checking Requirements [31](#on-line-revocation-checking-requirements)](#on-line-revocation-checking-requirements)
+[4.9.10 On-line Revocation Checking Requirements [32](#on-line-revocation-checking-requirements)](#on-line-revocation-checking-requirements)
 
-[4.9.11 Other Forms of Revocation Advertisements Available [31](#other-forms-of-revocation-advertisements-available)](#other-forms-of-revocation-advertisements-available)
+[4.9.11 Other Forms of Revocation Advertisements Available [32](#other-forms-of-revocation-advertisements-available)](#other-forms-of-revocation-advertisements-available)
 
-[4.9.12 Special Requirements Related To Key Compromise [31](#special-requirements-related-to-key-compromise)](#special-requirements-related-to-key-compromise)
+[4.9.12 Special Requirements Related To Key Compromise [32](#special-requirements-related-to-key-compromise)](#special-requirements-related-to-key-compromise)
 
-[4.9.13 Circumstances for Suspension [31](#circumstances-for-suspension)](#circumstances-for-suspension)
+[4.9.13 Circumstances for Suspension [32](#circumstances-for-suspension)](#circumstances-for-suspension)
 
-[4.9.14 Who Can Request Suspension [31](#who-can-request-suspension)](#who-can-request-suspension)
+[4.9.14 Who Can Request Suspension [32](#who-can-request-suspension)](#who-can-request-suspension)
 
-[4.9.15 Procedure for Suspension Request [31](#procedure-for-suspension-request)](#procedure-for-suspension-request)
+[4.9.15 Procedure for Suspension Request [32](#procedure-for-suspension-request)](#procedure-for-suspension-request)
 
-[4.9.16 Limits on Suspension Period [31](#limits-on-suspension-period)](#limits-on-suspension-period)
+[4.9.16 Limits on Suspension Period [32](#limits-on-suspension-period)](#limits-on-suspension-period)
 
-[4.10 Certificate Status Services [31](#certificate-status-services)](#certificate-status-services)
+[4.10 Certificate Status Services [32](#certificate-status-services)](#certificate-status-services)
 
-[4.10.1 Operational Characteristics [31](#operational-characteristics)](#operational-characteristics)
+[4.10.1 Operational Characteristics [32](#operational-characteristics)](#operational-characteristics)
 
-[4.10.2 Service Availability [32](#service-availability)](#service-availability)
+[4.10.2 Service Availability [33](#service-availability)](#service-availability)
 
-[4.10.3 Optional Features [32](#optional-features)](#optional-features)
+[4.10.3 Optional Features [33](#optional-features)](#optional-features)
 
-[4.11 End Of Subscription [32](#end-of-subscription)](#end-of-subscription)
+[4.11 End Of Subscription [33](#end-of-subscription)](#end-of-subscription)
 
-[4.12 Key Escrow and Recovery [32](#key-escrow-and-recovery)](#key-escrow-and-recovery)
+[4.12 Key Escrow and Recovery [33](#key-escrow-and-recovery)](#key-escrow-and-recovery)
 
-[4.12.1 Key Escrow and Recovery Policy and Practices [32](#key-escrow-and-recovery-policy-and-practices)](#key-escrow-and-recovery-policy-and-practices)
+[4.12.1 Key Escrow and Recovery Policy and Practices [33](#key-escrow-and-recovery-policy-and-practices)](#key-escrow-and-recovery-policy-and-practices)
 
-[4.12.2 Session Key Encapsulation and Recovery Policy and Practices [32](#session-key-encapsulation-and-recovery-policy-and-practices)](#session-key-encapsulation-and-recovery-policy-and-practices)
+[4.12.2 Session Key Encapsulation and Recovery Policy and Practices [33](#session-key-encapsulation-and-recovery-policy-and-practices)](#session-key-encapsulation-and-recovery-policy-and-practices)
 
-[5. Facility, Management, and Operational Controls [33](#facility-management-and-operational-controls)](#facility-management-and-operational-controls)
+[5. Facility, Management, and Operational Controls [34](#facility-management-and-operational-controls)](#facility-management-and-operational-controls)
 
-[5.1 Physical Controls [33](#physical-controls)](#physical-controls)
+[5.1 Physical Controls [34](#physical-controls)](#physical-controls)
 
-[5.1.1 Site Location and Construction [33](#site-location-and-construction)](#site-location-and-construction)
+[5.1.1 Site Location and Construction [34](#site-location-and-construction)](#site-location-and-construction)
 
-[5.1.2 Physical Access [33](#physical-access)](#physical-access)
+[5.1.2 Physical Access [34](#physical-access)](#physical-access)
 
-[5.1.2.1 Physical Access for CA Equipment [33](#physical-access-for-ca-equipment)](#physical-access-for-ca-equipment)
+[5.1.2.1 Physical Access for CA Equipment [34](#physical-access-for-ca-equipment)](#physical-access-for-ca-equipment)
 
-[5.1.2.2 Physical Access for RA Equipment [34](#physical-access-for-ra-equipment)](#physical-access-for-ra-equipment)
+[5.1.2.2 Physical Access for RA Equipment [35](#physical-access-for-ra-equipment)](#physical-access-for-ra-equipment)
 
-[5.1.2.3 Physical Access for CSS Equipment [34](#physical-access-for-css-equipment)](#physical-access-for-css-equipment)
+[5.1.2.3 Physical Access for CSS Equipment [35](#physical-access-for-css-equipment)](#physical-access-for-css-equipment)
 
-[5.1.3 Power and Air Conditioning [34](#power-and-air-conditioning)](#power-and-air-conditioning)
+[5.1.3 Power and Air Conditioning [35](#power-and-air-conditioning)](#power-and-air-conditioning)
 
-[5.1.4 Water Exposures [34](#water-exposures)](#water-exposures)
+[5.1.4 Water Exposures [35](#water-exposures)](#water-exposures)
 
-[5.1.5 Fire Prevention and Protection [34](#fire-prevention-and-protection)](#fire-prevention-and-protection)
+[5.1.5 Fire Prevention and Protection [35](#fire-prevention-and-protection)](#fire-prevention-and-protection)
 
-[5.1.6 Media Storage [35](#media-storage)](#media-storage)
+[5.1.6 Media Storage [36](#media-storage)](#media-storage)
 
-[5.1.7 Waste Disposal [35](#waste-disposal)](#waste-disposal)
+[5.1.7 Waste Disposal [36](#waste-disposal)](#waste-disposal)
 
-[5.1.8 Off-Site Backup [35](#off-site-backup)](#off-site-backup)
+[5.1.8 Off-Site Backup [36](#off-site-backup)](#off-site-backup)
 
-[5.2 Procedural Controls [35](#procedural-controls)](#procedural-controls)
+[5.2 Procedural Controls [36](#procedural-controls)](#procedural-controls)
 
-[5.2.1 Trusted Roles [35](#trusted-roles)](#trusted-roles)
+[5.2.1 Trusted Roles [36](#trusted-roles)](#trusted-roles)
 
-[5.2.2 Number of Persons Required per Task [36](#number-of-persons-required-per-task)](#number-of-persons-required-per-task)
+[5.2.2 Number of Persons Required per Task [37](#number-of-persons-required-per-task)](#number-of-persons-required-per-task)
 
-[5.2.3 Identification and Authentication for Each Role [36](#identification-and-authentication-for-each-role)](#identification-and-authentication-for-each-role)
+[5.2.3 Identification and Authentication for Each Role [37](#identification-and-authentication-for-each-role)](#identification-and-authentication-for-each-role)
 
-[5.2.4 Roles Requiring Separation of Duties [36](#roles-requiring-separation-of-duties)](#roles-requiring-separation-of-duties)
+[5.2.4 Roles Requiring Separation of Duties [37](#roles-requiring-separation-of-duties)](#roles-requiring-separation-of-duties)
 
-[5.3 Personnel Controls [36](#personnel-controls)](#personnel-controls)
+[5.3 Personnel Controls [37](#personnel-controls)](#personnel-controls)
 
-[5.3.1 Qualifications, Experience, and Clearance Requirements [36](#qualifications-experience-and-clearance-requirements)](#qualifications-experience-and-clearance-requirements)
+[5.3.1 Qualifications, Experience, and Clearance Requirements [37](#qualifications-experience-and-clearance-requirements)](#qualifications-experience-and-clearance-requirements)
 
-[5.3.2 Background Check Procedures [36](#background-check-procedures)](#background-check-procedures)
+[5.3.2 Background Check Procedures [37](#background-check-procedures)](#background-check-procedures)
 
-[5.3.3 Training Requirements [37](#training-requirements)](#training-requirements)
+[5.3.3 Training Requirements [38](#training-requirements)](#training-requirements)
 
-[5.3.4 Retraining Frequency and Requirements [37](#retraining-frequency-and-requirements)](#retraining-frequency-and-requirements)
+[5.3.4 Retraining Frequency and Requirements [38](#retraining-frequency-and-requirements)](#retraining-frequency-and-requirements)
 
-[5.3.5 Job Rotation Frequency and Sequence [37](#job-rotation-frequency-and-sequence)](#job-rotation-frequency-and-sequence)
+[5.3.5 Job Rotation Frequency and Sequence [38](#job-rotation-frequency-and-sequence)](#job-rotation-frequency-and-sequence)
 
-[5.3.6 Sanctions for Unauthorized Actions [37](#sanctions-for-unauthorized-actions)](#sanctions-for-unauthorized-actions)
+[5.3.6 Sanctions for Unauthorized Actions [38](#sanctions-for-unauthorized-actions)](#sanctions-for-unauthorized-actions)
 
-[5.3.7 Independent Contractor Requirements [37](#independent-contractor-requirements)](#independent-contractor-requirements)
+[5.3.7 Independent Contractor Requirements [38](#independent-contractor-requirements)](#independent-contractor-requirements)
 
-[5.3.8 Documentation Supplied to Personnel [38](#documentation-supplied-to-personnel)](#documentation-supplied-to-personnel)
+[5.3.8 Documentation Supplied to Personnel [39](#documentation-supplied-to-personnel)](#documentation-supplied-to-personnel)
 
-[5.4 Audit Logging Procedures [38](#audit-logging-procedures)](#audit-logging-procedures)
+[5.4 Audit Logging Procedures [39](#audit-logging-procedures)](#audit-logging-procedures)
 
-[5.4.1 Types of Events Recorded [38](#types-of-events-recorded)](#types-of-events-recorded)
+[5.4.1 Types of Events Recorded [39](#types-of-events-recorded)](#types-of-events-recorded)
 
-[5.4.2 Frequency of Processing Log [41](#frequency-of-processing-log)](#frequency-of-processing-log)
+[5.4.2 Frequency of Processing Log [42](#frequency-of-processing-log)](#frequency-of-processing-log)
 
-[5.4.3 Retention Period for Audit Log [41](#retention-period-for-audit-log)](#retention-period-for-audit-log)
+[5.4.3 Retention Period for Audit Log [42](#retention-period-for-audit-log)](#retention-period-for-audit-log)
 
-[5.4.4 Protection of Audit Log [42](#protection-of-audit-log)](#protection-of-audit-log)
+[5.4.4 Protection of Audit Log [43](#protection-of-audit-log)](#protection-of-audit-log)
 
-[5.4.5 Audit Log Backup Procedures [42](#audit-log-backup-procedures)](#audit-log-backup-procedures)
+[5.4.5 Audit Log Backup Procedures [43](#audit-log-backup-procedures)](#audit-log-backup-procedures)
 
-[5.4.6 Audit Collection System (Internal vs. External) [42](#audit-collection-system-internal-vs.-external)](#audit-collection-system-internal-vs.-external)
+[5.4.6 Audit Collection System (Internal vs. External) [43](#audit-collection-system-internal-vs.-external)](#audit-collection-system-internal-vs.-external)
 
-[5.4.7 Notification to Event-Causing Subject [42](#notification-to-event-causing-subject)](#notification-to-event-causing-subject)
+[5.4.7 Notification to Event-Causing Subject [43](#notification-to-event-causing-subject)](#notification-to-event-causing-subject)
 
-[5.4.8 Vulnerability Assessments [42](#vulnerability-assessments)](#vulnerability-assessments)
+[5.4.8 Vulnerability Assessments [43](#vulnerability-assessments)](#vulnerability-assessments)
 
-[5.5 Records Archival [42](#records-archival)](#records-archival)
+[5.5 Records Archival [43](#records-archival)](#records-archival)
 
-[5.5.1 Types of Events Archived [42](#types-of-events-archived)](#types-of-events-archived)
+[5.5.1 Types of Events Archived [43](#types-of-events-archived)](#types-of-events-archived)
 
-[5.5.2 Retention Period for Archive [44](#retention-period-for-archive)](#retention-period-for-archive)
+[5.5.2 Retention Period for Archive [45](#retention-period-for-archive)](#retention-period-for-archive)
 
-[5.5.3 Protection of Archive [44](#protection-of-archive)](#protection-of-archive)
+[5.5.3 Protection of Archive [45](#protection-of-archive)](#protection-of-archive)
 
-[5.5.4 Archive Backup Procedures [44](#archive-backup-procedures)](#archive-backup-procedures)
+[5.5.4 Archive Backup Procedures [45](#archive-backup-procedures)](#archive-backup-procedures)
 
-[5.5.5 Requirements for Time-Stamping of Records [44](#requirements-for-time-stamping-of-records)](#requirements-for-time-stamping-of-records)
+[5.5.5 Requirements for Time-Stamping of Records [45](#requirements-for-time-stamping-of-records)](#requirements-for-time-stamping-of-records)
 
-[5.5.6 Archive Collection System (Internal or External) [44](#archive-collection-system-internal-or-external)](#archive-collection-system-internal-or-external)
+[5.5.6 Archive Collection System (Internal or External) [45](#archive-collection-system-internal-or-external)](#archive-collection-system-internal-or-external)
 
-[5.5.7 Procedures to Obtain and Verify Archive Information [44](#procedures-to-obtain-and-verify-archive-information)](#procedures-to-obtain-and-verify-archive-information)
+[5.5.7 Procedures to Obtain and Verify Archive Information [45](#procedures-to-obtain-and-verify-archive-information)](#procedures-to-obtain-and-verify-archive-information)
 
-[5.6 Key Changeover [45](#key-changeover)](#key-changeover)
+[5.6 Key Changeover [46](#key-changeover)](#key-changeover)
 
-[5.7 Compromise and Disaster Recovery [45](#compromise-and-disaster-recovery)](#compromise-and-disaster-recovery)
+[5.7 Compromise and Disaster Recovery [46](#compromise-and-disaster-recovery)](#compromise-and-disaster-recovery)
 
-[5.7.1 Incident and Compromise Handling Procedures [45](#incident-and-compromise-handling-procedures)](#incident-and-compromise-handling-procedures)
+[5.7.1 Incident and Compromise Handling Procedures [46](#incident-and-compromise-handling-procedures)](#incident-and-compromise-handling-procedures)
 
-[5.7.2 Computing Resources, Software, and/or Data Are Corrupted [45](#computing-resources-software-andor-data-are-corrupted)](#computing-resources-software-andor-data-are-corrupted)
+[5.7.2 Computing Resources, Software, and/or Data Are Corrupted [46](#computing-resources-software-andor-data-are-corrupted)](#computing-resources-software-andor-data-are-corrupted)
 
-[5.7.3 Entity (CA) Private Key Compromise Procedures [46](#entity-ca-private-key-compromise-procedures)](#entity-ca-private-key-compromise-procedures)
+[5.7.3 Entity (CA) Private Key Compromise Procedures [47](#entity-ca-private-key-compromise-procedures)](#entity-ca-private-key-compromise-procedures)
 
-[5.7.4 Business Continuity Capabilities after a Disaster [46](#business-continuity-capabilities-after-a-disaster)](#business-continuity-capabilities-after-a-disaster)
+[5.7.4 Business Continuity Capabilities after a Disaster [47](#business-continuity-capabilities-after-a-disaster)](#business-continuity-capabilities-after-a-disaster)
 
-[5.8 CA or RA Termination [46](#ca-or-ra-termination)](#ca-or-ra-termination)
+[5.8 CA or RA Termination [47](#ca-or-ra-termination)](#ca-or-ra-termination)
 
-[6. Technical Security Controls [48](#technical-security-controls)](#technical-security-controls)
+[6. Technical Security Controls [49](#technical-security-controls)](#technical-security-controls)
 
-[6.1 Key Pair Generation and Installation [48](#key-pair-generation-and-installation)](#key-pair-generation-and-installation)
+[6.1 Key Pair Generation and Installation [49](#key-pair-generation-and-installation)](#key-pair-generation-and-installation)
 
-[6.1.1 Key Pair Generation [48](#key-pair-generation)](#key-pair-generation)
+[6.1.1 Key Pair Generation [49](#key-pair-generation)](#key-pair-generation)
 
-[6.1.1.1 CA Key Pair Generation [48](#ca-key-pair-generation)](#ca-key-pair-generation)
+[6.1.1.1 CA Key Pair Generation [49](#ca-key-pair-generation)](#ca-key-pair-generation)
 
-[6.1.1.2 Subscriber Key Pair Generation [48](#subscriber-key-pair-generation)](#subscriber-key-pair-generation)
+[6.1.1.2 Subscriber Key Pair Generation [49](#subscriber-key-pair-generation)](#subscriber-key-pair-generation)
 
-[6.1.1.3 CSS Key Pair Generation [49](#css-key-pair-generation)](#css-key-pair-generation)
+[6.1.1.3 CSS Key Pair Generation [50](#css-key-pair-generation)](#css-key-pair-generation)
 
-[6.1.1.4 PIV Content Signing Key Pair Generation [49](#piv-content-signing-key-pair-generation)](#piv-content-signing-key-pair-generation)
+[6.1.1.4 PIV Content Signing Key Pair Generation [50](#piv-content-signing-key-pair-generation)](#piv-content-signing-key-pair-generation)
 
-[6.1.2 Private Key Delivery to Subscriber [49](#private-key-delivery-to-subscriber)](#private-key-delivery-to-subscriber)
+[6.1.2 Private Key Delivery to Subscriber [50](#private-key-delivery-to-subscriber)](#private-key-delivery-to-subscriber)
 
-[6.1.3 Public Key Delivery to Certificate Issuer [50](#public-key-delivery-to-certificate-issuer)](#public-key-delivery-to-certificate-issuer)
+[6.1.3 Public Key Delivery to Certificate Issuer [51](#public-key-delivery-to-certificate-issuer)](#public-key-delivery-to-certificate-issuer)
 
-[6.1.4 CA Public Key Delivery to Relying Parties [50](#ca-public-key-delivery-to-relying-parties)](#ca-public-key-delivery-to-relying-parties)
+[6.1.4 CA Public Key Delivery to Relying Parties [51](#ca-public-key-delivery-to-relying-parties)](#ca-public-key-delivery-to-relying-parties)
 
-[6.1.5 Key Sizes [50](#key-sizes)](#key-sizes)
+[6.1.5 Key Sizes [51](#key-sizes)](#key-sizes)
 
-[6.1.6 Public Key Parameters Generation and Quality Checking [52](#public-key-parameters-generation-and-quality-checking)](#public-key-parameters-generation-and-quality-checking)
+[6.1.6 Public Key Parameters Generation and Quality Checking [53](#public-key-parameters-generation-and-quality-checking)](#public-key-parameters-generation-and-quality-checking)
 
-[6.1.7 Key Usage Purposes (as per X.509 v3 Key Usage Field) [52](#key-usage-purposes-as-per-x.509-v3-key-usage-field)](#key-usage-purposes-as-per-x.509-v3-key-usage-field)
+[6.1.7 Key Usage Purposes (as per X.509 v3 Key Usage Field) [53](#key-usage-purposes-as-per-x.509-v3-key-usage-field)](#key-usage-purposes-as-per-x.509-v3-key-usage-field)
 
-[6.2 Private Key Protection and Cryptographic Module Engineering Controls [53](#private-key-protection-and-cryptographic-module-engineering-controls)](#private-key-protection-and-cryptographic-module-engineering-controls)
+[6.2 Private Key Protection and Cryptographic Module Engineering Controls [54](#private-key-protection-and-cryptographic-module-engineering-controls)](#private-key-protection-and-cryptographic-module-engineering-controls)
 
-[6.2.1 Cryptographic Module Standards and Controls [53](#cryptographic-module-standards-and-controls)](#cryptographic-module-standards-and-controls)
+[6.2.1 Cryptographic Module Standards and Controls [54](#cryptographic-module-standards-and-controls)](#cryptographic-module-standards-and-controls)
 
-[6.2.2 Private Key (n out of m) Multi-Person Control [53](#private-key-n-out-of-m-multi-person-control)](#private-key-n-out-of-m-multi-person-control)
+[6.2.2 Private Key (n out of m) Multi-Person Control [55](#private-key-n-out-of-m-multi-person-control)](#private-key-n-out-of-m-multi-person-control)
 
-[6.2.3 Private Key Escrow [53](#private-key-escrow)](#private-key-escrow)
+[6.2.3 Private Key Escrow [55](#private-key-escrow)](#private-key-escrow)
 
-[6.2.4 Private Key Backup [54](#private-key-backup)](#private-key-backup)
+[6.2.4 Private Key Backup [55](#private-key-backup)](#private-key-backup)
 
-[6.2.4.1 Backup of CA Private Signature Key [54](#backup-of-ca-private-signature-key)](#backup-of-ca-private-signature-key)
+[6.2.4.1 Backup of CA Private Signature Key [55](#backup-of-ca-private-signature-key)](#backup-of-ca-private-signature-key)
 
-[6.2.4.2 Backup of Subscriber Private Signature Key [54](#backup-of-subscriber-private-signature-key)](#backup-of-subscriber-private-signature-key)
+[6.2.4.2 Backup of Subscriber Private Signature Key [55](#backup-of-subscriber-private-signature-key)](#backup-of-subscriber-private-signature-key)
 
-[6.2.4.3 Backup of Subscriber Private Key Management Key [54](#backup-of-subscriber-private-key-management-key)](#backup-of-subscriber-private-key-management-key)
+[6.2.4.3 Backup of Subscriber Private Key Management Key [55](#backup-of-subscriber-private-key-management-key)](#backup-of-subscriber-private-key-management-key)
 
-[6.2.4.4 Backup of CSS Private Key [54](#backup-of-css-private-key)](#backup-of-css-private-key)
+[6.2.4.4 Backup of CSS Private Key [55](#backup-of-css-private-key)](#backup-of-css-private-key)
 
-[6.2.4.5 Backup of Device Private Keys [54](#backup-of-device-private-keys)](#backup-of-device-private-keys)
+[6.2.4.5 Backup of Device Private Keys [56](#backup-of-device-private-keys)](#backup-of-device-private-keys)
 
-[6.2.4.6 Backup of Common PIV Content Signing Key [54](#backup-of-common-piv-content-signing-key)](#backup-of-common-piv-content-signing-key)
+[6.2.4.6 Backup of Common PIV Content Signing Key [56](#backup-of-common-piv-content-signing-key)](#backup-of-common-piv-content-signing-key)
 
-[6.2.5 Private Key Archival [55](#private-key-archival)](#private-key-archival)
+[6.2.5 Private Key Archival [56](#private-key-archival)](#private-key-archival)
 
-[6.2.6 Private Key Transfer into or from a Cryptographic Module [55](#private-key-transfer-into-or-from-a-cryptographic-module)](#private-key-transfer-into-or-from-a-cryptographic-module)
+[6.2.6 Private Key Transfer into or from a Cryptographic Module [56](#private-key-transfer-into-or-from-a-cryptographic-module)](#private-key-transfer-into-or-from-a-cryptographic-module)
 
-[6.2.7 Private Key Storage on Cryptographic Module [55](#private-key-storage-on-cryptographic-module)](#private-key-storage-on-cryptographic-module)
+[6.2.7 Private Key Storage on Cryptographic Module [56](#private-key-storage-on-cryptographic-module)](#private-key-storage-on-cryptographic-module)
 
-[6.2.8 Method of Activating Private Key [55](#method-of-activating-private-key)](#method-of-activating-private-key)
+[6.2.8 Method of Activating Private Key [56](#method-of-activating-private-key)](#method-of-activating-private-key)
 
-[6.2.9 Method of Deactivating Private Key [56](#method-of-deactivating-private-key)](#method-of-deactivating-private-key)
+[6.2.9 Method of Deactivating Private Key [57](#method-of-deactivating-private-key)](#method-of-deactivating-private-key)
 
-[6.2.10 Method of Destroying Private Key [56](#method-of-destroying-private-key)](#method-of-destroying-private-key)
+[6.2.10 Method of Destroying Private Key [57](#method-of-destroying-private-key)](#method-of-destroying-private-key)
 
-[6.2.11 Cryptographic Module Rating [56](#cryptographic-module-rating)](#cryptographic-module-rating)
+[6.2.11 Cryptographic Module Rating [57](#cryptographic-module-rating)](#cryptographic-module-rating)
 
-[6.3 Other Aspects of Key Pair Management [56](#other-aspects-of-key-pair-management)](#other-aspects-of-key-pair-management)
+[6.3 Other Aspects of Key Pair Management [57](#other-aspects-of-key-pair-management)](#other-aspects-of-key-pair-management)
 
-[6.3.1 Public Key Archival [56](#public-key-archival)](#public-key-archival)
+[6.3.1 Public Key Archival [57](#public-key-archival)](#public-key-archival)
 
-[6.3.2 Certificate Operational Periods and Key Usage Periods [56](#certificate-operational-periods-and-key-usage-periods)](#certificate-operational-periods-and-key-usage-periods)
+[6.3.2 Certificate Operational Periods and Key Usage Periods [57](#certificate-operational-periods-and-key-usage-periods)](#certificate-operational-periods-and-key-usage-periods)
 
-[6.4 Activation Data [57](#activation-data)](#activation-data)
+[6.4 Activation Data [58](#activation-data)](#activation-data)
 
-[6.4.1 Activation Data Generation and Installation [57](#activation-data-generation-and-installation)](#activation-data-generation-and-installation)
+[6.4.1 Activation Data Generation and Installation [58](#activation-data-generation-and-installation)](#activation-data-generation-and-installation)
 
-[6.4.2 Activation Data Protection [57](#activation-data-protection)](#activation-data-protection)
+[6.4.2 Activation Data Protection [58](#activation-data-protection)](#activation-data-protection)
 
-[6.4.3 Other Aspects of Activation Data [57](#other-aspects-of-activation-data)](#other-aspects-of-activation-data)
+[6.4.3 Other Aspects of Activation Data [58](#other-aspects-of-activation-data)](#other-aspects-of-activation-data)
 
-[6.5 Computer Security Controls [57](#computer-security-controls)](#computer-security-controls)
+[6.5 Computer Security Controls [59](#computer-security-controls)](#computer-security-controls)
 
-[6.5.1 Specific Computer Security Technical Requirements [57](#specific-computer-security-technical-requirements)](#specific-computer-security-technical-requirements)
+[6.5.1 Specific Computer Security Technical Requirements [59](#specific-computer-security-technical-requirements)](#specific-computer-security-technical-requirements)
 
-[6.5.2 Computer Security Rating [59](#computer-security-rating)](#computer-security-rating)
+[6.5.2 Computer Security Rating [60](#computer-security-rating)](#computer-security-rating)
 
-[6.6 Life Cycle Technical Controls [59](#life-cycle-technical-controls)](#life-cycle-technical-controls)
+[6.6 Life Cycle Technical Controls [60](#life-cycle-technical-controls)](#life-cycle-technical-controls)
 
-[6.6.1 System Development Controls [59](#system-development-controls)](#system-development-controls)
+[6.6.1 System Development Controls [60](#system-development-controls)](#system-development-controls)
 
-[6.6.2 Security Management Controls [59](#security-management-controls)](#security-management-controls)
+[6.6.2 Security Management Controls [61](#security-management-controls)](#security-management-controls)
 
-[6.6.3 Life Cycle Security Controls [59](#life-cycle-security-controls)](#life-cycle-security-controls)
+[6.6.3 Life Cycle Security Controls [61](#life-cycle-security-controls)](#life-cycle-security-controls)
 
-[6.7 Network Security Controls [59](#network-security-controls)](#network-security-controls)
+[6.7 Network Security Controls [61](#network-security-controls)](#network-security-controls)
 
-[6.8 Time-Stamping [60](#time-stamping)](#time-stamping)
+[6.8 Time-Stamping [61](#time-stamping)](#time-stamping)
 
-[7. Certificate, CRL, and OCSP Profiles [61](#certificate-crl-and-ocsp-profiles)](#certificate-crl-and-ocsp-profiles)
+[7. Certificate, CRL, and OCSP Profiles [62](#certificate-crl-and-ocsp-profiles)](#certificate-crl-and-ocsp-profiles)
 
-[7.1 Certificate Profile [61](#certificate-profile)](#certificate-profile)
+[7.1 Certificate Profile [62](#certificate-profile)](#certificate-profile)
 
-[7.1.1 Version Number(s) [61](#version-numbers)](#version-numbers)
+[7.1.1 Version Number(s) [62](#version-numbers)](#version-numbers)
 
-[7.1.2 Certificate Extensions [61](#certificate-extensions)](#certificate-extensions)
+[7.1.2 Certificate Extensions [62](#certificate-extensions)](#certificate-extensions)
 
-[7.1.3 Algorithm Object Identifiers [61](#algorithm-object-identifiers)](#algorithm-object-identifiers)
+[7.1.3 Algorithm Object Identifiers [62](#algorithm-object-identifiers)](#algorithm-object-identifiers)
 
-[7.1.4 Name Forms [62](#name-forms)](#name-forms)
+[7.1.4 Name Forms [63](#name-forms)](#name-forms)
 
-[7.1.5 Name Constraints [62](#name-constraints)](#name-constraints)
+[7.1.5 Name Constraints [63](#name-constraints)](#name-constraints)
 
-[7.1.6 Certificate Policy Object Identifier [62](#certificate-policy-object-identifier)](#certificate-policy-object-identifier)
+[7.1.6 Certificate Policy Object Identifier [63](#certificate-policy-object-identifier)](#certificate-policy-object-identifier)
 
-[7.1.7 Usage of Policy Constraints Extension [63](#usage-of-policy-constraints-extension)](#usage-of-policy-constraints-extension)
+[7.1.7 Usage of Policy Constraints Extension [64](#usage-of-policy-constraints-extension)](#usage-of-policy-constraints-extension)
 
-[7.1.8 Policy Qualifiers Syntax and Semantics [63](#policy-qualifiers-syntax-and-semantics)](#policy-qualifiers-syntax-and-semantics)
+[7.1.8 Policy Qualifiers Syntax and Semantics [64](#policy-qualifiers-syntax-and-semantics)](#policy-qualifiers-syntax-and-semantics)
 
-[7.1.9 Processing Semantics for the Critical Certificate Policies Extension [63](#processing-semantics-for-the-critical-certificate-policies-extension)](#processing-semantics-for-the-critical-certificate-policies-extension)
+[7.1.9 Processing Semantics for the Critical Certificate Policies Extension [64](#processing-semantics-for-the-critical-certificate-policies-extension)](#processing-semantics-for-the-critical-certificate-policies-extension)
 
-[7.2 CRL Profile [63](#crl-profile)](#crl-profile)
+[7.2 CRL Profile [64](#crl-profile)](#crl-profile)
 
-[7.2.1 Version Number(s) [63](#version-numbers-1)](#version-numbers-1)
+[7.2.1 Version Number(s) [64](#version-numbers-1)](#version-numbers-1)
 
-[7.2.2 CRL and CRL Entry Extensions [63](#crl-and-crl-entry-extensions)](#crl-and-crl-entry-extensions)
+[7.2.2 CRL and CRL Entry Extensions [64](#crl-and-crl-entry-extensions)](#crl-and-crl-entry-extensions)
 
-[7.3 OCSP Profile [63](#ocsp-profile)](#ocsp-profile)
+[7.3 OCSP Profile [64](#ocsp-profile)](#ocsp-profile)
 
-[7.3.1 Version Number(s) [63](#version-numbers-2)](#version-numbers-2)
+[7.3.1 Version Number(s) [64](#version-numbers-2)](#version-numbers-2)
 
-[7.3.2 OCSP Extensions [63](#ocsp-extensions)](#ocsp-extensions)
+[7.3.2 OCSP Extensions [64](#ocsp-extensions)](#ocsp-extensions)
 
-[8. Compliance Audit and Other Assessments [64](#compliance-audit-and-other-assessments)](#compliance-audit-and-other-assessments)
+[8. Compliance Audit and Other Assessments [65](#compliance-audit-and-other-assessments)](#compliance-audit-and-other-assessments)
 
-[8.1 Frequency or Circumstances of Assessment [64](#frequency-or-circumstances-of-assessment)](#frequency-or-circumstances-of-assessment)
+[8.1 Frequency or Circumstances of Assessment [65](#frequency-or-circumstances-of-assessment)](#frequency-or-circumstances-of-assessment)
 
-[8.2 Identity/Qualifications of Assessor [64](#identityqualifications-of-assessor)](#identityqualifications-of-assessor)
+[8.2 Identity/Qualifications of Assessor [65](#identityqualifications-of-assessor)](#identityqualifications-of-assessor)
 
-[8.3 Assessor’s Relationship to Assessed Entity [64](#assessors-relationship-to-assessed-entity)](#assessors-relationship-to-assessed-entity)
+[8.3 Assessor’s Relationship to Assessed Entity [65](#assessors-relationship-to-assessed-entity)](#assessors-relationship-to-assessed-entity)
 
-[8.4 Topics Covered by Assessment [64](#topics-covered-by-assessment)](#topics-covered-by-assessment)
+[8.4 Topics Covered by Assessment [65](#topics-covered-by-assessment)](#topics-covered-by-assessment)
 
-[8.5 Actions Taken as a Result of Deficiency [65](#actions-taken-as-a-result-of-deficiency)](#actions-taken-as-a-result-of-deficiency)
+[8.5 Actions Taken as a Result of Deficiency [66](#actions-taken-as-a-result-of-deficiency)](#actions-taken-as-a-result-of-deficiency)
 
-[8.6 Communication of Results [65](#communication-of-results)](#communication-of-results)
+[8.6 Communication of Results [66](#communication-of-results)](#communication-of-results)
 
-[9. Other Business and Legal Matters [66](#other-business-and-legal-matters)](#other-business-and-legal-matters)
+[9. Other Business and Legal Matters [67](#other-business-and-legal-matters)](#other-business-and-legal-matters)
 
-[9.1 Fees [66](#fees)](#fees)
+[9.1 Fees [67](#fees)](#fees)
 
-[9.1.1 Certificate Issuance or Renewal Fees [66](#certificate-issuance-or-renewal-fees)](#certificate-issuance-or-renewal-fees)
+[9.1.1 Certificate Issuance or Renewal Fees [67](#certificate-issuance-or-renewal-fees)](#certificate-issuance-or-renewal-fees)
 
-[9.1.2 Certificate Access Fees [66](#certificate-access-fees)](#certificate-access-fees)
+[9.1.2 Certificate Access Fees [67](#certificate-access-fees)](#certificate-access-fees)
 
-[9.1.3 Revocation or Status Information Access Fees [66](#revocation-or-status-information-access-fees)](#revocation-or-status-information-access-fees)
+[9.1.3 Revocation or Status Information Access Fees [67](#revocation-or-status-information-access-fees)](#revocation-or-status-information-access-fees)
 
-[9.1.4 Fees for other Services [66](#fees-for-other-services)](#fees-for-other-services)
+[9.1.4 Fees for other Services [67](#fees-for-other-services)](#fees-for-other-services)
 
-[9.1.5 Refund Policy [66](#refund-policy)](#refund-policy)
+[9.1.5 Refund Policy [67](#refund-policy)](#refund-policy)
 
-[9.2 Financial Responsibility [66](#financial-responsibility)](#financial-responsibility)
+[9.2 Financial Responsibility [67](#financial-responsibility)](#financial-responsibility)
 
-[9.2.1 Insurance Coverage [66](#insurance-coverage)](#insurance-coverage)
+[9.2.1 Insurance Coverage [67](#insurance-coverage)](#insurance-coverage)
 
-[9.2.2 Other Assets [66](#other-assets)](#other-assets)
+[9.2.2 Other Assets [67](#other-assets)](#other-assets)
 
-[9.2.3 Insurance or Warranty Coverage for End-Entities [66](#insurance-or-warranty-coverage-for-end-entities)](#insurance-or-warranty-coverage-for-end-entities)
+[9.2.3 Insurance or Warranty Coverage for End-Entities [67](#insurance-or-warranty-coverage-for-end-entities)](#insurance-or-warranty-coverage-for-end-entities)
 
-[9.3 Confidentiality of Business Information [66](#confidentiality-of-business-information)](#confidentiality-of-business-information)
+[9.3 Confidentiality of Business Information [67](#confidentiality-of-business-information)](#confidentiality-of-business-information)
 
-[9.3.1 Scope of Confidential Information [67](#scope-of-confidential-information)](#scope-of-confidential-information)
+[9.3.1 Scope of Confidential Information [68](#scope-of-confidential-information)](#scope-of-confidential-information)
 
-[9.3.2 Information not within the Scope of Confidential Information [67](#information-not-within-the-scope-of-confidential-information)](#information-not-within-the-scope-of-confidential-information)
+[9.3.2 Information not within the Scope of Confidential Information [68](#information-not-within-the-scope-of-confidential-information)](#information-not-within-the-scope-of-confidential-information)
 
-[9.3.3 Responsibility to Protect Confidential Information [67](#responsibility-to-protect-confidential-information)](#responsibility-to-protect-confidential-information)
+[9.3.3 Responsibility to Protect Confidential Information [68](#responsibility-to-protect-confidential-information)](#responsibility-to-protect-confidential-information)
 
-[9.4 Privacy of Personal Information [67](#privacy-of-personal-information)](#privacy-of-personal-information)
+[9.4 Privacy of Personal Information [68](#privacy-of-personal-information)](#privacy-of-personal-information)
 
-[9.4.1 Privacy Plan [67](#privacy-plan)](#privacy-plan)
+[9.4.1 Privacy Plan [68](#privacy-plan)](#privacy-plan)
 
-[9.4.2 Information Treated as Private [67](#information-treated-as-private)](#information-treated-as-private)
+[9.4.2 Information Treated as Private [68](#information-treated-as-private)](#information-treated-as-private)
 
-[9.4.3 Information not Deemed Private [67](#information-not-deemed-private)](#information-not-deemed-private)
+[9.4.3 Information not Deemed Private [68](#information-not-deemed-private)](#information-not-deemed-private)
 
-[9.4.4 Responsibility to Protect Private Information [67](#responsibility-to-protect-private-information)](#responsibility-to-protect-private-information)
+[9.4.4 Responsibility to Protect Private Information [68](#responsibility-to-protect-private-information)](#responsibility-to-protect-private-information)
 
-[9.4.5 Notice and Consent to Use Private Information [67](#notice-and-consent-to-use-private-information)](#notice-and-consent-to-use-private-information)
+[9.4.5 Notice and Consent to Use Private Information [68](#notice-and-consent-to-use-private-information)](#notice-and-consent-to-use-private-information)
 
-[9.4.6 Disclosure Pursuant to Judicial or Administrative Process [67](#disclosure-pursuant-to-judicial-or-administrative-process)](#disclosure-pursuant-to-judicial-or-administrative-process)
+[9.4.6 Disclosure Pursuant to Judicial or Administrative Process [68](#disclosure-pursuant-to-judicial-or-administrative-process)](#disclosure-pursuant-to-judicial-or-administrative-process)
 
-[9.4.7 Other Information Disclosure Circumstances [68](#other-information-disclosure-circumstances)](#other-information-disclosure-circumstances)
+[9.4.7 Other Information Disclosure Circumstances [69](#other-information-disclosure-circumstances)](#other-information-disclosure-circumstances)
 
-[9.5 Intellectual Property Rights [68](#intellectual-property-rights)](#intellectual-property-rights)
+[9.5 Intellectual Property Rights [69](#intellectual-property-rights)](#intellectual-property-rights)
 
-[9.6 Representations and Warranties [68](#representations-and-warranties)](#representations-and-warranties)
+[9.6 Representations and Warranties [69](#representations-and-warranties)](#representations-and-warranties)
 
-[9.6.1 CA Representations and Warranties [68](#ca-representations-and-warranties)](#ca-representations-and-warranties)
+[9.6.1 CA Representations and Warranties [69](#ca-representations-and-warranties)](#ca-representations-and-warranties)
 
-[9.6.2 RA Representations and Warranties [69](#ra-representations-and-warranties)](#ra-representations-and-warranties)
+[9.6.2 RA Representations and Warranties [70](#ra-representations-and-warranties)](#ra-representations-and-warranties)
 
-[9.6.3 Subscriber Representations and Warranties [69](#subscriber-representations-and-warranties)](#subscriber-representations-and-warranties)
+[9.6.3 Subscriber Representations and Warranties [70](#subscriber-representations-and-warranties)](#subscriber-representations-and-warranties)
 
-[9.6.4 Relying Parties Representations and Warranties [70](#relying-parties-representations-and-warranties)](#relying-parties-representations-and-warranties)
+[9.6.4 Relying Parties Representations and Warranties [71](#relying-parties-representations-and-warranties)](#relying-parties-representations-and-warranties)
 
-[9.6.5 Representations and Warranties of Other Participants [70](#representations-and-warranties-of-other-participants)](#representations-and-warranties-of-other-participants)
+[9.6.5 Representations and Warranties of Other Participants [71](#representations-and-warranties-of-other-participants)](#representations-and-warranties-of-other-participants)
 
-[9.7 Disclaimers of Warranties [70](#disclaimers-of-warranties)](#disclaimers-of-warranties)
+[9.7 Disclaimers of Warranties [71](#disclaimers-of-warranties)](#disclaimers-of-warranties)
 
-[9.8 Limitations of Liability [70](#limitations-of-liability)](#limitations-of-liability)
+[9.8 Limitations of Liability [71](#limitations-of-liability)](#limitations-of-liability)
 
-[9.9 Indemnities [70](#indemnities)](#indemnities)
+[9.9 Indemnities [71](#indemnities)](#indemnities)
 
-[9.10 Term and Termination [70](#term-and-termination)](#term-and-termination)
+[9.10 Term and Termination [71](#term-and-termination)](#term-and-termination)
 
-[9.10.1 Term [70](#term)](#term)
+[9.10.1 Term [71](#term)](#term)
 
-[9.10.2 Termination [70](#termination)](#termination)
+[9.10.2 Termination [71](#termination)](#termination)
 
-[9.10.3 Effect of Termination and Survival [70](#effect-of-termination-and-survival)](#effect-of-termination-and-survival)
+[9.10.3 Effect of Termination and Survival [71](#effect-of-termination-and-survival)](#effect-of-termination-and-survival)
 
-[9.11 Individual Notices and Communications with Participants [71](#individual-notices-and-communications-with-participants)](#individual-notices-and-communications-with-participants)
+[9.11 Individual Notices and Communications with Participants [72](#individual-notices-and-communications-with-participants)](#individual-notices-and-communications-with-participants)
 
-[9.12 Amendments [71](#amendments)](#amendments)
+[9.12 Amendments [72](#amendments)](#amendments)
 
-[9.12.1 Procedure for Amendment [71](#procedure-for-amendment)](#procedure-for-amendment)
+[9.12.1 Procedure for Amendment [72](#procedure-for-amendment)](#procedure-for-amendment)
 
-[9.12.2 Notification Mechanism and Period [71](#notification-mechanism-and-period)](#notification-mechanism-and-period)
+[9.12.2 Notification Mechanism and Period [72](#notification-mechanism-and-period)](#notification-mechanism-and-period)
 
-[9.12.3 Circumstances under which OID must be Changed [71](#circumstances-under-which-oid-must-be-changed)](#circumstances-under-which-oid-must-be-changed)
+[9.12.3 Circumstances under which OID must be Changed [72](#circumstances-under-which-oid-must-be-changed)](#circumstances-under-which-oid-must-be-changed)
 
-[9.13 Dispute Resolution Provisions [71](#dispute-resolution-provisions)](#dispute-resolution-provisions)
+[9.13 Dispute Resolution Provisions [72](#dispute-resolution-provisions)](#dispute-resolution-provisions)
 
-[9.14 Governing Law [71](#governing-law)](#governing-law)
+[9.14 Governing Law [72](#governing-law)](#governing-law)
 
-[9.15 Compliance with Applicable Law [71](#compliance-with-applicable-law)](#compliance-with-applicable-law)
+[9.15 Compliance with Applicable Law [72](#compliance-with-applicable-law)](#compliance-with-applicable-law)
 
-[9.16 Miscellaneous Provisions [71](#miscellaneous-provisions)](#miscellaneous-provisions)
+[9.16 Miscellaneous Provisions [72](#miscellaneous-provisions)](#miscellaneous-provisions)
 
-[9.16.1 Entire Agreement [71](#entire-agreement)](#entire-agreement)
+[9.16.1 Entire Agreement [72](#entire-agreement)](#entire-agreement)
 
-[9.16.2 Assignment [72](#assignment)](#assignment)
+[9.16.2 Assignment [73](#assignment)](#assignment)
 
-[9.16.3 Severability [72](#severability)](#severability)
+[9.16.3 Severability [73](#severability)](#severability)
 
-[9.16.4 Enforcement (Attorneys’ Fees and Waiver of Rights) [72](#enforcement-attorneys-fees-and-waiver-of-rights)](#enforcement-attorneys-fees-and-waiver-of-rights)
+[9.16.4 Enforcement (Attorneys’ Fees and Waiver of Rights) [73](#enforcement-attorneys-fees-and-waiver-of-rights)](#enforcement-attorneys-fees-and-waiver-of-rights)
 
-[9.16.5 Force Majeure [72](#force-majeure)](#force-majeure)
+[9.16.5 Force Majeure [73](#force-majeure)](#force-majeure)
 
-[9.17 Other Provisions [72](#other-provisions)](#other-provisions)
+[9.17 Other Provisions [73](#other-provisions)](#other-provisions)
 
-[10. Bibliography [73](#bibliography)](#bibliography)
+[10. Bibliography [74](#bibliography)](#bibliography)
 
-[11. Acronyms and Abbreviations [76](#acronyms-and-abbreviations)](#acronyms-and-abbreviations)
+[11. Acronyms and Abbreviations [77](#acronyms-and-abbreviations)](#acronyms-and-abbreviations)
 
-[12. Glossary [79](#glossary)](#glossary)
+[12. Glossary [80](#glossary)](#glossary)
 
-[13. Acknowledgments [88](#acknowledgments)](#acknowledgments)
+[13. Acknowledgments [89](#acknowledgments)](#acknowledgments)
 
 #  Introduction
 
@@ -1024,10 +1030,6 @@ A specific role may be identified in certificates issued to multiple subscribers
 Roles for which role-based certificates may be issued are limited to those that are held by a unique individual within an organization (e.g.
 *Chief Information Officer, GSA* is a unique individual whereas *Program Analyst, GSA* is not).
 
-Practice Note:
-When determining whether a role-based certificate is authorized, consider whether the role carries inherent authority beyond the job title.
-Role-based certificates may also be used for individuals on temporary assignment, where the temporary assignment carries an authority not shared by the individuals in their usual occupation, for example: “*Watch Commander, Task Force 1*”.
-
 ### Relying Parties
 
 A relying party is the entity that relies on the validity of the binding of the subscriber’s name to a public key.
@@ -1126,9 +1128,6 @@ The Common Policy CP shall be publicly available on the FPKIPA website (see <htt
 The CPS for the Common Policy Root CA will not be published; a redacted version of this CPS will be publicly available from the FPKIMA website (See <http://www.idmanagement.gov/fpkima>).
 
 ### Interoperability
-
-Practice Note:
-There is no requirement for the publication of CPSs of other CAs that issue certificates under this policy.
 
 Where certificates and CRLs are published in directories, standards-based schemas for directory objects and attributes shall be used as specified in the *Shared Service Provider Repository Service Requirements* \[SSP-REP\].
 
@@ -1264,11 +1263,6 @@ Where the \[department/agency\] is implicit in the role (e.g., Secretary of Comm
 Where the role alone is ambiguous (e.g., Chief Information Officer) the department/agency must be present in the common name.
 The organizational information in the common name must match that in the organizational unit attributes.
 
-Practice Note:
-In the case of “Chief Information Officer”, use of department/agency in the common name is redundant but is included for usability purposes.
-Display of the common name is widely supported in applications.
-Other attributes may or may not be presented to users.
-
 Devices that are the subject of certificates issued under this policy shall be assigned either a geo‑political name or an Internet domain component name.
 Device names shall take one of the following forms:
 
@@ -1319,17 +1313,6 @@ If included, the subject distinguished name shall take one of the following form
 
 - dc=mil, dc=*org0*, \[dc=*org1*\], …, \[dc=*orgN*\], \[ou=*structural_container*\], serialNumber=*UUID*
 
-Practice Note: The FASC-N \[PACS\] consists of 40 decimal digits that are encoded as a 25-byte binary value.
-This 25-byte binary value may be encoded directly into the pivFASC-N name type in the subject alternative name extension, but when included in the subject field the FASC-N must be encoded as a PrintableString that is at most 64 characters long.
-This policy does not mandate any particular method for encoding the FASC-N within the serial number attribute as long as the same encoding method is used for all certificates issued by a CA.
-Acceptable methods for encoding the FASC-N within the serial number attribute include encoding the 25-byte binary value as 50 bytes of ASCII HEX or encoding the 40 decimal digits as 40 bytes of ASCII decimal.
-
-Practice Note:
-When the UUID appears in the subjectAltName extension of a certificate, it must be encoded as a uniformResourceIdentifier as specified in Section 3 of \[RFC 4122\].
-An example of a UUID encoded as a URI, from RFC 4122, is “urn:uuid:f81d4fae-7dec-11d0-a765-00a0c91e6bf6”.
-This policy does not mandate any particular method for encoding the UUID within the serial number attribute as long as the same encoding method is used for all certificates issued by the CA and it is encoded as a PrintableString that is at most 64 characters long, however, it is recommended that the string representation from Section 3 of \[RFC 4122\] be used.
-An example would be “f81d4fae-7dec-11d0-a765-00a0c91e6bf6”.
-
 ### Need for Names to Be Meaningful
 
 The subscriber certificates issued pursuant to this CP are meaningful only if the names that appear in the certificates can be understood and used by relying parties.
@@ -1371,9 +1354,6 @@ Name uniqueness is not violated when multiple certificates are issued to the sam
 The CPS shall identify the method for the assignment of subject names.
 Directory information trees may be assigned to a single CA, or shared between CAs.
 Where multiple CAs share a single directory information tree, the FPKIPA shall review and approve the method for assignment of subject names.
-
-Practice Note:
-For distinguished names, name uniqueness is enforced for the entire name rather than a particular attribute (e.g., the common name).
 
 ### Recognition, Authentication, and Role of Trademarks
 
@@ -1438,11 +1418,6 @@ Typically this is accomplished by querying a database maintained by the organiza
 3.  The applicant presents current corroborating information (e.g., current credit card bill or recent utility bill) to the RA.
 The identifying information (e.g., name and address) on the credential presented in step 3) b) i) above shall be verified by the RA for currency and legitimacy (e.g., the agency ID is verified as valid).
 
-Practice Note:
-This may be accomplished by querying a database maintained by the organization that issued the financial instrument or through use of a commercial credit database.
-In some instances, commercial credit card databases will validate name and address of current cardholders on-line; this validation is acceptable if the card is presented to the RA.
-Other methods may be accepted.
-
 4)  Record and maintain a biometric of the applicant (e.g., a photograph or fingerprint) by the RA or CA.
 (Handwritten signatures and other behavioral characteristics are not accepted as biometrics for the purposes of this policy.)
 This establishes an audit trail for dispute resolution.
@@ -1478,11 +1453,6 @@ Typically this is accomplished by querying official records maintained by the or
 
 3.  The applicant presents current corroborating information (e.g., current credit card bill or recent utility bill) to the RA.
 The identifying information (e.g., name and address) on the credential presented in step 3) b) i) above shall be verified by the RA for currency and legitimacy (e.g., the agency ID is verified as valid).
-
-Practice note:
-This may be accomplished by querying a database maintained by the organization that issued the financial instrument or through use of a commercial credit database.
-In some instances, commercial credit card databases will validate name and address of current cardholders on-line; this validation is acceptable if the card is presented to the RA.
-Other methods may be accepted.
 
 4)  Record and maintain a biometric of the applicant (e.g., a photograph or fingerprint) by the RA or CA.
 (Handwritten signatures and other behavioral characteristics are not accepted as biometrics for the purposes of this policy.)
@@ -1545,8 +1515,6 @@ Information that is not verified shall not be included in certificates.
 
 Before issuing CA certificates or signature certificates that assert organizational authority, the CA shall validate the individual’s authority to act in the name of the organization.
 For pseudonymous certificates that identify subjects by their organizational roles, the CA shall validate that the individual either holds that role or has been delegated the authority to sign on behalf of the role.
-
-Practice Note: Examples of signature certificates that assert organizational authority are code signing certificates and FIPS 201 id-PIV-content-signing certificates.
 
 ### Criteria for Interoperation
 
@@ -1916,9 +1884,6 @@ Revocation requests received within two hours of CRL issuance shall be processed
 
 No stipulation.
 
-Practice note: Use of revoked certificates could have damaging or catastrophic consequences.
-The matter of how often new revocation data should be obtained is a determination to be made by the relying party, considering the risk, responsibility, and consequences for using a certificate whose revocation status cannot be guaranteed.
-
 ### CRL Issuance Frequency
 
 CRLs shall be issued periodically, even if there are no changes to be made, to ensure timeliness of information.
@@ -1932,11 +1897,6 @@ Legacy Federal PKIs, root CAs, and the Common Policy Root CA that only issue cer
 
 CAs that issue certificates to subscribers or operate on-line must issue CRLs at least once every 18 hours, and the *nextUpdate* time in the CRL may be no later than 48 hours after issuance time (i.e., the *thisUpdate* time).
 For legacy Federal PKIs only, the *nextUpdate* time in the CRL may be no later than 180 hours after issuance time (i.e., the *thisUpdate* time).
-
-Practice Note: Since many applications only check for a new CRL at nextUpdate, a longer nextUpdate time may result in applications continuing to rely on older CRLs even when a newer CRL is available.
-A longer nextUpdate time also increases the potential of a replay attack to validate a newly revoked certificate.
-Where the CRL nextUpdate exceeds 48 hours, relying parties should consider these risks and take appropriate measures to mitigate the risk.
-For high-risk, sensitive Relying Party applications suggested measures include configuring a preference for OCSP by applications, pre-fetching CRLs at least every 18 hours, and use of other compensating controls.
 
 Circumstances related to emergency CRL issuance are specified in section 4.9.12.
 
@@ -2505,10 +2465,6 @@ The CA will perform routine self-assessments of security controls.
 
 ## Records Archival
 
-Practice Note:
-The security audit data should be reviewed by the security auditor for events such as repeated failed actions, requests for privileged information, attempted access of system files, and unauthenticated responses.
-Security auditors should check for continuity of the security audit data.
-
 The Common Policy CA must follow either the General Records Schedules established by the National Archives and Records Administration or an agency-specific schedule as applicable.
 
 ### Types of Events Archived
@@ -2704,10 +2660,6 @@ When a CA operating under this policy terminates operations before all certifica
 Prior to CA termination, the CA shall provide archived data to an archive facility as specified in the CPS.
 As soon as possible, the CA will advise all other organizations to which it has issued certificates of its termination, using an agreed-upon method of communication specified in the CPS.
 
-Practice Note:
-This section does not apply to CAs that have ceased issuing new certificates but are continuing to issue CRLs until all certificates have expired.
-Such CAs are required to continue to conform with all relevant aspects of this policy (e.g., audit logging and archives).
-
 #  Technical Security Controls
 
 ## Key Pair Generation and Installation
@@ -2727,9 +2679,6 @@ An independent third party shall validate the execution of the key generation pr
 
 #### Subscriber Key Pair Generation
 
-Practice Note:
-If the audit trail identifies and documents any failures or anomalies in the key generation process, along with the corrective action taken, the key generation process need not be restarted but may continue.
-
 Subscriber key pair generation may be performed by the subscriber, CA, or RA.
 If the CA or RA generates subscriber key pairs, the requirements for key pair delivery specified in section 6.1.2 must also be met.
 
@@ -2739,9 +2688,6 @@ Any pseudo-random numbers used for key generation material shall be generated by
 Symmetric keys may be generated by means of either software or hardware mechanisms.
 
 #### CSS Key Pair Generation
-
-Practice Note:
-If the audit trail identifies and documents any failures or anomalies in the key generation process, along with the corrective action taken, the key generation process need not be restarted but may continue.
 
 Cryptographic keying material used by CSSes to sign status information shall be generated in FIPS 140 validated cryptographic modules.
 For CSSes that provide status under id-fpki-common-High, the module(s) shall meet or exceed FIPS 140 Level 3.
@@ -2811,17 +2757,10 @@ Acceptable methods for self-signed certificate delivery are:
 
 Key rollover certificates are signed with the CA’s current private key, so secure distribution is not required.
 
-Practice Note:
-To ensure the availability of the new public key, the key rollover certificates must be distributed using repositories.
-
-Practice Note: Other methods that preclude substitution attacks may be considered acceptable.
-
 ### Key Sizes
 
 This CP requires use of RSA PKCS \#1, RSASSA-PSS, or ECDSA signatures; additional restrictions on key sizes and hash algorithms are detailed below.
 Certificates issued under this policy shall contain RSA or elliptic curve public keys.
-
-Practice Note: Future versions of this policy may specify additional FIPS-approved signature algorithms.
 
 Trusted Certificates that expire before January 1, 2031 shall contain subject public keys of 2048 or 3072 bits for RSA or 256 or 384 bits for elliptic curve, and be signed with the corresponding private key.
 Trusted Certificates that expire on or after January 1, 2031 shall contain subject public keys of 3072 bits for RSA or 256 or 384 bits for elliptic curve, and be signed with the corresponding private key.
@@ -2892,9 +2831,17 @@ Signing certificates issued under the policy for id-fpki-common-piv-contentSigni
 The relevant standard for cryptographic modules is *Security Requirements for Cryptographic Modules* \[FIPS 140-2\].
 Cryptographic modules shall be validated to a FIPS 140 level identified in this section.
 
+In accordance with FIPS 201, the relevant NIST Guideline for PIV Card Issuers (PCI) is NIST SP 800-79, Guidelines for the Accreditation of Personal Identity Verification Card Issuers, which utilizes various aspects of NIST SP 800-37 and applies them to accrediting the reliability of PCIs.
+
 CAs that issue certificates under id-fpki-common-High shall use a FIPS 140 Level 3 or higher validated hardware cryptographic module.
 CAs that do not issue certificates under id-fpki-common-High shall use a FIPS 140 Level 2 or higher validated hardware cryptographic module.
+
 RAs shall use a FIPS 140 Level 2 or higher validated hardware cryptographic module.
+
+PIV Cards are PKI tokens that have private keys associated with certificates asserting id-fpki-common-authentication or id-fpki-common-cardAuth.
+PIV Cards shall only be issued using card stock that has been tested and approved by the FIPS 201/FICAM Testing Program and listed on the GSA [Approved Products List](http://www.idmanagement.gov/approved-products-list-apl) (APL).
+On an annual basis, for each PCI configuration used (as defined by the FIPS 201/FICAM Testing Program), one populated, representative sample PIV Card shall be submitted to the FIPS 201/FICAM Testing Program for testing.
+
 Subscribers shall use a FIPS 140 Level 1 or higher validated cryptographic module for all cryptographic operations.
 Subscribers issued certificates under the hardware users policy (id-fpki-common-hardware or id-fpki-common-devicesHardware), one of the authentication policies (id-fpki-common-authentication or id-fpki-common-cardAuth), or common High policy (id-fpki-common-High) shall use a FIPS 140 Level 2 or higher validated hardware cryptographic module for all private key operations.
 
@@ -3003,8 +2950,6 @@ Physical destruction of hardware is not required.
 
 To ensure future access to encrypted data, subscriber private key management keys should be secured in long-term backups or archived.
 
-Practice Note: Destruction will likely be performed by executing a “zeroize” command.
-
 ### Cryptographic Module Rating
 
 See section 6.2.1.
@@ -3054,8 +2999,6 @@ Activation data shall be:
 - recorded and secured at the level of assurance associated with the activation of the cryptographic module, and shall not be stored with the cryptographic module.
 
 ### Other Aspects of Activation Data
-
-Practice Note: Level 2 in FIPS 140-2 requires that the protection mechanism includes a facility to protect against repeated guessing attacks.
 
 No stipulation.
 
@@ -3683,123 +3626,133 @@ The following documents were used in part to develop this CP:
 >http://www.abanet.org/scitech/ec/isc/dsgfree.html</a></td>
 </tr>
 <tr class="even">
+<td>APL</td>
+<td><p>Approved Products List (APL)</p>
+<p><a href="http://www.idmanagement.gov/approved-products-list-apl">http://www.idmanagement.gov/approved-products-list-apl</a></p></td>
+</tr>
+<tr class="odd">
 <td>AUDIT</td>
 <td>FPKI Compliance Audit Requirements <a href="http://www.idmanagement.gov/fpkipa/documents/FPKI%20Compliance%20Audit%20Requirements.doc">http://www.idmanagement.gov/fpkipa/documents/FPKI%20Compliance%20Audit%20Requirements.doc</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>CCP-PROF</td>
 <td>X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program.
 <a href="http://www.idmanagement.gov/fpkipa/documents/CertCRLprofileForCP.pdf"
 >http://www.idmanagement.gov/fpkipa/documents/CertCRLprofileForCP.pdf</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>CIMC</td>
 <td>Certificate Issuing and Management Components Family of Protection Profiles, version 1.0, October 31, 2001.<br />
 <a href="http://csrc.nist.gov/pki/documents/CIMC_PP_20011031.pdf">http://csrc.nist.gov/pki/documents/CIMC_PP_20011031.pdf</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>E-Auth</td>
 <td>E-Authentication Guidance for Federal Agencies, M-04-04, December 16, 2003.<br />
 <a href="http://www.whitehouse.gov/omb/memoranda/fy04/m04-04.pdf">http://www.whitehouse.gov/omb/memoranda/fy04/m04-04.pdf</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>FIPS 140-2</td>
 <td>Security Requirements for Cryptographic Modules, FIPS 140-2, May 25, 2001.<br />
 <a href="http://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf">http://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>FIPS 186-2</td>
 <td>Digital Signature Standard (DSS), FIPS 186-2, January 27, 2000.<br />
 <a href="http://csrc.nist.gov/publications/fips/fips186-2/fips186-2-change1.pdf">http://csrc.nist.gov/publications/fips/fips186-2/fips186-2-change1.pdf</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>FIPS 201-1</td>
 <td>Personal Identity Verification (PIV) of Federal Employees and Contractors, FIPS 201-1, March 2006.<br />
 <a href="http://csrc.nist.gov/publications/fips/fips201-1/FIPS-201-1-chng1.pdf">http://csrc.nist.gov/publications/fips/fips201-1/FIPS-201-1-chng1.pdf</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>FOIACT</td>
 <td>5 U.S.C. 552, Freedom of Information Act. <a href="http://www4.law.cornell.edu/uscode/5/552.html"
 >http://www4.law.cornell.edu/uscode/5/552.html</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>ISO9594-8</td>
 <td>ITU-T Recommendation X.509 (2005) | ISO/IEC 9594-8:2005, Information technology - Open Systems Interconnection - The Directory: Public-key and attribute certificate frameworks.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>ITMRA</td>
 <td>40 U.S.C. 1452, Information Technology Management Reform Act of 1996.
 <a href="http://www4.law.cornell.edu/uscode/40/1452.html"
 >http://www4.law.cornell.edu/uscode/40/1452.html</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>NAG69C</td>
 <td>Information System Security Policy and Certification Practice Statement for Certification Authorities, rev C, November 1999.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>NSD42</td>
 <td>National Policy for the Security of National Security Telecom and Information Systems, 5 Jul 1990. <a href="http://snyside.sunnyside.com/cpsr/privacy/computer_security/nsd_42.txt">http://snyside.sunnyside.com/cpsr/privacy/computer_security/nsd_42.txt</a>
 (redacted version)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>NS4005</td>
 <td>NSTISSI 4005, Safeguarding COMSEC Facilities and Material, August 1997.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>NS4009</td>
 <td>NSTISSI 4009, National Information Systems Security Glossary, January 1999.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>PACS</td>
 <td><em>Technical Implementation Guidance: Smart Card Enabled Physical Access Control Systems</em>, Version 2.2, The Government Smart Card Interagency Advisory Board’s Physical Security Interagency Interoperability Working Group, July 30, 2004.<br />
 <a href="http://www.idmanagement.gov/smartcard/information/TIG_SCEPACS_v2.2.pdf">http://www.idmanagement.gov/smartcard/information/TIG_SCEPACS_v2.2.pdf</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>PKCS#1</td>
 <td>Jakob Jonsson and Burt Kaliski, Public-Key Cryptography Standards (PKCS) #1: RSA Cryptography Specifications Version 2.1, RFC 3447, February 2003.<br />
 <a href="http://www.ietf.org/rfc/rfc3447.txt">http://www.ietf.org/rfc/rfc3447.txt</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>PKCS#12</td>
 <td>PKCS 12 v1.0: Personal Information Exchange Syntax June 24, 1999.
 ftp://ftp.rsasecurity.com/pub/pkcs/pkcs-12/pkcs-12v1.pdf</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>RFC 2510</td>
 <td>Certificate Management Protocol, Adams and Farrell, March 1999.<br />
 <a href="http://www.ietf.org/rfc/rfc2510.txt">http://www.ietf.org/rfc/rfc2510.txt</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>RFC 2560</td>
 <td>X.509 Internet Public Key Infrastructure: Online Certificate Status Protocol – OCSP, Michael Myers, Rich Ankney, Ambarish Malpani, Slava Galperin, and Carlisle Adams, June 1999.<u><br />
 </u><a href="http://www.ietf.org/rfc/rfc2560.txt">http://www.ietf.org/rfc/rfc2560.txt</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>RFC 2822</td>
 <td>Internet Message Format, Peter W. Resnick, April 2001.<br />
 <a href="http://www.ietf.org/rfc/rfc2822.txt">http://www.ietf.org/rfc/rfc2822.txt</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>RFC 3647</td>
 <td>Certificate Policy and Certification Practices Framework, Chokhani and Ford, Sabett, Merrill, and Wu, November 2003.<br />
 <a href="http://www.ietf.org/rfc/rfc3647.txt">http://www.ietf.org/rfc/rfc3647.txt</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>RFC 4122</td>
 <td>A Universally Unique IDentifier (UUID) URN Namespace, Paul J. Leach, Michael Mealling, and Rich Salz, July 2005.<br />
 <a href="http://www.ietf.org/rfc/rfc4122.txt">http://www.ietf.org/rfc/rfc4122.txt</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>SP 800-37</td>
 <td>Guide for the Security Certification and Accreditation of Federal Information Systems, NIST Special Publication 800-37, May 2004.<br />
 <a href="http://csrc.nist.gov/publications/nistpubs/800-37/SP800-37-final.pdf"
 >http://csrc.nist.gov/publications/nistpubs/800-37/SP800-37-final.pdf</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>SP 800-73-3(1)</td>
 <td>Interfaces for Personal Identity Verification – Part 1: End-Point PIV Card Application Namespace, Data Model and Representation, NIST Special Publication 800-73-3, February 2010.<br />
 <a href="http://csrc.nist.gov/publications/nistpubs/800-73-3/sp800-73-3_PART1_piv-card-applic-namespace-date-model-rep.pdf"
 >http://csrc.nist.gov/publications/nistpubs/800-73-3/sp800-73-3_PART1_piv-card-applic-namespace-date-model-rep.pdf</a></td>
+</tr>
+<tr class="odd">
+<td>SP 800-79</td>
+<td><p>Guidelines for the Accreditation of Personal Identity Verification Card Issuers, NIST Special Publication 800-79</p>
+<p><a href="http://csrc.nist.gov/publications/nistpubs/">http://csrc.nist.gov/publications/nistpubs/</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -3814,6 +3767,7 @@ ftp://ftp.rsasecurity.com/pub/pkcs/pkcs-12/pkcs-12v1.pdf</td>
 | C&A      | Certification and Accreditation                                                   |
 | CHUID    | Card Holder Unique Identifier                                                     |
 | COMSEC   | Communications Security                                                           |
+| CMS      | Card Management System                                                            |
 | CP       | Certificate Policy                                                                |
 | CPS      | Certification Practice Statement                                                  |
 | CRL      | Certificate Revocation List                                                       |
@@ -3840,6 +3794,7 @@ ftp://ftp.rsasecurity.com/pub/pkcs/pkcs-12/pkcs-12v1.pdf</td>
 | NSTISSI  | National Security Telecommunications and Information Systems Security Instruction |
 | OCSP     | Online Certificate Status Protocol                                                |
 | OID      | Object Identifier                                                                 |
+| PCI      | PIV Card Issuer                                                                   |
 | PIN      | Personal Identification Number                                                    |
 | PIV      | Personal Identity Verification                                                    |
 | PKCS     | Public Key Cryptography Standards                                                 |

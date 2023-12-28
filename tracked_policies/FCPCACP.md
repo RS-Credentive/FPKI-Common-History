@@ -1,4 +1,4 @@
-<img src="media/image1.emf" style="width:3.76042in;height:0.75208in" alt="FPKIPA Federal Public Key Infrastructure Policy Authority " />
+<img src="media/image1.emf" style="width:3.76042in;height:0.75in" alt="FPKIPA Federal Public Key Infrastructure Policy Authority " />
 
 **X.509 Certificate Policy**
 
@@ -8,9 +8,9 @@
 
 **Common Policy Framework**
 
-Version 1.19
+Version 1.20
 
-June 22, 2012
+August 19, 2012
 
 **Signature Page**
 
@@ -139,6 +139,14 @@ Clarify RA audit requirements: revise section 1.3.1.5, add new last sentence to 
 <td>June 22, 2012</td>
 <td><strong>2012-02.</strong>
 Add new section 4.1.1.4, <em>Code Signing Certificates</em>, to address change proposal (approved by FPKIPA on 6/12/12) requiring organizations receiving a code signing certificate to have access to a Time Stamp Authority.</td>
+</tr>
+<tr class="odd">
+<td>1.20</td>
+<td>August 19, 2012</td>
+<td><p><strong>2012-03.</strong>
+Add new language to sections 3.2.3.2 and 9.6.3 to address change proposal (approved by FPKIPA on 8/14/12) to allow a human device sponsor, who is not physically located near the sponsored device, and/or who does not have sufficient administrative privileges on the sponsored device to fulfill these responsibilities, to delegate them to an authorized administrator of the device.</p>
+<p><strong>2012-04.</strong>
+Revise section 4.9.7 to address change proposal (approved by FPKIPA on 8/12/12) to detail and clarify the Common Policy CA’s CRL issuance policies to ensure Offline Root CA operations are permitted.</p></td>
 </tr>
 </tbody>
 </table>
@@ -759,7 +767,7 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [9.10.3 Effect of Termination and Survival [70](#effect-of-termination-and-survival)](#effect-of-termination-and-survival)
 
-[9.11 Individual Notices and Communications with Participants [70](#individual-notices-and-communications-with-participants)](#individual-notices-and-communications-with-participants)
+[9.11 Individual Notices and Communications with Participants [71](#individual-notices-and-communications-with-participants)](#individual-notices-and-communications-with-participants)
 
 [9.12 Amendments [71](#amendments)](#amendments)
 
@@ -779,9 +787,9 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [9.16.1 Entire Agreement [71](#entire-agreement)](#entire-agreement)
 
-[9.16.2 Assignment [71](#assignment)](#assignment)
+[9.16.2 Assignment [72](#assignment)](#assignment)
 
-[9.16.3 Severability [71](#severability)](#severability)
+[9.16.3 Severability [72](#severability)](#severability)
 
 [9.16.4 Enforcement (Attorneys’ Fees and Waiver of Rights) [72](#enforcement-attorneys-fees-and-waiver-of-rights)](#enforcement-attorneys-fees-and-waiver-of-rights)
 
@@ -1548,6 +1556,11 @@ The sponsor is responsible for providing the following registration information:
 
 - Contact information to enable the CA or RA to communicate with the sponsor when required.
 
+These certificates shall be issued only to authorized devices under the subscribing organization’s control.
+In the case a human sponsor is changed, the new sponsor shall review the status of each device under his/her sponsorship to ensure it is still authorized to receive certificates.
+The CPS shall describe procedures to ensure that certificate accountability is maintained.
+See section 9.6.3 for subscriber responsibilities.
+
 The identity of the sponsor shall be authenticated by:
 
 - Verification of digitally signed messages sent from the sponsor using a certificate issued under this policy; or
@@ -1945,7 +1958,7 @@ Certificate status information shall be published not later than the next schedu
 This will facilitate the local caching of certificate status information for off-line or remote (laptop) operation.
 
 CAs operating as part of the Shared Service Providers program that only issue certificates to CAs and that operate off-line must issue CRLs at least once every 24 hours, and the *nextUpdate* time in the CRL may be no later than 48 hours after issuance time (i.e., the *thisUpdate* time).
-For legacy Federal PKIs only, CAs that only issue certificates to CAs and that operate off-line must issue CRLs at least once every 31 days, and the *nextUpdate* time in the CRL may be no later than 32 days after issuance time (i.e., the *thisUpdate* time).
+Legacy Federal PKIs, root CAs, and the Common Policy Root CA that only issue certificates to CAs and that operate off-line must issue CRLs at least once every 31 days, and the *nextUpdate* time in the CRL may be no later than 32 days after issuance time (i.e., the *thisUpdate* time).
 
 CAs that issue certificates to subscribers or operate on-line must issue CRLs at least once every 18 hours, and the *nextUpdate* time in the CRL may be no later than 48 hours after issuance time (i.e., the *thisUpdate* time).
 For legacy Federal PKIs only, the *nextUpdate* time in the CRL may be no later than 180 hours after issuance time (i.e., the *thisUpdate* time).
@@ -3590,6 +3603,7 @@ An RA supporting this policy shall conform to the stipulations of this document,
 ### Subscriber Representations and Warranties
 
 A subscriber (or human sponsor for device certificates) shall be required to sign a document containing the requirements the subscriber shall meet respecting protection of the private key and use of the certificate before being issued the certificate.
+Wherever possible, subscriber documents must be digitally signed.
 
 Subscribers shall—
 
@@ -3601,6 +3615,10 @@ Subscribers shall—
 Such notification shall be made directly or indirectly through mechanisms consistent with the CA’s CPS.
 
 - Abide by all the terms, conditions, and restrictions levied on the use of their private key(s) and certificate(s).
+
+If the human sponsor for a device is not physically located near the sponsored device, and/or does not have sufficient administrative privileges on the sponsored device to protect the device’s private key and ensure that the device’s certificate is only used for authorized purposes, the device sponsor may delegate these responsibilities to an authorized administrator for the device.
+The delegation shall be documented and signed by both the device sponsor and the authorized administrator for the device.
+Delegation does not relieve the device sponsor of his or her accountability for these responsibilities.
 
 ### Relying Parties Representations and Warranties
 

@@ -8,9 +8,9 @@
 
 **Common Policy Framework**
 
-Version 1.25
+Version 1.26
 
-September 22, 2016
+February 2, 2017
 
 **Signature Page**
 
@@ -201,6 +201,13 @@ Alignment with CAB Forum Baseline Requirements (BR) v1.3.4.
 This will facilitate FPKI conformance to CAB Forum BRs for publicly-trusted SSL/TLS certificates, which will help promote inclusion of the Federal Root in public trust stores and provide guidance for issuance of publicly-trusted device certificates.</p>
 <p><strong>2016-02.</strong>
 Allow a long term CRL when a CA retires a key after performing a key changeover to align with the FPKI CPS.</p></td>
+</tr>
+<tr class="odd">
+<td>1.26</td>
+<td>February 2, 2017</td>
+<td><strong>2016-03</strong>.
+Remove or update references to obsoleted RFCs.
+Changes to Sections 1.3.1.7, 3.1.2, 3.1.4, 4.9.7, and 10.</td>
 </tr>
 </tbody>
 </table>
@@ -592,7 +599,7 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [5.7.1 Incident and Compromise Handling Procedures [50](#incident-and-compromise-handling-procedures)](#incident-and-compromise-handling-procedures)
 
-[5.7.2 Computing Resources, Software, and/or Data Are Corrupted [50](#computing-resources-software-andor-data-are-corrupted)](#computing-resources-software-andor-data-are-corrupted)
+[5.7.2 Computing Resources, Software, and/or Data Are Corrupted [51](#computing-resources-software-andor-data-are-corrupted)](#computing-resources-software-andor-data-are-corrupted)
 
 [5.7.3 Entity (CA) Private Key Compromise Procedures [51](#entity-ca-private-key-compromise-procedures)](#entity-ca-private-key-compromise-procedures)
 
@@ -925,19 +932,19 @@ Certificates issued in accordance with this CP and associated with the Federal C
 
 *Table 1 - id-fpki-common Policy OIDs*
 
-|                                          |                                                            |
-|------------------------------------------|------------------------------------------------------------|
-| id-fpki-common-policy                    | ::= {2 16 840 1 101 3 2 1 3 6}                             |
-| id-fpki-common-hardware                  | ::= {2 16 840 1 101 3 2 1 3 7}                             |
-| id-fpki-common-devices                   | ::= {2 16 840 1 101 3 2 1 3 8}                             |
-| id-fpki-common-devicesHardware           | ::= {2 16 840 1 101 3 2 1 3 36}                            |
-| id-fpki-common-authentication            | ::= {2 16 840 1 101 3 2 1 3 13}                            |
-| id-fpki-common-High                      | ::= {2 16 840 1 101 3 2 1 3 16}                            |
-| id-fpki-common-cardAuth                  | ::= {2 16 840 1 101 3 2 1 3 17}                            |
-| id-fpki-common-piv-contentSigning        | ::= {2 16 840 1 101 3 2 1 3 39}                            |
-| id-fpki-common-derived-pivAuth           | ::= {2 16 840 1 101 3 2 1 3 40}                            |
-| id-fpki-common-derived-pivAuth-hardware  | ::= {2 16 840 1 101 3 2 1 3 41}                            |
-| id-fpki-common-public-trusted-serverAuth | <span class="mark">::= {2 16 840 1 101 3 2 1 3 tbd}</span> |
+|                                          |                                 |
+|------------------------------------------|---------------------------------|
+| id-fpki-common-policy                    | ::= {2 16 840 1 101 3 2 1 3 6}  |
+| id-fpki-common-hardware                  | ::= {2 16 840 1 101 3 2 1 3 7}  |
+| id-fpki-common-devices                   | ::= {2 16 840 1 101 3 2 1 3 8}  |
+| id-fpki-common-devicesHardware           | ::= {2 16 840 1 101 3 2 1 3 36} |
+| id-fpki-common-authentication            | ::= {2 16 840 1 101 3 2 1 3 13} |
+| id-fpki-common-High                      | ::= {2 16 840 1 101 3 2 1 3 16} |
+| id-fpki-common-cardAuth                  | ::= {2 16 840 1 101 3 2 1 3 17} |
+| id-fpki-common-piv-contentSigning        | ::= {2 16 840 1 101 3 2 1 3 39} |
+| id-fpki-common-derived-pivAuth           | ::= {2 16 840 1 101 3 2 1 3 40} |
+| id-fpki-common-derived-pivAuth-hardware  | ::= {2 16 840 1 101 3 2 1 3 41} |
+| id-fpki-common-public-trusted-serverAuth | ::= {2 16 840 1 101 3 2 1 3 42} |
 
 Certificates issued to CAs may contain a subset of these OIDs.
 Certificates issued to users, other than devices, to support digitally signed documents or key management may contain either id-fpki-common-policy, id-fpki-common-hardware, or id-fpki-common-High.
@@ -1025,7 +1032,7 @@ Such an authority is termed a certificate status server (CSS).
 Where the CSS is identified in certificates as an authoritative source for revocation information, the operations of that authority are considered within the scope of this CP.
 A Certificate Status Server (CSS) shall assert all the policy OIDs for which it is authoritative.
 Examples include OCSP servers that are identified in the authority information access (AIA) extension.
-OCSP servers that are locally trusted, as described in RFC 2560, are not covered by this policy.
+OCSP servers that are locally trusted, as described in \[RFC 6960\], are not covered by this policy.
 
 ### Registration Authorities
 
@@ -1402,7 +1409,7 @@ If included, the common name should describe the issuer, such as:
 
 > cn=*AgencyX CA-3*
 
-The subject name in CA certificates must match the issuer name in certificates issued by the subject, as required by RFC 3280.
+The subject name in CA certificates must match the issuer name in certificates issued by the subject, as required by RFC 5280.
 
 ### Anonymity or Pseudonymity of Subscribers
 
@@ -1414,7 +1421,7 @@ CA certificates issued by the CA shall not contain anonymous or pseudonymous ide
 ### Rules for Interpreting Various Name Forms
 
 Rules for interpreting distinguished name forms are specified in X.501.
-Rules for interpreting e‑mail addresses are specified in \[RFC 2822\].
+Rules for interpreting e‑mail addresses are specified in \[RFC 5322\].
 Rules for interpreting the pivFASC-N name type are specified in \[PACS\].
 
 ### Uniqueness of Names
@@ -1990,8 +1997,8 @@ In this case, all certificates under an issuing CA or subordinate CA shall be re
 
 - The CA is made aware that a Wildcard Certificate has been used to authenticate a fraudulently misleading subordinate Fully-Qualified Domain Name.
 
-Whenever any of the above <span class="mark">circumstances are reported, the appropriate authority shall review the circumstances and make a revocation decision.
-The revocation decision shall be made based on appropriate criteria, to include</span>:
+Whenever any of the above circumstances are reported, the appropriate authority shall review the circumstances and make a revocation decision.
+The revocation decision shall be made based on appropriate criteria, to include:
 
 - The nature of the alleged problem;
 
@@ -1999,9 +2006,8 @@ The revocation decision shall be made based on appropriate criteria, to include<
 
 - Relevant legislation.
 
-<span class="mark">
 If it is determined that revocation is required, the associated certificate shall be revoked and placed on the CRL.
-Revoked certificates shall be included on all new publications of the certificate status information until the certificates expire.</span>
+Revoked certificates shall be included on all new publications of the certificate status information until the certificates expire.
 
 ### Who Can Request Revocation
 
@@ -2080,7 +2086,7 @@ Furthermore, each CRL shall be published no later than the time specified in the
 
 ### On-line Revocation/Status Checking Availability
 
-CAs shall support on-line status checking via OCSP \[RFC 2560\] for end entity certificates issued under id-fpki-common-authentication, id-fpki-common-derived-pivAuth-hardware, id-fpki-common-derived-pivAuth, id-fpki-common-cardAuth, id-fpki-common-public-trusted-serverAuth, and all publicly trusted device certificates.
+CAs shall support on-line status checking via OCSP \[RFC 6960\] for end entity certificates issued under id-fpki-common-authentication, id-fpki-common-derived-pivAuth-hardware, id-fpki-common-derived-pivAuth, id-fpki-common-cardAuth, id-fpki-common-public-trusted-serverAuth, and all publicly trusted device certificates.
 
 Where on-line status checking is supported, status information must be updated and available to relying parties within 18 hours of certificate revocation.
 
@@ -2785,11 +2791,10 @@ To minimize risk from compromise of a CA’s private signing key, that key may b
 From that time on, only the new key will be used to sign CA and subscriber certificates.
 If the old private key is used to sign OCSP responder certificates or CRLs that cover certificates signed with that key, the old key must be retained and protected.
 
-<span class="mark">
 After a CA performs a Key Changeover, the CA may continue to issue CRLs with the old key until all certificates signed with that key have expired.
 As an alternative, after all certificates signed with that old key have been revoked, the CA may issue a final long-term CRL using the old key, with a nextUpdate time past the validity period of all issued certificates.
 This final CRL shall be available for all relying parties until the validity period of all issued certificates has past.
-Once the last CRL has been issued, the old private signing key of the CA may be destroyed.</span>
+Once the last CRL has been issued, the old private signing key of the CA may be destroyed.
 
 The CA’s signing key shall have a validity period as described in section 6.3.2.
 
@@ -2869,14 +2874,12 @@ Relying parties may decide of their own volition whether to continue to use cert
 
 When a CA operating under this policy terminates operations before all certificates have expired, the CA signing keys shall be surrendered to the FPKIPA.
 
-<span class="mark">
 This section does not apply to CAs that have ceased issuing new certificates but are continuing to issue CRLs until all certificates have expired.
-Such CAs are required to continue to conform with all relevant aspects of this policy (e.g., audit logging and archives).</span>
+Such CAs are required to continue to conform with all relevant aspects of this policy (e.g., audit logging and archives).
 
-<span class="mark">
 Any issued certificates that have not expired, shall be revoked and a final long term CRL with a nextUpdate time past the validity period of all issued certificates shall be generated.
 This final CRL shall be available for all relying parties until the validity period of all issued certificates has past.
-Once the last CRL has been issued, the private signing key(s) of the CA to be terminated will be destroyed.</span>
+Once the last CRL has been issued, the private signing key(s) of the CA to be terminated will be destroyed.
 
 Prior to CA termination, the CA shall provide archived data to an archive facility as specified in the CPS.
 As soon as possible, the CA will advise all other organizations to which it has issued certificates of its termination, using an agreed-upon method of communication specified in the CPS.
@@ -3476,8 +3479,11 @@ Certificates issued under this CP shall assert at least one of the following OID
 > id-fpki-common-cardAuth ::= {2 16 840 1 101 3 2 1 3 17}
 >
 > id-fpki-common-piv-contentSigning ::= {2 16 840 1 101 3 2 1 3 39}
+>
+> id-fpki-common-public-trusted-serverAuth
+::= {2 16 840 1 101 3 2 1 3 42}
 
-Certificates that express the id-fpki-common-piv-contentSigning policy OID shall not express any other policy OIDs.
+Certificates that express the id-fpki-common-piv-contentSigning or id-fpki-common-public-trusted-serverAuth policy OIDs shall not express any other policy OIDs.
 
 ### Usage of Policy Constraints Extension
 
@@ -3973,29 +3979,27 @@ http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf</td>
 ftp://ftp.rsasecurity.com/pub/pkcs/pkcs-12/pkcs-12v1.pdf</td>
 </tr>
 <tr class="odd">
-<td>RFC 2510</td>
-<td>Certificate Management Protocol, Adams and Farrell, March 1999.<br />
-<a href="http://www.ietf.org/rfc/rfc2510.txt">http://www.ietf.org/rfc/rfc2510.txt</a></td>
-</tr>
-<tr class="even">
-<td>RFC 2560</td>
-<td>X.509 Internet Public Key Infrastructure: Online Certificate Status Protocol – OCSP, Michael Myers, Rich Ankney, Ambarish Malpani, Slava Galperin, and Carlisle Adams, June 1999.<u><br />
-</u><a href="http://www.ietf.org/rfc/rfc2560.txt">http://www.ietf.org/rfc/rfc2560.txt</a></td>
-</tr>
-<tr class="odd">
-<td>RFC 2822</td>
-<td>Internet Message Format, Peter W. Resnick, April 2001.<br />
-<a href="http://www.ietf.org/rfc/rfc2822.txt">http://www.ietf.org/rfc/rfc2822.txt</a></td>
-</tr>
-<tr class="even">
 <td>RFC 3647</td>
 <td>Certificate Policy and Certification Practices Framework, Chokhani and Ford, Sabett, Merrill, and Wu, November 2003.<br />
 <a href="http://www.ietf.org/rfc/rfc3647.txt">http://www.ietf.org/rfc/rfc3647.txt</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>RFC 4122</td>
 <td>A Universally Unique IDentifier (UUID) URN Namespace, Paul J. Leach, Michael Mealling, and Rich Salz, July 2005.<br />
 <a href="http://www.ietf.org/rfc/rfc4122.txt">http://www.ietf.org/rfc/rfc4122.txt</a></td>
+</tr>
+<tr class="odd">
+<td>RFC 5280</td>
+<td>Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile.
+<a href="https://www.ietf.org/rfc/rfc5280.txt">https://www.ietf.org/rfc/rfc5280.txt</a></td>
+</tr>
+<tr class="even">
+<td>RFC 5322</td>
+<td>Internet Message Format <a href="http://www.ietf.org/rfc/rfc5322.txt">http://www.ietf.org/rfc/rfc5322.txt</a></td>
+</tr>
+<tr class="odd">
+<td>RFC 6960</td>
+<td>X.509 Internet Public Key Infrastructure Online Certificate Status Protocol – OCSP. <a href="https://tools.ietf.org/html/rfc6960">https://tools.ietf.org/html/rfc6960</a></td>
 </tr>
 <tr class="even">
 <td>SP 800-37</td>

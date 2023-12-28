@@ -8,9 +8,9 @@
 
 **Common Policy Framework**
 
-Version 2.0
+Version 2.1
 
-September 1, 2020
+May 18, 2021
 
 **Signature Page**
 
@@ -41,163 +41,167 @@ Revision Details</strong></td>
 <tr class="odd">
 <td>1.1</td>
 <td>July 17, 2007</td>
-<td><strong>2007-01</strong>.
+<td><strong>2007-01:</strong>
 Alignment of Cryptographic Algorithm Requirements with SP 800-78-1</td>
 </tr>
 <tr class="even">
 <td>1.2</td>
 <td>September 12, 2007</td>
-<td><strong>2007-02</strong>.
+<td><strong>2007-02:</strong>
 Requiring the inclusion of a subject DN in PIV Authentication Certificates</td>
 </tr>
 <tr class="odd">
 <td>1.3</td>
 <td>October 16, 2007</td>
-<td><strong>2007-03</strong>.
+<td><strong>2007-03:</strong>
 Accommodating legacy PKIs for PIV Authentication</td>
 </tr>
 <tr class="even">
 <td>1.4</td>
 <td>April 3, 2008</td>
-<td><strong>2008-01.</strong>
+<td><strong>2008-01:</strong>
 § 8.3 Assessor’s Relationship to Assessed Entity</td>
 </tr>
 <tr class="odd">
 <td>1.5</td>
 <td>November 20, 2008</td>
-<td><strong>2008-02</strong>.
+<td><strong>2008-02:</strong>
 Include a provision for a role-based signature certificate</td>
 </tr>
 <tr class="even">
 <td>1.6</td>
 <td>February 11, 2009</td>
-<td><strong>2009-01.</strong> nextUpdate in Certificate Revocation Lists (CRL) published by legacy Federal PKIs</td>
+<td><strong>2009-01:</strong> nextUpdate in Certificate Revocation Lists (CRL) published by legacy Federal PKIs</td>
 </tr>
 <tr class="odd">
 <td>1.7</td>
 <td>April 15, 2009</td>
-<td><strong>2009-02.</strong>
+<td><strong>2009-02:</strong>
 Allow the use of the PIV Authentication certificate as proof of identity and employment</td>
 </tr>
 <tr class="even">
 <td>1.8</td>
 <td>January 21, 2010</td>
-<td><strong>2010-01</strong>.
-Align key length requirements w/ SP 800-57<br />
+<td><strong>2010-01:</strong>
+Align key length requirements w/ SP 800-57<strong><br />
 <br />
-<strong>2010-02</strong>.
+2010-02:</strong>
 Remote Administration of Certification Authorities</td>
 </tr>
 <tr class="odd">
 <td>1.9</td>
 <td>March 15, 2010</td>
-<td><strong>2010-03</strong>.
+<td><strong>2010-03:</strong>
 Allowing inclusion of UUIDs in Card Authentication Certificates</td>
 </tr>
 <tr class="even">
 <td>1.10</td>
 <td>April 8, 2010</td>
-<td><strong>2010-04</strong>.
+<td><strong>2010-04:</strong>
 § 8.1 &amp; 8.4</td>
 </tr>
 <tr class="odd">
 <td>1.11</td>
 <td>August 16, 2010</td>
-<td><strong>2010-05</strong>.
+<td><strong>2010-05:</strong>
 Clarify the archive definition and how its records are intended to be used</td>
 </tr>
 <tr class="even">
 <td>1.12</td>
 <td>October 15, 2010</td>
-<td><strong>2010-06.</strong>
+<td><strong>2010-06:</strong>
 Allow Federal Legacy PKIs to Directly Cross Certify with Common Policy CA</td>
 </tr>
 <tr class="odd">
 <td>1.13</td>
 <td>November 18, 2010</td>
-<td><strong>2010-07</strong>.
+<td><strong>2010-07:</strong>
 Legacy use of SHA-1 during transition period Jan 1, 2011 to Dec 31, 2013</td>
 </tr>
 <tr class="even">
 <td>1.14</td>
 <td>December 17, 2010</td>
-<td>Clarify requirement to support CA Key Rollover</td>
+<td><strong>2010-08:</strong>
+Clarify requirement to support CA Key Rollover</td>
 </tr>
 <tr class="odd">
 <td>1.15</td>
 <td>January 24, 2011</td>
-<td><strong>2011-01</strong>, CAs to assert policy OIDs in OCSP responder certificates for which the OCSP responder is authoritative</td>
+<td><strong>2011-01:</strong>
+CAs to assert policy OIDs in OCSP responder certificates for which the OCSP responder is authoritative</td>
 </tr>
 <tr class="even">
 <td>1.16</td>
 <td>September 23, 2011</td>
-<td><strong>2011-02</strong>, Clarify requirements for device Subscribers and certificates</td>
+<td><strong>2011-02:</strong>
+Clarify requirements for device Subscribers and certificates</td>
 </tr>
 <tr class="odd">
 <td>1.17</td>
 <td>December 13, 2011</td>
-<td><strong>2011-03</strong>, Remove Requirements for LDAP References in Certificates</td>
+<td><strong>2011-03:</strong>
+Remove Requirements for LDAP References in Certificates</td>
 </tr>
 <tr class="even">
 <td>1.18</td>
 <td>April 26, 2012</td>
-<td><strong>2012-01.</strong>
+<td><strong>2012-01:</strong>
 Clarify RA audit requirements: revise Section 1.3.1.5, add new last sentence to first paragraph of Section 8, revise first paragraph of Section 8.1, revise Sections 8.4, 8.5, and 8.6, revise "Policy Management Authority (PMA)" glossary definition.</td>
 </tr>
 <tr class="odd">
 <td>1.19</td>
 <td>June 22, 2012</td>
-<td><strong>2012-02.</strong>
-Add new Section 4.1.1.4, <em>Code Signing Certificates</em>, to address change proposal (approved by FPKIPA on 6/12/12) requiring organizations receiving a code signing certificate to have access to a Time Stamp Authority.</td>
+<td><strong>2012-02:</strong>
+Add new Section 4.1.1.4, Code Signing Certificates, to address change proposal (approved by FPKIPA on 6/12/12) requiring organizations receiving a code signing certificate to have access to a Time Stamp Authority.</td>
 </tr>
 <tr class="even">
 <td>1.20</td>
 <td>August 19, 2012</td>
-<td><p><strong>2012-03.</strong>
+<td><p><strong>2012-03:</strong>
 Add new language to Sections 3.2.3.2 and 9.6.3 to address change proposal (approved by FPKIPA on 8/14/12) to allow a human device sponsor, who is not physically located near the sponsored device, and/or who does not have sufficient administrative privileges on the sponsored device to fulfill these responsibilities, to delegate them to an authorized administrator of the device.</p>
-<p><strong>2012-04.</strong>
+<p><strong>2012-04:</strong>
 Revise Section 4.9.7 to address change proposal (approved by FPKIPA on 8/12/12) to detail and clarify the Common Policy CA’s CRL issuance policies to ensure Offline Root CA operations are permitted.</p></td>
 </tr>
 <tr class="odd">
 <td>1.21</td>
 <td>December 18, 2012</td>
-<td><strong>2012-05.</strong>
+<td><strong>2012-05:</strong>
 Revise Sections 1.2, 1.4.1, 3.1.1, 6.2.8, 6.3.2, 7.1.4, 7.1.6, and add new Sections 6.1.1.4 and 6.2.4.6 to address change proposal (approved by FPKIPA on 12/6/12) to create a new Common PIV Content Signing Policy OID.</td>
 </tr>
 <tr class="even">
 <td>1.22</td>
 <td>December 2, 2013</td>
-<td><p><strong>2013-01.</strong>
+<td><p><strong>2013-01:</strong>
 Clarify places in the Common Policy CP which were flagged during the FPKIMA Annual Audit as either contradictory with the FBCA CP or contradictory to current best practices.
 Clarify division of responsibilities between Trusted Roles (Section 5.2.1); clarify meaning of “all Security Audit logs (Section 5.4.1), and allow audit logs to be removed from production site once reviewed (Section 5.4.3)</p>
-<p><strong>2013-02.</strong>
+<p><strong>2013-02:</strong>
 Remove SHA-1 policies from Common Policy.</p></td>
 </tr>
 <tr class="odd">
 <td>1.23</td>
 <td>May 5, 2014</td>
-<td><strong>2013-03.</strong>
+<td><strong>2013-03:</strong>
 Require PIV Cards to be on the GSA Approved Products List (APL) Prior to Issuance and require annual PIV card testing.</td>
 </tr>
 <tr class="even">
 <td>1.24</td>
 <td>May 7, 2015</td>
-<td><strong>2015-01.</strong>
+<td><strong>2015-01:</strong>
 Create two new Common Derived PIV Authentication Certificate Policy OIDs in the Common Policy, and change/add text in appropriate sections throughout the CP.</td>
 </tr>
 <tr class="odd">
 <td>1.25</td>
 <td>September 22, 2016</td>
-<td><p><strong>2016-01.</strong>
+<td><p><strong>2016-01:</strong>
 Alignment with CAB Forum Baseline Requirements (BR) v1.3.4.
 This will facilitate FPKI conformance to CAB Forum BRs for publicly-trusted SSL/TLS certificates, which will help promote inclusion of the Federal Root in public trust stores and provide guidance for issuance of publicly-trusted device certificates.</p>
-<p><strong>2016-02.</strong>
+<p><strong>2016-02:</strong>
 Allow a long term CRL when a CA retires a key after performing a key changeover to align with the FPKI CPS.</p></td>
 </tr>
 <tr class="even">
 <td>1.26</td>
 <td>February 2, 2017</td>
-<td><strong>2016-03</strong>.
+<td><strong>2016-03:</strong>
 Remove or update references to obsoleted RFCs.
 Changes to Sections 1.3.1.7, 3.1.2, 3.1.4, 4.9.7, and 10.</td>
 </tr>
@@ -224,8 +228,10 @@ Key Recovery for key management certificates issued under the COMMON Policy</td>
 <td>May 10, 2018</td>
 <td><p><strong>2018-02:</strong>
 Add reference to Annual Review Requirements</p>
-<p><strong>2018-03</strong>: Mandate specific EKUs in certificates issued after June 30, 2019</p>
-<p><strong>2018-04</strong>: Certificate revocation requirements for Transitive Closure after August 15, 2018</p>
+<p><strong>2018-03:</strong>
+Mandate specific EKUs in certificates issued after June 30, 2019</p>
+<p><strong>2018-04:</strong>
+Certificate revocation requirements for Transitive Closure after August 15, 2018</p>
 <p><strong>2018-05:</strong>
 Requirements for virtual implementations</p></td>
 </tr>
@@ -256,608 +262,946 @@ Add support for federally issued Personal Identity Verification-Interoperable (P
 Consolidated update to Common Policy and associated profiles, effective as of September 1, 2021.
 See the change proposal cover sheet for more detail.</td>
 </tr>
+<tr class="even">
+<td>2.1</td>
+<td>May 18, 2021</td>
+<td><strong>2021-01:</strong>
+Consolidated Key Recovery Policy requirements into Common Policy.</td>
+</tr>
 </tbody>
 </table>
 
 **Table of Contents**
 
-[1. Introduction [16](#_Toc41032722)](#_Toc41032722)
-
-[1.1 Overview [17](#overview)](#overview)
-
-[1.1.1 Certificate Policy (CP) [17](#certificate-policy-cp)](#certificate-policy-cp)
-
-[1.1.2 Relationship between the CP and the CPS [17](#relationship-between-the-cp-and-the-cps)](#relationship-between-the-cp-and-the-cps)
-
-[1.1.3 Scope [17](#scope)](#scope)
-
-[1.1.4 Interoperation with CAs Issuing under Different Policies [17](#interoperation-with-cas-issuing-under-different-policies)](#interoperation-with-cas-issuing-under-different-policies)
-
-[1.2 Document Name and Identification [18](#document-name-and-identification)](#document-name-and-identification)
-
-[1.3 PKI Participants [20](#pki-participants)](#pki-participants)
-
-[1.3.1 PKI Authorities [20](#pki-authorities)](#pki-authorities)
-
-[1.3.1.1 Federal Chief Information Officers Council [20](#federal-chief-information-officers-council)](#federal-chief-information-officers-council)
-
-[1.3.1.2 Federal PKI Policy Authority (FPKIPA) [20](#federal-pki-policy-authority-fpkipa)](#federal-pki-policy-authority-fpkipa)
-
-[1.3.1.3 FPKI Management Authority (FPKIMA) [21](#fpki-management-authority-fpkima)](#fpki-management-authority-fpkima)
-
-[1.3.1.4 FPKI Management Authority Program Manager [21](#fpki-management-authority-program-manager)](#fpki-management-authority-program-manager)
-
-[1.3.1.5 Policy Management Authority (PMA) [21](#policy-management-authority-pma)](#policy-management-authority-pma)
-
-[1.3.2 Certification Authorities [21](#certification-authorities)](#certification-authorities)
-
-[1.3.3 Registration Authorities [22](#registration-authorities)](#registration-authorities)
-
-[1.3.4 Subscribers [22](#subscribers)](#subscribers)
-
-[1.3.5 Relying Parties [23](#relying-parties)](#relying-parties)
-
-[1.3.6 Other Participants [23](#other-participants)](#other-participants)
-
-[1.4 Certificate Usage [23](#certificate-usage)](#certificate-usage)
-
-[1.4.1 Appropriate Certificate Uses [23](#appropriate-certificate-uses)](#appropriate-certificate-uses)
-
-[1.4.2 Prohibited Certificate Uses [23](#prohibited-certificate-uses)](#prohibited-certificate-uses)
-
-[1.5 Policy Administration [24](#policy-administration)](#policy-administration)
-
-[1.5.1 Organization Administering the Document [24](#organization-administering-the-document)](#organization-administering-the-document)
-
-[1.5.2 Contact Person [24](#contact-person)](#contact-person)
-
-[1.5.3 Person Determining CPS Suitability for the Policy [24](#person-determining-cps-suitability-for-the-policy)](#person-determining-cps-suitability-for-the-policy)
-
-[1.5.4 CPS Approval Procedures [24](#cps-approval-procedures)](#cps-approval-procedures)
-
-[1.6 Definitions and Acronyms [24](#definitions-and-acronyms)](#definitions-and-acronyms)
-
-[2. Publication and Repository Responsibilities [24](#publication-and-repository-responsibilities)](#publication-and-repository-responsibilities)
-
-[2.1 Repositories [24](#repositories)](#repositories)
-
-[2.2 Publication of Certification Information [24](#publication-of-certification-information)](#publication-of-certification-information)
-
-[2.2.1 Publication of Certificates and Certificate Status [24](#publication-of-certificates-and-certificate-status)](#publication-of-certificates-and-certificate-status)
-
-[2.2.2 Publication of CA Information [25](#publication-of-ca-information)](#publication-of-ca-information)
-
-[2.3 Time or Frequency of Publication [25](#time-or-frequency-of-publication)](#time-or-frequency-of-publication)
-
-[2.4 Access Controls on Repositories [25](#access-controls-on-repositories)](#access-controls-on-repositories)
-
-[3. Identification and Authentication [26](#identification-and-authentication)](#identification-and-authentication)
-
-[3.1 Naming [26](#naming)](#naming)
-
-[3.1.1 Types of Names [26](#types-of-names)](#types-of-names)
-
-[3.1.1.1 Subject Names [26](#subject-names)](#subject-names)
-
-[3.1.1.2 Subject Alternative Names [28](#subject-alternative-names)](#subject-alternative-names)
-
-[3.1.2 Need for Names to Be Meaningful [30](#need-for-names-to-be-meaningful)](#need-for-names-to-be-meaningful)
-
-[3.1.3 Anonymity or Pseudonymity of Subscribers [30](#anonymity-or-pseudonymity-of-subscribers)](#anonymity-or-pseudonymity-of-subscribers)
-
-[3.1.4 Rules for Interpreting Various Name Forms [30](#rules-for-interpreting-various-name-forms)](#rules-for-interpreting-various-name-forms)
-
-[3.1.5 Uniqueness of Names [30](#uniqueness-of-names)](#uniqueness-of-names)
-
-[3.1.6 Recognition, Authentication, and Role of Trademarks [31](#recognition-authentication-and-role-of-trademarks)](#recognition-authentication-and-role-of-trademarks)
-
-[3.2 Initial Identity Validation [31](#initial-identity-validation)](#initial-identity-validation)
-
-[3.2.1 Method to Prove Possession of Private Key [31](#method-to-prove-possession-of-private-key)](#method-to-prove-possession-of-private-key)
-
-[3.2.2 Authentication of Organization Identity [31](#authentication-of-organization-identity)](#authentication-of-organization-identity)
-
-[3.2.3 Authentication of Individual Identity [31](#authentication-of-individual-identity)](#authentication-of-individual-identity)
-
-[3.2.3.1 Authentication of Human Subscribers [31](#authentication-of-human-subscribers)](#authentication-of-human-subscribers)
-
-[3.2.3.2 Authentication of Devices [35](#authentication-of-devices)](#authentication-of-devices)
-
-[3.2.4 Non-verified Subscriber Information [35](#non-verified-subscriber-information)](#non-verified-subscriber-information)
-
-[3.2.5 Validation of Authority [35](#validation-of-authority)](#validation-of-authority)
-
-[3.2.6 Criteria for Interoperation [36](#criteria-for-interoperation)](#criteria-for-interoperation)
-
-[3.3 Identification and Authentication for Re-key Requests [36](#identification-and-authentication-for-re-key-requests)](#identification-and-authentication-for-re-key-requests)
-
-[3.3.1 Identification and Authentication for Routine Re-key [36](#identification-and-authentication-for-routine-re-key)](#identification-and-authentication-for-routine-re-key)
-
-[3.3.2 Identification and Authentication for Re-key after Revocation [37](#identification-and-authentication-for-re-key-after-revocation)](#identification-and-authentication-for-re-key-after-revocation)
-
-[3.4 Identification and Authentication for Revocation Request [37](#identification-and-authentication-for-revocation-request)](#identification-and-authentication-for-revocation-request)
-
-[4. Certificate Life-Cycle Operational Requirements [37](#certificate-life-cycle-operational-requirements)](#certificate-life-cycle-operational-requirements)
-
-[4.1 Certificate Application [37](#certificate-application)](#certificate-application)
-
-[4.1.1 Who Can Submit a Certificate Application [37](#who-can-submit-a-certificate-application)](#who-can-submit-a-certificate-application)
-
-[4.1.2 Enrollment Process and Responsibilities [38](#enrollment-process-and-responsibilities)](#enrollment-process-and-responsibilities)
-
-[4.2 Certificate Application Processing [38](#certificate-application-processing)](#certificate-application-processing)
-
-[4.2.1 Performing Identification and Authentication Functions [38](#performing-identification-and-authentication-functions)](#performing-identification-and-authentication-functions)
-
-[4.2.2 Approval or Rejection of Certificate Applications [38](#approval-or-rejection-of-certificate-applications)](#approval-or-rejection-of-certificate-applications)
-
-[4.2.3 Time to Process Certificate Applications [38](#time-to-process-certificate-applications)](#time-to-process-certificate-applications)
-
-[4.3 Certificate Issuance [38](#certificate-issuance)](#certificate-issuance)
-
-[4.3.1 CA Actions During Certificate Issuance [38](#ca-actions-during-certificate-issuance)](#ca-actions-during-certificate-issuance)
-
-[4.3.2 Notification to Subscriber by the CA of Issuance of Certificate [39](#notification-to-subscriber-by-the-ca-of-issuance-of-certificate)](#notification-to-subscriber-by-the-ca-of-issuance-of-certificate)
-
-[4.4 Certificate Acceptance [39](#certificate-acceptance)](#certificate-acceptance)
-
-[4.4.1 Conduct Constituting Certificate Acceptance [39](#conduct-constituting-certificate-acceptance)](#conduct-constituting-certificate-acceptance)
-
-[4.4.2 Publication of the Certificate by the CA [39](#publication-of-the-certificate-by-the-ca)](#publication-of-the-certificate-by-the-ca)
-
-[4.4.3 Notification of Certificate Issuance by the CA to Other Entities [39](#notification-of-certificate-issuance-by-the-ca-to-other-entities)](#notification-of-certificate-issuance-by-the-ca-to-other-entities)
-
-[4.5 Key Pair and Certificate Usage [39](#key-pair-and-certificate-usage)](#key-pair-and-certificate-usage)
-
-[4.5.1 Subscriber Private Key and Certificate Usage [39](#subscriber-private-key-and-certificate-usage)](#subscriber-private-key-and-certificate-usage)
-
-[4.5.2 Relying Party Public key and Certificate Usage [40](#relying-party-public-key-and-certificate-usage)](#relying-party-public-key-and-certificate-usage)
-
-[4.6 Certificate Renewal [40](#certificate-renewal)](#certificate-renewal)
-
-[4.6.1 Circumstance for Certificate Renewal [40](#circumstance-for-certificate-renewal)](#circumstance-for-certificate-renewal)
-
-[4.6.2 Who May Request Renewal [40](#who-may-request-renewal)](#who-may-request-renewal)
-
-[4.6.3 Processing Certificate Renewal Requests [40](#processing-certificate-renewal-requests)](#processing-certificate-renewal-requests)
-
-[4.6.4 Notification of New Certificate Issuance to Subscriber [40](#notification-of-new-certificate-issuance-to-subscriber)](#notification-of-new-certificate-issuance-to-subscriber)
-
-[4.6.5 Conduct Constituting Acceptance of a Renewal Certificate [41](#conduct-constituting-acceptance-of-a-renewal-certificate)](#conduct-constituting-acceptance-of-a-renewal-certificate)
-
-[4.6.6 Publication of the Renewal Certificate by the CA [41](#publication-of-the-renewal-certificate-by-the-ca)](#publication-of-the-renewal-certificate-by-the-ca)
-
-[4.6.7 Notification of Certificate Issuance by the CA to Other Entities [41](#notification-of-certificate-issuance-by-the-ca-to-other-entities-1)](#notification-of-certificate-issuance-by-the-ca-to-other-entities-1)
-
-[4.7 Certificate Re-key [41](#certificate-re-key)](#certificate-re-key)
-
-[4.7.1 Circumstance for Certificate Re-key [41](#circumstance-for-certificate-re-key)](#circumstance-for-certificate-re-key)
-
-[4.7.2 Who May Request Certification of a New Public Key [41](#who-may-request-certification-of-a-new-public-key)](#who-may-request-certification-of-a-new-public-key)
-
-[4.7.3 Processing Certificate Re-keying Requests [41](#processing-certificate-re-keying-requests)](#processing-certificate-re-keying-requests)
-
-[4.7.4 Notification of New Certificate Issuance to Subscriber [42](#notification-of-new-certificate-issuance-to-subscriber-1)](#notification-of-new-certificate-issuance-to-subscriber-1)
-
-[4.7.5 Conduct Constituting Acceptance of a Re-keyed Certificate [42](#conduct-constituting-acceptance-of-a-re-keyed-certificate)](#conduct-constituting-acceptance-of-a-re-keyed-certificate)
-
-[4.7.6 Publication of the Re-keyed Certificate by the CA [42](#publication-of-the-re-keyed-certificate-by-the-ca)](#publication-of-the-re-keyed-certificate-by-the-ca)
-
-[4.7.7 Notification of Certificate Issuance by the CA to Other Entities [42](#notification-of-certificate-issuance-by-the-ca-to-other-entities-2)](#notification-of-certificate-issuance-by-the-ca-to-other-entities-2)
-
-[4.8 Certificate Modification [42](#certificate-modification)](#certificate-modification)
-
-[4.8.1 Circumstance for Certificate Modification [42](#circumstance-for-certificate-modification)](#circumstance-for-certificate-modification)
-
-[4.8.2 Who May Request Certificate Modification [42](#who-may-request-certificate-modification)](#who-may-request-certificate-modification)
-
-[4.8.3 Processing Certificate Modification Requests [42](#processing-certificate-modification-requests)](#processing-certificate-modification-requests)
-
-[4.8.4 Notification of New Certificate Issuance to Subscriber [43](#notification-of-new-certificate-issuance-to-subscriber-2)](#notification-of-new-certificate-issuance-to-subscriber-2)
-
-[4.8.5 Conduct Constituting Acceptance of Modified Certificate [43](#conduct-constituting-acceptance-of-modified-certificate)](#conduct-constituting-acceptance-of-modified-certificate)
-
-[4.8.6 Publication of the Modified Certificate by the CA [43](#publication-of-the-modified-certificate-by-the-ca)](#publication-of-the-modified-certificate-by-the-ca)
-
-[4.8.7 Notification of Certificate Issuance by the CA to Other Entities [43](#notification-of-certificate-issuance-by-the-ca-to-other-entities-3)](#notification-of-certificate-issuance-by-the-ca-to-other-entities-3)
-
-[4.9 Certificate Revocation and Suspension [43](#certificate-revocation-and-suspension)](#certificate-revocation-and-suspension)
-
-[4.9.1 Circumstances for Revocation [43](#circumstances-for-revocation)](#circumstances-for-revocation)
-
-[4.9.2 Who Can Request Revocation [44](#who-can-request-revocation)](#who-can-request-revocation)
-
-[4.9.3 Procedure for Revocation Request [44](#procedure-for-revocation-request)](#procedure-for-revocation-request)
-
-[4.9.4 Revocation Request Grace Period [45](#revocation-request-grace-period)](#revocation-request-grace-period)
-
-[4.9.5 Time within which CA must Process the Revocation Request [45](#time-within-which-ca-must-process-the-revocation-request)](#time-within-which-ca-must-process-the-revocation-request)
-
-[4.9.6 Revocation Checking Requirements for Relying Parties [45](#revocation-checking-requirements-for-relying-parties)](#revocation-checking-requirements-for-relying-parties)
-
-[4.9.7 CRL Issuance Frequency [45](#crl-issuance-frequency)](#crl-issuance-frequency)
-
-[4.9.8 Maximum Latency for CRLs [46](#maximum-latency-for-crls)](#maximum-latency-for-crls)
-
-[4.9.9 On-line Revocation/Status Checking Availability [46](#on-line-revocationstatus-checking-availability)](#on-line-revocationstatus-checking-availability)
-
-[4.9.10 On-line Revocation Checking Requirements [47](#on-line-revocation-checking-requirements)](#on-line-revocation-checking-requirements)
-
-[4.9.11 Other Forms of Revocation Advertisements Available [47](#other-forms-of-revocation-advertisements-available)](#other-forms-of-revocation-advertisements-available)
-
-[4.9.12 Special Requirements Related To Key Compromise [47](#special-requirements-related-to-key-compromise)](#special-requirements-related-to-key-compromise)
-
-[4.9.13 Circumstances for Suspension [47](#circumstances-for-suspension)](#circumstances-for-suspension)
-
-[4.9.14 Who Can Request Suspension [47](#who-can-request-suspension)](#who-can-request-suspension)
-
-[4.9.15 Procedure for Suspension Request [47](#procedure-for-suspension-request)](#procedure-for-suspension-request)
-
-[4.9.16 Limits on Suspension Period [47](#limits-on-suspension-period)](#limits-on-suspension-period)
-
-[4.10 Certificate Status Services [47](#certificate-status-services)](#certificate-status-services)
-
-[4.10.1 Operational Characteristics [48](#operational-characteristics)](#operational-characteristics)
-
-[4.10.2 Service Availability [48](#service-availability)](#service-availability)
-
-[4.10.3 Optional Features [48](#optional-features)](#optional-features)
-
-[4.11 End Of Subscription [48](#end-of-subscription)](#end-of-subscription)
-
-[4.12 Key Escrow and Recovery [48](#key-escrow-and-recovery)](#key-escrow-and-recovery)
-
-[4.12.1 Key Escrow and Recovery Policy and Practices [48](#key-escrow-and-recovery-policy-and-practices)](#key-escrow-and-recovery-policy-and-practices)
-
-[4.12.2 Session Key Encapsulation and Recovery Policy and Practices [48](#session-key-encapsulation-and-recovery-policy-and-practices)](#session-key-encapsulation-and-recovery-policy-and-practices)
-
-[5. Facility, Management, and Operational Controls [48](#facility-management-and-operational-controls)](#facility-management-and-operational-controls)
-
-[5.1 Physical Controls [48](#physical-controls)](#physical-controls)
-
-[5.1.1 Site Location and Construction [49](#site-location-and-construction)](#site-location-and-construction)
-
-[5.1.2 Physical Access [49](#physical-access)](#physical-access)
-
-[5.1.2.1 Physical Access for CA Equipment [49](#physical-access-for-ca-equipment)](#physical-access-for-ca-equipment)
-
-[5.1.2.2 Physical Access for RA Equipment [50](#physical-access-for-ra-equipment)](#physical-access-for-ra-equipment)
-
-[5.1.2.3 Physical Access for CSS Equipment [50](#physical-access-for-css-equipment)](#physical-access-for-css-equipment)
-
-[5.1.3 Power and Air Conditioning [50](#power-and-air-conditioning)](#power-and-air-conditioning)
-
-[5.1.4 Water Exposures [50](#water-exposures)](#water-exposures)
-
-[5.1.5 Fire Prevention and Protection [50](#fire-prevention-and-protection)](#fire-prevention-and-protection)
-
-[5.1.6 Media Storage [50](#media-storage)](#media-storage)
-
-[5.1.7 Waste Disposal [51](#waste-disposal)](#waste-disposal)
-
-[5.1.8 Off-Site Backup [51](#off-site-backup)](#off-site-backup)
-
-[5.2 Procedural Controls [51](#procedural-controls)](#procedural-controls)
-
-[5.2.1 Trusted Roles [51](#trusted-roles)](#trusted-roles)
-
-[5.2.2 Number of Persons Required per Task [52](#number-of-persons-required-per-task)](#number-of-persons-required-per-task)
-
-[5.2.3 Identification and Authentication for Each Role [52](#identification-and-authentication-for-each-role)](#identification-and-authentication-for-each-role)
-
-[5.2.4 Roles Requiring Separation of Duties [52](#roles-requiring-separation-of-duties)](#roles-requiring-separation-of-duties)
-
-[5.3 Personnel Controls [52](#personnel-controls)](#personnel-controls)
-
-[5.3.1 Qualifications, Experience, and Clearance Requirements [52](#qualifications-experience-and-clearance-requirements)](#qualifications-experience-and-clearance-requirements)
-
-[5.3.2 Background Check Procedures [52](#background-check-procedures)](#background-check-procedures)
-
-[5.3.3 Training Requirements [53](#training-requirements)](#training-requirements)
-
-[5.3.4 Retraining Frequency and Requirements [53](#retraining-frequency-and-requirements)](#retraining-frequency-and-requirements)
-
-[5.3.5 Job Rotation Frequency and Sequence [53](#job-rotation-frequency-and-sequence)](#job-rotation-frequency-and-sequence)
-
-[5.3.6 Sanctions for Unauthorized Actions [53](#sanctions-for-unauthorized-actions)](#sanctions-for-unauthorized-actions)
-
-[5.3.7 Independent Contractor Requirements [53](#independent-contractor-requirements)](#independent-contractor-requirements)
-
-[5.3.8 Documentation Supplied to Personnel [54](#documentation-supplied-to-personnel)](#documentation-supplied-to-personnel)
-
-[5.4 Audit Logging Procedures [54](#audit-logging-procedures)](#audit-logging-procedures)
-
-[5.4.1 Types of Events Recorded [54](#types-of-events-recorded)](#types-of-events-recorded)
-
-[5.4.2 Frequency of Processing Log [57](#frequency-of-processing-log)](#frequency-of-processing-log)
-
-[5.4.3 Retention Period for Audit Log [57](#retention-period-for-audit-log)](#retention-period-for-audit-log)
-
-[5.4.4 Protection of Audit Log [58](#protection-of-audit-log)](#protection-of-audit-log)
-
-[5.4.5 Audit Log Backup Procedures [58](#audit-log-backup-procedures)](#audit-log-backup-procedures)
-
-[5.4.6 Audit Collection System (Internal vs. External) [58](#audit-collection-system-internal-vs.-external)](#audit-collection-system-internal-vs.-external)
-
-[5.4.7 Notification to Event-Causing Subject [58](#notification-to-event-causing-subject)](#notification-to-event-causing-subject)
-
-[5.4.8 Vulnerability Assessments [58](#vulnerability-assessments)](#vulnerability-assessments)
-
-[5.5 Records Archival [59](#records-archival)](#records-archival)
-
-[5.5.1 Types of Events Archived [59](#types-of-events-archived)](#types-of-events-archived)
-
-[5.5.2 Retention Period for Archive [60](#retention-period-for-archive)](#retention-period-for-archive)
-
-[5.5.3 Protection of Archive [60](#protection-of-archive)](#protection-of-archive)
-
-[5.5.4 Archive Backup Procedures [60](#archive-backup-procedures)](#archive-backup-procedures)
-
-[5.5.5 Requirements for Time-Stamping of Records [60](#requirements-for-time-stamping-of-records)](#requirements-for-time-stamping-of-records)
-
-[5.5.6 Archive Collection System (Internal or External) [60](#archive-collection-system-internal-or-external)](#archive-collection-system-internal-or-external)
-
-[5.5.7 Procedures to Obtain and Verify Archive Information [60](#procedures-to-obtain-and-verify-archive-information)](#procedures-to-obtain-and-verify-archive-information)
-
-[5.6 Key Changeover [60](#key-changeover)](#key-changeover)
-
-[5.7 Compromise and Disaster Recovery [61](#compromise-and-disaster-recovery)](#compromise-and-disaster-recovery)
-
-[5.7.1 Incident and Compromise Handling Procedures [61](#incident-and-compromise-handling-procedures)](#incident-and-compromise-handling-procedures)
-
-[5.7.2 Computing Resources, Software, and/or Data Are Corrupted [62](#computing-resources-software-andor-data-are-corrupted)](#computing-resources-software-andor-data-are-corrupted)
-
-[5.7.3 Entity (CA) Private Key Compromise Procedures [62](#entity-ca-private-key-compromise-procedures)](#entity-ca-private-key-compromise-procedures)
-
-[5.7.4 Business Continuity Capabilities after a Disaster [63](#business-continuity-capabilities-after-a-disaster)](#business-continuity-capabilities-after-a-disaster)
-
-[5.8 CA Termination [63](#ca-or-ra-termination)](#ca-or-ra-termination)
-
-[6. Technical Security Controls [64](#technical-security-controls)](#technical-security-controls)
-
-[6.1 Key Pair Generation and Installation [64](#key-pair-generation-and-installation)](#key-pair-generation-and-installation)
-
-[6.1.1 Key Pair Generation [64](#key-pair-generation)](#key-pair-generation)
-
-[6.1.1.1 CA Key Pair Generation [64](#ca-key-pair-generation)](#ca-key-pair-generation)
-
-[6.1.1.2 Subscriber Key Pair Generation [64](#subscriber-key-pair-generation)](#subscriber-key-pair-generation)
-
-[6.1.1.3 CSS Key Pair Generation [64](#css-key-pair-generation)](#css-key-pair-generation)
-
-[6.1.1.4 PIV Content Signing Key Pair Generation [64](#piv-content-signing-key-pair-generation)](#piv-content-signing-key-pair-generation)
-
-[6.1.2 Private Key Delivery to Subscriber [64](#private-key-delivery-to-subscriber)](#private-key-delivery-to-subscriber)
-
-[6.1.3 Public Key Delivery to Certificate Issuer [65](#public-key-delivery-to-certificate-issuer)](#public-key-delivery-to-certificate-issuer)
-
-[6.1.4 CA Public Key Delivery to Relying Parties [65](#ca-public-key-delivery-to-relying-parties)](#ca-public-key-delivery-to-relying-parties)
-
-[6.1.5 Key Sizes [65](#key-sizes)](#key-sizes)
-
-[6.1.6 Public Key Parameters Generation and Quality Checking [66](#public-key-parameters-generation-and-quality-checking)](#public-key-parameters-generation-and-quality-checking)
-
-[6.1.7 Key Usage Purposes (as per X.509 v3 Key Usage Field) [66](#key-usage-purposes-as-per-x.509-v3-key-usage-field)](#key-usage-purposes-as-per-x.509-v3-key-usage-field)
-
-[6.2 Private Key Protection and Cryptographic Module Engineering Controls [67](#private-key-protection-and-cryptographic-module-engineering-controls)](#private-key-protection-and-cryptographic-module-engineering-controls)
-
-[6.2.1 Cryptographic Module Standards and Controls [67](#cryptographic-module-standards-and-controls)](#cryptographic-module-standards-and-controls)
-
-[6.2.2 Private Key (n out of m) Multi-Person Control [69](#private-key-n-out-of-m-multi-person-control)](#private-key-n-out-of-m-multi-person-control)
-
-[6.2.3 Private Key Escrow [69](#private-key-escrow)](#private-key-escrow)
-
-[6.2.4 Private Key Backup [69](#private-key-backup)](#private-key-backup)
-
-[6.2.5 Private Key Archival [70](#private-key-archival)](#private-key-archival)
-
-[6.2.6 Private Key Transfer into or from a Cryptographic Module [70](#private-key-transfer-into-or-from-a-cryptographic-module)](#private-key-transfer-into-or-from-a-cryptographic-module)
-
-[6.2.7 Private Key Storage on Cryptographic Module [70](#private-key-storage-on-cryptographic-module)](#private-key-storage-on-cryptographic-module)
-
-[6.2.8 Method of Activating Private Key [70](#method-of-activating-private-key)](#method-of-activating-private-key)
-
-[6.2.9 Method of Deactivating Private Key [71](#method-of-deactivating-private-key)](#method-of-deactivating-private-key)
-
-[6.2.10 Method of Destroying Private Key [72](#method-of-destroying-private-key)](#method-of-destroying-private-key)
-
-[6.2.11 Cryptographic Module Rating [72](#cryptographic-module-rating)](#cryptographic-module-rating)
-
-[6.3 Other Aspects of Key Pair Management [72](#other-aspects-of-key-pair-management)](#other-aspects-of-key-pair-management)
-
-[6.3.1 Public Key Archival [72](#public-key-archival)](#public-key-archival)
-
-[6.3.2 Certificate Operational Periods and Key Usage Periods [72](#certificate-operational-periods-and-key-usage-periods)](#certificate-operational-periods-and-key-usage-periods)
-
-[6.4 Activation Data [73](#activation-data)](#activation-data)
-
-[6.4.1 Activation Data Generation and Installation [73](#activation-data-generation-and-installation)](#activation-data-generation-and-installation)
-
-[6.4.2 Activation Data Protection [73](#activation-data-protection)](#activation-data-protection)
-
-[6.4.3 Other Aspects of Activation Data [73](#other-aspects-of-activation-data)](#other-aspects-of-activation-data)
-
-[6.5 Computer Security Controls [74](#computer-security-controls)](#computer-security-controls)
-
-[6.5.1 Specific Computer Security Technical Requirements [74](#specific-computer-security-technical-requirements)](#specific-computer-security-technical-requirements)
-
-[6.5.2 Computer Security Rating [75](#computer-security-rating)](#computer-security-rating)
-
-[6.6 Life Cycle Technical Controls [75](#life-cycle-technical-controls)](#life-cycle-technical-controls)
-
-[6.6.1 System Development Controls [75](#system-development-controls)](#system-development-controls)
-
-[6.6.2 Security Management Controls [75](#security-management-controls)](#security-management-controls)
-
-[6.6.3 Life Cycle Security Controls [76](#life-cycle-security-controls)](#life-cycle-security-controls)
-
-[6.7 Network Security Controls [76](#network-security-controls)](#network-security-controls)
-
-[6.8 Time-Stamping [76](#time-stamping)](#time-stamping)
-
-[7. Certificate, CRL, and OCSP Profiles [76](#certificate-crl-and-ocsp-profiles)](#certificate-crl-and-ocsp-profiles)
-
-[7.1 Certificate Profile [76](#certificate-profile)](#certificate-profile)
-
-[7.1.1 Version Number(s) [76](#version-numbers)](#version-numbers)
-
-[7.1.2 Certificate Extensions [77](#certificate-extensions)](#certificate-extensions)
-
-[7.1.3 Algorithm Object Identifiers [77](#algorithm-object-identifiers)](#algorithm-object-identifiers)
-
-[7.1.4 Name Forms [78](#name-forms)](#name-forms)
-
-[7.1.5 Name Constraints [78](#name-constraints)](#name-constraints)
-
-[7.1.6 Certificate Policy Object Identifier [78](#certificate-policy-object-identifier)](#certificate-policy-object-identifier)
-
-[7.1.7 Usage of Policy Constraints Extension [78](#usage-of-policy-constraints-extension)](#usage-of-policy-constraints-extension)
-
-[7.1.8 Policy Qualifiers Syntax and Semantics [79](#policy-qualifiers-syntax-and-semantics)](#policy-qualifiers-syntax-and-semantics)
-
-[7.1.9 Processing Semantics for the Critical Certificate Policies Extension [79](#processing-semantics-for-the-critical-certificate-policies-extension)](#processing-semantics-for-the-critical-certificate-policies-extension)
-
-[7.1.10 Inhibit Any Policy Extension [79](#inhibit-any-policy-extension)](#inhibit-any-policy-extension)
-
-[7.2 CRL Profile [79](#crl-profile)](#crl-profile)
-
-[7.2.1 Version Number(s) [79](#version-numbers-1)](#version-numbers-1)
-
-[7.2.2 CRL and CRL Entry Extensions [79](#crl-and-crl-entry-extensions)](#crl-and-crl-entry-extensions)
-
-[7.3 OCSP Profile [79](#ocsp-profile)](#ocsp-profile)
-
-[7.3.1 Version Number(s) [79](#version-numbers-2)](#version-numbers-2)
-
-[7.3.2 OCSP Extensions [79](#ocsp-extensions)](#ocsp-extensions)
-
-[8. Compliance Audit and Other Assessments [80](#compliance-audit-and-other-assessments)](#compliance-audit-and-other-assessments)
-
-[8.1 Frequency or Circumstances of Assessment [80](#frequency-or-circumstances-of-assessment)](#frequency-or-circumstances-of-assessment)
-
-[8.2 Identity/Qualifications of Assessor [80](#identityqualifications-of-assessor)](#identityqualifications-of-assessor)
-
-[8.3 Assessor’s Relationship to Assessed Entity [80](#assessors-relationship-to-assessed-entity)](#assessors-relationship-to-assessed-entity)
-
-[8.4 Topics Covered by Assessment [81](#topics-covered-by-assessment)](#topics-covered-by-assessment)
-
-[8.5 Actions Taken as a Result of Deficiency [81](#actions-taken-as-a-result-of-deficiency)](#actions-taken-as-a-result-of-deficiency)
-
-[8.6 Communication of Results [81](#communication-of-results)](#communication-of-results)
-
-[9. Other Business and Legal Matters [82](#other-business-and-legal-matters)](#other-business-and-legal-matters)
-
-[9.1 Fees [82](#fees)](#fees)
-
-[9.1.1 Certificate Issuance or Renewal Fees [82](#certificate-issuance-or-renewal-fees)](#certificate-issuance-or-renewal-fees)
-
-[9.1.2 Certificate Access Fees [82](#certificate-access-fees)](#certificate-access-fees)
-
-[9.1.3 Revocation or Status Information Access Fees [82](#revocation-or-status-information-access-fees)](#revocation-or-status-information-access-fees)
-
-[9.1.4 Fees for other Services [82](#fees-for-other-services)](#fees-for-other-services)
-
-[9.1.5 Refund Policy [82](#refund-policy)](#refund-policy)
-
-[9.2 Financial Responsibility [82](#financial-responsibility)](#financial-responsibility)
-
-[9.2.1 Insurance Coverage [82](#insurance-coverage)](#insurance-coverage)
-
-[9.2.2 Other Assets [82](#other-assets)](#other-assets)
-
-[9.2.3 Insurance or Warranty Coverage for End-Entities [82](#insurance-or-warranty-coverage-for-end-entities)](#insurance-or-warranty-coverage-for-end-entities)
-
-[9.3 Confidentiality of Business Information [82](#confidentiality-of-business-information)](#confidentiality-of-business-information)
-
-[9.3.1 Scope of Confidential Information [82](#scope-of-confidential-information)](#scope-of-confidential-information)
-
-[9.3.2 Information not within the Scope of Confidential Information [83](#information-not-within-the-scope-of-confidential-information)](#information-not-within-the-scope-of-confidential-information)
-
-[9.3.3 Responsibility to Protect Confidential Information [83](#responsibility-to-protect-confidential-information)](#responsibility-to-protect-confidential-information)
-
-[9.4 Privacy of Personal Information [83](#privacy-of-personal-information)](#privacy-of-personal-information)
-
-[9.4.1 Privacy Plan [83](#privacy-plan)](#privacy-plan)
-
-[9.4.2 Information Treated as Private [83](#information-treated-as-private)](#information-treated-as-private)
-
-[9.4.3 Information not Deemed Private [83](#information-not-deemed-private)](#information-not-deemed-private)
-
-[9.4.4 Responsibility to Protect Private Information [83](#responsibility-to-protect-private-information)](#responsibility-to-protect-private-information)
-
-[9.4.5 Notice and Consent to Use Private Information [84](#notice-and-consent-to-use-private-information)](#notice-and-consent-to-use-private-information)
-
-[9.4.6 Disclosure Pursuant to Judicial or Administrative Process [84](#disclosure-pursuant-to-judicial-or-administrative-process)](#disclosure-pursuant-to-judicial-or-administrative-process)
-
-[9.4.7 Other Information Disclosure Circumstances [84](#other-information-disclosure-circumstances)](#other-information-disclosure-circumstances)
-
-[9.5 Intellectual Property Rights [84](#intellectual-property-rights)](#intellectual-property-rights)
-
-[9.6 Representations and Warranties [84](#representations-and-warranties)](#representations-and-warranties)
-
-[9.6.1 CA Representations and Warranties [84](#ca-representations-and-warranties)](#ca-representations-and-warranties)
-
-[9.6.2 RA Representations and Warranties [85](#ra-representations-and-warranties)](#ra-representations-and-warranties)
-
-[9.6.3 Subscriber Representations and Warranties [85](#subscriber-representations-and-warranties)](#subscriber-representations-and-warranties)
-
-[9.6.4 Relying Parties Representations and Warranties [86](#relying-parties-representations-and-warranties)](#relying-parties-representations-and-warranties)
-
-[9.6.5 Representations and Warranties of Other Participants [86](#representations-and-warranties-of-other-participants)](#representations-and-warranties-of-other-participants)
-
-[9.7 Disclaimers of Warranties [86](#disclaimers-of-warranties)](#disclaimers-of-warranties)
-
-[9.8 Limitations of Liability [86](#limitations-of-liability)](#limitations-of-liability)
-
-[9.9 Indemnities [86](#indemnities)](#indemnities)
-
-[9.10 Term and Termination [86](#term-and-termination)](#term-and-termination)
-
-[9.10.1 Term [86](#term)](#term)
-
-[9.10.2 Termination [86](#termination)](#termination)
-
-[9.10.3 Effect of Termination and Survival [86](#effect-of-termination-and-survival)](#effect-of-termination-and-survival)
-
-[9.11 Individual Notices and Communications with Participants [86](#individual-notices-and-communications-with-participants)](#individual-notices-and-communications-with-participants)
-
-[9.12 Amendments [87](#amendments)](#amendments)
-
-[9.12.1 Procedure for Amendment [87](#procedure-for-amendment)](#procedure-for-amendment)
-
-[9.12.2 Notification Mechanism and Period [87](#notification-mechanism-and-period)](#notification-mechanism-and-period)
-
-[9.12.3 Circumstances under which OID must be Changed [87](#circumstances-under-which-oid-must-be-changed)](#circumstances-under-which-oid-must-be-changed)
-
-[9.13 Dispute Resolution Provisions [87](#dispute-resolution-provisions)](#dispute-resolution-provisions)
-
-[9.14 Governing Law [87](#governing-law)](#governing-law)
-
-[9.15 Compliance with Applicable Law [87](#compliance-with-applicable-law)](#compliance-with-applicable-law)
-
-[9.16 Miscellaneous Provisions [87](#miscellaneous-provisions)](#miscellaneous-provisions)
-
-[9.16.1 Entire Agreement [87](#entire-agreement)](#entire-agreement)
-
-[9.16.2 Assignment [88](#assignment)](#assignment)
-
-[9.16.3 Severability [88](#severability)](#severability)
-
-[9.16.4 Enforcement (Attorneys’ Fees and Waiver of Rights) [88](#enforcement-attorneys-fees-and-waiver-of-rights)](#enforcement-attorneys-fees-and-waiver-of-rights)
-
-[9.16.5 Force Majeure [88](#force-majeure)](#force-majeure)
-
-[9.17 Other Provisions [88](#other-provisions)](#other-provisions)
-
-[Appendix A: PIV and Common PIV Interoperable Comparison [89](#appendix-a-piv-and-common-piv-interoperable-comparison)](#appendix-a-piv-and-common-piv-interoperable-comparison)
-
-[Appendix B: References [91](#appendix-b-references)](#appendix-b-references)
-
-[Appendix C: Acronyms and Abbreviations [94](#appendix-c-acronyms-and-abbreviations)](#appendix-c-acronyms-and-abbreviations)
-
-[Appendix D: Glossary [96](#appendix-d-glossary)](#appendix-d-glossary)
-
-<span id="_Toc41032722" class="anchor"></span>
+[1. Introduction 17](#introduction)
+
+> [1.1.
+Overview 18](#overview)
+>
+> [1.1.1. Certificate Policy (CP) 18](#certificate-policy-cp)
+>
+> [1.1.2. Relationship between the CP and the CPS 18](#relationship-between-the-cp-and-the-cps)
+>
+> [1.1.3.
+Scope 18](#scope)
+>
+> [1.1.4.
+Interoperation with CAs Issuing under Different Policies 19](#interoperation-with-cas-issuing-under-different-policies)
+>
+> [1.2.
+Document Name and Identification 19](#document-name-and-identification)
+>
+> [1.3.
+PKI Participants 22](#pki-participants)
+>
+> [1.3.1.
+PKI Authorities 22](#pki-authorities)
+>
+> [1.3.1.1. Federal Chief Information Officers Council 22](#federal-chief-information-officers-council)
+>
+> [1.3.1.2. Federal PKI Policy Authority (FPKIPA) 22](#federal-pki-policy-authority-fpkipa)
+>
+> [1.3.1.3.
+FPKI Management Authority (FPKIMA) 22](#fpki-management-authority-fpkima)
+>
+> [1.3.1.4.
+FPKI Management Authority Program Manager 22](#fpki-management-authority-program-manager)
+>
+> [1.3.1.5.
+Policy Management Authority (PMA) 22](#policy-management-authority-pma)
+>
+> [1.3.2.
+Certification Authorities 23](#certification-authorities)
+>
+> [1.3.3.
+Registration Authorities 23](#registration-authorities)
+>
+> [1.3.4.
+Key Recovery Authorities 23](#key-recovery-authorities)
+>
+> [1.3.4.1.
+Key Escrow Database 23](#key-escrow-database)
+>
+> [1.3.4.2.
+Data Decryption Server 24](#data-decryption-server)
+>
+> [1.3.4.3.
+Key Recovery Agent 24](#key-recovery-agent)
+>
+> [1.3.4.4.
+Key Recovery Official 24](#key-recovery-official)
+>
+> [1.3.5.
+Key Recovery Requestors 24](#key-recovery-requestors)
+>
+> [1.3.5.1.
+Internal Third-Party Requestor 24](#internal-third-party-requestor)
+>
+> [1.3.5.2.
+External Third-Party Requestor 24](#external-third-party-requestor)
+>
+> [1.3.6.
+Subscribers 25](#subscribers)
+>
+> [1.3.7.
+Relying Parties 25](#relying-parties)
+>
+> [1.3.8.
+Other Participants 25](#other-participants)
+>
+> [1.4. Certificate Usage 26](#certificate-usage)
+>
+> [1.4.1. Appropriate Certificate Uses 26](#appropriate-certificate-uses)
+>
+> [1.4.2. Prohibited Certificate Uses 26](#prohibited-certificate-uses)
+>
+> [1.5.
+Policy Administration 26](#policy-administration)
+>
+> [1.5.1.
+Organization Administering the Document 26](#organization-administering-the-document)
+>
+> [1.5.2. Contact Person 26](#contact-person)
+>
+> [1.5.3.
+Person Determining CPS Suitability for the Policy 26](#person-determining-cps-suitability-for-the-policy)
+>
+> [1.5.4.
+CPS Approval Procedures 26](#cps-approval-procedures)
+>
+> [1.6.
+Definitions and Acronyms 27](#definitions-and-acronyms)
+
+[2. Publication and Repository Responsibilities 27](#publication-and-repository-responsibilities)
+
+> [2.1.
+Repositories 27](#repositories)
+>
+> [2.2.
+Publication of Certification Information 27](#publication-of-certification-information)
+>
+> [2.2.1. Publication of Certificates and Certificate Status 27](#publication-of-certificates-and-certificate-status)
+>
+> [2.2.2. Publication of CA Information 28](#publication-of-ca-information)
+>
+> [2.3.
+Time or Frequency of Publication 28](#time-or-frequency-of-publication)
+>
+> [2.4.
+Access Controls on Repositories 28](#access-controls-on-repositories)
+
+[3. Identification and Authentication 28](#identification-and-authentication)
+
+> [3.1.
+Naming 28](#naming)
+>
+> [3.1.1.
+Types of Names 28](#types-of-names)
+>
+> [3.1.1.1. Subject Names 29](#subject-names)
+>
+> [3.1.1.2. Subject Alternative Names 31](#subject-alternative-names)
+>
+> [3.1.2.
+Need for Names to Be Meaningful 32](#need-for-names-to-be-meaningful)
+>
+> [3.1.3.
+Anonymity or Pseudonymity of Subscribers 33](#anonymity-or-pseudonymity-of-subscribers)
+>
+> [3.1.4.
+Rules for Interpreting Various Name Forms 33](#rules-for-interpreting-various-name-forms)
+>
+> [3.1.5.
+Uniqueness of Names 33](#uniqueness-of-names)
+>
+> [3.1.6.
+Recognition, Authentication, and Role of Trademarks 33](#recognition-authentication-and-role-of-trademarks)
+>
+> [3.2.
+Initial Identity Validation 33](#initial-identity-validation)
+>
+> [3.2.1. Method to Prove Possession of Private Key 33](#method-to-prove-possession-of-private-key)
+>
+> [3.2.2.
+Authentication of Organization Identity 34](#authentication-of-organization-identity)
+>
+> [3.2.3.
+Authentication of Individual Identity 34](#authentication-of-individual-identity)
+>
+> [3.2.3.1.
+Authentication of Human Subscribers 34](#authentication-of-human-subscribers)
+>
+> [3.2.3.2.
+Authentication of Devices 37](#authentication-of-devices)
+>
+> [3.2.4.
+Non-verified Subscriber Information 38](#non-verified-subscriber-information)
+>
+> [3.2.5.
+Validation of Authority 38](#validation-of-authority)
+>
+> [3.2.6.
+Criteria for Interoperation 39](#criteria-for-interoperation)
+>
+> [3.3.
+Identification and Authentication for Re-Key Requests 39](#identification-and-authentication-for-re-key-requests)
+>
+> [3.3.1.
+Identification and Authentication for Routine Re-key 39](#identification-and-authentication-for-routine-re-key)
+>
+> [3.3.2.
+Identification and Authentication for Re-key after Revocation 39](#identification-and-authentication-for-re-key-after-revocation)
+>
+> [3.4.
+Identification and Authentication for Revocation Request 40](#identification-and-authentication-for-revocation-request)
+>
+> [3.5.
+Identification and Authentication for Key Recovery Requests 40](#identification-and-authentication-for-key-recovery-requests)
+>
+> [3.5.1.
+Third-Party Requestor Authentication 40](#third-party-requestor-authentication)
+>
+> [3.5.2.
+Subscriber Authentication 40](#subscriber-authentication)
+>
+> [3.5.3.
+KRA Authentication 40](#kra-authentication)
+>
+> [3.5.4.
+KRO Authentication 41](#kro-authentication)
+>
+> [3.5.5.
+Data Decryption Server Authentication 41](#data-decryption-server-authentication)
+
+[4. Certificate Life-Cycle Operational Requirements 41](#certificate-life-cycle-operational-requirements)
+
+> [4.1. Certificate Application 41](#certificate-application)
+>
+> [4.1.1.
+Who Can Submit a Certificate Application 41](#who-can-submit-a-certificate-application)
+>
+> [4.1.2. Enrollment Process and Responsibilities 41](#enrollment-process-and-responsibilities)
+>
+> [4.2.
+Certificate Application Processing 42](#certificate-application-processing)
+>
+> [4.2.1. Performing Identification and Authentication Functions 42](#performing-identification-and-authentication-functions)
+>
+> [4.2.2.
+Approval or Rejection of Certificate Applications 42](#approval-or-rejection-of-certificate-applications)
+>
+> [4.2.3.
+Time to Process Certificate Applications 42](#time-to-process-certificate-applications)
+>
+> [4.3.
+Certificate Issuance 42](#certificate-issuance)
+>
+> [4.3.1. CA Actions During Certificate Issuance 42](#ca-actions-during-certificate-issuance)
+>
+> [4.3.2.
+Notification to Subscriber by the CA of Issuance of Certificate 43](#notification-to-subscriber-by-the-ca-of-issuance-of-certificate)
+>
+> [4.4. Certificate Acceptance 43](#certificate-acceptance)
+>
+> [4.4.1. Conduct Constituting Certificate Acceptance 43](#conduct-constituting-certificate-acceptance)
+>
+> [4.4.2.
+Publication of the Certificate by the CA 43](#publication-of-the-certificate-by-the-ca)
+>
+> [4.4.3.
+Notification of Certificate Issuance by the CA to Other Entities 43](#notification-of-certificate-issuance-by-the-ca-to-other-entities)
+>
+> [4.5.
+Key Pair and Certificate Usage 43](#key-pair-and-certificate-usage)
+>
+> [4.5.1. Subscriber Private Key and Certificate Usage 43](#subscriber-private-key-and-certificate-usage)
+>
+> [4.5.2.
+Relying Party Public key and Certificate Usage 43](#relying-party-public-key-and-certificate-usage)
+>
+> [4.6. Certificate Renewal 44](#certificate-renewal)
+>
+> [4.6.1.
+Circumstance for Certificate Renewal 44](#circumstance-for-certificate-renewal)
+>
+> [4.6.2.
+Who May Request Renewal 44](#who-may-request-renewal)
+>
+> [4.6.3.
+Processing Certificate Renewal Requests 44](#processing-certificate-renewal-requests)
+>
+> [4.6.4.
+Notification of New Certificate Issuance to Subscriber 44](#notification-of-new-certificate-issuance-to-subscriber)
+>
+> [4.6.5.
+Conduct Constituting Acceptance of a Renewal Certificate 44](#conduct-constituting-acceptance-of-a-renewal-certificate)
+>
+> [4.6.6.
+Publication of the Renewal Certificate by the CA 45](#publication-of-the-renewal-certificate-by-the-ca)
+>
+> [4.6.7.
+Notification of Certificate Issuance by the CA to Other Entities 45](#notification-of-certificate-issuance-by-the-ca-to-other-entities-1)
+>
+> [4.7.
+Certificate Re-key 45](#certificate-re-key)
+>
+> [4.7.1. Circumstance for Certificate Re-key 45](#circumstance-for-certificate-re-key)
+>
+> [4.7.2.
+Who May Request Certification of a New Public Key 45](#who-may-request-certification-of-a-new-public-key)
+>
+> [4.7.3.
+Processing Certificate Re-keying Requests 45](#processing-certificate-re-keying-requests)
+>
+> [4.7.4.
+Notification of New Certificate Issuance to Subscriber 45](#notification-of-new-certificate-issuance-to-subscriber-1)
+>
+> [4.7.5.
+Conduct Constituting Acceptance of a Re-keyed Certificate 46](#conduct-constituting-acceptance-of-a-re-keyed-certificate)
+>
+> [4.7.6.
+Publication of the Re-keyed Certificate by the CA 46](#publication-of-the-re-keyed-certificate-by-the-ca)
+>
+> [4.7.7.
+Notification of Certificate Issuance by the CA to Other Entities 46](#notification-of-certificate-issuance-by-the-ca-to-other-entities-2)
+>
+> [4.8.
+Certificate Modification 46](#certificate-modification)
+>
+> [4.8.1. Circumstance for Certificate Modification 46](#circumstance-for-certificate-modification)
+>
+> [4.8.2.
+Who May Request Certificate Modification 46](#who-may-request-certificate-modification)
+>
+> [4.8.3.
+Processing Certificate Modification Requests 46](#processing-certificate-modification-requests)
+>
+> [4.8.4.
+Notification of New Certificate Issuance to Subscriber 47](#notification-of-new-certificate-issuance-to-subscriber-2)
+>
+> [4.8.5.
+Conduct Constituting Acceptance of Modified Certificate 47](#conduct-constituting-acceptance-of-modified-certificate)
+>
+> [4.8.6.
+Publication of the Modified Certificate by the CA 47](#publication-of-the-modified-certificate-by-the-ca)
+>
+> [4.8.7.
+Notification of Certificate Issuance by the CA to Other Entities 47](#notification-of-certificate-issuance-by-the-ca-to-other-entities-3)
+>
+> [4.9.
+Certificate Revocation and Suspension 47](#certificate-revocation-and-suspension)
+>
+> [4.9.1.
+Circumstances for Revocation 47](#circumstances-for-revocation)
+>
+> [4.9.2.
+Who Can Request Revocation 48](#who-can-request-revocation)
+>
+> [4.9.3.
+Procedure for Revocation Request 48](#procedure-for-revocation-request)
+>
+> [4.9.4.
+Revocation Request Grace Period 49](#revocation-request-grace-period)
+>
+> [4.9.5.
+Time within which CA must Process the Revocation Request 49](#time-within-which-ca-must-process-the-revocation-request)
+>
+> [4.9.6.
+Revocation Checking Requirements for Relying Parties 49](#revocation-checking-requirements-for-relying-parties)
+>
+> [4.9.7.
+CRL Issuance Frequency 49](#crl-issuance-frequency)
+>
+> [4.9.8.
+Maximum Latency for CRLs 50](#maximum-latency-for-crls)
+>
+> [4.9.9.
+On-line Revocation/Status Checking Availability 50](#on-line-revocationstatus-checking-availability)
+>
+> [4.9.10.
+On-line Revocation Checking Requirements 51](#on-line-revocation-checking-requirements)
+>
+> [4.9.11.
+Other Forms of Revocation Advertisements Available 51](#other-forms-of-revocation-advertisements-available)
+>
+> [4.9.12.
+Special Requirements Related to Key Compromise 51](#special-requirements-related-to-key-compromise)
+>
+> [4.9.13.
+Circumstances for Suspension 51](#circumstances-for-suspension)
+>
+> [4.9.14.
+Who Can Request Suspension 51](#who-can-request-suspension)
+>
+> [4.9.15.
+Procedure for Suspension Request 51](#procedure-for-suspension-request)
+>
+> [4.9.16.
+Limits on Suspension Period 51](#limits-on-suspension-period)
+>
+> [4.10.
+Certificate Status Services 52](#certificate-status-services)
+>
+> [4.10.1. Operational Characteristics 52](#operational-characteristics)
+>
+> [4.10.2.
+Service Availability 52](#service-availability)
+>
+> [4.10.3.
+Optional Features 52](#optional-features)
+>
+> [4.11.
+End Of Subscription 52](#end-of-subscription)
+>
+> [4.12.
+Key Escrow and Recovery 52](#key-escrow-and-recovery)
+>
+> [4.12.1.
+Key Escrow and Recovery Policy and Practices 52](#key-escrow-and-recovery-policy-and-practices)
+>
+> [4.12.1.1.
+Key Escrow Process and Responsibilities 52](#key-escrow-process-and-responsibilities)
+>
+> [4.12.1.2.
+Key Recovery Process and Responsibilities 52](#key-recovery-process-and-responsibilities)
+>
+> [4.12.1.2.1.
+Key Recovery Through KRA 53](#key-recovery-through-kra)
+>
+> [4.12.1.2.2.
+Automated Self-Recovery 54](#automated-self-recovery)
+>
+> [4.12.1.2.3.
+Key Recovery During Token Issuance 54](#key-recovery-during-token-issuance)
+>
+> [4.12.1.2.4.
+Key Recovery by Data Decryption Server 54](#key-recovery-by-data-decryption-server)
+>
+> [4.12.1.3.
+Who Can Submit a Key Recovery Application 55](#who-can-submit-a-key-recovery-application)
+>
+> [4.12.1.3.1.
+Requestor Authorization Validation 55](#requestor-authorization-validation)
+>
+> [4.12.1.3.2.
+Subscriber Authorization Validation 55](#subscriber-authorization-validation)
+>
+> [4.12.1.3.3.
+KRA Authorization Validation 55](#kra-authorization-validation)
+>
+> [4.12.1.3.4.
+KRO Authorization Validation 55](#kro-authorization-validation)
+>
+> [4.12.1.3.5.
+Data Decryption Server Authorization Validation 55](#data-decryption-server-authorization-validation)
+>
+> [4.12.2. Session Key Encapsulation and Recovery Policy and Practices 55](#session-key-encapsulation-and-recovery-policy-and-practices)
+
+[5. Facility, Management, and Operational Controls 56](#facility-management-and-operational-controls)
+
+> [5.1.
+Physical Controls 56](#physical-controls)
+>
+> [5.1.1. Site Location and Construction 56](#site-location-and-construction)
+>
+> [5.1.2. Physical Access 56](#physical-access)
+>
+> [5.1.2.1. Physical Access for CA Equipment 56](#physical-access-for-ca-equipment)
+>
+> [5.1.2.2. Physical Access for RA Equipment 57](#physical-access-for-ra-equipment)
+>
+> [5.1.2.3.
+Physical Access for CSS Equipment 57](#physical-access-for-css-equipment)
+>
+> [5.1.2.4.
+Physical Access for KED Equipment 57](#physical-access-for-ked-equipment)
+>
+> [5.1.2.5.
+Physical Access for DDS Equipment 57](#physical-access-for-dds-equipment)
+>
+> [5.1.2.6.
+Physical Access for KRA and KRO Equipment 58](#physical-access-for-kra-and-kro-equipment)
+>
+> [5.1.3.
+Power and Air Conditioning 58](#power-and-air-conditioning)
+>
+> [5.1.4.
+Water Exposures 58](#water-exposures)
+>
+> [5.1.5.
+Fire Prevention and Protection 58](#fire-prevention-and-protection)
+>
+> [5.1.6. Media Storage 58](#media-storage)
+>
+> [5.1.7. Waste Disposal 58](#waste-disposal)
+>
+> [5.1.8. Off-Site Backup 58](#off-site-backup)
+>
+> [5.2.
+Procedural Controls 59](#procedural-controls)
+>
+> [5.2.1. Trusted Roles 59](#trusted-roles)
+>
+> [5.2.1.1. Key Recovery Agent (KRA) 59](#key-recovery-agent-kra)
+>
+> [5.2.1.2. Key Recovery Official (KRO) 59](#key-recovery-official-kro)
+>
+> [5.2.2.
+Number of Persons Required per Task 60](#number-of-persons-required-per-task)
+>
+> [5.2.3.
+Identification and Authentication for Each Role 60](#identification-and-authentication-for-each-role)
+>
+> [5.2.4.
+Roles Requiring Separation of Duties 60](#roles-requiring-separation-of-duties)
+>
+> [5.3.
+Personnel Controls 60](#personnel-controls)
+>
+> [5.3.1.
+Qualifications, Experience, and Clearance Requirements 60](#qualifications-experience-and-clearance-requirements)
+>
+> [5.3.2.
+Background Check Procedures 61](#background-check-procedures)
+>
+> [5.3.3.
+Training Requirements 61](#training-requirements)
+>
+> [5.3.4.
+Retraining Frequency and Requirements 61](#retraining-frequency-and-requirements)
+>
+> [5.3.5.
+Job Rotation Frequency and Sequence 61](#job-rotation-frequency-and-sequence)
+>
+> [5.3.6.
+Sanctions for Unauthorized Actions 62](#sanctions-for-unauthorized-actions)
+>
+> [5.3.7.
+Independent Contractor Requirements 62](#independent-contractor-requirements)
+>
+> [5.3.8.
+Documentation Supplied to Personnel 62](#documentation-supplied-to-personnel)
+>
+> [5.4.
+Audit Logging Procedures 62](#audit-logging-procedures)
+>
+> [5.4.1.
+Types of Events Recorded 62](#types-of-events-recorded)
+>
+> [5.4.2.
+Frequency of Processing Log 66](#frequency-of-processing-log)
+>
+> [5.4.3.
+Retention Period for Audit Log 66](#retention-period-for-audit-log)
+>
+> [5.4.4.
+Protection of Audit Log 66](#protection-of-audit-log)
+>
+> [5.4.5.
+Audit Log Backup Procedures 66](#audit-log-backup-procedures)
+>
+> [5.4.6.
+Audit Collection System (Internal vs. External) 67](#audit-collection-system-internal-vs.-external)
+>
+> [5.4.7.
+Notification to Event-Causing Subject 67](#notification-to-event-causing-subject)
+>
+> [5.4.8.
+Vulnerability Assessments 67](#vulnerability-assessments)
+>
+> [5.5.
+Records Archival 67](#records-archival)
+>
+> [5.5.1.
+Types of Events Archived 68](#types-of-events-archived)
+>
+> [5.5.2.
+Retention Period for Archive 69](#retention-period-for-archive)
+>
+> [5.5.3.
+Protection of Archive 69](#protection-of-archive)
+>
+> [5.5.4.
+Archive Backup Procedures 69](#archive-backup-procedures)
+>
+> [5.5.5.
+Requirements for Time-Stamping of Records 69](#requirements-for-time-stamping-of-records)
+>
+> [5.5.6.
+Archive Collection System (Internal or External) 69](#archive-collection-system-internal-or-external)
+>
+> [5.5.7.
+Procedures to Obtain and Verify Archive Information 69](#procedures-to-obtain-and-verify-archive-information)
+>
+> [5.6.
+Key Changeover 69](#key-changeover)
+>
+> [5.7.
+Compromise and Disaster Recovery 70](#compromise-and-disaster-recovery)
+>
+> [5.7.1. Incident and Compromise Handling Procedures 70](#incident-and-compromise-handling-procedures)
+>
+> [5.7.2. Computing Resources, Software, and/or Data Are Corrupted 71](#computing-resources-software-andor-data-are-corrupted)
+>
+> [5.7.3.
+Entity Private Key Compromise Procedures 71](#entity-private-key-compromise-procedures)
+>
+> [5.7.3.1. CA Private Key Compromise Procedures 71](#ca-private-key-compromise-procedures)
+>
+> [5.7.3.2.
+KRS Private Key Compromise Procedures 71](#krs-private-key-compromise-procedures)
+>
+> [5.7.4.
+Business Continuity Capabilities after a Disaster 72](#business-continuity-capabilities-after-a-disaster)
+>
+> [5.8.
+CA or RA Termination 72](#ca-or-ra-termination)
+
+[6. Technical Security Controls 73](#technical-security-controls)
+
+> [6.1.
+Key Pair Generation and Installation 73](#key-pair-generation-and-installation)
+>
+> [6.1.1. Key Pair Generation 73](#key-pair-generation)
+>
+> [6.1.1.1. CA Key Pair Generation 73](#ca-key-pair-generation)
+>
+> [6.1.1.2. Subscriber Key Pair Generation 73](#subscriber-key-pair-generation)
+>
+> [6.1.1.3.
+CSS Key Pair Generation 74](#css-key-pair-generation)
+>
+> [6.1.1.4. PIV Content Signing Key Pair Generation 74](#piv-content-signing-key-pair-generation)
+>
+> [6.1.2. Private Key Delivery to Subscriber 74](#private-key-delivery-to-subscriber)
+>
+> [6.1.3.
+Public Key Delivery to Certificate Issuer 74](#public-key-delivery-to-certificate-issuer)
+>
+> [6.1.4. CA Public Key Delivery to Relying Parties 74](#ca-public-key-delivery-to-relying-parties)
+>
+> [6.1.5.
+Key Sizes 75](#key-sizes)
+>
+> [6.1.6. Public Key Parameters Generation and Quality Checking 76](#public-key-parameters-generation-and-quality-checking)
+>
+> [6.1.7.
+Key Usage Purposes (as per X.509 v3 Key Usage Field) 76](#key-usage-purposes-as-per-x.509-v3-key-usage-field)
+>
+> [6.2. Private Key Protection and Cryptographic Module Engineering Controls 77](#private-key-protection-and-cryptographic-module-engineering-controls)
+>
+> [6.2.1. Cryptographic Module Standards and Controls 77](#cryptographic-module-standards-and-controls)
+>
+> [6.2.2. Private Key (n out of m) Multi-Person Control 78](#private-key-n-out-of-m-multi-person-control)
+>
+> [6.2.3.
+Private Key Escrow 78](#private-key-escrow)
+>
+> [6.2.4.
+Private Key Backup 78](#private-key-backup)
+>
+> [6.2.5.
+Private Key Archival 79](#private-key-archival)
+>
+> [6.2.6.
+Private Key Transfer into or from a Cryptographic Module 80](#private-key-transfer-into-or-from-a-cryptographic-module)
+>
+> [6.2.7.
+Private Key Storage on Cryptographic Module 80](#private-key-storage-on-cryptographic-module)
+>
+> [6.2.8.
+Method of Activating Private Key 80](#method-of-activating-private-key)
+>
+> [6.2.9.
+Method of Deactivating Private Key 81](#method-of-deactivating-private-key)
+>
+> [6.2.10.
+Method of Destroying Private Key 81](#method-of-destroying-private-key)
+>
+> [6.2.11.
+Cryptographic Module Rating 81](#cryptographic-module-rating)
+>
+> [6.3.
+Other Aspects of Key Pair Management 82](#other-aspects-of-key-pair-management)
+>
+> [6.3.1.
+Public Key Archival 82](#public-key-archival)
+>
+> [6.3.2.
+Certificate Operational Periods and Key Usage Periods 82](#certificate-operational-periods-and-key-usage-periods)
+>
+> [6.4. Activation Data 83](#activation-data)
+>
+> [6.4.1. Activation Data Generation and Installation 83](#activation-data-generation-and-installation)
+>
+> [6.4.2.
+Activation Data Protection 83](#activation-data-protection)
+>
+> [6.4.3.
+Other Aspects of Activation Data 83](#other-aspects-of-activation-data)
+>
+> [6.5.
+Computer Security Controls 83](#computer-security-controls)
+>
+> [6.5.1. Specific Computer Security Technical Requirements 83](#specific-computer-security-technical-requirements)
+>
+> [6.5.2.
+Computer Security Rating 84](#computer-security-rating)
+>
+> [6.6.
+Life Cycle Technical Controls 84](#life-cycle-technical-controls)
+>
+> [6.6.1. System Development Controls 84](#system-development-controls)
+>
+> [6.6.2.
+Security Management Controls 85](#security-management-controls)
+>
+> [6.6.3.
+Life Cycle Security Controls 85](#life-cycle-security-controls)
+>
+> [6.7.
+Network Security Controls 85](#network-security-controls)
+>
+> [6.8.
+Time-Stamping 86](#time-stamping)
+
+[7. Certificate, CRL, and OCSP Profiles 86](#certificate-crl-and-ocsp-profiles)
+
+> [7.1. Certificate Profile 86](#certificate-profile)
+>
+> [7.1.1. Version Number(s) 86](#version-numbers)
+>
+> [7.1.2. Certificate Extensions 86](#certificate-extensions)
+>
+> [7.1.3.
+Algorithm Object Identifiers 87](#algorithm-object-identifiers)
+>
+> [7.1.4. Name Forms 88](#name-forms)
+>
+> [7.1.5.
+Name Constraints 88](#name-constraints)
+>
+> [7.1.6. Certificate Policy Object Identifier 88](#certificate-policy-object-identifier)
+>
+> [7.1.7.
+Usage of Policy Constraints Extension 88](#usage-of-policy-constraints-extension)
+>
+> [7.1.8.
+Policy Qualifiers Syntax and Semantics 89](#policy-qualifiers-syntax-and-semantics)
+>
+> [7.1.9.
+Processing Semantics for the Critical Certificate Policies Extension 89](#processing-semantics-for-the-critical-certificate-policies-extension)
+>
+> [7.1.10.
+Inhibit Any Policy Extension 89](#inhibit-any-policy-extension)
+>
+> [7.2. CRL Profile 89](#crl-profile)
+>
+> [7.2.1. Version Number(s) 89](#version-numbers-1)
+>
+> [7.2.2.
+CRL and CRL Entry Extensions 89](#crl-and-crl-entry-extensions)
+>
+> [7.3.
+OCSP Profile 89](#ocsp-profile)
+>
+> [7.3.1. Version Number(s) 89](#version-numbers-2)
+>
+> [7.3.2.
+OCSP Extensions 89](#ocsp-extensions)
+
+[8. Compliance Audit and Other Assessments 89](#compliance-audit-and-other-assessments)
+
+> [8.1.
+Frequency or Circumstances of Assessment 90](#frequency-or-circumstances-of-assessment)
+>
+> [8.2.
+Identity/Qualifications of Assessor 90](#identityqualifications-of-assessor)
+>
+> [8.3.
+Assessor’s Relationship to Assessed Entity 90](#assessors-relationship-to-assessed-entity)
+>
+> [8.4.
+Topics Covered by Assessment 90](#topics-covered-by-assessment)
+>
+> [8.5.
+Actions Taken as a Result of Deficiency 91](#actions-taken-as-a-result-of-deficiency)
+>
+> [8.6.
+Communication of Results 91](#communication-of-results)
+
+[9. Other Business and Legal Matters 91](#other-business-and-legal-matters)
+
+> [9.1.
+Fees 91](#fees)
+>
+> [9.1.1. Certificate Issuance or Renewal Fees 91](#certificate-issuance-or-renewal-fees)
+>
+> [9.1.2. Certificate Access Fees 91](#certificate-access-fees)
+>
+> [9.1.3.
+Revocation or Status Information Access Fees 92](#revocation-or-status-information-access-fees)
+>
+> [9.1.4.
+Fees for other Services 92](#fees-for-other-services)
+>
+> [9.1.5.
+Refund Policy 92](#refund-policy)
+>
+> [9.2.
+Financial Responsibility 92](#financial-responsibility)
+>
+> [9.2.1.
+Insurance Coverage 92](#insurance-coverage)
+>
+> [9.2.2.
+Other Assets 92](#other-assets)
+>
+> [9.2.3.
+Insurance or Warranty Coverage for End-Entities 92](#insurance-or-warranty-coverage-for-end-entities)
+>
+> [9.3.
+Confidentiality of Business Information 92](#confidentiality-of-business-information)
+>
+> [9.3.1.
+Scope of Confidential Information 92](#scope-of-confidential-information)
+>
+> [9.3.2.
+Information not within the Scope of Confidential Information 92](#information-not-within-the-scope-of-confidential-information)
+>
+> [9.3.3.
+Responsibility to Protect Confidential Information 92](#responsibility-to-protect-confidential-information)
+>
+> [9.4.
+Privacy of Personal Information 93](#privacy-of-personal-information)
+>
+> [9.4.1. Privacy Plan 93](#privacy-plan)
+>
+> [9.4.2.
+Information Treated as Private 93](#information-treated-as-private)
+>
+> [9.4.3.
+Information not Deemed Private 93](#information-not-deemed-private)
+>
+> [9.4.4.
+Responsibility to Protect Private Information 93](#responsibility-to-protect-private-information)
+>
+> [9.4.5.
+Notice and Consent to Use Private Information 93](#notice-and-consent-to-use-private-information)
+>
+> [9.4.6.
+Disclosure Pursuant to Judicial or Administrative Process 93](#disclosure-pursuant-to-judicial-or-administrative-process)
+>
+> [9.4.7.
+Other Information Disclosure Circumstances 94](#other-information-disclosure-circumstances)
+>
+> [9.5.
+Intellectual Property Rights 94](#intellectual-property-rights)
+>
+> [9.6.
+Representations and Warranties 94](#representations-and-warranties)
+>
+> [9.6.1.
+CA and KED Representations and Warranties 94](#ca-and-ked-representations-and-warranties)
+>
+> [9.6.2.
+RA and KRA/KRO Representations and Warranties 95](#ra-and-krakro-representations-and-warranties)
+>
+> [9.6.2.1. RA Obligations 95](#ra-obligations)
+>
+> [9.6.2.2.
+KRA Obligations 95](#kra-obligations)
+>
+> [9.6.2.3.
+KRO Obligations 96](#kro-obligations)
+>
+> [9.6.3.
+Subscriber and Data Decryption Server Representations and Warranties 97](#subscriber-and-data-decryption-server-representations-and-warranties)
+>
+> [9.6.3.1.
+Subscriber Representations and Warranties 97](#subscriber-representations-and-warranties)
+>
+> [9.6.3.2.
+Data Decryption Server Representations and Warranties 97](#data-decryption-server-representations-and-warranties)
+>
+> [9.6.4.
+Relying Parties Representations and Warranties 98](#relying-parties-representations-and-warranties)
+>
+> [9.6.5.
+Representations and Warranties of Other Participants 98](#representations-and-warranties-of-other-participants)
+>
+> [9.7.
+Disclaimers of Warranties 99](#disclaimers-of-warranties)
+>
+> [9.8.
+Limitations of Liability 99](#limitations-of-liability)
+>
+> [9.9.
+Indemnities 99](#indemnities)
+>
+> [9.10.
+Term and Termination 99](#term-and-termination)
+>
+> [9.10.1.
+Term 99](#term)
+>
+> [9.10.2.
+Termination 99](#termination)
+>
+> [9.10.3.
+Effect of Termination and Survival 99](#effect-of-termination-and-survival)
+>
+> [9.11.
+Individual Notices and Communications with Participants 100](#individual-notices-and-communications-with-participants)
+>
+> [9.12.
+Amendments 100](#amendments)
+>
+> [9.12.1.
+Procedure for Amendment 100](#procedure-for-amendment)
+>
+> [9.12.2. Notification Mechanism and Period 100](#notification-mechanism-and-period)
+>
+> [9.12.3.
+Circumstances under which OID must be Changed 100](#circumstances-under-which-oid-must-be-changed)
+>
+> [9.13.
+Dispute Resolution Provisions 100](#dispute-resolution-provisions)
+>
+> [9.14.
+Governing Law 100](#governing-law)
+>
+> [9.15.
+Compliance with Applicable Law 100](#compliance-with-applicable-law)
+>
+> [9.16.
+Miscellaneous Provisions 101](#miscellaneous-provisions)
+>
+> [9.16.1.
+Entire Agreement 101](#entire-agreement)
+>
+> [9.16.2.
+Assignment 101](#assignment)
+>
+> [9.16.3.
+Severability 101](#severability)
+>
+> [9.16.4.
+Enforcement (Attorneys’ Fees and Waiver of Rights) 101](#enforcement-attorneys-fees-and-waiver-of-rights)
+>
+> [9.16.5.
+Force Majeure 101](#force-majeure)
+>
+> [9.17.
+Other Provisions 101](#other-provisions)
+
+[Appendix A: PIV and Common PIV Interoperable Comparison 102](#appendix-a-piv-and-common-piv-interoperable-comparison)
+
+[Appendix B: References 104](#appendix-b-references)
+
+[Appendix C: Acronyms and Abbreviations 107](#appendix-c-acronyms-and-abbreviations)
+
+[Appendix D: Glossary 110](#appendix-d-glossary)
 
 # Introduction
 
@@ -909,6 +1253,9 @@ A Certification Authority (CA) that operates in accordance with this CP will pro
 - Certificate token initialization/programming/management
 
 - System management functions (e.g., security audit, configuration management, archive.)
+
+A Key Recovery System (KRS) is required for CAs operating under this policy that issue PIV key management certificates.
+The KRS provides the computer system hardware, software, staff and procedures to store private keys securely and recover them when appropriate.
 
 Any CA that asserts these policies in certificates must obtain prior approval from the Federal PKI Policy Authority; approval is dependent upon a Certification Practices Statement (CPS) that clearly describes how each requirement in this CP is fulfilled, or, for Federal agencies that operate their own PKI, a comparable CP.
 For any section of this policy containing no stipulation, the CPS must indicate whether it is applicable, and if so, describe the associated practices.
@@ -1129,6 +1476,59 @@ The RA is responsible for:
 A Trusted Agent is a person who satisfies all the trustworthiness requirements for an RA and who performs identity proofing as a proxy for the RA.
 A Trusted Agent records information from and verifies biometrics (e.g., photographs) on presented credentials for Applicants who cannot appear in person at an RA.
 
+### Key Recovery Authorities
+
+For organizations that have implemented Key Recovery, the applicable requirements for physical, personnel, and procedural security controls, technical security controls, and Compliance Audit are applied as follows:
+
+- CA requirements are applied to the KED and to the DDS
+
+- RA requirements are applied to the KRA and KRA automated systems
+
+- RA requirements are applied to the KRO and KRO automated systems, when the KRO has privileged access to the KED
+
+#### Key Escrow Database
+
+The KED is defined as the function, system, or subsystem that maintains the key escrow repository and responds to key registration requests.
+The KED also responds to key recovery requests from two or more KRAs or self-recovery by a current subscriber.
+
+Section 5.2.1.2 contains the description of trusted roles required to operate the KED.
+
+#### Data Decryption Server
+
+A DDS is an automated system that has the capability to obtain subscriber private keys from the KED or another DDS for data monitoring or other purposes (e.g., email inspection).
+DDSs do not provide keys to Subscribers or other Third-Party Requestors.
+A DDS has access to escrowed key management keys and must meet all security requirements of the KED as outlined in this policy.
+
+Implementation of a DDS is optional based on organizational operations.
+
+#### Key Recovery Agent
+
+A KRA is an individual who is authorized, as specified in the applicable Practice Statement (KRPS or CPS), to recover an escrowed key.
+The KRAs send the recovered key to the KRO or directly to the Requestor.
+The KRAs have high level, sensitive access to the KED and are considered Trusted Roles (see Section 5.2.1).
+KRAs can recover large numbers of keys, the number and location of KRAs should be closely controlled.
+
+KRAs may additionally conduct requestor identity verification and authorization validation when KROs are not used.
+
+#### Key Recovery Official
+
+A Key Recovery Official (KRO) may optionally be used to support identity verification and authorization validation tasks.
+KROs do not have privileged access to the KED.
+
+### Key Recovery Requestors
+
+A Requestor is the person or DDS that requests the recovery of a decryption private key.
+A Requestor may be the Subscriber or a third-party (e.g., supervisor, corporate officer or law enforcement officer) authorized to request recovery of a Subscriber’s escrowed key on behalf of the Subscriber or on behalf of the organization.
+Any individual who can demonstrate a verifiable authority and a need to obtain a recovered key may be considered a Requestor.
+
+#### Internal Third-Party Requestor
+
+An Internal Third-Party Requestor is any Requestor who is in the Subscriber’s supervisory chain or otherwise authorized to obtain the Subscriber’s key for the Issuing Organization (i.e., the organization on behalf of which the CA issues certificates to subscribers).
+
+#### External Third-Party Requestor
+
+An External Third-Party Requestor is someone (e.g., investigator) outside the Issuing Organization with a court order or other legal instrument to obtain the decryption private key of the Subscriber.
+
 ### Subscribers
 
 A Subscriber is the entity whose name appears as the subject in a certificate.
@@ -1144,8 +1544,7 @@ Normally, it will be issued in addition to an individual Subscriber certificate.
 A specific role may be identified in certificates issued to multiple Subscribers; however, the key pair will be unique to each individual role-based certificate.
 For example, there may be four individuals with a certificate issued in the role of “Secretary of Commerce”.
 However, each of the four certificates will have unique keys and certificate serial numbers.
-Roles for which role-based certificates may be issued are limited to those that are held by a unique individual within an organization (e.g.
-Chief Information Officer, GSA is a unique individual whereas Program Analyst, GSA is not).
+Roles for which role-based certificates may be issued are limited to those that are held by a unique individual within an organization (e.g., Chief Information Officer, GSA is a unique individual whereas Program Analyst, GSA is not).
 
 |                                                                                                                                                                                                                                                                                                                                                                                                         |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1239,11 +1638,11 @@ The file must be:
 The certs-only Cryptographic Message Syntax format is preferred as it allows flexibility for inclusion of multiple certificates.
 
 All CAs that issue certificates under this policy must publish the latest CRL covering all unexpired certificates via a publicly accessible HTTP URI until such time as all issued certificates have expired.
-This URI must be asserted in the CRL distribution point extension of all certificates issued by that CA, with the exception of OCSP responder certificates that include the id-pkix-ocsp-nocheck extension.
+This URI must be asserted in the CRL distribution point extension of all certificates issued by that CA, with the exception of Online Certificate Status Protocol (OCSP) responder certificates that include the id-pkix-ocsp-nocheck extension.
 
 A Certificate Status Server (CSS) provides status information about certificates on behalf of a CA through on-line transactions.
 
-CAs must include a CSS in the form of a delegated Online Certificate Status Protocol (OCSP) service, as described in \[RFC 6960\], to provide on-line status information for Subscriber certificates via a publicly accessible HTTP URI in the AIA extension.
+CAs must include a CSS in the form of a delegated OCSP service, as described in \[RFC 6960\], to provide on-line status information for Subscriber certificates via a publicly accessible HTTP URI in the AIA extension.
 The operations of the OCSP service are within the scope of this CP.
 
 Pre-generated OCSP responses may be created by the CSS and distributed to OCSP servers.
@@ -1488,6 +1887,8 @@ Before issuing CA certificates, an authority for the issuing CA must verify the 
 
 Before issuing subscriber certificates on behalf of an organization, the issuing CA must verify the authority of requesting representatives.
 
+Requests for Third-Party recovery of Subscriber keys must include validation of the individual’s authority to act on behalf of the requesting organization.
+
 ### Authentication of Individual Identity
 
 For each certificate issued, the CA must authenticate the identity of the individual requester.
@@ -1688,6 +2089,45 @@ In the event of certificate revocation, issuance of a new certificate must requi
 Revocation requests must be authenticated.
 Note that revocation requests may be digitally signed using a certificate's private key, regardless of whether or not the private key has been compromised.
 
+## Identification and Authentication for Key Recovery Requests
+
+### Third-Party Requestor Authentication
+
+This section addresses the requirements for authentication of a Third-Party Requestor, i.e., a Requestor other than the Subscriber themself.
+The requirements for authentication, when the Requestor is the Subscriber, are addressed in Section 3.3.1 or Section 3.2.3.1.
+
+Identity authentication must be commensurate with the assurance level of the certificate associated with the key being recovered.
+Identity must be established using one of the following methods:
+
+- Procedures specified in Section 3.2.3 for authentication of an individual identity during initial registration for the specified certificate policy assurance level (an assurance level equal to or greater than the assurance level of the certificate whose corresponding private key is being recovered).
+
+- Certificate-based authentication (e.g., digitally signed e-mail or client-authenticated TLS) that can be verified using current, valid (i.e., un-revoked) public key certificates at the requested certificate policy assurance level (an assurance level equal to or greater than the assurance level of the certificate whose corresponding private key is being recovered).
+
+The KRA or KRO must verify the identity and authorization of the Requestor prior to initiating the key recovery request.
+
+### Subscriber Authentication
+
+The Subscriber identity must be established as specified in Section 3.3.1 above.
+Alternatively, if the authentication cannot be verified using the public key certificates issued by the associated PKI and for at least the given certificate policy assurance level, then the identity validation can use the steps outlined in Section 3.2.3.1.
+
+For automated self-recovery, the Subscriber must be authenticated to the KED using a valid public key certificate.
+The assurance level of the Subscriber certificate must be equal to or greater than that of the certificate whose corresponding private key is being recovered.
+
+### KRA Authentication
+
+The KRA must authenticate to the KED or DDS directly or using a public key certificate issued by the associated PKI.
+The assurance level of the certificate must be the same as or greater than that of the certificate whose corresponding private key is being recovered and must meet the requirements of an RA credential.
+
+### KRO Authentication
+
+The KRO must authenticate to the KRA using a public key certificate issued by the associated PKI.
+The assurance level of the certificate must be the same as or greater than that of the certificate whose corresponding private key is being recovered and must meet the requirements of an RA credential.
+
+### Data Decryption Server Authentication
+
+The DDS must authenticate to the KED directly using a public key certificate issued by the associated PKI.
+The assurance level of the certificate must be the same as or greater than that of the highest assurance level encryption certificates issued by the associated PKI.
+
 # Certificate Life-Cycle Operational Requirements
 
 ## Certificate Application
@@ -1815,7 +2255,7 @@ Relying parties should process certificate and status information as specified i
 
 Renewing a certificate means creating a new certificate with a new serial number where all certificate subject information, including the subject public key and subject key identifier, remain unchanged.
 
-The new certificate may have an extended validity period and may include new issuer information (e.g. different CRL distribution point, AIA and/or be signed with a different issuer key).
+The new certificate may have an extended validity period and may include new issuer information (e.g., different CRL distribution point, AIA and/or be signed with a different issuer key).
 
 Once renewed, the old certificate may or may not be revoked but must not be reused for requesting further renewals, re-keys, or modifications.
 
@@ -1914,7 +2354,7 @@ Once modified, the old certificate may or may not be revoked, but must not be re
 
 ### Circumstance for Certificate Modification
 
-CA certificates and Delegated OCSP responder certificates whose characteristics have changed (e.g. assert new policy OID) may be modified.
+CA certificates and Delegated OCSP responder certificates whose characteristics have changed (e.g., assert new policy OID) may be modified.
 The new certificate may have the same or a different subject public key.
 
 A certificate associated with a Subscriber whose characteristics have changed (e.g., name change due to marriage) may be modified.
@@ -1946,7 +2386,7 @@ As specified in Section 4.3.2.
 
 For certificates issued by the Federal Common Policy CA, failure to object to the certificate or its contents constitutes acceptance of the certificate.
 
-For all other CAs operating under this policy, no stipulation
+For all other CAs operating under this policy, no stipulation.
 
 ### Publication of the Modified Certificate by the CA
 
@@ -2021,7 +2461,7 @@ Where Subscribers use hardware tokens, revocation is optional if all the followi
 
 - the hardware token does not permit the Subscriber to export the signature private key;
 
-- the Subscriber surrenders the token to an authorized individual (e.g. supervisor, human resources, RA, or CA representative);
+- the Subscriber surrenders the token to an authorized individual (e.g., supervisor, human resources, RA, or CA representative);
 
 - the token was zeroized or destroyed promptly upon surrender;
 
@@ -2148,7 +2588,7 @@ Any alternative method must meet the following requirements:
 
 - The alternative method must meet the issuance and latency requirements for CRLs stated in Sections 4.9.7 and 4.9.8.
 
-###  Special Requirements Related To Key Compromise
+###  Special Requirements Related to Key Compromise
 
 When a CA certificate is revoked a CRL must be issued within 18 hours of notification.
 
@@ -2202,13 +2642,134 @@ No stipulation.
 CA private keys are never escrowed.
 
 Human Subscriber key management keys must be escrowed to provide key recovery.
-CAs must develop a Key Recovery Practice Statement (KRPS) describing the procedures and controls implemented to comply with the FPKI Key Recovery Policy.
-The KRPS may be a separate document or may be combined with the appropriate Certification Practice Statement and/or Registration Practice Statement.
-The Federal PKI Policy Authority (FPKIPA) will determine the KRPS compliance with the KRP and this CP.
+Escrowed keys must be maintained within an online KED for a minimum of one year after the expiration of the associated public key certificate.
 
-Under no circumstances must a Subscriber signature key be held in trust by a third party.
+Subscriber signature keys are never escrowed.
 
-###  Session Key Encapsulation and Recovery Policy and Practices
+#### Key Escrow Process and Responsibilities
+
+Human subscriber private keys (i.e., decryption private keys) associated with a key management certificate must be securely escrowed by the KED.
+The CA must ensure that the keys are escrowed successfully prior to issuance of the key management certificates.
+
+Subscriber private keys must be protected during transit and storage using cryptography at least as strong as the key being escrowed.
+
+Subscribers must be notified that the private keys associated with their encryption certificates will be escrowed.
+
+#### Key Recovery Process and Responsibilities
+
+Communications between the various key recovery participants (KED, DDS, KRA, KRO, Requestor, and Subscriber) must be secured from protocol threats such as disclosure, modification, replay, and substitution.
+The strength of all cryptographic protocols must be equal to or greater than that of the keys they protect.
+
+During delivery, escrowed keys must be protected against disclosure to any party except the Requestor.
+
+When any mechanism that includes a shared secret (e.g., a password) is used to protect the key in transit, the mechanism must ensure that the Requestor and the transmitting party are the only holders of this shared secret.
+
+Subscribers may use electronic or manual means to request their own escrowed keys from the KRS.
+The Subscriber may submit the request to the KED, KRA or KRO.
+If the request is made electronically, the subscriber must digitally sign the request or authenticate to a recovery service using an associated authentication or signature certificate with an assurance level equal to or greater than that of the escrowed key.
+Manual requests must be made in person, and include proper identity verification by the KRA in accordance with Section 3.2.3.1.
+
+Internal Third-Party Requestors may use electronic or manual means to request the Subscribers’ escrowed keys.
+The Requestor must submit the request to the KRA or KRO.
+If the request is made electronically, the Requestor must digitally sign the request using an authentication or signature certificate with an assurance level equal to or greater than that of the escrowed key.
+Manual requests must be made in person, and must include proper identity verification by the KRA in accordance with Section 3.2.3.1.
+
+External Third-Party Requestors must use manual means to request the Subscribers’ escrowed keys.
+The Requestor must submit the request to the KRA or KRO.
+Manual requests must be made in person, and must include proper identity verification by the KRA in accordance with Section 3.2.3.1.
+
+DDSs must use electronic means to request Subscribers’ escrowed keys.
+Requests must be authenticated as specified in Section 3.5.5.
+
+Third party key recovery in and of itself does not require revocation of a subscriber certificate.
+This does not prohibit Subscribers from revoking their own certificates for any reason.
+
+#### Key Recovery Through KRA
+
+The KRA must provide access to a copy of an escrowed key only in response to a properly authenticated and authorized key recovery request.
+Such access requires the actions of at least two KRAs.
+All copies of escrowed keys must be protected using two-person control procedures during recovery and delivery to the authenticated and authorized Requestor.
+Split key or password procedures are considered adequate two-person controls, provided they comply with technical controls in Section 6.2.2.
+
+|                                                                                                                                                                                                                                                                                        |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Practice Note: A combination of physical, procedural and technical security controls can be used to enforce continuous two-person control during recovery and delivery of escrowed keys. The KRS should be designed to maximize the ability to enforce two-person control technically. |
+
+The KRA is not required to notify subscribers of a third-party key recovery.
+
+#### Automated Self-Recovery
+
+A current Subscriber’s escrowed keys may be provided directly to the Subscriber without imposition of two-person control requirements.
+The KED must only provide escrowed keys to current Subscribers without two-person control upon:
+
+- Verifying that the authenticated identity of the Requestor is the same as the Subscriber associated with the escrowed keys being requested;
+
+- Sending notification to the Subscriber of all attempts (successful or unsuccessful) to recover the Subscriber’s escrowed keys that are made by entities claiming to be the subscriber.
+If the KED does not have information (e.g., an e-mail address) necessary to send notification to the Subscriber of a key recovery request, then the KED must not provide the Subscriber with the requested key material using the automated recovery process
+
+|                                                                                                                                       |
+|---------------------------------------------------------------------------------------------------------------------------------------|
+| Practice Note: Where possible, the e-mail address will be from the subject alternative name field of the certificate being recovered. |
+
+- Ensuring that the escrowed keys are being sent only to the authenticated Subscriber associated with the escrowed keys; and
+
+- Ensuring that the escrowed keys are encrypted during transmission using cryptography of equal or greater strength than provided by the escrowed keys.
+
+#### Key Recovery During Token Issuance
+
+When a Subscriber (individual and/or group/role sponsor or member) is issued a new certificate on a hardware token, private key management keys for the Subscriber may be recovered as part of the issuance process as long as the KED uses secure means, such as Global Platform Secure Channel Protocol, to inject the key history onto the hardware token directly.
+
+The hardware token must meet FIPS 140 Level 2 hardware requirements and the key must be injected into the token such that it is not thereafter exportable.
+
+#### Key Recovery by Data Decryption Server
+
+A DDS must be under two-person control, as is required for any CA or KED.
+A DDS is permitted to automatically recover keys from the KED.
+The KED must perform the following activities prior to releasing the key:
+
+- Authenticating the Requestor as a legitimate DDS;
+
+- Verifying that the DDS is authorized to recover the escrowed key for the Issuing Organization to which the key belongs;
+
+- Ensuring that the escrowed keys are protected during transmission using cryptography or other means of equal or greater strength than provided by the escrowed keys.
+
+A combination of physical, procedural and technical security controls must be used to enforce continuous two-person control on the DDSs.
+The DDSs must be designed to maximize the ability to enforce two-person control technically.
+
+|                                                                                                                                |
+|--------------------------------------------------------------------------------------------------------------------------------|
+| Practice Note: The DDS is considered under two-person control when any human action performed on the DDS requires two persons. |
+
+#### Who Can Submit a Key Recovery Application
+
+Subscribers may request recovery of their own escrowed keys.
+Key recovery may also be requested by internal Third-Party Requestor permitted by the Issuing Organization policy, as verified by the KRO, and by authorized external Third-Party Requestors (e.g., law enforcement personnel with a court order from a competent court).
+
+#### Requestor Authorization Validation
+
+The KRA or the KRO, as an intermediary for the KRA, must validate the authorization of the Requestor in consultation with Issuing Organization management and/or legal counsel, as appropriate.
+
+Issuing Organizations must determine internal notification requirements for External Third-Party key recovery requests and account for situations where the law requires the KED to release the Subscriber’s private key without organizational notification.
+
+Nothing in this document is intended to change the current procedures for obtaining information about individuals in connection with such requests.
+
+#### Subscriber Authorization Validation
+
+Current Subscribers are authorized to recover their own escrowed key material.
+
+#### KRA Authorization Validation
+
+The KED must verify that the KRA has appropriate privileges to obtain the keys for the identified Subscriber’s organization.
+
+#### KRO Authorization Validation
+
+The KED or KRA must verify that the KRO is authorized to request keys for the identified Subscriber.
+
+#### Data Decryption Server Authorization Validation
+
+The KED must verify that the DDS recovery request falls within the organizational scope for which the DDS was established.
+
+### Session Key Encapsulation and Recovery Policy and Practices
 
 CAs that support session key encapsulation and recovery must identify the document describing the practices in the applicable CPS.
 
@@ -2276,6 +2837,20 @@ These security mechanisms must be commensurate with the level of threat in the R
 Physical access control requirements for CSS equipment that has signing capability must meet the CA physical access requirements specified in Section 5.1.2.1.
 CSS equipment that do not have a private signing key and only distribute pre-generated OCSP responses are not required to meet these requirements.
 
+#### Physical Access for KED Equipment
+
+Physical access control requirements for KED equipment that store private keys must meet the CA physical access requirements specified in Section 5.1.2.1.
+
+#### Physical Access for DDS Equipment
+
+Physical access control requirements for DDS equipment that store or use private keys must meet the CA physical access requirements specified in Section 5.1.2.1.
+
+#### Physical Access for KRA and KRO Equipment
+
+KRA and KRO equipment must be protected from unauthorized access while the cryptographic module is installed and activated.
+The KRA and KRO must implement physical access controls to reduce the risk of equipment tampering even when the cryptographic module is not installed and activated.
+These security mechanisms must be commensurate with the level of threat in the equipment environment.
+
 ### Power and Air Conditioning
 
 The CA must have sufficient alternative power supply in the event of a primary power source failure to either maintain CA operations or, at a minimum, prevent loss of data.
@@ -2325,9 +2900,9 @@ The second distributes the functions among more than one person, so that any mal
 
 The requirements of this policy are defined in terms of four roles, implementing organizations may define additional roles provided the following separation of duties are enforced.
 
-1.  Administrator – authorized to install, configure, and maintain the CA; establish and maintain system accounts; configure audit parameters; and generate PKI component keys.
+1.  Administrator – authorized to install, configure, and maintain the CA, KED or DDS; establish and maintain system accounts; configure audit parameters; and generate PKI component keys.
 
-2.  Officer – authorized to request or approve certificate issuance and revocations.
+2.  Officer – authorized to request or approve certificate issuance, revocations, or recovery, as appropriate.
 
 3.  Auditor – authorized to review, maintain, and archive audit logs.
 
@@ -2335,24 +2910,49 @@ The requirements of this policy are defined in terms of four roles, implementing
 
 Administrators do not issue certificates to Subscribers.
 
-These four roles are employed at the CA, RA, and CSS locations as appropriate.
+These four roles are employed at the CA, RA, KED, DDS and CSS locations as appropriate.
 Separation of duties must comply with Section 5.2.4, and requirements for two-person control with Section 5.2.2, regardless of the titles and numbers of Trusted Roles.
+
+#### Key Recovery Agent (KRA)
+
+All KRAs that operate under this policy are subject to the stipulations of this policy.
+A KRA’s responsibilities are to ensure that the following functions occur according to the stipulations of this policy:
+
+- Authorized to authenticate requests and recover copies of escrowed keys; and
+
+- Authorized to distribute copies of recovered keys to Requestor, with protection as described in Section 4.12.1.2.1.
+
+#### Key Recovery Official (KRO)
+
+KROs are defined as Trusted Roles only if they have privileged access to the KED.
+
+A KRO’s responsibilities are to ensure that the following functions occur according to the stipulations of this policy:
+
+- Authorized to verify a Requestor’s identity and authorization as stated by this policy;
+
+- Authorized to build key recovery requests on behalf of authorized Requestor;
+
+- Authorized to securely communicate key recovery requests to and responses from the KRA; and
+
+- Authorized to participate in distribution of escrowed keys to the Requestor, as described by the associated practice statement (CPS or KRPS).
 
 ### Number of Persons Required per Task
 
 Two or more persons are required for the following tasks:
 
-- CA key generation;
+- CA, KED, or DDS key generation;
 
 <!-- -->
 
 - CA signing key activation;
 
-- CA private key backup.
+- CA, KED, or DDS private key backup.
 
 Where multiparty control is required, at least one of the participants must be an Administrator.
 All participants must serve in a Trusted Role as defined in Section 5.2.1.
 Multiparty control must not be achieved using personnel that serve in the Auditor Trusted Role.
+
+The participation of two KRAs is required for third-party key recovery.
 
 ### Identification and Authentication for Each Role
 
@@ -2365,6 +2965,13 @@ The CA and RA software and hardware must identify and authenticate its users and
 For CAs that issue at id-fpki-common-high, the Auditor may not assume any other role.
 No individual must have more than one identity.
 
+A Trusted Role may perform the same role on the CA, KED, and DDS.
+
+Under no circumstances will a KRA or KRO be an Administrator or Auditor for a KED or DDS.
+
+A Registration Authority (RA) may fill the role of a KRA or KRO.
+A Trusted Agent (TA), may fill the role of a KRO.
+
 ## Personnel Controls
 
 ### Qualifications, Experience, and Clearance Requirements
@@ -2376,7 +2983,7 @@ The FPKIMA Program Manager must hold a Top Secret security clearance.
 
 ### Background Check Procedures
 
-CA personnel must receive a favorable adjudication after undergoing a background investigation covering the following areas:
+Trusted Roles must receive a favorable adjudication after undergoing a background investigation covering the following areas:
 
 - Employment;
 
@@ -2443,7 +3050,7 @@ Documentation sufficient to define duties and procedures for each role must be p
 ## Audit Logging Procedures
 
 Audit log files must be generated for all events relating to the security of the CA.
-For CAs operated in a virtual machine environment (VME)[^2], audit logs must be generated for all applicable events on both the virtual machine (VM) and isolation kernel (i.e. hypervisor).
+For CAs, KEDs, and DDSs operated in a virtual machine environment (VME)[^2], audit logs must be generated for all applicable events on both the virtual machine (VM) and isolation kernel (i.e., hypervisor).
 
 Where possible, the security audit logs must be automatically collected.
 Where this is not possible, a logbook, paper form, or other physical mechanism must be used.
@@ -2451,7 +3058,7 @@ All security audit logs, both electronic and non-electronic, must be retained an
 
 ### Types of Events Recorded
 
-All security auditing capabilities of CA operating system and CA applications required by this CP must be enabled during installation.
+All security auditing capabilities of CA operating system and CA applications required by this CP (including the KRS) must be enabled during installation.
 At a minimum, each audit record must include the following (either recorded automatically or manually for each auditable event):
 
 - The type of event;
@@ -2460,14 +3067,18 @@ At a minimum, each audit record must include the following (either recorded auto
 
 - A success or failure indicator when executing the CA’s signing process;
 
-- A success or failure indicator when performing certificate revocation; and
+- A success or failure indicator when performing certificate revocation;
+
+- A success or failure indication for requested KED actions;
+
+- The request source, destination, and contents for requests to the KED; and
 
 - The identity of the entity and/or operator that caused the event.
 
 A message from any source requesting an action requiring the use of a private key controlled by the CA is an auditable event; the corresponding audit record must also include message date and time, source, destination, and contents.
 
-The CA must record events identified in the list below.
-Where these events cannot be electronically logged, electronic audit logs must be supplemented with physical logs as necessary..
+The CA and KRS must record all applicable events identified in the list below.
+Where these events cannot be electronically logged, electronic audit logs must be supplemented with physical logs as necessary.
 
 - SECURITY AUDIT:
 
@@ -2654,11 +3265,14 @@ Where these events cannot be electronically logged, electronic audit logs must b
 
 For CAs that issue certificates under id-fpki-common-high, the audit log must be reviewed at least once every month.
 For CAs that do not issue certificates under id-fpki-common-high, the audit log must be reviewed at least once every two months.
+KRS audit log processing frequency shall align with the CA audit log processing frequency described above.
 
 Such reviews may be performed manually or by an automated process, and must include verification that the logs have not been tampered with, an inspection of log entries, and a root cause analysis for any alerts or irregularities.
-A statistically significant portion of the security audit data generated by the CA since the last review must be examined.
-This amount will be described in the CPS.
+A statistically significant portion of the security audit data generated by the CA or KRS since the last review must be examined.
+This amount will be described in the CPS or KRPS.
 
+All KED audit records of unsuccessful key recoveries must be analyzed to determine the cause and to ensure that the KRS is operating correctly and securely, and is not vulnerable to hacking or unauthorized use.
+The objective of audit log reconciliation is to ensure that all actions are being made by authorized parties and for legitimate reasons.
 All significant events must be explained in an audit log summary.
 Actions taken as a result of these reviews must be documented.
 
@@ -2690,7 +3304,7 @@ A copy of the audit log must be sent off-site on a monthly basis.
 
 ### Audit Collection System (Internal vs. External)
 
-The audit log collection system may or may not be external to the CA system.
+The audit log collection system may or may not be external to the CA system or KRS.
 Automated audit processes must be invoked at system or application startup, and cease only at system or application shutdown.
 Audit collection systems must be configured such that security audit data is protected against loss (e.g., overwriting or overflow of automated log files).
 If an automated audit system has failed, and the integrity of the system or confidentiality of the information protected by the system is at risk, operations must be suspended until the problem has been remedied.
@@ -2702,15 +3316,30 @@ Real-time alerts are neither required nor prohibited by this policy.
 
 ### Vulnerability Assessments
 
-CAs must perform routine self-assessments of security controls.
+CAs and KRSs must perform routine self-assessments of security controls.
 
-|                                                                                                                                                                                                                                                                                                               |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Practice Note: The security audit data should be reviewed by the security auditor for events such as repeated failed actions, requests for privileged information, attempted access of system files, and unauthenticated responses. Security auditors should check for continuity of the security audit data. |
+|                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Practice Note: The security audit data should be reviewed by the security auditor for events such as repeated failed actions, requests for privileged information, attempted access of system files, requests for escrowed keys, attempted access of escrowed keys, unauthenticated responses, and other suspicious or unusual activity. Security auditors should check for continuity of the security audit data. |
 
 ## Records Archival
 
-CAs must follow either the General Records Schedules established by the National Archives and Records Administration or an agency-specific schedule as applicable.
+CAs and KRSs must follow either the General Records Schedules established by the National Archives and Records Administration or an agency-specific schedule as applicable.
+
+The primary objective of the CA archive is to prove the validity of any certificate (including those revoked or expired) issued by the CA in the event of dispute regarding the use of the certificate.
+
+The primary objective of the KRS archive is reconstruction of key recovery activities, in case of dispute.
+Examples of disputes may include:
+
+- Validation of key recovery requests
+
+- Validation of the identity of the recipient of an escrowed key;
+
+- Verification of authorization to obtain the escrowed key copy;
+
+- Verification of transfer of custody of escrowed keys to an authorized Requestor; and
+
+- Establishment of the circumstances under which a copy of the escrowed key was provided.
 
 ### Types of Events Archived
 
@@ -2723,9 +3352,9 @@ At a minimum, the following data must be recorded for archive:
 
 - Certificate Policy
 
-- Certification Practice Statement
+- Certification Practice Statement / Key Recovery Practice Statement
 
-- Contractual obligations and other agreements concerning operations of the CA
+- Contractual obligations and other agreements concerning operations of the CA or KRS
 
 - System and equipment configuration
 
@@ -2749,7 +3378,7 @@ At a minimum, the following data must be recorded for archive:
 
 - All CRLs issued and/or published
 
-- Other data or applications to verify archive contents
+- Other data or applications to verify archive contents (e.g., key escrow software)
 
 - Compliance Auditor reports
 
@@ -2767,7 +3396,7 @@ At a minimum, the following data must be recorded for archive:
 
 - The approval or rejection of a certificate status change request
 
-- Appointment of an individual to a Trusted Role
+- Appointment of an individual to a Trusted Role (to include KRA/KRO)
 
 - Destruction of cryptographic modules
 
@@ -2777,7 +3406,7 @@ At a minimum, the following data must be recorded for archive:
 
 - Violations of Certificate Policy
 
-- Violations of Certification Practice Statement
+- Violations of Certification Practice Statement / Key Recovery Practice Statement
 
 ### Retention Period for Archive
 
@@ -2800,18 +3429,19 @@ No stipulation.
 
 ### Requirements for Time-Stamping of Records
 
-CA archive records must be automatically time-stamped as they are created.
-The CPS must describe how system clocks used for time-stamping are maintained in synchrony with an authoritative time standard.
+CA or KRS archive records must be automatically time-stamped as they are created.
+The time precision must be such that the sequence of events can be determined.
+The CPS or KRPS must describe how system clocks used for time-stamping are maintained in synchrony with an authoritative time standard.
 
 ### Archive Collection System (Internal or External)
 
-Archive data may be collected in any expedient manner.
+Archive data may be collected in any expedient manner, but must be documented in the associated CPS/KRPS.
 
 ### Procedures to Obtain and Verify Archive Information
 
 Copies of records of individual transactions may be released upon request of any Subscribers involved in the transaction or their legally recognized agents.
 
-Procedures, detailing how to create, verify, package, transmit, and store the CA archive information, must be included in the CPS.
+Procedures, detailing how to create, verify, package, transmit, and store the CA/KRS archive information, must be included in the CPS/KRPS.
 
 ## Key Changeover
 
@@ -2885,7 +3515,9 @@ The customer Agency Points of Contact (POC) must be notified as soon as possible
 In the event of an incident as described above, the organization operating the CA must post a notice on its web page identifying the incident and provide notification to the FPKIPA.
 See Section 5.7.1 for contents of the notice.
 
-### Entity (CA) Private Key Compromise Procedures
+### Entity Private Key Compromise Procedures
+
+#### CA Private Key Compromise Procedures
 
 In the event of a CA private key compromise, the following operations must be performed:
 
@@ -2908,6 +3540,27 @@ Subscriber certificates issued prior to compromise of the CA private key may be 
 The organization operating the CA must post a notice on its web page describing the compromise.
 See Section 5.7.1 for contents of the notice.
 
+#### KRS Private Key Compromise Procedures
+
+In the event that the KED or DDS is compromised or is suspected to be compromised, the following operations must be performed:
+
+- Notify the FPKIPA of the compromise
+
+- Provide detail concerning the root cause, operational impact and initial remediation actions
+
+- Determine the extent of the compromise
+
+- Gain concurrence from the FPKIPA on planned resolution.
+This may include revocation of certificates associated with the compromised private keys stored in the KED or DDS.
+
+If a KRA or KRO certificate is revoked due to compromise, the potential exists for some Subscribers’ escrowed keys to have been exposed during a recovery process, the following operations must be performed:
+
+- Audit record review by the audit administrator to identify all potentially exposed escrowed keys.
+
+- Revocation of each of the potentially exposed escrowed keys, according to procedures specified in Section 4.9.3, to include Subscriber notification of the revocation
+
+- Reissuance of the KRA or KRO authentication certificate
+
 ### Business Continuity Capabilities after a Disaster
 
 For the Federal Common Policy CA, recovery procedures must be in place to reconstitute the CA within six (6) hours of failure.
@@ -2915,6 +3568,10 @@ For the Federal Common Policy CA, recovery procedures must be in place to recons
 All other CAs operating under this policy must have recovery procedures in place to reconstitute the CA within 72 hours of failure.
 
 In the case of a disaster whereby the CA installation is physically damaged and all copies of the CA signature key are destroyed as a result, the FPKIPA must be notified at the earliest feasible time, and the FPKIPA must take whatever action it deems appropriate.
+
+|                                                                                                                                                                                                  |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Practice Note: KED and DDS may take more than 72 hours to restore depending on the business needs of the operator. In this event, the FPKIPA must be notified of the expected recovery timeline. |
 
 ## CA or RA Termination
 
@@ -2929,7 +3586,7 @@ Any issued certificates that have not expired, must be revoked and a final long 
 This final CRL must be available for all relying parties until the validity period of all issued certificates has passed.
 Once the last CRL has been issued, the private signing key(s) of the CA to be terminated will be destroyed or taken offline, designated as “not in use”, and protected as stipulated in Section 5.1.2.1.
 
-Prior to CA termination, the CA must provide archived data to an archive facility as specified in the CPS.
+Prior to CA/KRS termination, the CA/KRS must provide archived data to an archive facility as specified in the CPS/KRPS.
 As soon as possible, the CA will advise all other organizations to which it has issued certificates of its termination, using an agreed-upon method of communication specified in the CPS.
 
 When an organizational RA function operating under this policy terminates operations, the RA must archive all audit logs and other records prior to termination and destroy its private keys upon termination.
@@ -3016,6 +3673,8 @@ Acceptable methods include:
 
 ### Key Sizes
 
+All keys must meet requirements listed in \[SP 800-57\].
+
 This CP requires use of RSA PKCS \#1, RSASSA-PSS, or ECDSA signatures; additional restrictions on key sizes and hash algorithms are detailed below.
 Certificates issued under this policy must contain 2048, 3072, or 4096-bit RSA keys, or 256 or 384-bit elliptic curve keys.
 CAs that generate certificates and CRLs under this policy must use the SHA-256, SHA-384, or SHA-512 hash algorithm when generating digital signatures.
@@ -3047,6 +3706,8 @@ CAs that generate certificates and CRLs under this policy must use the SHA-256, 
 </tr>
 </tbody>
 </table>
+
+KED and DDS keys must be at equal to or stronger than the keys being escrowed.
 
 <table>
 <colgroup>
@@ -3154,7 +3815,7 @@ Cryptographic modules must be minimally validated to a FIPS 140 level identified
 <td>FIPS 140 Level</td>
 </tr>
 <tr class="even">
-<td><p>CA</p>
+<td><p>CA, KED, and DDS</p>
 <ul>
 <li><p>all applicable policies</p></li>
 </ul></td>
@@ -3420,7 +4081,7 @@ CA cryptographic modules must be physically secured per requirements in Section 
 
 ### Method of Destroying Private Key
 
-Individuals in Trusted Roles must destroy all copies of CA, RA, and CSS (e.g., OCSP server) private signature keys and activation data (e.g. operator card set or tokens) when they are no longer needed.
+Individuals in Trusted Roles must destroy all copies of CA, RA, and CSS (e.g., OCSP server) private signature keys and activation data (e.g., operator card set or tokens) when they are no longer needed.
 Subscribers must either surrender their cryptographic module to CA/RA personnel for destruction or destroy their private signature keys, when they are no longer needed or when the certificates to which they correspond expire or are revoked.
 Physical destruction of hardware is not required.
 
@@ -3462,6 +4123,8 @@ All certificates signed by a specific CA key pair must expire before the end of 
 
 > \* Expiration of the Content Signing certificate must be later than the expiration of the Subscriber certificates on the same PIV credential.
 
+RA, DDS, KRA and KRO are considered Subscribers.
+
 ## Activation Data
 
 ### Activation Data Generation and Installation
@@ -3496,7 +4159,7 @@ A CA operating under this policy must define any other aspects of Activation Dat
 
 ### Specific Computer Security Technical Requirements
 
-For CAs operating under this policy, the computer security functions listed below are required.
+For CAs, KEDs, and DDSs operating under this policy, the computer security functions listed below are required.
 These functions may be provided by the operating system, or through a combination of operating system, software, and physical safeguards.
 The CA and its ancillary parts must include the following functionality (in a VME, these functions are applicable to both the VM and hypervisor):
 
@@ -3530,7 +4193,8 @@ For certificate status servers operating under this policy, the computer securit
 
 - require recovery from key or system failure.
 
-For remote workstations used to administer the CAs, the computer security functions listed below are required:
+Methods used to administer the CAs, KEDs, or DDSs must not bypass applicable two-person controls.
+In addition, the computer security functions listed below are required:
 
 - authenticate the identity of users before permitting access to the system or applications;
 
@@ -3539,6 +4203,8 @@ For remote workstations used to administer the CAs, the computer security functi
 - generate and archive audit records for all transactions; (see Section 5.4)
 
 - enforce domain integrity boundaries for security critical processes;
+
+- prohibit object reuse or require separation for random access memory;
 
 - provide residual information protection; and
 
@@ -3589,16 +4255,16 @@ CAs operating under this policy must identify any Life Cycle Security Control re
 
 This section does not apply to offline CAs.
 
-A network guard, firewall, or filtering router must protect network access to CA equipment.
-The network guard, firewall, or filtering router must limit services allowed to and from the CA equipment to those required to perform CA functions.
+A network guard, firewall, or filtering router must protect network access to CA and KRS equipment.
+The network guard, firewall, or filtering router must limit services allowed to and from the CA and KRS equipment to those required to perform CA and KRS functions.
 
-Protection of CA equipment must be provided against known network attacks.
+Protection of CA and KRS equipment must be provided against known network attacks.
 All unused network ports and services must be turned off.
-Any network software present on the CA equipment must be necessary to the functioning of the CA application.
+Any network software present on the CA and KRS equipment must be necessary to the functioning of the CA application.
 
 Any boundary control devices used to protect the network on which PKI equipment is hosted must deny all but the necessary services to the PKI equipment.
 
-Repositories, CSSs, and remote workstations used to administer the CAs must employ appropriate network security controls.
+Repositories, CSSs, KRA/KRO, and remote workstations used to administer the CAs must employ appropriate network security controls.
 Networking equipment must turn off unused network ports and services.
 Any network software present must be necessary to the function of the equipment.
 
@@ -3711,9 +4377,10 @@ When this extension appears, at least one of requireExplicitPolicy or inhibitPol
 When present, this extension may be marked critical.
 
 For certificates issued to the Federal Bridge CA, inhibitPolicy
-Mappings skip certs must be set to 2.
+Mapping skip certs must be set to 2.
 
-For all other CA certificates issued by the Federal Common Policy CA, inhibitPolicyMappingskip certs must be set to 0.
+For all other CA certificates issued by the Federal Common Policy CA, inhibitPolicy
+Mapping skip certs must be set to 0.
 When requireExplicitPolicy is included, skip certs must be set to 0.
 
 ### Policy Qualifiers Syntax and Semantics
@@ -3959,7 +4626,7 @@ Each issuing agency must:
 
 - Review namespace control procedures to ensure that distinguished names are uniquely assigned within their agency.
 
-### CA Representations and Warranties
+### CA and KED Representations and Warranties
 
 CAs operating under this policy must warrant that their procedures are implemented in accordance with this CP, and that any certificates issued that assert the policy OIDs identified in this CP were issued in accordance with the stipulations of this policy.
 
@@ -3977,7 +4644,20 @@ A CA that issues certificates that assert a policy defined in this document must
 
 - Operating or providing for the services of an on-line repository, and informing the repository service provider of their obligations if applicable.
 
-### RA Representations and Warranties
+A KED that provides escrowed keys to Requestors under this policy must conform to the stipulations of this document.
+In particular, the following stipulations apply:
+
+- The FPKIPA must approve the CPS/KRPS prior to key escrow.
+
+- The KED must operate in accordance with the stipulations of the CPS/KRPS and this policy.
+
+- The CA/KED must automatically notify the subscribers when their private keys have been escrowed during the subscriber registration process (e.g., a dialog box may appear on a subscriber’s screen during the certificate request process).
+
+- The KED must monitor KRA and KRO activity for patterns of potentially anomalous activity as indicators of possible problems in the infrastructure, and initiate inquiries or investigations as appropriate
+
+### RA and KRA/KRO Representations and Warranties
+
+#### RA Obligations
 
 An RA that performs registration functions as described in this policy must comply with the stipulations of this policy, and comply with a CPS approved by the FPKIPA for use with this policy.
 An RA who is found to have acted in a manner inconsistent with these obligations is subject to revocation of RA responsibilities.
@@ -3989,7 +4669,70 @@ An RA supporting this policy must conform to the stipulations of this document, 
 
 - Ensuring that obligations are imposed on Subscribers in accordance with Section 9.6.3, and that Subscribers are informed of the consequences of not complying with those obligations.
 
-### Subscriber Representations and Warranties
+#### KRA Obligations
+
+KRAs that submit requests as described in this policy must comply with the stipulations of this policy and the applicable CPS/KRPS.
+In particular, the following stipulations apply:
+
+- KRAs must keep a copy of this policy and the applicable CPS/KRPS.
+
+- KRAs must protect subscribers’ escrowed keys from unauthorized disclosure, including the encrypted files and associated decryption keys.
+
+- KRAs must protect all information associated with key recovery, including the KRA’s own key(s), that could be used to recover subscribers’ escrowed keys.
+
+- KRAs must release Subscribers’ escrowed keys only for properly authenticated and authorized requests from Requestor.
+
+- KRAs may rely upon the KROs for authentication and verification of the identity and authority of the Requestor.
+However, KRAs must also authenticate the identity of the Requestor when the Requestor digital signature is available.
+
+- KRAs must authenticate the KROs as described in Section 3.5.4.
+
+- KRAs must validate the authorization of the KRO by ensuring that the KRO is an authorized KRO for the Subscriber for whom key recovery has been requested.
+
+- KRAs must protect all information regarding all occurrences of key recovery.
+
+- KRAs must communicate knowledge of a recovery process only to the KRO and Requestor involved in the key recovery.
+
+- KRAs must not communicate any information concerning a key recovery to the Subscriber except when the Subscriber is the Requestor.
+
+- KRAs must monitor KRO activity for patterns of potentially anomalous behavior as indicators of possible problems in the infrastructure, and initiate inquiries or investigations as appropriate.
+
+#### KRO Obligations
+
+A KRO initiates a key recovery request for a Requestor.
+When using the services of a KRO, the Requestor is generally a third party, but this policy does not preclude the Subscriber from seeking the assistance of a KRO to recover the Subscriber’s private key.
+
+- The KRO must protect Subscribers’ recovered keys from compromise.
+
+- After providing the Requestor with the encrypted key, the KRO must destroy the copy of the key in his/her system.
+
+- The KRO must request the Subscriber’s keys only upon receipt of a request from an authorized Requestor.
+
+- The KRO, as an intermediary for the KRA, must validate the identity of any Requestor seeking a key recovery.
+
+- When the Requestor is authenticated on the basis of digital signature, the KRO must forward the Requestor’s digitally signed object to the KRA in a form verifiable by the KRA.
+
+- In the case of persons other than the Subscriber seeking a key recovery, the KRO must ensure that the Requestor has the authority to request the Subscriber’s private decryption key.
+
+- The KRO, as an intermediary for the KRA, must validate the authorization for the request, to include consultation with legal counsel when appropriate.
+
+- The KRO must protect all information associated with key recovery, including the KRO’s own private key(s), that could be used to obtain the Subscriber's recovered private decryption key(s).
+
+- The KRO must protect all information regarding all occurrences of key recovery.
+
+- The KRO must communicate knowledge of any recovery process only to the Requestor
+
+- The KRO must not communicate any information concerning a key recovery to the Subscriber except when the Subscriber is the Requestor.
+
+- The KRO must accurately represent himself when requesting key recovery services.
+
+- The KRO must keep records of all recovery requests and disposition, including acknowledgement of receipt by the Requestor.
+
+If an Issuing Organization chooses not to implement the KRO role, then these obligations become the responsibility of the KRA in addition to the obligations in Section 9.6.2.2 above.
+
+### Subscriber and Data Decryption Server Representations and Warranties
+
+#### Subscriber Representations and Warranties
 
 A Subscriber (or human sponsor for device certificates) must be required to sign a document containing the requirements the Subscriber must meet respecting protection of the private key and use of the certificate before being issued the certificate.
 Wherever possible, Subscriber documents must be digitally signed.
@@ -4005,7 +4748,27 @@ Such notification must be made directly or indirectly through mechanisms consist
 
 - Abide by all the terms, conditions, and restrictions levied on the use of their private key(s) and certificate(s).
 
+- Subscribers must provide accurate identification and authentication information during key recovery requests.
+
+- When the Subscriber is notified that his or her escrowed key has been recovered, the Subscriber must determine whether revocation of the public key certificate associated with the recovered key is necessary.
+The Subscriber must request the revocation, if necessary.
+
 If the human sponsor for a device is not physically located near the sponsored device, and/or does not have sufficient administrative privileges on the sponsored device to protect the device’s private key and ensure that the device’s certificate is only used for authorized purposes, the device sponsor may delegate these responsibilities to an authorized administrator for the device.
+
+#### Data Decryption Server Representations and Warranties
+
+Prior to the beginning of the operation of a DDS, the Issuing Organization must formally acknowledge and agree to the obligations described here by signing an appropriate document.
+
+- The DDS must protect Subscribers’ recovered key(s) from compromise.
+The DDS must use a combination of computer security, cryptographic, network security, physical security, personnel security, and procedural security controls to protect their keys and recovered subscribers’ keys.
+
+- The DDS must destroy Subscribers’ keys when no longer required (i.e., when the data has been recovered).
+
+- The DDS must request the Subscriber’s escrowed key(s) only upon receiving a request to decrypt subscriber data from an authenticated authorized Enterprise system (e.g., an e-mail Server)
+
+- The DDS must use the Subscriber’s recovered keys only to recover Subscriber’s data requested from an authenticated authorized Enterprise system
+
+The DDS must provide accurate identification and authentication information at the same or higher assurance level as required for issuing new PKI certificates at the assurance level of the key being requested.
 
 ### Relying Parties Representations and Warranties
 
@@ -4014,7 +4777,35 @@ The relying party decides, pursuant to its own policies, what steps to take.
 
 ### Representations and Warranties of Other Participants
 
-None.
+Third-party key recovery Requestors must formally acknowledge and agree to the obligations described here, prior to receiving a recovered key:
+
+- Requestor must protect Subscribers’ recovered key(s) from compromise.
+Requestor must use a combination of computer security, cryptographic, network security, physical security, personnel security, and procedural security controls to protect their keys and recovered Subscribers’ keys.
+
+- Third-Party Requestor must destroy Subscribers’ keys when no longer required (i.e., when the data has been recovered).
+
+- Requestor must request and use the Subscriber’s escrowed key(s) only to recover Subscriber’s data they are authorized to access.
+
+- Requestor must accurately represent themselves to all entities during any key recovery service.
+
+- When the request is made, the Requestor must provide accurate identification and authentication information at least to the same level required for issuing new PKI certificates at the level of the key being requested (e.g., the Requestor sends a digitally signed request using the credential issued by the Entity PKI at the same or higher assurance level as the key being recovered).
+
+- The Third-Party Requestor must protect information concerning each key recovery operation.
+
+- The Third-Party Requestor must communicate information concerning the recovery to the Subscriber when appropriate as determined by the reason for the recovery.
+The decision to notify the Subscriber must be based on the law and the Issuing Organization’s policies and procedures for third party information access.
+
+- In the event that the Third-Party Requestor notifies the Subscriber of a key recovery, the Requestor must consult with the Subscriber to determine whether or not the recovery circumstances warrant revoking the associated public key certificate.
+
+- As a condition of receiving a recovered key, a Requestor must agree to follow the law and the Issuing Organization’s policies relating to protection and release of the recovered key.
+
+- Upon receipt of the recovered key(s), the Third-Party Requestor must sign an attestation to the effect:
+
+> “I hereby state that I have legitimate and official need to recover this key in order to obtain (recover) the encrypted data that I have authorization to access.
+I acknowledge receipt of a recovered encryption key associated with the Subscriber identified here \[Subscriber Name\].
+I certify that I have accurately identified myself to the KRO, and truthfully described all reasons that I require access to data protected by the recovered key.
+I acknowledge my responsibility to use this recovered key only for the stated purposes, to protect it from further exposure, and to destroy all key materials or return them to the KRO when no longer needed.
+I understand that I am bound by \[Issuing Organization\] policies, applicable laws and Federal regulations concerning the protection of the recovered key and any data recovered using the key.”
 
 ## Disclaimers of Warranties
 
@@ -4290,101 +5081,97 @@ u>https://csrc.nist.gov/publications/detail/fips/140/2/final</u></a></td>
 <a href="https://csrc.nist.gov/publications/detail/fips/201/2/final"><
 u>https://csrc.nist.gov/publications/detail/fips/201/2/final</u></a></td>
 </tr>
-</tbody>
-</table>
-
-<table>
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 83%" />
-</colgroup>
-<tbody>
-<tr class="odd">
+<tr class="even">
 <td>ITMRA</td>
 <td><p>40 U.S.C. 1452, Information Technology Management Reform Act of 1996.</p>
 <p><a href="https://govinfo.library.unt.edu/npr/library/misc/itref.html"><
 u>https://govinfo.library.unt.edu/npr/library/misc/itref.html</u></a></p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>NS4009</td>
 <td>NSTISSI 4009, National Information Systems Security Glossary, January 1999.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>PACS</td>
 <td><em>Technical Implementation Guidance: Smart Card Enabled Physical Access Control Systems</em>, Version 2.3, The Government Smart Card Interagency Advisory Board’s Physical Security Interagency Interoperability Working Group, December 20, 2005.<br />
 <a href="https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/TIG_SCEPACS_v2.3.pdf"><mark><u>https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/TIG_SCEPACS_v2.3.pdf</u></mark></a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>PIV-I Issuers</td>
 <td><p>Personal Identity Verification Interoperability for Issuers</p>
 <p><a href="https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/piv-i-for-issuers.pdf"><
 u>https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/piv-i-for-issuers.pdf</u></a></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>PIV-I Profile</td>
 <td><p>X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards</p>
 <p><u>https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-x509-cert-profiles-pivi.pdf</u></p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>PKCS#1</td>
 <td>Jakob Jonsson and Burt Kaliski, Public-Key Cryptography Standards (PKCS) #1: RSA Cryptography Specifications Version 2.1, RFC 3447, February 2003.<br />
 <a href="http://www.ietf.org/rfc/rfc3447.txt"><
 u>http://www.ietf.org/rfc/rfc3447.txt</u></a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>PKCS#12</td>
 <td>PKCS #12: Personal Information Exchange Syntax v1.1 July 2014. <a href="https://tools.ietf.org/html/rfc7292"><u>https://tools.ietf.org/html/rfc7292</u></a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>RFC 2585</td>
 <td>Internet X.509 Public Key Infrastructure: Operational Protocols: FTP and HTTP, Russel Housley and Paul Hoffman, May 1999.<br />
 <a href="https://www.ietf.org/rfc/rfc2585.txt"><
 u>https://www.ietf.org/rfc/rfc2585.txt</u></a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>RFC 3647</td>
 <td>Certificate Policy and Certification Practices Framework, Chokhani and Ford, Sabett, Merrill, and Wu, November 2003.<br />
 <a href="http://www.ietf.org/rfc/rfc3647.txt"><
 u>http://www.ietf.org/rfc/rfc3647.txt</u></a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>RFC 4122</td>
 <td>A Universally Unique IDentifier (UUID) URN Namespace, Paul J. Leach, Michael Mealling, and Rich Salz, July 2005.<br />
 <a href="http://www.ietf.org/rfc/rfc4122.txt"><
 u>http://www.ietf.org/rfc/rfc4122.txt</u></a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>RFC 5280</td>
 <td><p>Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile.</p>
 <p><u><a href="https://www.ietf.org/rfc/rfc5280.txt">https://www.ietf.org/rfc/rfc5280.txt</a></u></p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>RFC 5322</td>
 <td><p>Internet Message Format</p>
 <p><a href="http://www.ietf.org/rfc/rfc5322.txt"><
 u>http://www.ietf.org/rfc/rfc5322.txt</u></a></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>RFC 6960</td>
 <td><p>X.509 Internet Public Key Infrastructure Online Certificate Status Protocol – OCSP.</p>
 <p><a href="https://tools.ietf.org/html/rfc6960"><u>https://tools.ietf.org/html/rfc6960</u></a></p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>RFC 8551</td>
 <td>Secure/Multipurpose Internet Mail Extensions (S/MIME) Version 4.0 Message Specification, J. Schaad, B. Ramsdell, S. Turner, April 2019.<br />
 <a href="https://tools.ietf.org/rfc/rfc8551.txt"><u>https://tools.ietf.org/rfc/rfc8551.txt</u></a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>SP 800-37</td>
 <td>Guide for Applying the Risk Management Framework to Federal Information Systems: A Security Life Cycle Approach, NIST Special Publication 800-37, Revision 2, December2018.<br />
 <a href="https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final"><
 u>https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final</u></a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>SP 800-56A</td>
 <td><p>Recommendation for Pair-Wise Key Establishment Schemes Using Discrete Logarithm Cryptography, NIST Special Publication 800-56A</p>
 <p><a href="https://csrc.nist.gov/publications/detail/sp/800-56a/rev-3/final"><
 u>https://csrc.nist.gov/publications/detail/sp/800-56a/rev-3/final</u></a></p></td>
+</tr>
+<tr class="even">
+<td>SP 800-57</td>
+<td>Recommendation for Key Management: Part 1- General, NIST Special Publication 800-57 Part 1 Revision 5, May 2020<br />
+<a href="https://csrc.nist.gov/publications/detail/sp/800-57-part-1/rev-5/final">https://csrc.nist.gov/publications/detail/sp/800-57-part-1/rev-5/final</a></td>
 </tr>
 <tr class="odd">
 <td>SP 800-63-3</td>
@@ -4433,12 +5220,14 @@ u>https://csrc.nist.gov/publications/detail/sp/800-157/final</u></a></td>
 
 |         |                                                         |
 |---------|---------------------------------------------------------|
+| AIA     | Authority Information Access                            |
 | CA      | Certification Authority                                 |
 | CHUID   | Card Holder Unique Identifier                           |
 | CP      | Certificate Policy                                      |
 | CPS     | Certification Practice Statement                        |
 | CRL     | Certificate Revocation List                             |
 | CSOR    | Computer Security Objects Registry                      |
+| DDS     | Data Decryption Server                                  |
 | DN      | Distinguished Name                                      |
 | DPCI    | Derived PIV Credential Issuer                           |
 | ECDSA   | Elliptic Curve Digital Signature Algorithm              |
@@ -4450,8 +5239,11 @@ u>https://csrc.nist.gov/publications/detail/sp/800-157/final</u></a></td>
 | HTTP    | Hypertext Transfer Protocol                             |
 | IETF    | Internet Engineering Task Force                         |
 | IP      | Internet Protocol                                       |
-| KRP     | Key Recovery Policy                                     |
+| KED     | Key Escrow Database                                     |
+| KRA     | Key Recovery Agent                                      |
+| KRO     | Key Recovery Officer                                    |
 | KRPS    | Key Recovery Practice Statement                         |
+| KRS     | Key Recovery System                                     |
 | LDAP    | Lightweight Directory Access Protocol                   |
 | ISO     | International Organization for Standardization          |
 | ISSO    | Information Systems Security Officer                    |
@@ -4486,98 +5278,445 @@ u>https://csrc.nist.gov/publications/detail/sp/800-157/final</u></a></td>
 | VME     | Virtual Machine Environment                             |
 | WWW     | World Wide Web                                          |
 
+# 
+
 # Appendix D: Glossary
 
-|                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|-------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Access                                                      | Ability to make use of any information system (IS) resource. \[NS4009\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Access Control                                              | Process of granting access to information system resources only to authorized users, programs, processes, or other systems. \[NS4009\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Accreditation                                               | Formal declaration by a Designated Approving Authority that an Information System is approved to operate in a particular security mode using a prescribed set of safeguards at an acceptable level of risk. \[NS4009\]                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Activation Data                                             | Private data, other than keys, that are required to access cryptographic modules (i.e., unlock private keys for signing or decryption events).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Applicant                                                   | The Subscriber is sometimes also called an "Applicant" after applying to a certification authority for a certificate, but before the certificate issuance procedure is completed. \[ABADSG footnote 32\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Archive                                                     | Long-term, physically separate storage.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Audit                                                       | Independent review and examination of records and activities to assess the adequacy of system controls, to ensure compliance with established policies and operational procedures, and to recommend necessary changes in controls, policies, or procedures. \[NS4009\]                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Audit Data                                                  | Chronological record of system activities to enable the reconstruction and examination of the sequence of events and changes in an event. \[NS4009, "audit trail"\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Authenticate                                                | To confirm the identity of an entity when that identity is presented.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Authentication                                              | Security measure designed to establish the validity of a transmission, message, or originator, or a means of verifying an individual's authorization to receive specific categories of information. \[NS4009\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Backup                                                      | Copy of files and programs made to facilitate recovery if necessary. \[NS4009\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Binding                                                     | Process of associating two related elements of information. \[NS4009\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Biometric                                                   | A physical or behavioral characteristic of a human being.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Certificate                                                 | A digital representation of information which at least (1) identifies the certification authority issuing it, (2) names or identifies its Subscriber, (3) contains the Subscriber's public key, (4) identifies its operational period, and (5) is digitally signed by the certification authority issuing it. \[ABADSG\]. As used in this CP, the term “certificate” refers to X.509 certificates that expressly reference the OID of this CP in the certificatePolicies extension.                                                                                                                                                                                                |
-| Certification Authority (CA)                                | An authority trusted by one or more users to issue and manage X.509 public key certificates and CRLs.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| CA Facility                                                 | The collection of equipment, personnel, procedures and structures that are used by a certification authority to perform certificate issuance and revocation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Certification Authority Software                            | Key management and cryptographic software used to manage certificates issued to Subscribers.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Certificate Policy (CP)                                     | A certificate policy is a specialized form of administrative policy tuned to electronic transactions performed during certificate management. A certificate policy addresses all aspects associated with the generation, production, distribution, accounting, compromise recovery and administration of digital certificates. Indirectly, a certificate policy can also govern the transactions conducted using a communications system protected by a certificate-based security system. By controlling critical certificate extensions, such policies and associated enforcement technology can support provision of the security services required by particular applications. |
-| Certification Practice Statement (CPS)                      | A statement of the practices that a CA employs in issuing, suspending, revoking, and renewing certificates and providing access to them, in accordance with specific requirements (i.e., requirements specified in this CP, or requirements specified in a contract for services).                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Certificate-Related Information                             | Information, such as a Subscriber's postal address, that is not included in a certificate. May be used by a CA managing certificates.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Certificate Revocation List (CRL)                           | A list maintained by a certification authority of the certificates that it has issued that are revoked prior to their stated expiration date.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Certificate Status Server (CSS)                             | A trusted entity that provides on-line verification to a relying party of a subject certificate's revocation status.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Client (application)                                        | A system entity, usually a computer process acting on behalf of a human user that makes use of a service provided by a server.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Compromise                                                  | Disclosure of information to unauthorized persons, or a violation of the security policy of a system in which unauthorized intentional or unintentional disclosure, modification, destruction, or loss of an object may have occurred. \[NS4009\]                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Computer Security Objects Registry (CSOR)                   | Computer Security Objects Registry operated by the National Institute of Standards and Technology.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Confidentiality                                             | Assurance that information is not disclosed to unauthorized entities or processes. \[NS4009\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Cross-Certificate                                           | A certificate used to establish a trust relationship between two certification authorities.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Cryptographic Module                                        | The set of hardware, software, firmware, or some combination thereof that implements cryptographic logic or processes, including cryptographic algorithms, and is contained within the cryptographic boundary of the module. \[FIPS 140\]                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Data Integrity                                              | Assurance that the data are unchanged from creation to reception.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Device                                                      | A non-person entity, i.e., a piece of hardware or a software application                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Digital Signature                                           | The result of a transformation of a message by means of a cryptographic system using keys such that a relying party can determine: (1) whether the transformation was created using the private key that corresponds to the public key in the signer’s digital certificate; and (2) whether the message has been altered since the transformation was made.                                                                                                                                                                                                                                                                                                                        |
-| Encryption Certificate                                      | A certificate containing a public key that is used to encrypt electronic messages, files, documents, or data transmissions, or to establish or exchange a session key for these same purposes.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| FPKI Management Authority (FPKIMA)                          | The Federal Public Key Infrastructure Management Authority is the organization responsible for operating the Federal Common Policy Certification Authority.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Federal Public Key Infrastructure Policy Authority (FPKIPA) | The FPKIPA is a Federal Government body responsible for setting, implementing, and administering policy decisions regarding the Federal PKI Architecture.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Firewall                                                    | Gateway that limits access between networks in accordance with local security policy. \[NS4009\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Hypervisor                                                  | Computer software, firmware or hardware that creates and runs virtual machines. A [hypervisor](https://en.wikipedia.org/wiki/Hypervisor) uses [native execution](https://en.wikipedia.org/wiki/Native_code) to share and manage hardware, allowing for multiple environments which are isolated from one another, yet exist on the same physical machine. Also known as an isolation kernel or virtual machine monitor.                                                                                                                                                                                                                                                            |
-| Information Systems Security Officer (ISSO)                 | Person responsible to the Designated Approving Authority for ensuring the security of an information system throughout its life-cycle, from design through disposal. \[NS4009\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Integrity                                                   | Protection against unauthorized modification or destruction of information. \[NS4009\]. A state in which information has remained unaltered from the point it was produced by a source, during transmission, storage, and eventual receipt by the destination.                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Intellectual Property                                       | Useful artistic, technical, and/or industrial information, knowledge or ideas that convey ownership and control of tangible or virtual usage and/or representation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Intermediate CA                                             | A CA that is subordinate to another CA, and has a CA subordinate to itself.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Key Escrow                                                  | A deposit of the private key of a Subscriber and other pertinent information pursuant to an escrow agreement or similar contract binding upon the Subscriber, the terms of which require one or more agents to hold the Subscriber's private key for the benefit of the Subscriber, an employer, or other party, upon provisions set forth in the agreement. \[adapted from ABADSG, "Commercial key escrow service"\]                                                                                                                                                                                                                                                              |
-| Key Exchange                                                | The process of exchanging public keys in order to establish secure communications.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Key Generation Material                                     | Random numbers, pseudo-random numbers, and cryptographic parameters used in generating cryptographic keys.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Key Pair                                                    | Two mathematically related keys having the properties that (1) one (public) key can be used to encrypt a message that can only be decrypted using the other (private) key, and (2) even knowing the public key, it is computationally infeasible to discover the private key.                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Key Recovery Policy (KRP)                                   | A key recovery policy is a specialized form of administrative policy tuned to the protection and recovery of key management private keys (i.e. decryption keys) held in escrow. A key recovery policy addresses all aspects associated with the storage and recovery of key management certificates.                                                                                                                                                                                                                                                                                                                                                                               |
-| Key Recovery Practices Statement (KRPS)                     | A statement of the practices that a Key Recovery System employs in protecting and recovering key management private keys, in accordance with specific requirements (i.e., requirements specified in the KRP).                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Modification (of a certificate)                             | The act or process by which data items bound in an existing public key certificate are changed by issuing a new certificate.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Mutual Authentication                                       | Occurs when parties at both ends of a communication activity authenticate each other (see authentication).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| National Security System                                    | Any telecommunications or information system operated by the United States Government, the function, operation, or use of which involves intelligence activities; involves cryptologic activities related to national security; involves command and control of military forces; involves equipment that is an integral part of a weapon or weapons system; or is critical to the direct fulfillment of military or intelligence missions, but does not include a system that is to be used for routine administrative and business applications (including payroll, finance, logistics, and personnel management applications). \[ITMRA\]                                         |
-| Network Guard                                               | An enclave boundary protection device that controls access between a local area network that an enterprise system has a requirement to protect, and an external network that is outside the control of the enterprise system, with a high degree of assurance.                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Non-Repudiation                                             | Assurance that the sender is provided with proof of delivery and that the recipient is provided with proof of the sender's identity so that neither can later deny having processed the data. \[NS4009\] Technical non-repudiation refers to the assurance a relying party has that if a public key is used to validate a digital signature, that signature had to have been made by the corresponding private signature key.                                                                                                                                                                                                                                                      |
-| Object Identifier (OID)                                     | A specialized formatted number that is registered with an internationally recognized standards organization, the unique alphanumeric/numeric identifier registered under the ISO registration standard to reference a specific object or object class. In the Federal PKI, OIDS are used to uniquely identify certificate policies and cryptographic algorithms.                                                                                                                                                                                                                                                                                                                   |
-| Offline CA                                                  | An offline certification authority is a certification authority isolated from network access, and is often kept in a powered-down state.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Out-of-Band                                                 | Communication between parties utilizing a means or method that differs from the current method of communication (e.g., one party uses U.S. Postal Service mail to communicate with another party where current communication is occurring on-line).                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Physically Isolated Network                                 | A network that is not connected to entities or systems outside a physically controlled space.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| PKI Sponsor                                                 | Fills the role of a Subscriber for non-human system components that are named as public key certificate subjects, and is responsible for meeting the obligations of Subscribers as defined throughout this CP.                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Policy Management Authority (PMA)                           | The individual or group that is responsible for the creation and maintenance of Certificate Policies and Certification Practice Statements, and for ensuring that all Entity PKI components (e.g., CAs, CSSs, Card Management Systems, RAs) are audited and operated in compliance with the entity PKI CP. The PMA evaluates non-domain policies for acceptance within the domain, and generally oversees and manages the PKI certificate policies.  For the Common Policy, the PMA is the FPKIPA.                                                                                                                                                                                 |
-| Privacy                                                     | Restricting access to Subscriber or relying party information in accordance with federal law.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Private Key                                                 | \(1\) The key of a signature key pair used to create a digital signature. (2) The key of an encryption key pair that is used to decrypt confidential information. In both cases, this key must be kept secret.                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Public Key                                                  | \(1\) The key of a signature key pair used to validate a digital signature. (2) The key of an encryption key pair that is used to encrypt confidential information. In both cases, this key is normally made publicly available in the form of a digital certificate.                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Public Key Infrastructure (PKI)                             | A set of policies, processes, server platforms, software, and workstations used for the purpose of administering certificates and public/private key pairs, including the ability to issue, maintain, and revoke public key certificates.                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Registration Authority (RA)                                 | An entity that is responsible for identification and authentication of certificate subjects, but that does not sign or issue certificates (i.e., a Registration Authority is delegated certain tasks on behalf of an authorized CA).                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Re-key (a certificate)                                      | To change the value of a cryptographic key that is being used in a cryptographic system application; this normally entails issuing a new certificate that contains the new public key.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Relying Party                                               | A person or entity who has received information that includes a certificate and a digital signature verifiable with reference to a public key listed in the certificate, and is in a position to rely on them.                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Renew (a certificate)                                       | The act or process of extending the validity of the data binding asserted by a public key certificate by issuing a new certificate.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Repository                                                  | A system containing data relating to certificates or revocation data as specified in this CP. May refer to a directory, web server, or server which only hosts pre-generated OCSP responses.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Revoke a Certificate                                        | To prematurely end the operational period of a certificate effective at a specific date and time.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Risk                                                        | An expectation of loss expressed as the probability that a particular threat will exploit a particular vulnerability with a particular harmful result.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Risk Tolerance                                              | The level of risk an entity is willing to assume in order to achieve a potential desired result.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Root CA                                                     | In a hierarchical PKI, the CA whose public key serves as the most trusted datum (i.e., the beginning of trust paths) for a security domain.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Server                                                      | A system entity that provides a service in response to requests from clients.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Signature Certificate                                       | A public key certificate that contains a public key intended for verifying digital signatures rather than encrypting data or performing any other cryptographic functions.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Structural Container                                        | An organizational unit attribute included in a distinguished name solely to support local directory requirements, such as differentiation between Human Subscribers and devices.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Subordinate CA                                              | In a hierarchical PKI, a CA whose certificate signature key is certified by another CA, and whose activities are constrained by that other CA. (See superior CA).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Subscriber                                                  | A Subscriber is an entity that (1) is the subject named or identified in a certificate issued to that entity, (2) holds a private key that corresponds to the public key listed in the certificate, and (3) does not itself issue certificates to another party. This includes, but is not limited to, an individual, an application or network device.                                                                                                                                                                                                                                                                                                                            |
-| Superior CA                                                 | In a hierarchical PKI, a CA that has certified the certificate signature key of another CA, and that constrains the activities of that CA. (See subordinate CA).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Supervised Remote Identity Proofing                         | A real-time identity proofing event where the RA/Trusted Agent is not in the same physical location as the Applicant/Subscriber. The RA/Trusted Agent controls a device which is utilized by the Applicant/Subscriber in order to ensure the remote identity proofing process employs physical, technical and procedural measures to provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person identity proofing process. Supervised Remote Identity Proofing must meet the criteria specified in NIST SP 800-63A Section 5.3.3; and must have the capacity to capture an approved biometric.                                    |
-| Threat                                                      | Any circumstance or event with the potential to cause harm to an information system in the form of destruction, disclosure, adverse modification of data, and/or denial of service. \[NS4009\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Trust List                                                  | Collection of Trusted Certificates used by relying parties to authenticate other certificates.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Trusted Agent                                               | Entity authorized to act as a representative of a CA in confirming Subscriber identification during the registration process. Trusted agents do not have automated interfaces with certification authorities.                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Trusted Certificate                                         | A certificate that is trusted by the relying party on the basis of secure and authenticated delivery. The public keys included in trusted certificates are used to start certification paths. Also known as a "trust anchor".                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Trustworthy System                                          | Computer hardware, software, and procedures that: (1) are reasonably secure from intrusion and misuse; (2) provide a reasonable level of availability, reliability, and correct operation; (3) are reasonably suited to performing their intended functions; and (4) adhere to generally accepted security procedures.                                                                                                                                                                                                                                                                                                                                                             |
-| Two-Person Control                                          | Continuous surveillance and control of positive control material at all times by a minimum of two authorized individuals, each capable of detecting incorrect and/or unauthorized procedures with respect to the task being performed and each familiar with established security and safety requirements. \[NS4009\]                                                                                                                                                                                                                                                                                                                                                              |
-| Virtual Machine Environment                                 | An emulation of a computer system (in this case, a CA) that provides the functionality of a physical machine in a platform-independent environment. They provide functionality needed to execute entire operating systems. At this time, allowed VMEs are limited to Hypervisor type virtual environments.  Other technology, such as Docker Containers, is not permitted.                                                                                                                                                                                                                                                                                                         |
-| Zeroize                                                     | A method of erasing electronically stored data by altering the contents of the data storage so as to prevent the recovery of the data. \[FIPS 140\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 70%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Access</td>
+<td>Ability to make use of any information system (IS) resource.
+[NS4009]</td>
+</tr>
+<tr class="even">
+<td>Access Control</td>
+<td>Process of granting access to information system resources only to authorized users, programs, processes, or other systems.
+[NS4009]</td>
+</tr>
+<tr class="odd">
+<td>Accreditation</td>
+<td>Formal declaration by a Designated Approving Authority that an Information System is approved to operate in a particular security mode using a prescribed set of safeguards at an acceptable level of risk.
+[NS4009]</td>
+</tr>
+<tr class="even">
+<td>Activation Data</td>
+<td>Private data, other than keys, that are required to access cryptographic modules (i.e., unlock private keys for signing or decryption events).</td>
+</tr>
+<tr class="odd">
+<td>Applicant</td>
+<td>The Subscriber is sometimes also called an "Applicant" after applying to a certification authority for a certificate, but before the certificate issuance procedure is completed.
+[ABADSG footnote 32]</td>
+</tr>
+<tr class="even">
+<td>Archive</td>
+<td>Long-term, physically separate storage.</td>
+</tr>
+<tr class="odd">
+<td>Audit</td>
+<td>Independent review and examination of records and activities to assess the adequacy of system controls, to ensure compliance with established policies and operational procedures, and to recommend necessary changes in controls, policies, or procedures.
+[NS4009]</td>
+</tr>
+<tr class="even">
+<td>Audit Data</td>
+<td>Chronological record of system activities to enable the reconstruction and examination of the sequence of events and changes in an event.
+[NS4009, "audit trail"]</td>
+</tr>
+<tr class="odd">
+<td>Authenticate</td>
+<td>To confirm the identity of an entity when that identity is presented.</td>
+</tr>
+<tr class="even">
+<td>Authentication</td>
+<td>Security measure designed to establish the validity of a transmission, message, or originator, or a means of verifying an individual's authorization to receive specific categories of information.
+[NS4009]</td>
+</tr>
+<tr class="odd">
+<td>Backup</td>
+<td>Copy of files and programs made to facilitate recovery if necessary.
+[NS4009]</td>
+</tr>
+<tr class="even">
+<td>Binding</td>
+<td>Process of associating two related elements of information.
+[NS4009]</td>
+</tr>
+<tr class="odd">
+<td>Biometric</td>
+<td>A physical or behavioral characteristic of a human being.</td>
+</tr>
+<tr class="even">
+<td>Certificate</td>
+<td>A digital representation of information which at least (1) identifies the certification authority issuing it, (2) names or identifies its Subscriber, (3) contains the Subscriber's public key, (4) identifies its operational period, and (5) is digitally signed by the certification authority issuing it.
+[ABADSG].
+As used in this CP, the term “certificate” refers to X.509 certificates that expressly reference the OID of this CP in the certificatePolicies extension.</td>
+</tr>
+<tr class="odd">
+<td>Certification Authority (CA)</td>
+<td>An authority trusted by one or more users to issue and manage X.509 public key certificates and CRLs.</td>
+</tr>
+<tr class="even">
+<td>CA Facility</td>
+<td>
+The collection of equipment, personnel, procedures and structures that are used by a certification authority to perform certificate issuance and revocation.</td>
+</tr>
+<tr class="odd">
+<td>Certification Authority Software</td>
+<td>Key management and cryptographic software used to manage certificates issued to Subscribers.</td>
+</tr>
+<tr class="even">
+<td>Certificate Policy (CP)</td>
+<td>A certificate policy is a specialized form of administrative policy tuned to electronic transactions performed during certificate management.
+A certificate policy addresses all aspects associated with the generation, production, distribution, accounting, compromise recovery and administration of digital certificates.
+Indirectly, a certificate policy can also govern the transactions conducted using a communications system protected by a certificate-based security system.
+By controlling critical certificate extensions, such policies and associated enforcement technology can support provision of the security services required by particular applications.</td>
+</tr>
+<tr class="odd">
+<td>Certification Practice Statement (CPS)</td>
+<td>A statement of the practices that a CA employs in issuing, suspending, revoking, and renewing certificates and providing access to them, in accordance with specific requirements (i.e., requirements specified in this CP, or requirements specified in a contract for services).</td>
+</tr>
+<tr class="even">
+<td>Certificate-Related Information</td>
+<td>Information, such as a Subscriber's postal address, that is not included in a certificate.
+May be used by a CA managing certificates.</td>
+</tr>
+<tr class="odd">
+<td>Certificate Revocation List (CRL)</td>
+<td>A list maintained by a certification authority of the certificates that it has issued that are revoked prior to their stated expiration date.</td>
+</tr>
+<tr class="even">
+<td>Certificate Status Server (CSS)</td>
+<td>A trusted entity that provides on-line verification to a relying party of a subject certificate's revocation status.</td>
+</tr>
+<tr class="odd">
+<td>Client (application)</td>
+<td>A system entity, usually a computer process acting on behalf of a human user that makes use of a service provided by a server.</td>
+</tr>
+<tr class="even">
+<td>Compromise</td>
+<td>Disclosure of information to unauthorized persons, or a violation of the security policy of a system in which unauthorized intentional or unintentional disclosure, modification, destruction, or loss of an object may have occurred.
+[NS4009]</td>
+</tr>
+<tr class="odd">
+<td>Computer Security Objects Registry (CSOR)</td>
+<td>Computer Security Objects Registry operated by the National Institute of Standards and Technology.</td>
+</tr>
+<tr class="even">
+<td>Confidentiality</td>
+<td>Assurance that information is not disclosed to unauthorized entities or processes.
+[NS4009]</td>
+</tr>
+<tr class="odd">
+<td>Cross-Certificate</td>
+<td>A certificate used to establish a trust relationship between two certification authorities.</td>
+</tr>
+<tr class="even">
+<td>Cryptographic Module</td>
+<td>
+The set of hardware, software, firmware, or some combination thereof that implements cryptographic logic or processes, including cryptographic algorithms, and is contained within the cryptographic boundary of the module.
+[FIPS 140]</td>
+</tr>
+<tr class="odd">
+<td>Data Decryption Server</td>
+<td>An automated system that obtains subscriber private keys from the Key Escrow Database or another Data Decryption Server in order to support decryption of data entering and leaving the Enterprise.
+An example of such data is e-mail.</td>
+</tr>
+<tr class="even">
+<td>Data Integrity</td>
+<td>Assurance that the data are unchanged from creation to reception.</td>
+</tr>
+<tr class="odd">
+<td>Device</td>
+<td>A non-person entity, i.e., a piece of hardware or a software application</td>
+</tr>
+<tr class="even">
+<td>Digital Signature</td>
+<td>
+The result of a transformation of a message by means of a cryptographic system using keys such that a relying party can determine: (1) whether the transformation was created using the private key that corresponds to the public key in the signer’s digital certificate; and (2) whether the message has been altered since the transformation was made.</td>
+</tr>
+<tr class="odd">
+<td>Encryption Certificate</td>
+<td>A certificate containing a public key that is used to encrypt electronic messages, files, documents, or data transmissions, or to establish or exchange a session key for these same purposes.</td>
+</tr>
+<tr class="even">
+<td>FPKI Management Authority (FPKIMA)</td>
+<td>The Federal Public Key Infrastructure Management Authority is the organization responsible for operating the Federal Common Policy Certification Authority.</td>
+</tr>
+<tr class="odd">
+<td>Federal Public Key Infrastructure Policy Authority (FPKIPA)</td>
+<td>The FPKIPA is a Federal Government body responsible for setting, implementing, and administering policy decisions regarding the Federal PKI Architecture.</td>
+</tr>
+<tr class="even">
+<td>Firewall</td>
+<td>Gateway that limits access between networks in accordance with local security policy.
+[NS4009]</td>
+</tr>
+<tr class="odd">
+<td>Hypervisor</td>
+<td>Computer software, firmware or hardware that creates and runs virtual machines.
+A <a href="https://en.wikipedia.org/wiki/Hypervisor">hypervisor</a>
+uses <a href="https://en.wikipedia.org/wiki/Native_code">native execution</a> to share and manage hardware, allowing for multiple environments which are isolated from one another, yet exist on the same physical machine.
+Also known as an isolation kernel or virtual machine monitor.</td>
+</tr>
+<tr class="even">
+<td>Information Systems Security Officer (ISSO)</td>
+<td>Person responsible to the Designated Approving Authority for ensuring the security of an information system throughout its life-cycle, from design through disposal.
+[NS4009]</td>
+</tr>
+<tr class="odd">
+<td>Integrity</td>
+<td>Protection against unauthorized modification or destruction of information. [NS4009].
+A state in which information has remained unaltered from the point it was produced by a source, during transmission, storage, and eventual receipt by the destination.</td>
+</tr>
+<tr class="even">
+<td>Intellectual Property</td>
+<td>Useful artistic, technical, and/or industrial information, knowledge or ideas that convey ownership and control of tangible or virtual usage and/or representation.</td>
+</tr>
+<tr class="odd">
+<td>Intermediate CA</td>
+<td>A CA that is subordinate to another CA, and has a CA subordinate to itself.</td>
+</tr>
+<tr class="even">
+<td>Key Escrow</td>
+<td>A deposit of the private key of a Subscriber and other pertinent information pursuant to an escrow agreement or similar contract binding upon the Subscriber, the terms of which require one or more agents to hold the Subscriber's private key for the benefit of the Subscriber, an employer, or other party, upon provisions set forth in the agreement.
+[adapted from ABADSG, "Commercial key escrow service"]</td>
+</tr>
+<tr class="odd">
+<td>Key Escrow Database (KED)</td>
+<td><p>
+The function, system, or subsystem that maintains the key escrow</p>
+<p>repository and responds to key escrow and key recovery requests</p>
+<p>from one or more Key Recovery Agents, as specified by this</p>
+<p>policy.</p></td>
+</tr>
+<tr class="even">
+<td>Key Exchange</td>
+<td>The process of exchanging public keys in order to establish secure communications.</td>
+</tr>
+<tr class="odd">
+<td>Key Generation Material</td>
+<td>Random numbers, pseudo-random numbers, and cryptographic parameters used in generating cryptographic keys.</td>
+</tr>
+<tr class="even">
+<td>Key Pair</td>
+<td>Two mathematically related keys having the properties that (1) one (public) key can be used to encrypt a message that can only be decrypted using the other (private) key, and (2) even knowing the public key, it is computationally infeasible to discover the private key.</td>
+</tr>
+<tr class="odd">
+<td>Key Recovery</td>
+<td>Production of a copy of an escrowed key and delivery of that key to an authorized requestor.</td>
+</tr>
+<tr class="even">
+<td>Key Recovery Agent (KRA)</td>
+<td>An individual authorized to interface with the key escrow database in conjunction with one or more other key recovery agents) to cause the key escrow database to carry out key recovery requests, as specified by this policy.</td>
+</tr>
+<tr class="odd">
+<td>Key Recovery Official (KRO)</td>
+<td>An individual authorized to authenticate and submit key recovery requests to the Key Recovery Agent on behalf of requestor, as specified by this policy.</td>
+</tr>
+<tr class="even">
+<td>Key Recovery Practices Statement (KRPS)</td>
+<td>A statement of the practices that a Key Recovery System employs in protecting and recovering key management private keys, in accordance with specific requirements (i.e., requirements specified in the CP or KRP).</td>
+</tr>
+<tr class="odd">
+<td>Modification (of a certificate)</td>
+<td>
+The act or process by which data items bound in an existing public key certificate are changed by issuing a new certificate.</td>
+</tr>
+<tr class="even">
+<td>Mutual Authentication</td>
+<td>Occurs when parties at both ends of a communication activity authenticate each other (see authentication).</td>
+</tr>
+<tr class="odd">
+<td>National Security System</td>
+<td>
+Any telecommunications or information system operated by the United States Government, the function, operation, or use of which involves intelligence activities; involves cryptologic activities related to national security; involves command and control of military forces; involves equipment that is an integral part of a weapon or weapons system; or is critical to the direct fulfillment of military or intelligence missions, but does not include a system that is to be used for routine administrative and business applications (including payroll, finance, logistics, and personnel management applications).
+[ITMRA]</td>
+</tr>
+<tr class="even">
+<td>Network Guard</td>
+<td>An enclave boundary protection device that controls access between a local area network that an enterprise system has a requirement to protect, and an external network that is outside the control of the enterprise system, with a high degree of assurance.</td>
+</tr>
+<tr class="odd">
+<td>Non-Repudiation</td>
+<td>Assurance that the sender is provided with proof of delivery and that the recipient is provided with proof of the sender's identity so that neither can later deny having processed the data.
+[NS4009]
+Technical non-repudiation refers to the assurance a relying party has that if a public key is used to validate a digital signature, that signature had to have been made by the corresponding private signature key.</td>
+</tr>
+<tr class="even">
+<td>Object Identifier (OID)</td>
+<td>A specialized formatted number that is registered with an internationally recognized standards organization, the unique alphanumeric/numeric identifier registered under the ISO registration standard to reference a specific object or object class.
+In the Federal PKI, OIDS are used to uniquely identify certificate policies and cryptographic algorithms.</td>
+</tr>
+<tr class="odd">
+<td>Offline CA</td>
+<td>An offline certification authority is a certification authority isolated from network access, and is often kept in a powered-down state.</td>
+</tr>
+<tr class="even">
+<td>Out-of-Band</td>
+<td>Communication between parties utilizing a means or method that differs from the current method of communication (e.g., one party uses U.S. Postal Service mail to communicate with another party where current communication is occurring on-line).</td>
+</tr>
+<tr class="odd">
+<td>Physically Isolated Network</td>
+<td>A network that is not connected to entities or systems outside a physically controlled space.</td>
+</tr>
+<tr class="even">
+<td>PKI Sponsor</td>
+<td>Fills the role of a Subscriber for non-human system components that are named as public key certificate subjects, and is responsible for meeting the obligations of Subscribers as defined throughout this CP.</td>
+</tr>
+<tr class="odd">
+<td>Policy Management Authority (PMA)</td>
+<td>The individual or group that is responsible for the creation and maintenance of Certificate Policies and Certification Practice Statements, and for ensuring that all Entity PKI components (e.g., CAs, CSSs, Card Management Systems, RAs) are audited and operated in compliance with the entity PKI CP.
+The PMA evaluates non-domain policies for acceptance within the domain, and generally oversees and manages the PKI certificate policies.
+For the Common Policy, the PMA is the FPKIPA.</td>
+</tr>
+<tr class="even">
+<td>Privacy</td>
+<td>Restricting access to Subscriber or relying party information in accordance with federal law.</td>
+</tr>
+<tr class="odd">
+<td>Private Key</td>
+<td>(1)
+The key of a signature key pair used to create a digital signature. (2)
+The key of an encryption key pair that is used to decrypt confidential information.
+In both cases, this key must be kept secret.</td>
+</tr>
+<tr class="even">
+<td>Public Key</td>
+<td>(1)
+The key of a signature key pair used to validate a digital signature. (2)
+The key of an encryption key pair that is used to encrypt confidential information.
+In both cases, this key is normally made publicly available in the form of a digital certificate.</td>
+</tr>
+<tr class="odd">
+<td>Public Key Infrastructure (PKI)</td>
+<td>A set of policies, processes, server platforms, software, and workstations used for the purpose of administering certificates and public/private key pairs, including the ability to issue, maintain, and revoke public key certificates.</td>
+</tr>
+<tr class="even">
+<td>Registration Authority (RA)</td>
+<td>
+An entity that is responsible for identification and authentication of certificate subjects, but that does not sign or issue certificates (i.e., a Registration Authority is delegated certain tasks on behalf of an authorized CA).</td>
+</tr>
+<tr class="odd">
+<td>Re-key (a certificate)</td>
+<td>To change the value of a cryptographic key that is being used in a cryptographic system application; this normally entails issuing a new certificate that contains the new public key.</td>
+</tr>
+<tr class="even">
+<td>Relying Party</td>
+<td>A person or entity who has received information that includes a certificate and a digital signature verifiable with reference to a public key listed in the certificate, and is in a position to rely on them.</td>
+</tr>
+<tr class="odd">
+<td>Renew (a certificate)</td>
+<td>
+The act or process of extending the validity of the data binding asserted by a public key certificate by issuing a new certificate.</td>
+</tr>
+<tr class="even">
+<td>Repository</td>
+<td>A system containing data relating to certificates or revocation data as specified in this CP.
+May refer to a directory, web server, or server which only hosts pre-generated OCSP responses.</td>
+</tr>
+<tr class="odd">
+<td>Revoke a Certificate</td>
+<td>To prematurely end the operational period of a certificate effective at a specific date and time.</td>
+</tr>
+<tr class="even">
+<td>Risk</td>
+<td>An expectation of loss expressed as the probability that a particular threat will exploit a particular vulnerability with a particular harmful result.</td>
+</tr>
+<tr class="odd">
+<td>Risk Tolerance</td>
+<td>The level of risk an entity is willing to assume in order to achieve a potential desired result.</td>
+</tr>
+<tr class="even">
+<td>Root CA</td>
+<td>
+In a hierarchical PKI, the CA whose public key serves as the most trusted datum (i.e., the beginning of trust paths) for a security domain.</td>
+</tr>
+<tr class="odd">
+<td>Server</td>
+<td>A system entity that provides a service in response to requests from clients.</td>
+</tr>
+<tr class="even">
+<td>Signature Certificate</td>
+<td>A public key certificate that contains a public key intended for verifying digital signatures rather than encrypting data or performing any other cryptographic functions.</td>
+</tr>
+<tr class="odd">
+<td>Structural Container</td>
+<td>An organizational unit attribute included in a distinguished name solely to support local directory requirements, such as differentiation between Human Subscribers and devices.</td>
+</tr>
+<tr class="even">
+<td>Subordinate CA</td>
+<td>
+In a hierarchical PKI, a CA whose certificate signature key is certified by another CA, and whose activities are constrained by that other CA.
+(See superior CA).</td>
+</tr>
+<tr class="odd">
+<td>Subscriber</td>
+<td>A Subscriber is an entity that (1) is the subject named or identified in a certificate issued to that entity, (2) holds a private key that corresponds to the public key listed in the certificate, and (3) does not itself issue certificates to another party.
+This includes, but is not limited to, an individual, an application or network device.</td>
+</tr>
+<tr class="even">
+<td>Superior CA</td>
+<td>
+In a hierarchical PKI, a CA that has certified the certificate signature key of another CA, and that constrains the activities of that CA.
+(See subordinate CA).</td>
+</tr>
+<tr class="odd">
+<td>Supervised Remote Identity Proofing</td>
+<td>A real-time identity proofing event where the RA/Trusted Agent is not in the same physical location as the Applicant/Subscriber.
+The RA/Trusted Agent controls a device which is utilized by the Applicant/Subscriber in order to ensure the remote identity proofing process employs physical, technical and procedural measures to provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person identity proofing process.
+Supervised Remote Identity Proofing must meet the criteria specified in NIST SP 800-63A Section 5.3.3; and must have the capacity to capture an approved biometric.</td>
+</tr>
+<tr class="even">
+<td>Threat</td>
+<td>
+Any circumstance or event with the potential to cause harm to an information system in the form of destruction, disclosure, adverse modification of data, and/or denial of service.
+[NS4009]</td>
+</tr>
+<tr class="odd">
+<td>Trust List</td>
+<td>Collection of Trusted Certificates used by relying parties to authenticate other certificates.</td>
+</tr>
+<tr class="even">
+<td>Trusted Agent</td>
+<td>Entity authorized to act as a representative of a CA in confirming Subscriber identification during the registration process.
+Trusted agents do not have automated interfaces with certification authorities.</td>
+</tr>
+<tr class="odd">
+<td>Trusted Certificate</td>
+<td>A certificate that is trusted by the relying party on the basis of secure and authenticated delivery.
+The public keys included in trusted certificates are used to start certification paths.
+Also known as a "trust anchor".</td>
+</tr>
+<tr class="even">
+<td>Trustworthy System</td>
+<td>Computer hardware, software, and procedures that: (1) are reasonably secure from intrusion and misuse; (2) provide a reasonable level of availability, reliability, and correct operation; (3) are reasonably suited to performing their intended functions; and (4) adhere to generally accepted security procedures.</td>
+</tr>
+<tr class="odd">
+<td>Two-Person Control</td>
+<td>Continuous surveillance and control of positive control material at all times by a minimum of two authorized individuals, each capable of detecting incorrect and/or unauthorized procedures with respect to the task being performed and each familiar with established security and safety requirements.
+[NS4009]</td>
+</tr>
+<tr class="even">
+<td>Virtual Machine Environment</td>
+<td>An emulation of a computer system (in this case, a CA) that provides the functionality of a physical machine in a platform-independent environment.
+They provide functionality needed to execute entire operating systems.
+At this time, allowed VMEs are limited to Hypervisor type virtual environments.
+Other technology, such as Docker Containers, is not permitted.</td>
+</tr>
+<tr class="odd">
+<td>Zeroize</td>
+<td>A method of erasing electronically stored data by altering the contents of the data storage so as to prevent the recovery of the data.
+[FIPS 140]</td>
+</tr>
+</tbody>
+</table>
 
 [^1]: The minimum requirements associated with supervised remote identity proofing are described in NIST SP 800-63A, *Digital Identity Guidelines: Enrollment and Identity Proofing*, Section 5.3.3. In addition, the supervised remote process must have the capability of capturing an approved biometric.
 
-[^2]:  For the purposes of this policy, the definition of a virtual machine environment does not include cloud-based solutions (e.g. platform-as-a-service) or container-type solutions (e.g. Docker), which are not permitted for any CA operating under this policy.
+[^2]:  For the purposes of this policy, the definition of a virtual machine environment does not include cloud-based solutions (e.g., platform-as-a-service) or container-type solutions (e.g., Docker), which are not permitted for any CA operating under this policy.
 
 [^3]: Content Signing and OCSP Signing certificates are excluded from this requirement.

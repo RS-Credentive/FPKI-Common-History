@@ -8,9 +8,9 @@
 
 **Common Policy Framework**
 
-Version 1.31
+Version 1.32
 
-February 8, 2019
+April 14, 2020
 
 **Signature Page**
 
@@ -251,6 +251,12 @@ Remove the common-public-trusted-serverAuth certificate policy and associated re
 <p><strong>2018-08:</strong>
 Permit retention of private signing key(s) following CA termination effective as of February 8, 2019</p></td>
 </tr>
+<tr class="odd">
+<td>1.32</td>
+<td>April 14, 2020</td>
+<td><strong>2020-01:</strong>
+Add support for federally issued Personal Identity Verification-Interoperable (PIV-I) credentials</td>
+</tr>
 </tbody>
 </table>
 
@@ -299,7 +305,7 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [1.2 Document Name and Identification [2](#document-name-and-identification)](#document-name-and-identification)
 
-[1.3 PKI Participants [3](#pki-participants)](#pki-participants)
+[1.3 PKI Participants [4](#pki-participants)](#pki-participants)
 
 [1.3.1 PKI Authorities [4](#pki-authorities)](#pki-authorities)
 
@@ -311,19 +317,19 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [1.3.1.4 FPKI Management Authority Program Manager [4](#fpki-management-authority-program-manager)](#fpki-management-authority-program-manager)
 
-[1.3.1.5 Policy Management Authority [4](#policy-management-authority)](#policy-management-authority)
+[1.3.1.5 Policy Management Authority [5](#policy-management-authority)](#policy-management-authority)
 
 [1.3.1.6 Certification Authority [5](#certification-authority)](#certification-authority)
 
 [1.3.1.7 Certificate Status Servers [5](#certificate-status-servers)](#certificate-status-servers)
 
-[1.3.2 Registration Authorities [5](#registration-authorities)](#registration-authorities)
+[1.3.2 Registration Authorities [6](#registration-authorities)](#registration-authorities)
 
-[1.3.3 Trusted Agents [5](#trusted-agents)](#trusted-agents)
+[1.3.3 Trusted Agents [6](#trusted-agents)](#trusted-agents)
 
 [1.3.4 Subscribers [6](#subscribers)](#subscribers)
 
-[1.3.5 Relying Parties [6](#relying-parties)](#relying-parties)
+[1.3.5 Relying Parties [7](#relying-parties)](#relying-parties)
 
 [1.3.6 Other Participants [7](#other-participants)](#other-participants)
 
@@ -331,7 +337,7 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [1.4.1 Appropriate Certificate Uses [7](#appropriate-certificate-uses)](#appropriate-certificate-uses)
 
-[1.4.2 Prohibited Certificate Uses [7](#prohibited-certificate-uses)](#prohibited-certificate-uses)
+[1.4.2 Prohibited Certificate Uses [8](#prohibited-certificate-uses)](#prohibited-certificate-uses)
 
 [1.5 Policy Administration [8](#policy-administration)](#policy-administration)
 
@@ -443,11 +449,11 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [4.4.3 Notification of Certificate Issuance by the CA to Other Entities [26](#notification-of-certificate-issuance-by-the-ca-to-other-entities)](#notification-of-certificate-issuance-by-the-ca-to-other-entities)
 
-[4.5 Key Pair and Certificate Usage [27](#key-pair-and-certificate-usage)](#key-pair-and-certificate-usage)
+[4.5 Key Pair and Certificate Usage [26](#key-pair-and-certificate-usage)](#key-pair-and-certificate-usage)
 
-[4.5.1 Subscriber Private Key and Certificate Usage [27](#subscriber-private-key-and-certificate-usage)](#subscriber-private-key-and-certificate-usage)
+[4.5.1 Subscriber Private Key and Certificate Usage [26](#subscriber-private-key-and-certificate-usage)](#subscriber-private-key-and-certificate-usage)
 
-[4.5.2 Relying Party Public key and Certificate Usage [27](#relying-party-public-key-and-certificate-usage)](#relying-party-public-key-and-certificate-usage)
+[4.5.2 Relying Party Public key and Certificate Usage [26](#relying-party-public-key-and-certificate-usage)](#relying-party-public-key-and-certificate-usage)
 
 [4.6 Certificate Renewal [27](#certificate-renewal)](#certificate-renewal)
 
@@ -459,9 +465,9 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [4.6.4 Notification of New Certificate Issuance to Subscriber [27](#notification-of-new-certificate-issuance-to-subscriber)](#notification-of-new-certificate-issuance-to-subscriber)
 
-[4.6.5 Conduct Constituting Acceptance of a Renewal Certificate [28](#conduct-constituting-acceptance-of-a-renewal-certificate)](#conduct-constituting-acceptance-of-a-renewal-certificate)
+[4.6.5 Conduct Constituting Acceptance of a Renewal Certificate [27](#conduct-constituting-acceptance-of-a-renewal-certificate)](#conduct-constituting-acceptance-of-a-renewal-certificate)
 
-[4.6.6 Publication of the Renewal Certificate by the CA [28](#publication-of-the-renewal-certificate-by-the-ca)](#publication-of-the-renewal-certificate-by-the-ca)
+[4.6.6 Publication of the Renewal Certificate by the CA [27](#publication-of-the-renewal-certificate-by-the-ca)](#publication-of-the-renewal-certificate-by-the-ca)
 
 [4.6.7 Notification of Certificate Issuance by the CA to Other Entities [28](#notification-of-certificate-issuance-by-the-ca-to-other-entities-1)](#notification-of-certificate-issuance-by-the-ca-to-other-entities-1)
 
@@ -473,9 +479,9 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [4.7.3 Processing Certificate Re-keying Requests [28](#processing-certificate-re-keying-requests)](#processing-certificate-re-keying-requests)
 
-[4.7.4 Notification of New Certificate Issuance to Subscriber [29](#notification-of-new-certificate-issuance-to-subscriber-1)](#notification-of-new-certificate-issuance-to-subscriber-1)
+[4.7.4 Notification of New Certificate Issuance to Subscriber [28](#notification-of-new-certificate-issuance-to-subscriber-1)](#notification-of-new-certificate-issuance-to-subscriber-1)
 
-[4.7.5 Conduct Constituting Acceptance of a Re-keyed Certificate [29](#conduct-constituting-acceptance-of-a-re-keyed-certificate)](#conduct-constituting-acceptance-of-a-re-keyed-certificate)
+[4.7.5 Conduct Constituting Acceptance of a Re-keyed Certificate [28](#conduct-constituting-acceptance-of-a-re-keyed-certificate)](#conduct-constituting-acceptance-of-a-re-keyed-certificate)
 
 [4.7.6 Publication of the Re-keyed Certificate by the CA [29](#publication-of-the-re-keyed-certificate-by-the-ca)](#publication-of-the-re-keyed-certificate-by-the-ca)
 
@@ -489,7 +495,7 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [4.8.3 Processing Certificate Modification Requests [29](#processing-certificate-modification-requests)](#processing-certificate-modification-requests)
 
-[4.8.4 Notification of New Certificate Issuance to Subscriber [30](#notification-of-new-certificate-issuance-to-subscriber-2)](#notification-of-new-certificate-issuance-to-subscriber-2)
+[4.8.4 Notification of New Certificate Issuance to Subscriber [29](#notification-of-new-certificate-issuance-to-subscriber-2)](#notification-of-new-certificate-issuance-to-subscriber-2)
 
 [4.8.5 Conduct Constituting Acceptance of Modified Certificate [30](#conduct-constituting-acceptance-of-modified-certificate)](#conduct-constituting-acceptance-of-modified-certificate)
 
@@ -499,187 +505,187 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [4.9 Certificate Revocation and Suspension [30](#certificate-revocation-and-suspension)](#certificate-revocation-and-suspension)
 
-[4.9.1 Circumstances for Revocation [31](#circumstances-for-revocation)](#circumstances-for-revocation)
+[4.9.1 Circumstances for Revocation [30](#circumstances-for-revocation)](#circumstances-for-revocation)
 
-[4.9.2 Who Can Request Revocation [32](#who-can-request-revocation)](#who-can-request-revocation)
+[4.9.2 Who Can Request Revocation [31](#who-can-request-revocation)](#who-can-request-revocation)
 
-[4.9.3 Procedure for Revocation Request [32](#procedure-for-revocation-request)](#procedure-for-revocation-request)
+[4.9.3 Procedure for Revocation Request [31](#procedure-for-revocation-request)](#procedure-for-revocation-request)
 
 [4.9.4 Revocation Request Grace Period [32](#revocation-request-grace-period)](#revocation-request-grace-period)
 
 [4.9.5 Time within which CA must Process the Revocation Request [32](#time-within-which-ca-must-process-the-revocation-request)](#time-within-which-ca-must-process-the-revocation-request)
 
-[4.9.6 Revocation Checking Requirements for Relying Parties [33](#revocation-checking-requirements-for-relying-parties)](#revocation-checking-requirements-for-relying-parties)
+[4.9.6 Revocation Checking Requirements for Relying Parties [32](#revocation-checking-requirements-for-relying-parties)](#revocation-checking-requirements-for-relying-parties)
 
-[4.9.7 CRL Issuance Frequency [33](#crl-issuance-frequency)](#crl-issuance-frequency)
+[4.9.7 CRL Issuance Frequency [32](#crl-issuance-frequency)](#crl-issuance-frequency)
 
-[4.9.8 Maximum Latency for CRLs [34](#maximum-latency-for-crls)](#maximum-latency-for-crls)
+[4.9.8 Maximum Latency for CRLs [33](#maximum-latency-for-crls)](#maximum-latency-for-crls)
 
-[4.9.9 On-line Revocation/Status Checking Availability [34](#on-line-revocationstatus-checking-availability)](#on-line-revocationstatus-checking-availability)
+[4.9.9 On-line Revocation/Status Checking Availability [33](#on-line-revocationstatus-checking-availability)](#on-line-revocationstatus-checking-availability)
 
-[4.9.10 On-line Revocation Checking Requirements [35](#on-line-revocation-checking-requirements)](#on-line-revocation-checking-requirements)
+[4.9.10 On-line Revocation Checking Requirements [34](#on-line-revocation-checking-requirements)](#on-line-revocation-checking-requirements)
 
-[4.9.11 Other Forms of Revocation Advertisements Available [35](#other-forms-of-revocation-advertisements-available)](#other-forms-of-revocation-advertisements-available)
+[4.9.11 Other Forms of Revocation Advertisements Available [34](#other-forms-of-revocation-advertisements-available)](#other-forms-of-revocation-advertisements-available)
 
-[4.9.12 Special Requirements Related To Key Compromise [35](#special-requirements-related-to-key-compromise)](#special-requirements-related-to-key-compromise)
+[4.9.12 Special Requirements Related To Key Compromise [34](#special-requirements-related-to-key-compromise)](#special-requirements-related-to-key-compromise)
 
-[4.9.13 Circumstances for Suspension [35](#circumstances-for-suspension)](#circumstances-for-suspension)
+[4.9.13 Circumstances for Suspension [34](#circumstances-for-suspension)](#circumstances-for-suspension)
 
-[4.9.14 Who Can Request Suspension [36](#who-can-request-suspension)](#who-can-request-suspension)
+[4.9.14 Who Can Request Suspension [34](#who-can-request-suspension)](#who-can-request-suspension)
 
-[4.9.15 Procedure for Suspension Request [36](#procedure-for-suspension-request)](#procedure-for-suspension-request)
+[4.9.15 Procedure for Suspension Request [34](#procedure-for-suspension-request)](#procedure-for-suspension-request)
 
-[4.9.16 Limits on Suspension Period [36](#limits-on-suspension-period)](#limits-on-suspension-period)
+[4.9.16 Limits on Suspension Period [34](#limits-on-suspension-period)](#limits-on-suspension-period)
 
-[4.10 Certificate Status Services [36](#certificate-status-services)](#certificate-status-services)
+[4.10 Certificate Status Services [34](#certificate-status-services)](#certificate-status-services)
 
-[4.10.1 Operational Characteristics [36](#operational-characteristics)](#operational-characteristics)
+[4.10.1 Operational Characteristics [34](#operational-characteristics)](#operational-characteristics)
 
-[4.10.2 Service Availability [36](#service-availability)](#service-availability)
+[4.10.2 Service Availability [35](#service-availability)](#service-availability)
 
-[4.10.3 Optional Features [36](#optional-features)](#optional-features)
+[4.10.3 Optional Features [35](#optional-features)](#optional-features)
 
-[4.11 End Of Subscription [36](#end-of-subscription)](#end-of-subscription)
+[4.11 End Of Subscription [35](#end-of-subscription)](#end-of-subscription)
 
-[4.12 Key Escrow and Recovery [36](#key-escrow-and-recovery)](#key-escrow-and-recovery)
+[4.12 Key Escrow and Recovery [35](#key-escrow-and-recovery)](#key-escrow-and-recovery)
 
-[4.12.1 Key Escrow and Recovery Policy and Practices [36](#key-escrow-and-recovery-policy-and-practices)](#key-escrow-and-recovery-policy-and-practices)
+[4.12.1 Key Escrow and Recovery Policy and Practices [35](#key-escrow-and-recovery-policy-and-practices)](#key-escrow-and-recovery-policy-and-practices)
 
-[4.12.2 Session Key Encapsulation and Recovery Policy and Practices [36](#session-key-encapsulation-and-recovery-policy-and-practices)](#session-key-encapsulation-and-recovery-policy-and-practices)
+[4.12.2 Session Key Encapsulation and Recovery Policy and Practices [35](#session-key-encapsulation-and-recovery-policy-and-practices)](#session-key-encapsulation-and-recovery-policy-and-practices)
 
-[5. Facility, Management, and Operational Controls [37](#facility-management-and-operational-controls)](#facility-management-and-operational-controls)
+[5. Facility, Management, and Operational Controls [36](#facility-management-and-operational-controls)](#facility-management-and-operational-controls)
 
-[5.1 Physical Controls [37](#physical-controls)](#physical-controls)
+[5.1 Physical Controls [36](#physical-controls)](#physical-controls)
 
-[5.1.1 Site Location and Construction [37](#site-location-and-construction)](#site-location-and-construction)
+[5.1.1 Site Location and Construction [36](#site-location-and-construction)](#site-location-and-construction)
 
-[5.1.2 Physical Access [37](#physical-access)](#physical-access)
+[5.1.2 Physical Access [36](#physical-access)](#physical-access)
 
-[5.1.2.1 Physical Access for CA Equipment [37](#physical-access-for-ca-equipment)](#physical-access-for-ca-equipment)
+[5.1.2.1 Physical Access for CA Equipment [36](#physical-access-for-ca-equipment)](#physical-access-for-ca-equipment)
 
-[5.1.2.2 Physical Access for RA Equipment [38](#physical-access-for-ra-equipment)](#physical-access-for-ra-equipment)
+[5.1.2.2 Physical Access for RA Equipment [37](#physical-access-for-ra-equipment)](#physical-access-for-ra-equipment)
 
-[5.1.2.3 Physical Access for CSS Equipment [38](#physical-access-for-css-equipment)](#physical-access-for-css-equipment)
+[5.1.2.3 Physical Access for CSS Equipment [37](#physical-access-for-css-equipment)](#physical-access-for-css-equipment)
 
-[5.1.3 Power and Air Conditioning [38](#power-and-air-conditioning)](#power-and-air-conditioning)
+[5.1.3 Power and Air Conditioning [37](#power-and-air-conditioning)](#power-and-air-conditioning)
 
-[5.1.4 Water Exposures [38](#water-exposures)](#water-exposures)
+[5.1.4 Water Exposures [37](#water-exposures)](#water-exposures)
 
-[5.1.5 Fire Prevention and Protection [38](#fire-prevention-and-protection)](#fire-prevention-and-protection)
+[5.1.5 Fire Prevention and Protection [37](#fire-prevention-and-protection)](#fire-prevention-and-protection)
 
-[5.1.6 Media Storage [38](#media-storage)](#media-storage)
+[5.1.6 Media Storage [37](#media-storage)](#media-storage)
 
-[5.1.7 Waste Disposal [39](#waste-disposal)](#waste-disposal)
+[5.1.7 Waste Disposal [38](#waste-disposal)](#waste-disposal)
 
-[5.1.8 Off-Site Backup [39](#off-site-backup)](#off-site-backup)
+[5.1.8 Off-Site Backup [38](#off-site-backup)](#off-site-backup)
 
-[5.2 Procedural Controls [39](#procedural-controls)](#procedural-controls)
+[5.2 Procedural Controls [38](#procedural-controls)](#procedural-controls)
 
-[5.2.1 Trusted Roles [39](#trusted-roles)](#trusted-roles)
+[5.2.1 Trusted Roles [38](#trusted-roles)](#trusted-roles)
 
-[5.2.2 Number of Persons Required per Task [40](#number-of-persons-required-per-task)](#number-of-persons-required-per-task)
+[5.2.2 Number of Persons Required per Task [39](#number-of-persons-required-per-task)](#number-of-persons-required-per-task)
 
-[5.2.3 Identification and Authentication for Each Role [40](#identification-and-authentication-for-each-role)](#identification-and-authentication-for-each-role)
+[5.2.3 Identification and Authentication for Each Role [39](#identification-and-authentication-for-each-role)](#identification-and-authentication-for-each-role)
 
-[5.2.4 Roles Requiring Separation of Duties [40](#roles-requiring-separation-of-duties)](#roles-requiring-separation-of-duties)
+[5.2.4 Roles Requiring Separation of Duties [39](#roles-requiring-separation-of-duties)](#roles-requiring-separation-of-duties)
 
-[5.3 Personnel Controls [40](#personnel-controls)](#personnel-controls)
+[5.3 Personnel Controls [39](#personnel-controls)](#personnel-controls)
 
-[5.3.1 Qualifications, Experience, and Clearance Requirements [40](#qualifications-experience-and-clearance-requirements)](#qualifications-experience-and-clearance-requirements)
+[5.3.1 Qualifications, Experience, and Clearance Requirements [39](#qualifications-experience-and-clearance-requirements)](#qualifications-experience-and-clearance-requirements)
 
-[5.3.2 Background Check Procedures [40](#background-check-procedures)](#background-check-procedures)
+[5.3.2 Background Check Procedures [39](#background-check-procedures)](#background-check-procedures)
 
-[5.3.3 Training Requirements [41](#training-requirements)](#training-requirements)
+[5.3.3 Training Requirements [40](#training-requirements)](#training-requirements)
 
-[5.3.4 Retraining Frequency and Requirements [41](#retraining-frequency-and-requirements)](#retraining-frequency-and-requirements)
+[5.3.4 Retraining Frequency and Requirements [40](#retraining-frequency-and-requirements)](#retraining-frequency-and-requirements)
 
-[5.3.5 Job Rotation Frequency and Sequence [41](#job-rotation-frequency-and-sequence)](#job-rotation-frequency-and-sequence)
+[5.3.5 Job Rotation Frequency and Sequence [40](#job-rotation-frequency-and-sequence)](#job-rotation-frequency-and-sequence)
 
-[5.3.6 Sanctions for Unauthorized Actions [41](#sanctions-for-unauthorized-actions)](#sanctions-for-unauthorized-actions)
+[5.3.6 Sanctions for Unauthorized Actions [40](#sanctions-for-unauthorized-actions)](#sanctions-for-unauthorized-actions)
 
-[5.3.7 Independent Contractor Requirements [41](#independent-contractor-requirements)](#independent-contractor-requirements)
+[5.3.7 Independent Contractor Requirements [40](#independent-contractor-requirements)](#independent-contractor-requirements)
 
-[5.3.8 Documentation Supplied to Personnel [42](#documentation-supplied-to-personnel)](#documentation-supplied-to-personnel)
+[5.3.8 Documentation Supplied to Personnel [41](#documentation-supplied-to-personnel)](#documentation-supplied-to-personnel)
 
-[5.4 Audit Logging Procedures [42](#audit-logging-procedures)](#audit-logging-procedures)
+[5.4 Audit Logging Procedures [41](#audit-logging-procedures)](#audit-logging-procedures)
 
-[5.4.1 Types of Events Recorded [42](#types-of-events-recorded)](#types-of-events-recorded)
+[5.4.1 Types of Events Recorded [41](#types-of-events-recorded)](#types-of-events-recorded)
 
-[5.4.2 Frequency of Processing Log [45](#frequency-of-processing-log)](#frequency-of-processing-log)
+[5.4.2 Frequency of Processing Log [44](#frequency-of-processing-log)](#frequency-of-processing-log)
 
-[5.4.3 Retention Period for Audit Log [46](#retention-period-for-audit-log)](#retention-period-for-audit-log)
+[5.4.3 Retention Period for Audit Log [45](#retention-period-for-audit-log)](#retention-period-for-audit-log)
 
-[5.4.4 Protection of Audit Log [46](#protection-of-audit-log)](#protection-of-audit-log)
+[5.4.4 Protection of Audit Log [45](#protection-of-audit-log)](#protection-of-audit-log)
 
-[5.4.5 Audit Log Backup Procedures [46](#audit-log-backup-procedures)](#audit-log-backup-procedures)
+[5.4.5 Audit Log Backup Procedures [45](#audit-log-backup-procedures)](#audit-log-backup-procedures)
 
-[5.4.6 Audit Collection System (Internal vs. External) [46](#audit-collection-system-internal-vs.-external)](#audit-collection-system-internal-vs.-external)
+[5.4.6 Audit Collection System (Internal vs. External) [45](#audit-collection-system-internal-vs.-external)](#audit-collection-system-internal-vs.-external)
 
-[5.4.7 Notification to Event-Causing Subject [46](#notification-to-event-causing-subject)](#notification-to-event-causing-subject)
+[5.4.7 Notification to Event-Causing Subject [45](#notification-to-event-causing-subject)](#notification-to-event-causing-subject)
 
-[5.4.8 Vulnerability Assessments [46](#vulnerability-assessments)](#vulnerability-assessments)
+[5.4.8 Vulnerability Assessments [45](#vulnerability-assessments)](#vulnerability-assessments)
 
-[5.5 Records Archival [47](#_Toc524699790)](#_Toc524699790)
+[5.5 Records Archival [46](#_Toc37237589)](#_Toc37237589)
 
-[5.5.1 Types of Events Archived [47](#types-of-events-archived)](#types-of-events-archived)
+[5.5.1 Types of Events Archived [46](#types-of-events-archived)](#types-of-events-archived)
 
-[5.5.2 Retention Period for Archive [48](#retention-period-for-archive)](#retention-period-for-archive)
+[5.5.2 Retention Period for Archive [47](#retention-period-for-archive)](#retention-period-for-archive)
 
-[5.5.3 Protection of Archive [48](#protection-of-archive)](#protection-of-archive)
+[5.5.3 Protection of Archive [47](#protection-of-archive)](#protection-of-archive)
 
-[5.5.4 Archive Backup Procedures [49](#archive-backup-procedures)](#archive-backup-procedures)
+[5.5.4 Archive Backup Procedures [48](#archive-backup-procedures)](#archive-backup-procedures)
 
-[5.5.5 Requirements for Time-Stamping of Records [49](#requirements-for-time-stamping-of-records)](#requirements-for-time-stamping-of-records)
+[5.5.5 Requirements for Time-Stamping of Records [48](#requirements-for-time-stamping-of-records)](#requirements-for-time-stamping-of-records)
 
-[5.5.6 Archive Collection System (Internal or External) [49](#archive-collection-system-internal-or-external)](#archive-collection-system-internal-or-external)
+[5.5.6 Archive Collection System (Internal or External) [48](#archive-collection-system-internal-or-external)](#archive-collection-system-internal-or-external)
 
-[5.5.7 Procedures to Obtain and Verify Archive Information [49](#procedures-to-obtain-and-verify-archive-information)](#procedures-to-obtain-and-verify-archive-information)
+[5.5.7 Procedures to Obtain and Verify Archive Information [48](#procedures-to-obtain-and-verify-archive-information)](#procedures-to-obtain-and-verify-archive-information)
 
-[5.6 Key Changeover [49](#key-changeover)](#key-changeover)
+[5.6 Key Changeover [48](#key-changeover)](#key-changeover)
 
-[5.7 Compromise and Disaster Recovery [50](#compromise-and-disaster-recovery)](#compromise-and-disaster-recovery)
+[5.7 Compromise and Disaster Recovery [49](#compromise-and-disaster-recovery)](#compromise-and-disaster-recovery)
 
-[5.7.1 Incident and Compromise Handling Procedures [50](#incident-and-compromise-handling-procedures)](#incident-and-compromise-handling-procedures)
+[5.7.1 Incident and Compromise Handling Procedures [49](#incident-and-compromise-handling-procedures)](#incident-and-compromise-handling-procedures)
 
-[5.7.2 Computing Resources, Software, and/or Data Are Corrupted [50](#computing-resources-software-andor-data-are-corrupted)](#computing-resources-software-andor-data-are-corrupted)
+[5.7.2 Computing Resources, Software, and/or Data Are Corrupted [49](#computing-resources-software-andor-data-are-corrupted)](#computing-resources-software-andor-data-are-corrupted)
 
-[5.7.3 Entity (CA) Private Key Compromise Procedures [51](#entity-ca-private-key-compromise-procedures)](#entity-ca-private-key-compromise-procedures)
+[5.7.3 Entity (CA) Private Key Compromise Procedures [50](#entity-ca-private-key-compromise-procedures)](#entity-ca-private-key-compromise-procedures)
 
-[5.7.4 Business Continuity Capabilities after a Disaster [51](#business-continuity-capabilities-after-a-disaster)](#business-continuity-capabilities-after-a-disaster)
+[5.7.4 Business Continuity Capabilities after a Disaster [50](#business-continuity-capabilities-after-a-disaster)](#business-continuity-capabilities-after-a-disaster)
 
-[5.8 CA or RA Termination [52](#ca-or-ra-termination)](#ca-or-ra-termination)
+[5.8 CA or RA Termination [51](#ca-or-ra-termination)](#ca-or-ra-termination)
 
-[6. Technical Security Controls [53](#technical-security-controls)](#technical-security-controls)
+[6. Technical Security Controls [52](#technical-security-controls)](#technical-security-controls)
 
-[6.1 Key Pair Generation and Installation [53](#key-pair-generation-and-installation)](#key-pair-generation-and-installation)
+[6.1 Key Pair Generation and Installation [52](#key-pair-generation-and-installation)](#key-pair-generation-and-installation)
 
-[6.1.1 Key Pair Generation [53](#key-pair-generation)](#key-pair-generation)
+[6.1.1 Key Pair Generation [52](#key-pair-generation)](#key-pair-generation)
 
-[6.1.1.1 CA Key Pair Generation [53](#ca-key-pair-generation)](#ca-key-pair-generation)
+[6.1.1.1 CA Key Pair Generation [52](#ca-key-pair-generation)](#ca-key-pair-generation)
 
-[6.1.1.2 Subscriber Key Pair Generation [53](#_Toc524699809)](#_Toc524699809)
+[6.1.1.2 Subscriber Key Pair Generation [52](#_Toc37237608)](#_Toc37237608)
 
-[6.1.1.3 CSS Key Pair Generation [53](#_Toc524699810)](#_Toc524699810)
+[6.1.1.3 CSS Key Pair Generation [53](#_Toc37237609)](#_Toc37237609)
 
-[6.1.1.4 PIV Content Signing Key Pair Generation [54](#piv-content-signing-key-pair-generation)](#piv-content-signing-key-pair-generation)
+[6.1.1.4 PIV Content Signing Key Pair Generation [53](#piv-content-signing-key-pair-generation)](#piv-content-signing-key-pair-generation)
 
-[6.1.2 Private Key Delivery to Subscriber [54](#private-key-delivery-to-subscriber)](#private-key-delivery-to-subscriber)
+[6.1.2 Private Key Delivery to Subscriber [53](#private-key-delivery-to-subscriber)](#private-key-delivery-to-subscriber)
 
 [6.1.3 Public Key Delivery to Certificate Issuer [54](#public-key-delivery-to-certificate-issuer)](#public-key-delivery-to-certificate-issuer)
 
-[6.1.4 CA Public Key Delivery to Relying Parties [55](#ca-public-key-delivery-to-relying-parties)](#ca-public-key-delivery-to-relying-parties)
+[6.1.4 CA Public Key Delivery to Relying Parties [54](#ca-public-key-delivery-to-relying-parties)](#ca-public-key-delivery-to-relying-parties)
 
 [6.1.5 Key Sizes [55](#key-sizes)](#key-sizes)
 
-[6.1.6 Public Key Parameters Generation and Quality Checking [57](#public-key-parameters-generation-and-quality-checking)](#public-key-parameters-generation-and-quality-checking)
+[6.1.6 Public Key Parameters Generation and Quality Checking [56](#public-key-parameters-generation-and-quality-checking)](#public-key-parameters-generation-and-quality-checking)
 
-[6.1.7 Key Usage Purposes (as per X.509 v3 Key Usage Field) [57](#key-usage-purposes-as-per-x.509-v3-key-usage-field)](#key-usage-purposes-as-per-x.509-v3-key-usage-field)
+[6.1.7 Key Usage Purposes (as per X.509 v3 Key Usage Field) [56](#key-usage-purposes-as-per-x.509-v3-key-usage-field)](#key-usage-purposes-as-per-x.509-v3-key-usage-field)
 
-[6.2 Private Key Protection and Cryptographic Module Engineering Controls [58](#private-key-protection-and-cryptographic-module-engineering-controls)](#private-key-protection-and-cryptographic-module-engineering-controls)
+[6.2 Private Key Protection and Cryptographic Module Engineering Controls [57](#private-key-protection-and-cryptographic-module-engineering-controls)](#private-key-protection-and-cryptographic-module-engineering-controls)
 
-[6.2.1 Cryptographic Module Standards and Controls [58](#cryptographic-module-standards-and-controls)](#cryptographic-module-standards-and-controls)
+[6.2.1 Cryptographic Module Standards and Controls [57](#cryptographic-module-standards-and-controls)](#cryptographic-module-standards-and-controls)
 
-[6.2.2 Private Key (n out of m) Multi-Person Control [59](#private-key-n-out-of-m-multi-person-control)](#private-key-n-out-of-m-multi-person-control)
+[6.2.2 Private Key (n out of m) Multi-Person Control [58](#private-key-n-out-of-m-multi-person-control)](#private-key-n-out-of-m-multi-person-control)
 
 [6.2.3 Private Key Escrow [59](#private-key-escrow)](#private-key-escrow)
 
@@ -687,59 +693,59 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [6.2.4.1 Backup of CA Private Signature Key [59](#backup-of-ca-private-signature-key)](#backup-of-ca-private-signature-key)
 
-[6.2.4.2 Backup of Subscriber Private Signature Key [60](#backup-of-subscriber-private-signature-key)](#backup-of-subscriber-private-signature-key)
+[6.2.4.2 Backup of Subscriber Private Signature Key [59](#backup-of-subscriber-private-signature-key)](#backup-of-subscriber-private-signature-key)
 
-[6.2.4.3 Backup of Subscriber Private Key Management Key [60](#backup-of-subscriber-private-key-management-key)](#backup-of-subscriber-private-key-management-key)
+[6.2.4.3 Backup of Subscriber Private Key Management Key [59](#backup-of-subscriber-private-key-management-key)](#backup-of-subscriber-private-key-management-key)
 
-[6.2.4.4 Backup of CSS Private Key [60](#backup-of-css-private-key)](#backup-of-css-private-key)
+[6.2.4.4 Backup of CSS Private Key [59](#backup-of-css-private-key)](#backup-of-css-private-key)
 
-[6.2.4.5 Backup of Device Private Keys [60](#backup-of-device-private-keys)](#backup-of-device-private-keys)
+[6.2.4.5 Backup of Device Private Keys [59](#backup-of-device-private-keys)](#backup-of-device-private-keys)
 
-[6.2.4.6 Backup of Common PIV Content Signing Key [60](#backup-of-common-piv-content-signing-key)](#backup-of-common-piv-content-signing-key)
+[6.2.4.6 Backup of Common PIV Content Signing Key [59](#backup-of-common-piv-content-signing-key)](#backup-of-common-piv-content-signing-key)
 
 [6.2.5 Private Key Archival [60](#private-key-archival)](#private-key-archival)
 
 [6.2.6 Private Key Transfer into or from a Cryptographic Module [60](#private-key-transfer-into-or-from-a-cryptographic-module)](#private-key-transfer-into-or-from-a-cryptographic-module)
 
-[6.2.7 Private Key Storage on Cryptographic Module [61](#private-key-storage-on-cryptographic-module)](#private-key-storage-on-cryptographic-module)
+[6.2.7 Private Key Storage on Cryptographic Module [60](#private-key-storage-on-cryptographic-module)](#private-key-storage-on-cryptographic-module)
 
-[6.2.8 Method of Activating Private Key [61](#method-of-activating-private-key)](#method-of-activating-private-key)
+[6.2.8 Method of Activating Private Key [60](#method-of-activating-private-key)](#method-of-activating-private-key)
 
 [6.2.9 Method of Deactivating Private Key [61](#method-of-deactivating-private-key)](#method-of-deactivating-private-key)
 
 [6.2.10 Method of Destroying Private Key [61](#method-of-destroying-private-key)](#method-of-destroying-private-key)
 
-[6.2.11 Cryptographic Module Rating [62](#cryptographic-module-rating)](#cryptographic-module-rating)
+[6.2.11 Cryptographic Module Rating [61](#cryptographic-module-rating)](#cryptographic-module-rating)
 
-[6.3 Other Aspects of Key Pair Management [62](#other-aspects-of-key-pair-management)](#other-aspects-of-key-pair-management)
+[6.3 Other Aspects of Key Pair Management [61](#other-aspects-of-key-pair-management)](#other-aspects-of-key-pair-management)
 
-[6.3.1 Public Key Archival [62](#public-key-archival)](#public-key-archival)
+[6.3.1 Public Key Archival [61](#public-key-archival)](#public-key-archival)
 
-[6.3.2 Certificate Operational Periods and Key Usage Periods [62](#certificate-operational-periods-and-key-usage-periods)](#certificate-operational-periods-and-key-usage-periods)
+[6.3.2 Certificate Operational Periods and Key Usage Periods [61](#certificate-operational-periods-and-key-usage-periods)](#certificate-operational-periods-and-key-usage-periods)
 
 [6.4 Activation Data [62](#activation-data)](#activation-data)
 
 [6.4.1 Activation Data Generation and Installation [62](#activation-data-generation-and-installation)](#activation-data-generation-and-installation)
 
-[6.4.2 Activation Data Protection [63](#activation-data-protection)](#activation-data-protection)
+[6.4.2 Activation Data Protection [62](#activation-data-protection)](#activation-data-protection)
 
-[6.4.3 Other Aspects of Activation Data [63](#_Toc524699842)](#_Toc524699842)
+[6.4.3 Other Aspects of Activation Data [62](#_Toc37237641)](#_Toc37237641)
 
-[6.5 Computer Security Controls [63](#computer-security-controls)](#computer-security-controls)
+[6.5 Computer Security Controls [62](#computer-security-controls)](#computer-security-controls)
 
-[6.5.1 Specific Computer Security Technical Requirements [63](#specific-computer-security-technical-requirements)](#specific-computer-security-technical-requirements)
+[6.5.1 Specific Computer Security Technical Requirements [62](#specific-computer-security-technical-requirements)](#specific-computer-security-technical-requirements)
 
-[6.5.2 Computer Security Rating [65](#computer-security-rating)](#computer-security-rating)
+[6.5.2 Computer Security Rating [64](#computer-security-rating)](#computer-security-rating)
 
-[6.6 Life Cycle Technical Controls [65](#life-cycle-technical-controls)](#life-cycle-technical-controls)
+[6.6 Life Cycle Technical Controls [64](#life-cycle-technical-controls)](#life-cycle-technical-controls)
 
-[6.6.1 System Development Controls [65](#system-development-controls)](#system-development-controls)
+[6.6.1 System Development Controls [64](#system-development-controls)](#system-development-controls)
 
-[6.6.2 Security Management Controls [66](#security-management-controls)](#security-management-controls)
+[6.6.2 Security Management Controls [65](#security-management-controls)](#security-management-controls)
 
-[6.6.3 Life Cycle Security Controls [66](#life-cycle-security-controls)](#life-cycle-security-controls)
+[6.6.3 Life Cycle Security Controls [65](#life-cycle-security-controls)](#life-cycle-security-controls)
 
-[6.7 Network Security Controls [66](#network-security-controls)](#network-security-controls)
+[6.7 Network Security Controls [65](#network-security-controls)](#network-security-controls)
 
 [6.8 Time-Stamping [66](#time-stamping)](#time-stamping)
 
@@ -771,7 +777,7 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [7.2.1 Version Number(s) [69](#version-numbers-1)](#version-numbers-1)
 
-[7.2.2 CRL and CRL Entry Extensions [69](#crl-and-crl-entry-extensions)](#crl-and-crl-entry-extensions)
+[7.2.2 CRL and CRL Entry Extensions [70](#crl-and-crl-entry-extensions)](#crl-and-crl-entry-extensions)
 
 [7.3 OCSP Profile [70](#ocsp-profile)](#ocsp-profile)
 
@@ -847,7 +853,7 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [9.6.2 RA Representations and Warranties [76](#ra-representations-and-warranties)](#ra-representations-and-warranties)
 
-[9.6.3 Subscriber Representations and Warranties [77](#subscriber-representations-and-warranties)](#subscriber-representations-and-warranties)
+[9.6.3 Subscriber Representations and Warranties [76](#subscriber-representations-and-warranties)](#subscriber-representations-and-warranties)
 
 [9.6.4 Relying Parties Representations and Warranties [77](#relying-parties-representations-and-warranties)](#relying-parties-representations-and-warranties)
 
@@ -857,7 +863,7 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [9.8 Limitations of Liability [77](#limitations-of-liability)](#limitations-of-liability)
 
-[9.9 Indemnities [78](#indemnities)](#indemnities)
+[9.9 Indemnities [77](#indemnities)](#indemnities)
 
 [9.10 Term and Termination [78](#term-and-termination)](#term-and-termination)
 
@@ -875,7 +881,7 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [9.12.2 Notification Mechanism and Period [78](#notification-mechanism-and-period)](#notification-mechanism-and-period)
 
-[9.12.3 Circumstances under which OID must be Changed [79](#circumstances-under-which-oid-must-be-changed)](#circumstances-under-which-oid-must-be-changed)
+[9.12.3 Circumstances under which OID must be Changed [78](#circumstances-under-which-oid-must-be-changed)](#circumstances-under-which-oid-must-be-changed)
 
 [9.13 Dispute Resolution Provisions [79](#dispute-resolution-provisions)](#dispute-resolution-provisions)
 
@@ -899,11 +905,13 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [10. Bibliography [80](#bibliography)](#bibliography)
 
-[11. Acronyms and Abbreviations [83](#acronyms-and-abbreviations)](#acronyms-and-abbreviations)
+[11. Acronyms and Abbreviations [84](#acronyms-and-abbreviations)](#acronyms-and-abbreviations)
 
-[12. Glossary [86](#glossary)](#glossary)
+[12. Glossary [87](#glossary)](#glossary)
 
-[13. Acknowledgments [96](#acknowledgments)](#acknowledgments)
+[13. Acknowledgments [97](#acknowledgments)](#acknowledgments)
+
+[Appendix A – PIV and Common PIV Interoperable (Common PIV-I) Comparison [98](#appendix-a-piv-and-common-piv-interoperable-common-piv-i-comparison)](#appendix-a-piv-and-common-piv-interoperable-common-piv-i-comparison)
 
 # 
 
@@ -990,6 +998,9 @@ Certificates issued in accordance with this CP and associated with the Federal C
 | id-fpki-common-piv-contentSigning       | ::= {2 16 840 1 101 3 2 1 3 39} |
 | id-fpki-common-derived-pivAuth          | ::= {2 16 840 1 101 3 2 1 3 40} |
 | id-fpki-common-derived-pivAuth-hardware | ::= {2 16 840 1 101 3 2 1 3 41} |
+| id-fpki-common-pivi-authentication      | ::= {2 16 840 1 101 3 2 1 3 45} |
+| id-fpki-common-pivi-cardAuth            | ::= {2 16 840 1 101 3 2 1 3 46} |
+| id-fpki-common-pivi-contentSigning      | ::= {2 16 840 1 101 3 2 1 3 47} |
 
 Certificates issued to CAs may contain a subset of these OIDs.
 Certificates issued to users, other than devices, to support digitally signed documents or key management may contain either id-fpki-common-policy, id-fpki-common-hardware, or id-fpki-common-High.
@@ -1002,8 +1013,15 @@ Certificates issued to users supporting authentication where the private key is 
 Certificates issued to users, in accordance with NIST SP 800-157, supporting authentication, but not digital signature, where the corresponding private key is not stored on a PIV Card, may contain either id-fpki-common-derived-pivAuth-hardware or id-fpki-common-derived-pivAuth as appropriate.
 The id-fpki-common-piv-contentSigning policy shall only be asserted in certificates issued to devices that sign PIV data objects in accordance with \[FIPS 201\] or \[SP 800-157\].
 
-The requirements associated with id-fpki-common-piv-contentSigning are identical to id-fpki-common-devices
-Hardware except where specifically noted in the text.
+Certificates issued to users supporting authentication where the private key is stored on a Common PIV-I credential and requires user authentication shall contain id-fpki-common-pivi-authentication.
+Certificates issued to users supporting authentication where the private key is stored on a Common PIV-I credential and can be used without user authentication shall contain id-fpki-common-pivi-cardAuth.
+The id-fpki-common-pivi-contentSigning policy shall only be asserted in certificates issued to devices that sign Common PIV-I credential data objects.
+
+The requirements associated with id-fpki-common-pivi-authentication and id-fpki-common-pivi-cardAuth are identical to id-fpki-common-authentication and id-fpki-common-cardAuth, respectively, with the exception of the need for a NACI and associated favorable adjudication.
+For additional comparisons, see Appendix A.
+
+The requirements associated with id-fpki-common-piv-contentSigning and id-fpki-common-pivi-contentSigning are identical to id-fpki-common-devices
+Hardware, except where specifically noted in the text.
 
 ## PKI Participants
 
@@ -1143,16 +1161,16 @@ This policy is intended to support applications involving unclassified informati
 
 Credentials issued under the id-fpki-common-policy and id-fpki-common-derived-pivAuth policies are intended to meet the requirements for Level 3 authentication, as defined by the OMB E‑Authentication Guidance.
 \[E-Auth\]
-Credentials issued under the id-fpki-common-hardware, id-fpki-common-authentication, id-fpki-common-derived-pivAuth-hardware, and id-fpki-common-High policies meet the requirements for Level 4 authentication, as defined by the OMB E-Authentication Guidance.
+Credentials issued under the id-fpki-common-hardware, id-fpki-common-authentication<u>,</u> id-fpki-common-pivi-authentication, id-fpki-common-derived-pivAuth-hardware, and id-fpki-common-High policies meet the requirements for Level 4 authentication, as defined by the OMB E-Authentication Guidance.
 \[E-Auth\]
 
-Credentials issued under the id-fpki-common-piv-contentSigning policy are intended to meet the requirements in FIPS 201 and SP 800-157 as the digital signatory of the PIV Card Holder Unique IDentifier (CHUID) and associated PIV data objects.
+Credentials issued under the id-fpki-common-piv-contentSigning or id-fpki-common-pivi-contentSigning policy are intended to meet the requirements in FIPS 201 and SP 800-157 as the digital signatory of the PIV Card Holder Unique IDentifier (CHUID) and associated PIV data objects.
 
 In addition, this policy may support signature and confidentiality requirements for Federal government processes.
 
 ### Prohibited Certificate Uses
 
-Certificates that assert id-fpki-common-cardAuth shall only be used to authenticate the hardware token containing the associated private key and shall not be interpreted as authenticating the presenter or holder of the token.
+Certificates that assert id-fpki-common-cardAuth or id-fpki-common-pivi-cardAuth shall only be used to authenticate the hardware token containing the associated private key and shall not be interpreted as authenticating the presenter or holder of the token.
 
 ## Policy Administration
 
@@ -1391,26 +1409,38 @@ A unique UUID shall be created for each certificate issued under one of these po
 For certificates issued under this policy by a CA operating as part of the Shared Service Providers program, subject distinguished names shall follow either the rules specified above for id‑fpki-common-hardware or the rules specified below for including a non-NULL subject DN with a UUID in id-fpki-common-cardAuth.
 For legacy Federal PKIs only, distinguished names may follow established agency naming conventions.
 
-For certificates issued under id-fpki-common-authentication, assignment of X.500 distinguished names is mandatory.
+For certificates issued under id-fpki-common-authentication or id-fpki-common-pivi-authentication, assignment of X.500 distinguished names is mandatory.
 For certificates issued under this policy by a CA operating as part of the Shared Service Providers program, distinguished names shall follow either the rules specified above for id‑fpki-common-hardware or the rules specified below for including a non-NULL subject DN in id-fpki-common-cardAuth.
 For legacy Federal PKIs only, distinguished names may follow established agency naming conventions.
-Certificates issued under id-fpki-common-authentication shall include a subject alternative name.
-At a minimum, the subject alternative name extension shall include the pivFASC-N name type \[FIPS 201\].
-The value for this name shall be the FASC-N \[PACS\] of the subject’s PIV card.
+Certificates issued under id-fpki-common-authentication or id-fpki-common-pivi-authentication shall include a subject alternative name.
+
+For certificates asserting id-fpki-common-authentication, at a minimum, the subject alternative name extension shall include:
+
+1)  the pivFASC-N name type \[FIPS 201\].
+The value for this name shall be the FASC-N \[PACS\] of the subject’s PIV card
+
+2)  The UUID \[RFC 4122\]
+
+For certificates asserting id-fpki-common-pivi-authentication, at a minimum, the subject alternative name extension shall include:
+
+1)  The UUID \[RFC 4122\]
 
 Certificates issued under id-fpki-common-cardAuth shall include a subject alternative name extension that includes the pivFASC-N name type.
 The value for this name shall be the FASC-N of the subject’s PIV card.
-Certificates issued under id-fpki-common-cardAuth may also include a UUID \[RFC 4122\] in the subject alternative name extension, if the UUID is included as specified in Section 3.3 of \[SP 800-73-3(1)\].
-Certificates issued under id-fpki-common-cardAuth shall not include any other name in the subject alternative name extension but may include a non-NULL name in the subject field.
+Certificates issued under id-fpki-common-cardAuth shall also include a UUID \[RFC 4122\] in the subject alternative name extension, as specified in Section 3.3 of \[SP 800-73-3(1)\].
+Certificates issued under id-fpki-common-pivi-cardAuth shall only include a UUID \[RFC 4122\] in the subject alternative name extension.
+Certificates issued under id-fpki-common-cardAuth or id-fpki-common-pivi-cardAuth shall not include any other name in the subject alternative name extension but may include a non-NULL name in the subject field.
 If included, the subject distinguished name shall take one of the following forms:
 
-- C=US, o=U.S. Government, \[ou=*department*\], \[ou=*agency*\], \[ou=*structural_container*\], serialNumber=*FASC-N*
+PIV Examples:
 
-<!-- -->
+- C=US, o=U.S. Government, \[ou=*department*\], \[ou=*agency*\], \[ou=*structural_container*\], serialNumber=*FASC-N*
 
 - dc=gov, dc=*org0*, \[*dc=org1*\], …, \[dc=*orgN*\], \[ou=*structural_container*\], serialNumber=*FASC-N*
 
 - dc=mil, dc=*org0*, \[*dc=org1*\], …, \[dc=*orgN*\], \[ou=*structural_container*\], serialNumber=*FASC-N*
+
+PIV or PIV-I Examples:
 
 - C=US, o=U.S. Government, \[ou=*department*\], \[ou=*agency*\], \[ou=*structural_container*\], serialNumber=*UUID*
 
@@ -1508,7 +1538,7 @@ When this is the case, the agency procedures for authentication of personnel sha
 The RA shall ensure that the applicant’s identity information is verified.
 Identity shall be verified no more than 30 days before initial certificate issuance.
 
-At id-fpki-common-High, id-fpki-common-derived-pivAuth-hardware and id-fpki-common-authentication, the applicant shall appear at the RA in person or via supervised remote[^1].
+At id-fpki-common-High, id-fpki-common-derived-pivAuth-hardware, id-fpki-common-authentication, and id-fpki-common-pivi-authentication, the applicant shall appear at the RA in person or via supervised remote[^1].
 For all other policies, RAs may accept authentication of an applicant’s identity attested to and documented by a trusted agent, assuming agency identity badging requirements are otherwise satisfied.
 Authentication by a trusted agent does not relieve the RA of its responsibility to verify required procedures were followed as described below.
 
@@ -2062,7 +2092,7 @@ Furthermore, each CRL shall be published no later than the time specified in the
 
 ### On-line Revocation/Status Checking Availability
 
-CAs shall support on-line status checking via OCSP \[RFC 6960\] for end entity certificates issued under id-fpki-common-authentication, id-fpki-common-derived-pivAuth-hardware, id-fpki-common-derived-pivAuth, and id-fpki-common-cardAuth.
+CAs shall support on-line status checking via OCSP \[RFC 6960\] for end entity certificates issued under id-fpki-common-authentication, id-fpki-common-pivi-authentication, id-fpki-common-derived-pivAuth-hardware, id-fpki-common-derived-pivAuth, id-fpki-common-cardAuth, and id-fpki-common-pivi-cardAuth.
 
 Where on-line status checking is supported, status information must be updated and available to relying parties within 18 hours of certificate revocation.
 
@@ -2896,7 +2926,7 @@ Subscriber key pair generation may be performed by the subscriber, CA, or RA.
 If the CA or RA generates subscriber key pairs, the requirements for key pair delivery specified in section 6.1.2 must also be met.
 
 Validated software or hardware cryptographic modules shall be used to generate all subscriber key pairs, as well as pseudo-random numbers and parameters used in key pair generation.
-For the id‑fpki-common-hardware, id-fpki-common-High, id-fpki-common-authentication, id-fpki-common-derived-pivAuth-hardware, and id-fpki-common-cardauth policies, subscriber key pairs shall be generated in FIPS 140 Level 2 hardware cryptographic modules.
+For the id‑fpki-common-hardware, id-fpki-common-High, id-fpki-common-authentication, id-fpki-common-pivi-authentication, id-fpki-common-derived-pivAuth-hardware, id-fpki-common-pivi-cardAuth, and id-fpki-common-cardauth policies, subscriber key pairs shall be generated in FIPS 140 Level 2 hardware cryptographic modules.
 Any pseudo-random numbers used for key generation material shall be generated by a FIPS-approved method.
 Symmetric keys may be generated by means of either software or hardware mechanisms.
 
@@ -3025,7 +3055,7 @@ The use of a specific key is constrained by the key usage extension in the X.509
 All certificates shall include a critical key usage extension.
 
 Public keys that are bound into subscriber user certificates shall be used only for signing or encrypting, but not both.
-User certificates that assert id-fpki-common-authentication, id-fpki-common-derived-pivAuth-hardware, id-fpki-common-derived-pivAuth, or id-fpki-common-cardAuth shall only assert the *digitalSignature* bit.
+User certificates that assert id-fpki-common-authentication, id-fpki-common-pivi-authentication, id-fpki-common-derived-pivAuth-hardware, id-fpki-common-derived-pivAuth, id-fpki-common-cardAuth, or id-fpki-common-pivi-cardAuth shall only assert the *digitalSignature* bit.
 Other user certificates to be used for digital signatures shall assert both the *digitalSignature* and *nonRepudiation* bits.
 User certificates that contain RSA public keys that are to be used for key transport shall assert the *keyEncipherment* bit.
 User certificates that contain elliptic curve public keys that are to be used for key agreement shall assert the *keyAgreement* bit.
@@ -3049,7 +3079,7 @@ Extended Key Usage OIDs shall be consistent with key usage bits asserted.
 
 If a certificate is used for authentication of ephemeral keys, the Key Usage bit in the certificate must assert the *digitalSignature* bit and may or may not assert *keyEncryption* and *keyAgreement* depending on the public key in the SPKI of the certificate.
 
-Signing certificates issued under the policy for id-fpki-common-piv-contentSigning shall include an extended key usage of *id-PIV-content-signing* (see \[CCP-PROF\]).
+Signing certificates issued under the policy for id-fpki-common-piv-contentSigning or id-fpki-common-pivi-contentSigning shall include an extended key usage of *id-PIV-content-signing* (see \[CCP-PROF\]).
 
 ## Private Key Protection and Cryptographic Module Engineering Controls
 
@@ -3067,12 +3097,16 @@ RAs shall use a FIPS 140 Level 2 or higher validated hardware cryptographic modu
 
 PIV Cards are PKI tokens that have private keys associated with certificates asserting id-fpki-common-authentication or id-fpki-common-cardAuth.
 PIV Cards shall only be issued using card stock that has been tested and approved by the FIPS 201 Evaluation Program and listed on the GSA [Approved Products List](http://www.idmanagement.gov/approved-products-list-apl) (APL).
+
+PIV-I cards have private keys associated with certificates asserting id-fpki-common-pivi-authentication or id-fpki-common-pivi-cardAuth.
+PIV-I cards issued by federal executive branch agencies and the certification authorities operating under this policy shall only be issued using card stock that has been tested and approved by the FIPS 201 Evaluation Program and listed on the GSA [Approved Products List](http://www.idmanagement.gov/approved-products-list-apl) (APL).
+
 Card stock that has been removed from the APL may continue to be issued for no more than one year after GSA approved replacement card stock is available.
-PIV cards issued using the deprecated card stock may continue to be used until the current subscriber certificates expire, unless otherwise notified by the FPKIPA/FPKIMA.
-On an annual basis, for each PCI configuration used (as defined by the FIPS 201 Evaluation Program), one populated, representative sample PIV Card shall be submitted to the FIPS 201 Evaluation Program for testing.
+Smart cards issued using the deprecated card stock may continue to be used until the current subscriber certificates expire, unless otherwise notified by the FPKIPA/FPKIMA.
+On an annual basis, for each PCI configuration used (as defined by the FIPS 201 Evaluation Program), one populated, representative sample PIV and/or PIV-I Card shall be submitted to the FIPS 201 Evaluation Program for testing.
 
 Subscribers shall use a FIPS 140 Level 1 or higher validated cryptographic module for all cryptographic operations.
-Subscribers issued certificates under the hardware users policy (id-fpki-common-hardware or id-fpki-common-devicesHardware), one of the authentication policies (id-fpki-common-authentication, id-fpki-common-derived-pivAuth-hardware, or id-fpki-common-cardAuth), or common High policy (id-fpki-common-High) shall use a FIPS 140 Level 2 or higher validated hardware cryptographic module for all private key operations.
+Subscribers issued certificates under the hardware users policy (id-fpki-common-hardware or id-fpki-common-devicesHardware), one of the authentication policies (id-fpki-common-authentication, id-fpki-common-pivi-authentication, id-fpki-common-derived-pivAuth-hardware, id-fpki-common-cardAuth, or id-fpki-common-pivi-cardAuth), or common High policy (id-fpki-common-High) shall use a FIPS 140 Level 2 or higher validated hardware cryptographic module for all private key operations.
 
 CSSes that provide status information for certificates issued under id-fpki-common-High shall use a FIPS 140 Level 3 or higher validated hardware cryptographic module.
 CSSes that do not provide status information for certificates issued under id-fpki-common-High shall use a FIPS 140 Level 2 or higher validated hardware cryptographic module.
@@ -3102,7 +3136,7 @@ Backup procedures shall be included in the CA’s CPS.
 
 #### Backup of Subscriber Private Signature Key
 
-Subscriber private signature keys whose corresponding public key is contained in a certificate asserting the id-fpki-common-authentication, id-fpki-common-derived-pivAuth-hardware, id-fpki-common-cardAuth, or id-fpki-common-High policy shall not be backed up or copied.
+Subscriber private signature keys whose corresponding public key is contained in a certificate asserting the id-fpki-common-authentication, id-fpki-common-pivi-authentication, id-fpki-common-derived-pivAuth-hardware, id-fpki-common-cardAuth, id-fpki-common-pivi-cardAuth, or id-fpki-common-High policy shall not be backed up or copied.
 
 All other Subscriber private signature keys may be backed up or copied, but must be held in the subscriber’s control.
 Backed up subscriber private signature keys shall not be stored in plaintext form outside the cryptographic module.
@@ -3154,17 +3188,17 @@ No stipulation beyond that specified in FIPS 140.
 
 ### Method of Activating Private Key
 
-For certificates issued under id-fpki-common-authentication, id-fpki-common-derived-pivAuth-hardware, id-fpki-common-derived-pivAuth, id-fpki-common-policy, id-fpki-common-hardware, and id-fpki-common-High, the subscriber must be authenticated to the cryptographic token before the activation of the associated private key(s).
+For certificates issued under id-fpki-common-authentication, id-fpki-common-pivi-authentication, id-fpki-common-derived-pivAuth-hardware, id-fpki-common-derived-pivAuth, id-fpki-common-policy, id-fpki-common-hardware, and id-fpki-common-High, the subscriber must be authenticated to the cryptographic token before the activation of the associated private key(s).
 Acceptable means of authentication include but are not limited to passphrases, PINs or biometrics.
 When passphrases or PINs are used, they shall be a minimum of six (6) characters.
 Entry of activation data shall be protected from disclosure (i.e., the data should not be displayed while it is entered).
 
 For certificates issued under id-fpki-common-devices and id-fpki-common-devices
 Hardware, the device may be configured to activate its private key without requiring its human sponsor or authorized administrator to authenticate to the cryptographic token, provided that appropriate physical and logical access controls are implemented for the device and its cryptographic token.
-For certificates issued under id-fpki-common-piv-contentSigning, the PIV card issuance system or device may be configured to activate its private key without requiring its human sponsor or authorized administrator to authenticate to the cryptographic token, provided that appropriate physical and logical access controls are implemented for content signing operations conformant with PIV issuance requirements (see \[FIPS 201\]).
+For certificates issued under id-fpki-common-piv-contentSigning or id-fpki-common-pivi-contentSigning, the PIV card issuance system or device may be configured to activate its private key without requiring its human sponsor or authorized administrator to authenticate to the cryptographic token, provided that appropriate physical and logical access controls are implemented for content signing operations conformant with PIV issuance requirements (see \[FIPS 201\]).
 The strength of the security controls shall be commensurate with the level of threat in the device’s environment, and shall protect the device’s hardware, software, and the cryptographic token and its activation data from compromise.
 
-For certificates issued under id-fpki-common-cardAuth, subscriber authentication is not required to use the associated private key.
+For certificates issued under id-fpki-common-cardAuth or id-fpki-common-pivi-cardAuth, subscriber authentication is not required to use the associated private key.
 
 ### Method of Deactivating Private Key
 
@@ -3200,9 +3234,9 @@ For all other CAs operating under this policy, the usage period for a CA key pai
 The CA private key may be used to sign certificates for at most four years, but may be used to sign CRLs and OCSP responder certificates for the entire usage period.
 All certificates signed by a specific CA key pair must expire before the end of that key pair’s usage period.
 
-Subscriber public keys in certificates that assert the id-PIV-content-signing OID in the extended key usage extension have a maximum usage period of nine years.
+Subscriber public keys in certificates that assert the id-PIV-content-signing or id-fpki-common-pivi-contentSigning OID in the extended key usage extension have a maximum usage period of nine years.
 The private keys corresponding to the public keys in these certificates have a maximum usage period of three years.
-Expiration of the id-fpki-common-piv-contentSigning certificate shall be later than the expiration of the id-fpki-common-authentication, id-fpki-common-derived-pivAuth-hardware, or id-fpki-common-derived-pivAuth certificates.
+Expiration of the id-fpki-common-piv-contentSigning or id-fpki-common-pivi-contentSigning certificate shall be later than the expiration of the credential’s id-fpki-common-authentication, id-fpki-common-pivi-authentication, id-fpki-common-derived-pivAuth-hardware, or id-fpki-common-derived-pivAuth certificates.
 
 For OCSP responders operating under this policy and all other subscriber public keys, the maximum usage period is three years.
 Subscriber signature private keys have the same usage period as their corresponding public key.
@@ -3457,13 +3491,13 @@ Where the certificate contains an elliptic curve public key, the parameters shal
 
 ### Name Forms
 
-The subject field in certificates issued under id-fpki-common-policy, id-fpki-common-hardware, id-fpki-common-authentication, id-fpki-common-derived-pivAuth-hardware, id-fpki-common-derived-pivAuth, id-fpki-common-High, id-fpki-common-devices, id-fpki-common-devicesHardware, and id-fpki-common-piv-contentSigning shall be populated with an X.500 distinguished name as specified in section 3.1.1.
+The subject field in certificates issued under id-fpki-common-policy, id-fpki-common-hardware, id-fpki-common-authentication, id-fpki-common-pivi-authentication, id-fpki-common-derived-pivAuth-hardware, id-fpki-common-derived-pivAuth, id-fpki-common-High, id-fpki-common-devices, id-fpki-common-devicesHardware, id-fpki-common-piv-contentSigning, and id-fpki-common-pivi-contentSigning shall be populated with an X.500 distinguished name as specified in section 3.1.1.
 
 The issuer field of certificates issued under the policies in this document shall be populated with a non-empty X.500 Distinguished Name as specified in section 3.1.1.
 
 The subject alternative name extension shall be present and include the pivFASC-N name type in certificates issued under id-fpki-common-authentication and id-fpki-common-cardAuth.
 
-The subject alternative name extension shall be present and include a UUID, encoded as a URI, in certificates issued under id-fpki-common-authentication, id-fpki-common-cardAuth, id-fpki-common-derived-pivAuth-hardware and id-fpki-common-derived-pivAuth.
+The subject alternative name extension shall be present and include a UUID, encoded as a URI, in certificates issued under id-fpki-common-authentication, id-fpki-common-cardAuth, id-fpki-common-derived-pivAuth-hardware, id-fpki-common-derived-pivAuth, id-fpki-common-pivi-authentication, and id-fpki-common-pivi-cardAuth.
 
 ### Name Constraints
 
@@ -3493,8 +3527,15 @@ Certificates issued under this CP shall assert at least one of the following OID
 > id-fpki-common-cardAuth ::= {2 16 840 1 101 3 2 1 3 17}
 >
 > id-fpki-common-piv-contentSigning ::= {2 16 840 1 101 3 2 1 3 39}
+>
+> id-fpki-common-pivi-authentication ::= {2 16 840 1 101 3 2 1 3 45}
+>
+> id-fpki-common-pivi-cardAuth
+::= {2 16 840 1 101 3 2 1 3 46}
+>
+> id-fpki-common-pivi-contentSigning ::= {2 16 840 1 101 3 2 1 3 47}
 
-Certificates that express the id-fpki-common-piv-contentSigning policy OID shall not express any other policy OIDs.
+Certificates that express the id-fpki-common-piv-contentSigning or id-fpki-common-pivi-contentSigning policy OID shall not express any other policy OIDs.
 
 ### Usage of Policy Constraints Extension
 
@@ -4000,6 +4041,18 @@ http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf</td>
 <a href="http://www.idmanagement.gov/smartcard/information/TIG_SCEPACS_v2.2.pdf">http://www.idmanagement.gov/smartcard/information/TIG_SCEPACS_v2.2.pdf</a></td>
 </tr>
 <tr class="odd">
+<td>PIV-I Issuers</td>
+<td>Personal Identity Verification Interoperability for Issuers<br />
+<a href="https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/piv-i-for-issuers.pdf"
+>https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/piv-i-for-issuers.pdf</a></td>
+</tr>
+<tr class="even">
+<td>PIV-I Profiles</td>
+<td>X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards<br />
+<a href="https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-pivi-cert-profiles.pdf"
+>https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-pivi-cert-profiles.pdf</a></td>
+</tr>
+<tr class="odd">
 <td>PKCS#1</td>
 <td>Jakob Jonsson and Burt Kaliski, Public-Key Cryptography Standards (PKCS) #1: RSA Cryptography Specifications Version 2.1, RFC 3447, February 2003.<br />
 <a href="http://www.ietf.org/rfc/rfc3447.txt">http://www.ietf.org/rfc/rfc3447.txt</a></td>
@@ -4255,6 +4308,130 @@ or <a href="http://csrc.nist.gov/publications/drafts/800-157/sp800_157_draft.pdf
 #  Acknowledgments
 
 The Certificate Policy Working Group developed this CP based on RFC 3647 and the original U.S. Federal PKI Common Policy Framework Certificate Policy.
+
+# Appendix A – PIV and Common PIV Interoperable (Common PIV-I) Comparison
+
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 61%" />
+<col style="width: 9%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th rowspan="9"><blockquote>
+<p><strong>Trust</strong></p>
+</blockquote></th>
+<th><strong>Technical Requirements</strong></th>
+<th><strong>PIV</strong></th>
+<th><strong>PIV-I</strong></th>
+</tr>
+<tr class="odd">
+<th><p>Suitability Assurance:</p>
+<blockquote>
+<p>Favorably adjudicated National Agency</p>
+<p>Check with Inquiries (minimum) or other Tier 1</p>
+<p>investigation</p>
+</blockquote></th>
+<th>x</th>
+<th></th>
+</tr>
+<tr class="header">
+<th>PIV policy object identifier on PIV Authentication Certificates</th>
+<th>x</th>
+<th></th>
+</tr>
+<tr class="odd">
+<th>PIV-I equivalent policy object identifier on PIV-I Authentication Certificates</th>
+<th></th>
+<th>x</th>
+</tr>
+<tr class="header">
+<th>PIV Content Signing object signing certificate</th>
+<th>x</th>
+<th></th>
+</tr>
+<tr class="odd">
+<th>PIV-I Content Signing equivalent object signing certificate</th>
+<th></th>
+<th>x</th>
+</tr>
+<tr class="header">
+<th>PIV Card Authentication Certificate</th>
+<th>x</th>
+<th></th>
+</tr>
+<tr class="odd">
+<th>PIV-I Card Authentication Certificate</th>
+<th></th>
+<th>x</th>
+</tr>
+<tr class="header">
+<th>
+Card shall not be valid for more than 6 years and card expiration shall not exceed the expiration date of object signing certificate</th>
+<th>x</th>
+<th>x</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td rowspan="6"><blockquote>
+<p><strong>Credential Edge</strong></p>
+</blockquote></td>
+<td>Card stock certified by FIPS 201 Evaluation Program</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr class="even">
+<td>Command edge and NIST SP 800-85 conformant</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr class="odd">
+<td>NIST SP 800-73 conformant data model and PIV Application Identifier (AID)</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr class="even">
+<td>NIST SP 800-73 conformant to include GUID present in the CHUID</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr class="odd">
+<td>RFC 4122 conformant UUID required in the GUID data element of the CHUID</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr class="even">
+<td>RFC 4122 conformant UUID present in the Authentication Certificates</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr class="odd">
+<td rowspan="2"><blockquote>
+<p><strong>Topography</strong></p>
+</blockquote></td>
+<td>FIPS 201 compliant topography</td>
+<td>x</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>
+Minimally contains facial image, cardholder name, issuing organization, and expiration, but does not replicate FIPS 201 topography requirements</td>
+<td></td>
+<td>x</td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p><strong>Card Management System</strong></p>
+</blockquote></td>
+<td>Card Management Master Key maintained in a FIPS 140-2 Level 2 Cryptographic Module and conforms to [NIST SP 800-78] requirements; activation of the Card Management Master Key requires commensurate authentication of Trusted Roles</td>
+<td>x</td>
+<td>x</td>
+</tr>
+</tbody>
+</table>
 
 [^1]: The minimum requirements associated with supervised remote identity proofing are described in NIST SP 800-63A, *Digital Identity Guidelines: Enrollment and Identity Proofing*, Section 5.3.3. In addition, the supervised remote process must have the capability of capturing an approved biometric.
 

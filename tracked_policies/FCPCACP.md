@@ -8,9 +8,9 @@
 
 **Common Policy Framework**
 
-Version 1.18
+Version 1.19
 
-April 26, 2012
+June 22, 2012
 
 **Signature Page**
 
@@ -133,6 +133,12 @@ Remote Administration of Certification Authorities</td>
 <td>April 26, 2012</td>
 <td><strong>2012-01.</strong>
 Clarify RA audit requirements: revise section 1.3.1.5, add new last sentence to first paragraph of section 8, revise first paragraph of section 8.1, revise sections 8.4, 8.5, and 8.6, revise "Policy Management Authority (PMA)" glossary definition.</td>
+</tr>
+<tr class="even">
+<td>1.19</td>
+<td>June 22, 2012</td>
+<td><strong>2012-02.</strong>
+Add new section 4.1.1.4, <em>Code Signing Certificates</em>, to address change proposal (approved by FPKIPA on 6/12/12) requiring organizations receiving a code signing certificate to have access to a Time Stamp Authority.</td>
 </tr>
 </tbody>
 </table>
@@ -301,9 +307,11 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [4.1.1.3 Device Certificates [22](#device-certificates)](#device-certificates)
 
+[4.1.1.4 Code Signing Certificates [22](#code-signing-certificates)](#code-signing-certificates)
+
 [4.1.2 Enrollment Process and Responsibilities [22](#enrollment-process-and-responsibilities)](#enrollment-process-and-responsibilities)
 
-[4.2 Certificate Application Processing [22](#certificate-application-processing)](#certificate-application-processing)
+[4.2 Certificate Application Processing [23](#certificate-application-processing)](#certificate-application-processing)
 
 [4.2.1 Performing Identification and Authentication Functions [23](#performing-identification-and-authentication-functions)](#performing-identification-and-authentication-functions)
 
@@ -315,7 +323,7 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [4.3.1 CA Actions During Certificate Issuance [23](#ca-actions-during-certificate-issuance)](#ca-actions-during-certificate-issuance)
 
-[4.3.2 Notification to Subscriber by the CA of Issuance of Certificate [23](#notification-to-subscriber-by-the-ca-of-issuance-of-certificate)](#notification-to-subscriber-by-the-ca-of-issuance-of-certificate)
+[4.3.2 Notification to Subscriber by the CA of Issuance of Certificate [24](#notification-to-subscriber-by-the-ca-of-issuance-of-certificate)](#notification-to-subscriber-by-the-ca-of-issuance-of-certificate)
 
 [4.4 Certificate Acceptance [24](#certificate-acceptance)](#certificate-acceptance)
 
@@ -333,7 +341,7 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [4.6 Certificate Renewal [24](#certificate-renewal)](#certificate-renewal)
 
-[4.6.1 Circumstance for Certificate Renewal [24](#circumstance-for-certificate-renewal)](#circumstance-for-certificate-renewal)
+[4.6.1 Circumstance for Certificate Renewal [25](#circumstance-for-certificate-renewal)](#circumstance-for-certificate-renewal)
 
 [4.6.2 Who May Request Renewal [25](#who-may-request-renewal)](#who-may-request-renewal)
 
@@ -363,7 +371,7 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [4.7.7 Notification of Certificate Issuance by the CA to Other Entities [26](#notification-of-certificate-issuance-by-the-ca-to-other-entities-2)](#notification-of-certificate-issuance-by-the-ca-to-other-entities-2)
 
-[4.8 Certificate Modification [26](#certificate-modification)](#certificate-modification)
+[4.8 Certificate Modification [27](#certificate-modification)](#certificate-modification)
 
 [4.8.1 Circumstance for Certificate Modification [27](#circumstance-for-certificate-modification)](#circumstance-for-certificate-modification)
 
@@ -377,7 +385,7 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 [4.8.6 Publication of the Modified Certificate by the CA [27](#publication-of-the-modified-certificate-by-the-ca)](#publication-of-the-modified-certificate-by-the-ca)
 
-[4.8.7 Notification of Certificate Issuance by the CA to Other Entities [27](#notification-of-certificate-issuance-by-the-ca-to-other-entities-3)](#notification-of-certificate-issuance-by-the-ca-to-other-entities-3)
+[4.8.7 Notification of Certificate Issuance by the CA to Other Entities [28](#notification-of-certificate-issuance-by-the-ca-to-other-entities-3)](#notification-of-certificate-issuance-by-the-ca-to-other-entities-3)
 
 [4.9 Certificate Revocation and Suspension [28](#certificate-revocation-and-suspension)](#certificate-revocation-and-suspension)
 
@@ -1614,6 +1622,13 @@ An application for a user (subscriber) certificate shall be submitted by either 
 #### Device Certificates
 
 An application for a device certificate shall be submitted by the human sponsor of the device.
+
+#### Code Signing Certificates
+
+A code signing certificate has an Extended Key Usage (EKU) containing a value of id-kp-codeSigning OBJECT IDENTIFIER ::= { id-kp 3 }(1.3.6.1.5.5.7.3.3) - See \[CCP-PROF\] for appropriate EKU bit settings.
+
+An application for a code signing certificate shall be submitted by an authorized representative of the organization.
+The representative shall assert that the organization has access to a Time Stamp Authority (TSA) prior to issuance of the code signing certificate.
 
 ### Enrollment Process and Responsibilities
 
@@ -3840,6 +3855,7 @@ ftp://ftp.rsasecurity.com/pub/pkcs/pkcs-12/pkcs-12v1.pdf</td>
 | CSOR     | Computer Security Objects Registry                                                |
 | DN       | Distinguished Name                                                                |
 | ECDSA    | Elliptic Curve Digital Signature Algorithm                                        |
+| EKU      | Extended Key Usage                                                                |
 | FPKIMA   | Federal Public Key Infrastructure Management Authority                            |
 | FIPS PUB | (US) Federal Information Processing Standards Publication                         |
 | FPKI     | Federal Public Key Infrastructure                                                 |
@@ -3875,6 +3891,7 @@ ftp://ftp.rsasecurity.com/pub/pkcs/pkcs-12/pkcs-12v1.pdf</td>
 | SP       | Special Publication                                                               |
 | SSL      | Secure Sockets Layer                                                              |
 | SSP-REP  | Shared Service Provider Repository Service Requirements                           |
+| TSA      | Time Stamp Authority                                                              |
 | UPS      | Uninterrupted Power Supply                                                        |
 | URL      | Uniform Resource Locator                                                          |
 | U.S.C.   | United States Code                                                                |
@@ -3969,6 +3986,7 @@ ftp://ftp.rsasecurity.com/pub/pkcs/pkcs-12/pkcs-12v1.pdf</td>
 | System Equipment Configuration                              | A comprehensive accounting of all system hardware and software types and settings.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | System High                                                 | The highest security level supported by an information system. \[NS4009\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Threat                                                      | Any circumstance or event with the potential to cause harm to an information system in the form of destruction, disclosure, adverse modification of data, and/or denial of service. \[NS4009\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Time Stamp Authority                                        | An independent, reliable  service that issues and verifies electronic time stamps.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Trust List                                                  | Collection of Trusted Certificates used by relying parties to authenticate other certificates.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Trusted Agent                                               | Entity authorized to act as a representative of a CA in confirming subscriber identification during the registration process. Trusted agents do not have automated interfaces with certification authorities.                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Trusted Certificate                                         | A certificate that is trusted by the relying party on the basis of secure and authenticated delivery. The public keys included in trusted certificates are used to start certification paths. Also known as a "trust anchor".                                                                                                                                                                                                                                                                                                                                                                                                                                                      |

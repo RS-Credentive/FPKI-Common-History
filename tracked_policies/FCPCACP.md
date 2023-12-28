@@ -8,9 +8,9 @@
 
 **Common Policy Framework**
 
-Version 2.4
+Version 2.5
 
-April 17, 2023
+July 6, 2023
 
 **Signature Page**
 
@@ -298,6 +298,14 @@ Update to Section 5.5.2 to provide specificity for archive record retention peri
 Incorporates changes to multiple sections based on the comments received by the CPWG to include certificate suspension requirements, 3<sup>rd</sup>
 party key recovery request handling, public key parameters, key generation specifics, and remote workstation definition.</p>
 <p>Changes effective as of September 1, 2023.</p></td>
+</tr>
+<tr class="even">
+<td>2.5</td>
+<td>July 6, 2023</td>
+<td><p><strong>2023-04:</strong>
+Clarifies the audit and archive requirements for assignment of Trusted Roles.
+Additionally, removes obsolete references.</p>
+<p>Change effective immediately.</p></td>
 </tr>
 </tbody>
 </table>
@@ -650,7 +658,7 @@ party key recovery request handling, public key parameters, key generation speci
 
 [5.2.3. Identification and Authentication for Each Role [61](#identification-and-authentication-for-each-role)](#identification-and-authentication-for-each-role)
 
-[5.2.4. Roles Requiring Separation of Duties [61](#roles-requiring-separation-of-duties)](#roles-requiring-separation-of-duties)
+[5.2.4. Roles Requiring Separation of Duties [62](#roles-requiring-separation-of-duties)](#roles-requiring-separation-of-duties)
 
 [5.3. Personnel Controls [62](#personnel-controls)](#personnel-controls)
 
@@ -2678,6 +2686,8 @@ The functions performed in these roles form the basis of trust for the entire PK
 Two approaches are taken to increase the likelihood that these roles can be successfully carried out.
 The first ensures that the person filling the role is trustworthy and properly trained.
 The second distributes the functions among more than one person, so that any malicious activity would require collusion.
+An auditable record must be created identifying when personnel are added or removed from a trusted role, as well as who added or removed them from the role.
+The individual who authorized the role assignment, or any series of role assignments over a given period of time, must also be traceable via audit and archive records.
 
 The requirements of this policy are defined in terms of four roles, implementing organizations may define additional roles provided the following separation of duties are enforced.
 
@@ -2951,7 +2961,7 @@ The specific configuration items relevant to the environment in which the CA ope
 
 - MISCELLANEOUS:
 
-- Appointment of an individual to a designated trusted role
+- Record of an individual being added or removed from a trusted role, and who added or removed them from the role
 
 | Practice Note: If multiparty control is implemented via team separation, these records must include team appointment specifics. |
 |---------------------------------------------------------------------------------------------------------------------------------|
@@ -3161,7 +3171,7 @@ At a minimum, the following data must be recorded for archive:
 
 - The approval or rejection of a certificate status change request
 
-- Appointment of an individual to a Trusted Role (to include KRA/KRO)
+- Record of an individual being added or removed from a trusted role, and who added or removed them from the role
 
 - Destruction of cryptographic modules
 
@@ -3590,7 +3600,7 @@ The Extended Key Usage extension must not contain anyExtendedKeyUsage {2.5.29.37
 
 Certificates that assert id-fpki-common-piv-contentSigning must include a critical Extended Key Usage extension that asserts only id-PIV-content-signing {2.16.840.1.101.3.6.7} (see \[CCP-PROF\]).
 
-Certificates that assert id-fpki-common-pivi-contentSigning must include a critical Extended Key Usage extension that asserts only id-fpki-pivi-content-signing {2.16.840.1.101.3.8.7} (see \[PIV-I Profile\]).
+Certificates that assert id-fpki-common-pivi-contentSigning must include a critical Extended Key Usage extension that asserts only id-fpki-pivi-content-signing {2.16.840.1.101.3.8.7} (see \[CCP-Prof\]).
 
 ## Private Key Protection and Cryptographic Module Engineering Controls
 
@@ -4903,100 +4913,94 @@ Card Management System</u></strong></p>
 >https://www.idmanagement.gov/docs/fpki-pivi-for-issuers.pdf</a></p></td>
 </tr>
 <tr class="odd">
-<td>PIV-I Profile</td>
-<td><p>X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards</p>
-<p><a href="https://www.idmanagement.gov/docs/fpki-x509-cert-profiles-pivi.pdf"
->https://www.idmanagement.gov/docs/fpki-x509-cert-profiles-pivi.pdf</a></p></td>
-</tr>
-<tr class="even">
 <td>PKCS#1</td>
 <td>Jakob Jonsson and Burt Kaliski, Public-Key Cryptography Standards (PKCS) #1: RSA Cryptography Specifications Version 2.1, RFC 3447, February 2003.<br />
 <a href="http://www.ietf.org/rfc/rfc3447.txt">http://www.ietf.org/rfc/rfc3447.txt</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>PKCS#12</td>
 <td>PKCS #12: Personal Information Exchange Syntax v1.1 July 2014. <a href="https://tools.ietf.org/html/rfc7292">https://tools.ietf.org/html/rfc7292</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>RFC 2585</td>
 <td>Internet X.509 Public Key Infrastructure: Operational Protocols: FTP and HTTP, Russel Housley and Paul Hoffman, May 1999.<br />
 <a href="https://www.ietf.org/rfc/rfc2585.txt">https://www.ietf.org/rfc/rfc2585.txt</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>RFC 3647</td>
 <td>Certificate Policy and Certification Practices Framework, Chokhani and Ford, Sabett, Merrill, and Wu, November 2003.<br />
 <a href="http://www.ietf.org/rfc/rfc3647.txt">http://www.ietf.org/rfc/rfc3647.txt</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>RFC 4122</td>
 <td>A Universally Unique IDentifier (UUID) URN Namespace, Paul J. Leach, Michael Mealling, and Rich Salz, July 2005.<br />
 <a href="http://www.ietf.org/rfc/rfc4122.txt">http://www.ietf.org/rfc/rfc4122.txt</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>RFC 5280</td>
 <td><p>Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile.</p>
 <p><a href="https://www.ietf.org/rfc/rfc5280.txt">https://www.ietf.org/rfc/rfc5280.txt</a></p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>RFC 5322</td>
 <td><p>Internet Message Format</p>
 <p><a href="http://www.ietf.org/rfc/rfc5322.txt">http://www.ietf.org/rfc/rfc5322.txt</a></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>RFC 6960</td>
 <td><p>X.509 Internet Public Key Infrastructure Online Certificate Status Protocol – OCSP.</p>
 <p><a href="https://tools.ietf.org/html/rfc6960">https://tools.ietf.org/html/rfc6960</a></p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>RFC 8551</td>
 <td>Secure/Multipurpose Internet Mail Extensions (S/MIME) Version 4.0 Message Specification, J. Schaad, B. Ramsdell, S. Turner, April 2019.<br />
 <a href="https://tools.ietf.org/rfc/rfc8551.txt"><u>https://tools.ietf.org/rfc/rfc8551.txt</u></a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>SP 800-37</td>
 <td>Guide for Applying the Risk Management Framework to Federal Information Systems: A Security Life Cycle Approach, NIST Special Publication 800-37, Revision 2, December2018.<br />
 <a href="https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final">https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>SP 800-56A</td>
 <td><p>Recommendation for Pair-Wise Key Establishment Schemes Using Discrete Logarithm Cryptography, NIST Special Publication 800-56A</p>
 <p><a href="https://csrc.nist.gov/publications/detail/sp/800-56a/rev-3/final">https://csrc.nist.gov/publications/detail/sp/800-56a/rev-3/final</a></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>SP 800-57</td>
 <td>Recommendation for Key Management: Part 1- General, NIST Special Publication 800-57 Part 1 Revision 5, May 2020<br />
 <a href="https://csrc.nist.gov/publications/detail/sp/800-57-part-1/rev-5/final">https://csrc.nist.gov/publications/detail/sp/800-57-part-1/rev-5/final</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>SP 800-63-3</td>
 <td><p>Digital Identity Guidelines</p>
 <p><a href="https://csrc.nist.gov/publications/detail/sp/800-63/3/final">https://csrc.nist.gov/publications/detail/sp/800-63/3/final</a></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>SP 800-76-2</td>
 <td>Biometric Specifications for Personal Identity Verification, NIST Special Publication 800-76-2, July 2013.<br />
 <a href="https://csrc.nist.gov/publications/detail/sp/800-76/2/final">https://csrc.nist.gov/publications/detail/sp/800-76/2/final</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>SP 800-78-4</td>
 <td>Cryptographic Algorithms and Key Sizes for Personal Identity Verification, NIST Special Publication 800-78-4, May 2015.<br />
 <a href="https://csrc.nist.gov/publications/detail/sp/800-78/4/final">https://csrc.nist.gov/publications/detail/sp/800-78/4/final</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>SP 800-79-2</td>
 <td><p>Guidelines for the Accreditation of Personal Identity Verification Card Issuers, NIST Special Publication 800-79</p>
 <p><a href="https://csrc.nist.gov/publications/detail/sp/800-79/2/final">https://csrc.nist.gov/publications/detail/sp/800-79/2/final</a></p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>SP 800-89</td>
 <td><p>Recommendation for Obtaining Assurances for Digital Signature Applications, NIST Special Publication 800-89</p>
 <p><a href="https://csrc.nist.gov/publications/detail/sp/800-89/final">https://csrc.nist.gov/publications/detail/sp/800-89/final</a></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>SP 800-157</td>
 <td>Guidelines for Derived Personal Identity Verification (PIV) Credentials, NIST Special Publication 800-157. <a href="https://csrc.nist.gov/publications/detail/sp/800-157/final">https://csrc.nist.gov/publications/detail/sp/800-157/final</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>X.509</td>
 <td>ITU-T Recommendation X.509 (2005) | ISO/IEC 9594-8:2005, Information technology - Open Systems Interconnection - The Directory: Public-key and attribute certificate frameworks.</td>
 </tr>

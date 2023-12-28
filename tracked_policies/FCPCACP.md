@@ -8,9 +8,9 @@
 
 **Common Policy Framework**
 
-Version 1.30
+Version 1.31
 
-October 4, 2018
+February 8, 2019
 
 **Signature Page**
 
@@ -241,7 +241,15 @@ Requirements for virtual implementations</p></td>
 <td>1.30</td>
 <td>October 4, 2018</td>
 <td><strong>2018-06:</strong>
-Incorporate “supervised remote identity proofing and other new guidance as defined in NIST SP 800-63-3 effective as of October 4, 2018</td>
+Incorporate “supervised remote identity proofing” and other new guidance as defined in NIST SP 800-63-3 effective as of October 4, 2018</td>
+</tr>
+<tr class="even">
+<td>1.31</td>
+<td>February 8, 2019</td>
+<td><p><strong>2018-07:</strong>
+Remove the common-public-trusted-serverAuth certificate policy and associated requirements effective as of February 8, 2019</p>
+<p><strong>2018-08:</strong>
+Permit retention of private signing key(s) following CA termination effective as of February 8, 2019</p></td>
 </tr>
 </tbody>
 </table>
@@ -249,7 +257,7 @@ Incorporate “supervised remote identity proofing and other new guidance as def
 FOREWORD
 
 This is the policy framework governing the public key infrastructure (PKI) component of the Federal Enterprise Architecture.
-The policy framework incorporates eleven specific certificate policies: a policy for users with software cryptographic modules, a policy for users with hardware cryptographic modules, a policy for devices that sign Personal Identity Verification (PIV) data objects, a policy for devices with software cryptographic modules, a policy for devices with hardware cryptographic modules, a policy for publicly trusted Server Authentication certificates, a high assurance user policy, three user authentication policies, and a card authentication policy.
+The policy framework incorporates multiple specific certificate policies: a policy for users with software cryptographic modules, a policy for users with hardware cryptographic modules, a policy for devices that sign Personal Identity Verification (PIV) data objects, a policy for devices with software cryptographic modules, a policy for devices with hardware cryptographic modules, a high assurance user policy, three user authentication policies, and a card authentication policy.
 There is one Certification Authority (CA) associated with the Common Policy Framework: The Federal Common Policy Root CA.
 
 The user policies apply to Federal employees, contractors, and other affiliated personnel requiring PKI credentials for access to Federal systems that have not been designated by law as national security systems.
@@ -901,9 +909,9 @@ The terms and provisions of these certificate policies shall be interpreted unde
 
 # Introduction
 
-This certificate policy (CP) includes many distinct certificate policies: a policy for users with software cryptographic modules, a policy for users with hardware cryptographic modules, a policy for devices with software cryptographic modules, a policy for devices with hardware cryptographic modules, a policy for devices that sign PIV data objects, a policy for publicly trusted Server Authentication certificates, a high assurance user policy, three user authentication policies, and a card authentication policy.
+This certificate policy (CP) includes many distinct certificate policies: a policy for users with software cryptographic modules, a policy for users with hardware cryptographic modules, a policy for devices with software cryptographic modules, a policy for devices with hardware cryptographic modules, a policy for devices that sign PIV data objects, a high assurance user policy, three user authentication policies, and a card authentication policy.
 In this document, the term “device” means a non-person entity, i.e., a hardware device or software application.
-Where a specific policy is not stated, the policies and procedures in this specification apply equally to all eleven policies.
+Where a specific policy is not stated, the policies and procedures in this specification apply equally to all policies.
 
 The use of SHA-1 to create digital signatures is not allowed under Common Policy after 12/31/2013.
 
@@ -970,27 +978,23 @@ Certificates issued in accordance with this CP and associated with the Federal C
 
 *Table 1 - id-fpki-common Policy OIDs*
 
-|                                          |                                 |
-|------------------------------------------|---------------------------------|
-| id-fpki-common-policy                    | ::= {2 16 840 1 101 3 2 1 3 6}  |
-| id-fpki-common-hardware                  | ::= {2 16 840 1 101 3 2 1 3 7}  |
-| id-fpki-common-devices                   | ::= {2 16 840 1 101 3 2 1 3 8}  |
-| id-fpki-common-devicesHardware           | ::= {2 16 840 1 101 3 2 1 3 36} |
-| id-fpki-common-authentication            | ::= {2 16 840 1 101 3 2 1 3 13} |
-| id-fpki-common-High                      | ::= {2 16 840 1 101 3 2 1 3 16} |
-| id-fpki-common-cardAuth                  | ::= {2 16 840 1 101 3 2 1 3 17} |
-| id-fpki-common-piv-contentSigning        | ::= {2 16 840 1 101 3 2 1 3 39} |
-| id-fpki-common-derived-pivAuth           | ::= {2 16 840 1 101 3 2 1 3 40} |
-| id-fpki-common-derived-pivAuth-hardware  | ::= {2 16 840 1 101 3 2 1 3 41} |
-| id-fpki-common-public-trusted-serverAuth | ::= {2 16 840 1 101 3 2 1 3 42} |
+|                                         |                                 |
+|-----------------------------------------|---------------------------------|
+| id-fpki-common-policy                   | ::= {2 16 840 1 101 3 2 1 3 6}  |
+| id-fpki-common-hardware                 | ::= {2 16 840 1 101 3 2 1 3 7}  |
+| id-fpki-common-devices                  | ::= {2 16 840 1 101 3 2 1 3 8}  |
+| id-fpki-common-devicesHardware          | ::= {2 16 840 1 101 3 2 1 3 36} |
+| id-fpki-common-authentication           | ::= {2 16 840 1 101 3 2 1 3 13} |
+| id-fpki-common-High                     | ::= {2 16 840 1 101 3 2 1 3 16} |
+| id-fpki-common-cardAuth                 | ::= {2 16 840 1 101 3 2 1 3 17} |
+| id-fpki-common-piv-contentSigning       | ::= {2 16 840 1 101 3 2 1 3 39} |
+| id-fpki-common-derived-pivAuth          | ::= {2 16 840 1 101 3 2 1 3 40} |
+| id-fpki-common-derived-pivAuth-hardware | ::= {2 16 840 1 101 3 2 1 3 41} |
 
 Certificates issued to CAs may contain a subset of these OIDs.
 Certificates issued to users, other than devices, to support digitally signed documents or key management may contain either id-fpki-common-policy, id-fpki-common-hardware, or id-fpki-common-High.
-Subscriber certificates issued to devices under this policy that use FIPS 140 Level 2 or higher cryptographic modules shall include one or more of id-fpki-common-deviceHardware, id-fpki-common-devices, or id-fpki-common-public-trusted-serverAuth.
-Subscriber certificates issued to devices under this policy using software cryptographic modules shall include id-fpki-common-devices or id-fpki-common-public-trusted-serverAuth.
-
-CAs that issue id-fpki-common-public-trusted-serverAuth certificates shall only issue certificates asserting serverAuth in the EKU.
-CAs that issue publicly trusted Code Signing certificates shall only issue certificates asserting codeSigning in the EKU.
+Subscriber certificates issued to devices under this policy that use FIPS 140 Level 2 or higher cryptographic modules shall include one or more of id-fpki-common-deviceHardware, or id-fpki-common-devices.
+Subscriber certificates issued to devices under this policy using software cryptographic modules shall include id-fpki-common-devices.
 
 This document includes five policies specific to FIPS 201 Personal Identity Verification (PIV) of Federal Employees and Contractors.
 Certificates issued to users supporting authentication but not digital signature, where the corresponding private key is stored on a PIV Card, may contain id-fpki-common-authentication.
@@ -1363,14 +1367,6 @@ Device names shall take one of the following forms:
 where *device name* is a descriptive name for the device.
 Where a device is fully described by the Internet domain name, the common name attribute is optional.
 
-In addition, id-fpki-common-public-trusted-serverAuth certificates shall conform to the following:
-
-- The extendedKeyUsage extension shall assert the serverAuthentication value;
-
-- The *SubjectAltName* field shall contain a *dNSName* containing a Fully Qualified Domain Name (FQDN) of a server;
-
-- Internet Protocol (IP) Addresses shall not be included in the *SubjectAltName* field;
-
 For certificates that assert serverAuth in the EKU:
 
 - Wildcard Domain Names are permitted if all sub-domains covered by the wildcard fall within the same application, cloud service, or system accreditation boundary within the scope of the sponsoring Agency.
@@ -1379,7 +1375,7 @@ For certificates that assert serverAuth in the EKU:
 The use of third-level Agency wildcards, (e.g., \*.\[agency\].gov), shall be prohibited to reduce the likelihood that a certificate will overlap multiple systems or services.
 Third level wildcards are permitted for DNS names dedicated to a specific application (e.g., \*.\[application_name\].gov).
 
-- Before issuing a publicly trusted serverAuth certificate containing a wildcard, the CA shall ensure the sponsoring agency has a documented procedure for determining that the scope of the certificate does not now and will not infringe on other agency applications.
+- Before issuing a serverAuth certificate containing a wildcard, the CA shall ensure the sponsoring agency has a documented procedure for determining that the scope of the certificate does not now and will not infringe on other agency applications.
 
 This policy does not restrict the directory information tree for names of CAs and CSSs.
 However, CAs that issue certificates under this policy must have distinguished names.
@@ -1596,16 +1592,8 @@ In the case a human sponsor is changed, the new sponsor shall review the status 
 The CPS shall describe procedures to ensure that certificate accountability is maintained.
 See section 9.6.3 for subscriber responsibilities.
 
-For each Fully-Qualified Domain Name listed in an id-fpki-common-public-trusted-serverAuth certificate, the CA shall confirm and maintain documented evidence that, as of the date the Certificate was issued, the Sponsor’s agency has control over the FQDN and the sponsor is authorized to request the certificate.
-
-Each agency shall have a naming policy for devices that receive an id-fpki-common-public-trusted-serverAuth certificate that specifies unique meaningful FQDN names and the CPS shall document how the CA ensures compliance with the sponsoring agency’s policy.
-
-Note: FQDNs shall be listed in id-fpki-common-public-trusted-serverAuth Subscriber Certificates using dNSNames in the subjectAltName extension or in Subordinate CA Certificates via dNSNames in permittedSubtrees within the Name Constraints extension.
-
 Before issuing a certificate with a wildcard character (\*) in a CN or subjectAltName of type DNS-ID, the CA shall establish and follow a documented procedure to ensure that the wildcard does not fall immediately to the left of an agency or organization name, but is qualified down to a unique application, server, or server farm under control of the sponsor’s organization.
 The device sponsor shall demonstrate that the domain name requested is entirely within the name space to be covered by the wildcard certificate.
-
-All requests for device certificates shall be digitally signed by the sponsor.
 
 The identity of the sponsor shall be authenticated by:
 
@@ -1718,12 +1706,9 @@ An application for a device certificate shall be submitted by the human sponsor 
 
 #### Code Signing Certificates
 
-A code signing certificate has an Extended Key Usage (EKU) containing a value of id-kp-codeSigning OBJECT IDENTIFIER ::= { id-kp 3 }(1.3.6.1.5.5.7.3.3) - See \[CCP-PROF\] for appropriate EKU bit settings.
+A code signing certificate has an Extended Key Usage (EKU) containing a value of id-kp-codeSigning OBJECT IDENTIFIER ::= { id-kp 3 }(1.3.6.1.5.5.7.3.3).
 
 An application for a code signing certificate shall be submitted by an authorized representative of the organization.
-The representative shall assert that the organization has access to a Time Stamp Authority (TSA) prior to issuance of the code signing certificate.
-
-CAs subordinate to the publicly trusted Federal Common Policy Root CAs for device certificates that issue publicly trusted Code Signing certificates shall not issue other types of certificates from the same CA that issues code signing certificates.
 
 ### Enrollment Process and Responsibilities
 
@@ -1743,7 +1728,6 @@ PKI Authorities shall specify procedures to verify information in certificate ap
 
 The identification and authentication of the subscriber must meet the requirements specified for subscriber authentication as specified in sections 3.2 and 3.3 of this CP.
 The PKI Authority must identify the components of the PKI Authority (e.g., CA or RA) that are responsible for authenticating the subscriber’s identity in each case.
-For CAs that issue id-fpki-common-public-trusted-serverAuth certificates and subordinate to a publicly trusted Federal Common Policy Root CA, the CPS shall state whether the CA reviews Certification Authority Authorization (CAA) DNS Resource Records, and if so, the CA’s practice on processing CAA records for fully Qualified Domain Names.
 
 ### Approval or Rejection of Certificate Applications
 
@@ -1996,22 +1980,6 @@ This would include evidence that a wild card certificate has been issued with a 
 - The failure of a CA to adequately adhere to the requirements of this CP or the approved CPS.
 For example, there is strong evidence that the CA has failed to comply with the requirements of section 6.7 of the CP.
 
-In addition, for id-fpki-common-public-trusted-serverAuth certificates, a certificate shall be revoked when:
-
-- The CA obtains evidence that the issuing CA (or Subordinate CA) no longer complies with the requirements of section 6.7.
-In this case, all certificates under an issuing CA or subordinate CA shall be revoked.
-
-- The CA is made aware that a Wildcard Certificate has been used to authenticate a fraudulently misleading subordinate Fully-Qualified Domain Name.
-
-Whenever any of the above circumstances are reported, the appropriate authority shall review the circumstances and make a revocation decision.
-The revocation decision shall be made based on appropriate criteria, to include:
-
-- The nature of the alleged problem;
-
-- The number of Certificate Problem Reports received about a particular Certificate or Subscriber; and
-
-- Relevant legislation.
-
 If it is determined that revocation is required, the associated certificate shall be revoked and placed on the CRL.
 Revoked certificates shall be included on all new publications of the certificate status information until the certificates expire.
 
@@ -2094,39 +2062,17 @@ Furthermore, each CRL shall be published no later than the time specified in the
 
 ### On-line Revocation/Status Checking Availability
 
-CAs shall support on-line status checking via OCSP \[RFC 6960\] for end entity certificates issued under id-fpki-common-authentication, id-fpki-common-derived-pivAuth-hardware, id-fpki-common-derived-pivAuth, id-fpki-common-cardAuth, id-fpki-common-public-trusted-serverAuth, and all publicly trusted device certificates.
+CAs shall support on-line status checking via OCSP \[RFC 6960\] for end entity certificates issued under id-fpki-common-authentication, id-fpki-common-derived-pivAuth-hardware, id-fpki-common-derived-pivAuth, and id-fpki-common-cardAuth.
 
 Where on-line status checking is supported, status information must be updated and available to relying parties within 18 hours of certificate revocation.
 
 Where on-line status checking is supported and a certificate issued under id-fpki-common-High is revoked for key compromise, the status information must be updated and available to relying parties within 6 hours.
-
-For publicly trusted server authentication and code signing certificates, CAs shall support an OCSP capability using the GET method for Certificates issued in accordance with this CP.
-
-For the status of Subscriber Certificates:
-
-- The CA shall update information provided via an Online Certificate Status Protocol at least every 18 hours.
-OCSP responses from this service shall have a maximum expiration time of ten days.
-
-For the status of Subordinate CA Certificates:
-
-- The CA shall update information provided via an Online Certificate Status Protocol whenever CRLs are generated and at least within 18 hours after revoking a Subordinate CA Certificate.
-
-If the OCSP responder receives a request for status of a certificate that has not been issued, then the responder should not respond with a "good" status.
-The CA should monitor the responder for such requests as part of its security response procedures.
 
 The CA shall operate and maintain its CRL and OCSP capability with resources sufficient to provide a response time of ten seconds or less under normal operating conditions.
 
 The CA shall maintain an online 24x7 Repository that application software can use to automatically check the current status of all unexpired Certificates issued by the CA.
 
 The CA shall maintain a continuous 24x7 ability to respond internally to a high-priority Certificate Problem Report, and where appropriate, forward such a complaint to law enforcement authorities, and/or revoke a Certificate that is the subject of such a complaint.
-
-In addition, for id-fpki-common-public-trusted-serverAuth certificates, OCSP responses must be signed either:
-
-1.  by the CA that issued the certificates whose revocation status is being checked, or
-
-2.  by a delegated OCSP Responder using a certificate signed by the CA that issued the certificate whose revocation status is being checked.
-
-In the latter case, the OCSP signing Certificate shall contain an extension of type id-pkix-ocsp-nocheck, as defined by RFC2560.
 
 Since some relying parties cannot accommodate on-line communications, all CAs will be required to support CRLs.
 
@@ -2919,7 +2865,7 @@ Such CAs are required to continue to conform with all relevant aspects of this p
 
 Any issued certificates that have not expired, shall be revoked and a final long term CRL with a nextUpdate time past the validity period of all issued certificates shall be generated.
 This final CRL shall be available for all relying parties until the validity period of all issued certificates has past.
-Once the last CRL has been issued, the private signing key(s) of the CA to be terminated will be destroyed.
+Once the last CRL has been issued, the private signing key(s) of the CA to be terminated will be destroyed or taken offline, designated as “not in use”, and protected as stipulated in 5.1.2.1.
 
 Prior to CA termination, the CA shall provide archived data to an archive facility as specified in the CPS.
 As soon as possible, the CA will advise all other organizations to which it has issued certificates of its termination, using an agreed-upon method of communication specified in the CPS.
@@ -3130,9 +3076,6 @@ Subscribers issued certificates under the hardware users policy (id-fpki-common-
 
 CSSes that provide status information for certificates issued under id-fpki-common-High shall use a FIPS 140 Level 3 or higher validated hardware cryptographic module.
 CSSes that do not provide status information for certificates issued under id-fpki-common-High shall use a FIPS 140 Level 2 or higher validated hardware cryptographic module.
-
-For CAs that issue id-fpki-common-public-trusted-serverAuth device certificates, The CA shall host test Web pages that allow Application Software Suppliers to test their software with Subscriber Certificates that chain up to each publicly trusted Root Certificate.
-At a minimum, the CA shall host separate Web pages using Subscriber Certificates that are (i) valid, (ii) revoked, and (iii) expired.
 
 ### Private Key (n out of m) Multi-Person Control
 
@@ -3550,11 +3493,8 @@ Certificates issued under this CP shall assert at least one of the following OID
 > id-fpki-common-cardAuth ::= {2 16 840 1 101 3 2 1 3 17}
 >
 > id-fpki-common-piv-contentSigning ::= {2 16 840 1 101 3 2 1 3 39}
->
-> id-fpki-common-public-trusted-serverAuth
-::= {2 16 840 1 101 3 2 1 3 42}
 
-Certificates that express the id-fpki-common-piv-contentSigning or id-fpki-common-public-trusted-serverAuth policy OIDs shall not express any other policy OIDs.
+Certificates that express the id-fpki-common-piv-contentSigning policy OID shall not express any other policy OIDs.
 
 ### Usage of Policy Constraints Extension
 
@@ -3820,9 +3760,6 @@ A CA that issues certificates that assert a policy defined in this document shal
 - Revoking the certificates of subscribers found to have acted in a manner counter to their obligations in accordance with section 9.6.3.
 
 - Operating or providing for the services of an on-line repository, and informing the repository service provider of their obligations if applicable.
-
-This CP will be reviewed and updated as appropriate when Baseline Requirements for the Issuance and Management of Publicly-Trusted Certificates published at <http://www.cabforum.org>
-are updated.
 
 ### RA Representations and Warranties
 

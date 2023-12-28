@@ -8,9 +8,9 @@
 
 **Common Policy Framework**
 
-Version 2.2
+Version 2.3
 
-December 1, 2021
+September 9, 2022
 
 **Signature Page**
 
@@ -283,6 +283,13 @@ Implementation date is November 1, 2022.
 2020-03:</strong>
 Removes the prohibition on container technology and generalizes terminology.<br />
 Effective as of December 1, 2021.</td>
+</tr>
+<tr class="even">
+<td>2.3</td>
+<td>September 9, 2022</td>
+<td><p><strong>2022-01A:</strong>
+Update to Section 5.5.2 to provide specificity for archive record retention periods, assisting RAs, or other archiving elements, to understand what artifacts need to be archived, and for how long in certain scenarios.</p>
+<p>Implementation date is November 1, 2022.</p></td>
 </tr>
 </tbody>
 </table>
@@ -683,37 +690,37 @@ Effective as of December 1, 2021.</td>
 
 [5.5.4. Archive Backup Procedures [70](#archive-backup-procedures)](#archive-backup-procedures)
 
-[5.5.5. Requirements for Time-Stamping of Records [70](#requirements-for-time-stamping-of-records)](#requirements-for-time-stamping-of-records)
+[5.5.5. Requirements for Time-Stamping of Records [71](#requirements-for-time-stamping-of-records)](#requirements-for-time-stamping-of-records)
 
-[5.5.6. Archive Collection System (Internal or External) [70](#archive-collection-system-internal-or-external)](#archive-collection-system-internal-or-external)
+[5.5.6. Archive Collection System (Internal or External) [71](#archive-collection-system-internal-or-external)](#archive-collection-system-internal-or-external)
 
-[5.5.7. Procedures to Obtain and Verify Archive Information [70](#procedures-to-obtain-and-verify-archive-information)](#procedures-to-obtain-and-verify-archive-information)
+[5.5.7. Procedures to Obtain and Verify Archive Information [71](#procedures-to-obtain-and-verify-archive-information)](#procedures-to-obtain-and-verify-archive-information)
 
 [5.6. Key Changeover [71](#key-changeover)](#key-changeover)
 
-[5.7. Compromise and Disaster Recovery [71](#compromise-and-disaster-recovery)](#compromise-and-disaster-recovery)
+[5.7. Compromise and Disaster Recovery [72](#compromise-and-disaster-recovery)](#compromise-and-disaster-recovery)
 
-[5.7.1. Incident and Compromise Handling Procedures [71](#incident-and-compromise-handling-procedures)](#incident-and-compromise-handling-procedures)
+[5.7.1. Incident and Compromise Handling Procedures [72](#incident-and-compromise-handling-procedures)](#incident-and-compromise-handling-procedures)
 
 [5.7.2. Computing Resources, Software, and/or Data Are Corrupted [72](#computing-resources-software-andor-data-are-corrupted)](#computing-resources-software-andor-data-are-corrupted)
 
-[5.7.3. Entity Private Key Compromise Procedures [72](#entity-private-key-compromise-procedures)](#entity-private-key-compromise-procedures)
+[5.7.3. Entity Private Key Compromise Procedures [73](#entity-private-key-compromise-procedures)](#entity-private-key-compromise-procedures)
 
-[5.7.3.1. CA Private Key Compromise Procedures [72](#ca-private-key-compromise-procedures)](#ca-private-key-compromise-procedures)
+[5.7.3.1. CA Private Key Compromise Procedures [73](#ca-private-key-compromise-procedures)](#ca-private-key-compromise-procedures)
 
 [5.7.3.2. KRS Private Key Compromise Procedures [73](#krs-private-key-compromise-procedures)](#krs-private-key-compromise-procedures)
 
-[5.7.4. Business Continuity Capabilities after a Disaster [73](#business-continuity-capabilities-after-a-disaster)](#business-continuity-capabilities-after-a-disaster)
+[5.7.4. Business Continuity Capabilities after a Disaster [74](#business-continuity-capabilities-after-a-disaster)](#business-continuity-capabilities-after-a-disaster)
 
-[5.8. CA or RA Termination [73](#ca-or-ra-termination)](#ca-or-ra-termination)
+[5.8. CA or RA Termination [74](#ca-or-ra-termination)](#ca-or-ra-termination)
 
-[6. Technical Security Controls [74](#technical-security-controls)](#technical-security-controls)
+[6. Technical Security Controls [75](#technical-security-controls)](#technical-security-controls)
 
-[6.1. Key Pair Generation and Installation [74](#key-pair-generation-and-installation)](#key-pair-generation-and-installation)
+[6.1. Key Pair Generation and Installation [75](#key-pair-generation-and-installation)](#key-pair-generation-and-installation)
 
-[6.1.1. Key Pair Generation [74](#key-pair-generation)](#key-pair-generation)
+[6.1.1. Key Pair Generation [75](#key-pair-generation)](#key-pair-generation)
 
-[6.1.1.1. CA Key Pair Generation [74](#ca-key-pair-generation)](#ca-key-pair-generation)
+[6.1.1.1. CA Key Pair Generation [75](#ca-key-pair-generation)](#ca-key-pair-generation)
 
 [6.1.1.2. Subscriber Key Pair Generation [75](#subscriber-key-pair-generation)](#subscriber-key-pair-generation)
 
@@ -737,9 +744,9 @@ Effective as of December 1, 2021.</td>
 
 [6.2.1. Cryptographic Module Standards and Controls [78](#cryptographic-module-standards-and-controls)](#cryptographic-module-standards-and-controls)
 
-[6.2.2. Private Key (n out of m) Multi-Person Control [79](#private-key-n-out-of-m-multi-person-control)](#private-key-n-out-of-m-multi-person-control)
+[6.2.2. Private Key (n out of m) Multi-Person Control [80](#private-key-n-out-of-m-multi-person-control)](#private-key-n-out-of-m-multi-person-control)
 
-[6.2.3. Private Key Escrow [79](#private-key-escrow)](#private-key-escrow)
+[6.2.3. Private Key Escrow [80](#private-key-escrow)](#private-key-escrow)
 
 [6.2.4. Private Key Backup [80](#private-key-backup)](#private-key-backup)
 
@@ -747,13 +754,13 @@ Effective as of December 1, 2021.</td>
 
 [6.2.6. Private Key Transfer into or from a Cryptographic Module [81](#private-key-transfer-into-or-from-a-cryptographic-module)](#private-key-transfer-into-or-from-a-cryptographic-module)
 
-[6.2.7. Private Key Storage on Cryptographic Module [81](#private-key-storage-on-cryptographic-module)](#private-key-storage-on-cryptographic-module)
+[6.2.7. Private Key Storage on Cryptographic Module [82](#private-key-storage-on-cryptographic-module)](#private-key-storage-on-cryptographic-module)
 
-[6.2.8. Method of Activating Private Key [81](#method-of-activating-private-key)](#method-of-activating-private-key)
+[6.2.8. Method of Activating Private Key [82](#method-of-activating-private-key)](#method-of-activating-private-key)
 
-[6.2.9. Method of Deactivating Private Key [82](#method-of-deactivating-private-key)](#method-of-deactivating-private-key)
+[6.2.9. Method of Deactivating Private Key [83](#method-of-deactivating-private-key)](#method-of-deactivating-private-key)
 
-[6.2.10. Method of Destroying Private Key [82](#method-of-destroying-private-key)](#method-of-destroying-private-key)
+[6.2.10. Method of Destroying Private Key [83](#method-of-destroying-private-key)](#method-of-destroying-private-key)
 
 [6.2.11. Cryptographic Module Rating [83](#cryptographic-module-rating)](#cryptographic-module-rating)
 
@@ -769,197 +776,197 @@ Effective as of December 1, 2021.</td>
 
 [6.4.2. Activation Data Protection [84](#activation-data-protection)](#activation-data-protection)
 
-[6.4.3. Other Aspects of Activation Data [84](#other-aspects-of-activation-data)](#other-aspects-of-activation-data)
+[6.4.3. Other Aspects of Activation Data [85](#other-aspects-of-activation-data)](#other-aspects-of-activation-data)
 
-[6.5. Computer Security Controls [84](#computer-security-controls)](#computer-security-controls)
+[6.5. Computer Security Controls [85](#computer-security-controls)](#computer-security-controls)
 
-[6.5.1. Specific Computer Security Technical Requirements [84](#specific-computer-security-technical-requirements)](#specific-computer-security-technical-requirements)
+[6.5.1. Specific Computer Security Technical Requirements [85](#specific-computer-security-technical-requirements)](#specific-computer-security-technical-requirements)
 
-[6.5.2. Computer Security Rating [85](#computer-security-rating)](#computer-security-rating)
+[6.5.2. Computer Security Rating [86](#computer-security-rating)](#computer-security-rating)
 
-[6.6. Life Cycle Technical Controls [85](#life-cycle-technical-controls)](#life-cycle-technical-controls)
+[6.6. Life Cycle Technical Controls [86](#life-cycle-technical-controls)](#life-cycle-technical-controls)
 
-[6.6.1. System Development Controls [85](#system-development-controls)](#system-development-controls)
+[6.6.1. System Development Controls [86](#system-development-controls)](#system-development-controls)
 
-[6.6.2. Security Management Controls [86](#security-management-controls)](#security-management-controls)
+[6.6.2. Security Management Controls [87](#security-management-controls)](#security-management-controls)
 
-[6.6.3. Life Cycle Security Controls [86](#life-cycle-security-controls)](#life-cycle-security-controls)
+[6.6.3. Life Cycle Security Controls [87](#life-cycle-security-controls)](#life-cycle-security-controls)
 
-[6.7. Network Security Controls [86](#network-security-controls)](#network-security-controls)
+[6.7. Network Security Controls [87](#network-security-controls)](#network-security-controls)
 
-[6.8. Time-Stamping [87](#time-stamping)](#time-stamping)
+[6.8. Time-Stamping [88](#time-stamping)](#time-stamping)
 
-[7. Certificate, CRL, and OCSP Profiles [87](#certificate-crl-and-ocsp-profiles)](#certificate-crl-and-ocsp-profiles)
+[7. Certificate, CRL, and OCSP Profiles [88](#certificate-crl-and-ocsp-profiles)](#certificate-crl-and-ocsp-profiles)
 
-[7.1. Certificate Profile [87](#certificate-profile)](#certificate-profile)
+[7.1. Certificate Profile [88](#certificate-profile)](#certificate-profile)
 
-[7.1.1. Version Number(s) [87](#version-numbers)](#version-numbers)
+[7.1.1. Version Number(s) [88](#version-numbers)](#version-numbers)
 
-[7.1.2. Certificate Extensions [87](#certificate-extensions)](#certificate-extensions)
+[7.1.2. Certificate Extensions [88](#certificate-extensions)](#certificate-extensions)
 
-[7.1.3. Algorithm Object Identifiers [88](#algorithm-object-identifiers)](#algorithm-object-identifiers)
+[7.1.3. Algorithm Object Identifiers [89](#algorithm-object-identifiers)](#algorithm-object-identifiers)
 
-[7.1.4. Name Forms [89](#name-forms)](#name-forms)
+[7.1.4. Name Forms [90](#name-forms)](#name-forms)
 
-[7.1.5. Name Constraints [89](#name-constraints)](#name-constraints)
+[7.1.5. Name Constraints [90](#name-constraints)](#name-constraints)
 
-[7.1.6. Certificate Policy Object Identifier [89](#certificate-policy-object-identifier)](#certificate-policy-object-identifier)
+[7.1.6. Certificate Policy Object Identifier [90](#certificate-policy-object-identifier)](#certificate-policy-object-identifier)
 
-[7.1.7. Usage of Policy Constraints Extension [89](#usage-of-policy-constraints-extension)](#usage-of-policy-constraints-extension)
+[7.1.7. Usage of Policy Constraints Extension [90](#usage-of-policy-constraints-extension)](#usage-of-policy-constraints-extension)
 
-[7.1.8. Policy Qualifiers Syntax and Semantics [90](#policy-qualifiers-syntax-and-semantics)](#policy-qualifiers-syntax-and-semantics)
+[7.1.8. Policy Qualifiers Syntax and Semantics [91](#policy-qualifiers-syntax-and-semantics)](#policy-qualifiers-syntax-and-semantics)
 
-[7.1.9. Processing Semantics for the Critical Certificate Policies Extension [90](#processing-semantics-for-the-critical-certificate-policies-extension)](#processing-semantics-for-the-critical-certificate-policies-extension)
+[7.1.9. Processing Semantics for the Critical Certificate Policies Extension [91](#processing-semantics-for-the-critical-certificate-policies-extension)](#processing-semantics-for-the-critical-certificate-policies-extension)
 
-[7.1.10. Inhibit Any Policy Extension [90](#inhibit-any-policy-extension)](#inhibit-any-policy-extension)
+[7.1.10. Inhibit Any Policy Extension [91](#inhibit-any-policy-extension)](#inhibit-any-policy-extension)
 
-[7.2. CRL Profile [90](#crl-profile)](#crl-profile)
+[7.2. CRL Profile [91](#crl-profile)](#crl-profile)
 
-[7.2.1. Version Number(s) [90](#version-numbers-1)](#version-numbers-1)
+[7.2.1. Version Number(s) [91](#version-numbers-1)](#version-numbers-1)
 
-[7.2.2. CRL and CRL Entry Extensions [90](#crl-and-crl-entry-extensions)](#crl-and-crl-entry-extensions)
+[7.2.2. CRL and CRL Entry Extensions [91](#crl-and-crl-entry-extensions)](#crl-and-crl-entry-extensions)
 
-[7.3. OCSP Profile [90](#ocsp-profile)](#ocsp-profile)
+[7.3. OCSP Profile [91](#ocsp-profile)](#ocsp-profile)
 
-[7.3.1. Version Number(s) [90](#version-numbers-2)](#version-numbers-2)
+[7.3.1. Version Number(s) [91](#version-numbers-2)](#version-numbers-2)
 
-[7.3.2. OCSP Extensions [90](#ocsp-extensions)](#ocsp-extensions)
+[7.3.2. OCSP Extensions [91](#ocsp-extensions)](#ocsp-extensions)
 
-[8. Compliance Audit and Other Assessments [90](#compliance-audit-and-other-assessments)](#compliance-audit-and-other-assessments)
+[8. Compliance Audit and Other Assessments [91](#compliance-audit-and-other-assessments)](#compliance-audit-and-other-assessments)
 
-[8.1. Frequency or Circumstances of Assessment [91](#frequency-or-circumstances-of-assessment)](#frequency-or-circumstances-of-assessment)
+[8.1. Frequency or Circumstances of Assessment [92](#frequency-or-circumstances-of-assessment)](#frequency-or-circumstances-of-assessment)
 
-[8.2. Identity/Qualifications of Assessor [91](#identityqualifications-of-assessor)](#identityqualifications-of-assessor)
+[8.2. Identity/Qualifications of Assessor [92](#identityqualifications-of-assessor)](#identityqualifications-of-assessor)
 
-[8.3. Assessor’s Relationship to Assessed Entity [91](#assessors-relationship-to-assessed-entity)](#assessors-relationship-to-assessed-entity)
+[8.3. Assessor’s Relationship to Assessed Entity [92](#assessors-relationship-to-assessed-entity)](#assessors-relationship-to-assessed-entity)
 
-[8.4. Topics Covered by Assessment [91](#topics-covered-by-assessment)](#topics-covered-by-assessment)
+[8.4. Topics Covered by Assessment [92](#topics-covered-by-assessment)](#topics-covered-by-assessment)
 
-[8.5. Actions Taken as a Result of Deficiency [92](#actions-taken-as-a-result-of-deficiency)](#actions-taken-as-a-result-of-deficiency)
+[8.5. Actions Taken as a Result of Deficiency [93](#actions-taken-as-a-result-of-deficiency)](#actions-taken-as-a-result-of-deficiency)
 
-[8.6. Communication of Results [92](#communication-of-results)](#communication-of-results)
+[8.6. Communication of Results [93](#communication-of-results)](#communication-of-results)
 
-[9. Other Business and Legal Matters [92](#other-business-and-legal-matters)](#other-business-and-legal-matters)
+[9. Other Business and Legal Matters [93](#other-business-and-legal-matters)](#other-business-and-legal-matters)
 
-[9.1. Fees [92](#fees)](#fees)
+[9.1. Fees [93](#fees)](#fees)
 
-[9.1.1. Certificate Issuance or Renewal Fees [92](#certificate-issuance-or-renewal-fees)](#certificate-issuance-or-renewal-fees)
+[9.1.1. Certificate Issuance or Renewal Fees [93](#certificate-issuance-or-renewal-fees)](#certificate-issuance-or-renewal-fees)
 
-[9.1.2. Certificate Access Fees [92](#certificate-access-fees)](#certificate-access-fees)
+[9.1.2. Certificate Access Fees [93](#certificate-access-fees)](#certificate-access-fees)
 
-[9.1.3. Revocation or Status Information Access Fees [93](#revocation-or-status-information-access-fees)](#revocation-or-status-information-access-fees)
+[9.1.3. Revocation or Status Information Access Fees [94](#revocation-or-status-information-access-fees)](#revocation-or-status-information-access-fees)
 
-[9.1.4. Fees for other Services [93](#fees-for-other-services)](#fees-for-other-services)
+[9.1.4. Fees for other Services [94](#fees-for-other-services)](#fees-for-other-services)
 
-[9.1.5. Refund Policy [93](#refund-policy)](#refund-policy)
+[9.1.5. Refund Policy [94](#refund-policy)](#refund-policy)
 
-[9.2. Financial Responsibility [93](#financial-responsibility)](#financial-responsibility)
+[9.2. Financial Responsibility [94](#financial-responsibility)](#financial-responsibility)
 
-[9.2.1. Insurance Coverage [93](#insurance-coverage)](#insurance-coverage)
+[9.2.1. Insurance Coverage [94](#insurance-coverage)](#insurance-coverage)
 
-[9.2.2. Other Assets [93](#other-assets)](#other-assets)
+[9.2.2. Other Assets [94](#other-assets)](#other-assets)
 
-[9.2.3. Insurance or Warranty Coverage for End-Entities [93](#insurance-or-warranty-coverage-for-end-entities)](#insurance-or-warranty-coverage-for-end-entities)
+[9.2.3. Insurance or Warranty Coverage for End-Entities [94](#insurance-or-warranty-coverage-for-end-entities)](#insurance-or-warranty-coverage-for-end-entities)
 
-[9.3. Confidentiality of Business Information [93](#confidentiality-of-business-information)](#confidentiality-of-business-information)
+[9.3. Confidentiality of Business Information [94](#confidentiality-of-business-information)](#confidentiality-of-business-information)
 
-[9.3.1. Scope of Confidential Information [93](#scope-of-confidential-information)](#scope-of-confidential-information)
+[9.3.1. Scope of Confidential Information [94](#scope-of-confidential-information)](#scope-of-confidential-information)
 
-[9.3.2. Information not within the Scope of Confidential Information [93](#information-not-within-the-scope-of-confidential-information)](#information-not-within-the-scope-of-confidential-information)
+[9.3.2. Information not within the Scope of Confidential Information [94](#information-not-within-the-scope-of-confidential-information)](#information-not-within-the-scope-of-confidential-information)
 
-[9.3.3. Responsibility to Protect Confidential Information [93](#responsibility-to-protect-confidential-information)](#responsibility-to-protect-confidential-information)
+[9.3.3. Responsibility to Protect Confidential Information [94](#responsibility-to-protect-confidential-information)](#responsibility-to-protect-confidential-information)
 
-[9.4. Privacy of Personal Information [94](#privacy-of-personal-information)](#privacy-of-personal-information)
+[9.4. Privacy of Personal Information [95](#privacy-of-personal-information)](#privacy-of-personal-information)
 
-[9.4.1. Privacy Plan [94](#privacy-plan)](#privacy-plan)
+[9.4.1. Privacy Plan [95](#privacy-plan)](#privacy-plan)
 
-[9.4.2. Information Treated as Private [94](#information-treated-as-private)](#information-treated-as-private)
+[9.4.2. Information Treated as Private [95](#information-treated-as-private)](#information-treated-as-private)
 
-[9.4.3. Information not Deemed Private [94](#information-not-deemed-private)](#information-not-deemed-private)
+[9.4.3. Information not Deemed Private [95](#information-not-deemed-private)](#information-not-deemed-private)
 
-[9.4.4. Responsibility to Protect Private Information [94](#responsibility-to-protect-private-information)](#responsibility-to-protect-private-information)
+[9.4.4. Responsibility to Protect Private Information [95](#responsibility-to-protect-private-information)](#responsibility-to-protect-private-information)
 
-[9.4.5. Notice and Consent to Use Private Information [94](#notice-and-consent-to-use-private-information)](#notice-and-consent-to-use-private-information)
+[9.4.5. Notice and Consent to Use Private Information [95](#notice-and-consent-to-use-private-information)](#notice-and-consent-to-use-private-information)
 
-[9.4.6. Disclosure Pursuant to Judicial or Administrative Process [94](#disclosure-pursuant-to-judicial-or-administrative-process)](#disclosure-pursuant-to-judicial-or-administrative-process)
+[9.4.6. Disclosure Pursuant to Judicial or Administrative Process [95](#disclosure-pursuant-to-judicial-or-administrative-process)](#disclosure-pursuant-to-judicial-or-administrative-process)
 
-[9.4.7. Other Information Disclosure Circumstances [95](#other-information-disclosure-circumstances)](#other-information-disclosure-circumstances)
+[9.4.7. Other Information Disclosure Circumstances [96](#other-information-disclosure-circumstances)](#other-information-disclosure-circumstances)
 
-[9.5. Intellectual Property Rights [95](#intellectual-property-rights)](#intellectual-property-rights)
+[9.5. Intellectual Property Rights [96](#intellectual-property-rights)](#intellectual-property-rights)
 
-[9.6. Representations and Warranties [95](#representations-and-warranties)](#representations-and-warranties)
+[9.6. Representations and Warranties [96](#representations-and-warranties)](#representations-and-warranties)
 
-[9.6.1. CA and KED Representations and Warranties [95](#ca-and-ked-representations-and-warranties)](#ca-and-ked-representations-and-warranties)
+[9.6.1. CA and KED Representations and Warranties [96](#ca-and-ked-representations-and-warranties)](#ca-and-ked-representations-and-warranties)
 
-[9.6.2. RA and KRA/KRO Representations and Warranties [96](#ra-and-krakro-representations-and-warranties)](#ra-and-krakro-representations-and-warranties)
+[9.6.2. RA and KRA/KRO Representations and Warranties [97](#ra-and-krakro-representations-and-warranties)](#ra-and-krakro-representations-and-warranties)
 
-[9.6.2.1. RA Obligations [96](#ra-obligations)](#ra-obligations)
+[9.6.2.1. RA Obligations [97](#ra-obligations)](#ra-obligations)
 
-[9.6.2.2. KRA Obligations [96](#kra-obligations)](#kra-obligations)
+[9.6.2.2. KRA Obligations [97](#kra-obligations)](#kra-obligations)
 
-[9.6.2.3. KRO Obligations [97](#kro-obligations)](#kro-obligations)
+[9.6.2.3. KRO Obligations [98](#kro-obligations)](#kro-obligations)
 
-[9.6.3. Subscriber and Data Decryption Server Representations and Warranties [98](#subscriber-and-data-decryption-server-representations-and-warranties)](#subscriber-and-data-decryption-server-representations-and-warranties)
+[9.6.3. Subscriber and Data Decryption Server Representations and Warranties [99](#subscriber-and-data-decryption-server-representations-and-warranties)](#subscriber-and-data-decryption-server-representations-and-warranties)
 
-[9.6.3.1. Subscriber Representations and Warranties [98](#subscriber-representations-and-warranties)](#subscriber-representations-and-warranties)
+[9.6.3.1. Subscriber Representations and Warranties [99](#subscriber-representations-and-warranties)](#subscriber-representations-and-warranties)
 
-[9.6.3.2. Data Decryption Server Representations and Warranties [98](#data-decryption-server-representations-and-warranties)](#data-decryption-server-representations-and-warranties)
+[9.6.3.2. Data Decryption Server Representations and Warranties [99](#data-decryption-server-representations-and-warranties)](#data-decryption-server-representations-and-warranties)
 
-[9.6.4. Relying Parties Representations and Warranties [99](#relying-parties-representations-and-warranties)](#relying-parties-representations-and-warranties)
+[9.6.4. Relying Parties Representations and Warranties [100](#relying-parties-representations-and-warranties)](#relying-parties-representations-and-warranties)
 
-[9.6.5. Representations and Warranties of Other Participants [99](#representations-and-warranties-of-other-participants)](#representations-and-warranties-of-other-participants)
+[9.6.5. Representations and Warranties of Other Participants [100](#representations-and-warranties-of-other-participants)](#representations-and-warranties-of-other-participants)
 
-[9.7. Disclaimers of Warranties [100](#disclaimers-of-warranties)](#disclaimers-of-warranties)
+[9.7. Disclaimers of Warranties [101](#disclaimers-of-warranties)](#disclaimers-of-warranties)
 
-[9.8. Limitations of Liability [100](#limitations-of-liability)](#limitations-of-liability)
+[9.8. Limitations of Liability [101](#limitations-of-liability)](#limitations-of-liability)
 
-[9.9. Indemnities [100](#indemnities)](#indemnities)
+[9.9. Indemnities [101](#indemnities)](#indemnities)
 
-[9.10. Term and Termination [100](#term-and-termination)](#term-and-termination)
+[9.10. Term and Termination [101](#term-and-termination)](#term-and-termination)
 
-[9.10.1. Term [100](#term)](#term)
+[9.10.1. Term [101](#term)](#term)
 
-[9.10.2. Termination [100](#termination)](#termination)
+[9.10.2. Termination [101](#termination)](#termination)
 
-[9.10.3. Effect of Termination and Survival [100](#effect-of-termination-and-survival)](#effect-of-termination-and-survival)
+[9.10.3. Effect of Termination and Survival [101](#effect-of-termination-and-survival)](#effect-of-termination-and-survival)
 
-[9.11. Individual Notices and Communications with Participants [101](#individual-notices-and-communications-with-participants)](#individual-notices-and-communications-with-participants)
+[9.11. Individual Notices and Communications with Participants [102](#individual-notices-and-communications-with-participants)](#individual-notices-and-communications-with-participants)
 
-[9.12. Amendments [101](#amendments)](#amendments)
+[9.12. Amendments [102](#amendments)](#amendments)
 
-[9.12.1. Procedure for Amendment [101](#procedure-for-amendment)](#procedure-for-amendment)
+[9.12.1. Procedure for Amendment [102](#procedure-for-amendment)](#procedure-for-amendment)
 
-[9.12.2. Notification Mechanism and Period [101](#notification-mechanism-and-period)](#notification-mechanism-and-period)
+[9.12.2. Notification Mechanism and Period [102](#notification-mechanism-and-period)](#notification-mechanism-and-period)
 
-[9.12.3. Circumstances under which OID must be Changed [101](#circumstances-under-which-oid-must-be-changed)](#circumstances-under-which-oid-must-be-changed)
+[9.12.3. Circumstances under which OID must be Changed [102](#circumstances-under-which-oid-must-be-changed)](#circumstances-under-which-oid-must-be-changed)
 
-[9.13. Dispute Resolution Provisions [101](#dispute-resolution-provisions)](#dispute-resolution-provisions)
+[9.13. Dispute Resolution Provisions [102](#dispute-resolution-provisions)](#dispute-resolution-provisions)
 
-[9.14. Governing Law [101](#governing-law)](#governing-law)
+[9.14. Governing Law [102](#governing-law)](#governing-law)
 
-[9.15. Compliance with Applicable Law [101](#compliance-with-applicable-law)](#compliance-with-applicable-law)
+[9.15. Compliance with Applicable Law [102](#compliance-with-applicable-law)](#compliance-with-applicable-law)
 
-[9.16. Miscellaneous Provisions [102](#miscellaneous-provisions)](#miscellaneous-provisions)
+[9.16. Miscellaneous Provisions [103](#miscellaneous-provisions)](#miscellaneous-provisions)
 
-[9.16.1. Entire Agreement [102](#entire-agreement)](#entire-agreement)
+[9.16.1. Entire Agreement [103](#entire-agreement)](#entire-agreement)
 
-[9.16.2. Assignment [102](#assignment)](#assignment)
+[9.16.2. Assignment [103](#assignment)](#assignment)
 
-[9.16.3. Severability [102](#severability)](#severability)
+[9.16.3. Severability [103](#severability)](#severability)
 
-[9.16.4. Enforcement (Attorneys’ Fees and Waiver of Rights) [102](#enforcement-attorneys-fees-and-waiver-of-rights)](#enforcement-attorneys-fees-and-waiver-of-rights)
+[9.16.4. Enforcement (Attorneys’ Fees and Waiver of Rights) [103](#enforcement-attorneys-fees-and-waiver-of-rights)](#enforcement-attorneys-fees-and-waiver-of-rights)
 
-[9.16.5. Force Majeure [102](#force-majeure)](#force-majeure)
+[9.16.5. Force Majeure [103](#force-majeure)](#force-majeure)
 
-[9.17. Other Provisions [102](#other-provisions)](#other-provisions)
+[9.17. Other Provisions [103](#other-provisions)](#other-provisions)
 
-[Appendix A: PIV and Common PIV Interoperable Comparison [103](#appendix-a-piv-and-common-piv-interoperable-comparison)](#appendix-a-piv-and-common-piv-interoperable-comparison)
+[Appendix A: PIV and Common PIV Interoperable Comparison [104](#appendix-a-piv-and-common-piv-interoperable-comparison)](#appendix-a-piv-and-common-piv-interoperable-comparison)
 
-[Appendix B: References [105](#appendix-b-references)](#appendix-b-references)
+[Appendix B: References [106](#appendix-b-references)](#appendix-b-references)
 
-[Appendix C: Acronyms and Abbreviations [108](#appendix-c-acronyms-and-abbreviations)](#appendix-c-acronyms-and-abbreviations)
+[Appendix C: Acronyms and Abbreviations [109](#appendix-c-acronyms-and-abbreviations)](#appendix-c-acronyms-and-abbreviations)
 
-[Appendix D: Glossary [111](#appendix-d-glossary)](#appendix-d-glossary)
+[Appendix D: Glossary [112](#appendix-d-glossary)](#appendix-d-glossary)
 
 # Introduction
 
@@ -3160,9 +3167,20 @@ For CAs that leverage key-rollover procedures a new retention period begins for 
 
 CAs will maintain all archived records related to that CA, in an accessible fashion, for 3 years after CA expiration or CA termination.
 
-National Archives and Records Administration General Records Schedules \[NARA GRS\], 5.6 Item 120, defines other required RA chain-of-trust records, and archive retention periods.
+Individual records associated with certificate request authorization, certificate revocation, subscriber authentication, or subscriber certificate acceptance must be maintained for a minimum of 3 years after the subject certificate expiration date.
+Issuance of new certificates with extended validity periods (i.e., renewal, rekey or modification) supported by existing subscriber authentication records (i.e., authentication using an existing valid certificate) will result in a new retention period for those initial records, based on the new certificate expiration date.
 
-Otherwise RA operations, to include any IT systems that facilitate RA functions, must maintain relevant archives for 3 years after RA system replacement or termination
+|                                                                                                                                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Practice Note**: Archive records can be retained for as long as business purposes require; however, this policy does not waive any organizational policies that may require the destruction of such records or otherwise limits their retention periods. |
+
+|                                                                                                                                                                                                                       |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Practice Note**: If the archive records are maintained separately from the CA, communication processes may be required to determine when archive records are no longer needed based on related public certificates. |
+
+National Archives and Records Administration General Records Schedules \[NARA GRS\], 5.6 Item 120, defines other required RA chain-of-trust records, and archive retention periods related to credentials issued in support of HSPD-12.
+
+RA system operations audit records that include any IT resources that facilitate RA functions, must maintain relevant archives for a minimum of 3 years after RA system replacement or termination
 
 ### Protection of Archive
 
@@ -3859,7 +3877,7 @@ See Section 6.2.1.
 
 ### Public Key Archival
 
-Public key is archival must be in accordance with Section 5.5.
+Public key archival must be in accordance with Section 5.5.
 
 ### Certificate Operational Periods and Key Usage Periods
 
@@ -4818,8 +4836,8 @@ Card Management System</u></strong></p>
 <tr class="even">
 <td>CCP-PROF</td>
 <td>Common Policy X.509 Certificate and Certificate Revocation List (CRL) Profiles <u><br />
-</u><a href="https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-x509-cert-profile-ssp.pdf"
->https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-x509-cert-profile-ssp.pdf</a></td>
+</u><a href="https://www.idmanagement.gov/docs/fpki-x509-cert-profile-common.pdf"
+>https://www.idmanagement.gov/docs/fpki-x509-cert-profile-common.pdf</a></td>
 </tr>
 <tr class="odd">
 <td>Executive Order 12968</td>

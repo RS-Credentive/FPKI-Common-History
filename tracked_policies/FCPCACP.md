@@ -8,9 +8,9 @@
 
 **Common Policy Framework**
 
-Version 1.28
+Version 1.29
 
-April 4, 2018
+May 10, 2018
 
 **Signature Page**
 
@@ -226,6 +226,16 @@ Clarifies the period of time PIV card stock can continue to be used once it has 
 <td>April 4, 2018</td>
 <td><strong>2018-01:</strong>
 Key Recovery for key management certificates issued under the COMMON Policy</td>
+</tr>
+<tr class="even">
+<td>1.29</td>
+<td>May 10, 2018</td>
+<td><p><strong>2018-02:</strong>
+Add reference to Annual Review Requirements</p>
+<p><strong>2018-03</strong>: Mandate specific EKUs in certificates issued after June 30, 2019</p>
+<p><strong>2018-04</strong>: Certificate revocation requirements for Transitive Closure after August 15, 2018</p>
+<p><strong>2018-05:</strong>
+Requirements for virtual implementations</p></td>
 </tr>
 </tbody>
 </table>
@@ -2035,6 +2045,8 @@ The revocation decision shall be made based on appropriate criteria, to include:
 If it is determined that revocation is required, the associated certificate shall be revoked and placed on the CRL.
 Revoked certificates shall be included on all new publications of the certificate status information until the certificates expire.
 
+If it is determined that a private key used to authorize the issuance of one or more certificates may have been compromised, all certificates directly or indirectly authorized by that private key since the date of actual or suspected compromise shall be revoked or shall be verified as appropriately issued.
+
 ### Who Can Request Revocation
 
 Within the PKI, a CA may summarily revoke certificates within its domain.
@@ -2447,6 +2459,8 @@ Documentation sufficient to define duties and procedures for each role shall be 
 ## Audit Logging Procedures
 
 Audit log files shall be generated for all events relating to the security of the CA.
+For CAs operated in a virtual machine environment (VME)[^1], audit logs shall be generated for all applicable events on both the virtual machine (VM) and isolation kernel (i.e. hypervisor).
+
 Where possible, the security audit logs shall be automatically collected.
 Where this is not possible, a logbook, paper form, or other physical mechanism shall be used.
 All security audit logs, both electronic and non-electronic, shall be retained and made available during compliance audits.
@@ -3114,6 +3128,11 @@ Device certificates shall not assert the *nonRepudiation* bit.
 
 The *dataEncipherment*, *encipherOnly*, and *decipherOnly* bits shall not be asserted in certificates issued under this policy.
 
+For End Entity certificates issued after June 30, 2019, the Extended Key Usage extension shall always be present and shall not contain *anyExtendedKeyUsage* {2.5.29.37.0}.
+Extended Key Usage OIDs shall be consistent with key usage bits asserted.
+
+If a certificate is used for authentication of ephemeral keys, the Key Usage bit in the certificate must assert the *digitalSignature* bit and may or may not assert *keyEncryption* and *keyAgreement* depending on the public key in the SPKI of the certificate.
+
 Signing certificates issued under the policy for id-fpki-common-piv-contentSigning shall include an extended key usage of *id-PIV-content-signing* (see \[CCP-PROF\]).
 
 ## Private Key Protection and Cryptographic Module Engineering Controls
@@ -3336,9 +3355,29 @@ The following computer security functions pertaining to the Common Policy Root C
 
 - Enforce domain integrity boundaries for security-critical processes.
 
+For those portions of the Common Policy Root CA operating in a VME, the following security functions also pertain to the hypervisor:
+
+- Require authenticated logins
+
+- Provide discretionary access control
+
+- Provide a security audit capability
+
+- Enforce separation of duties for PKI roles
+
+- Prohibit object reuse or require separation for CA random access memory
+
+- Require use of cryptography for session communication and database security
+
+- Archive CA history and audit data
+
+- Require self-test security-related CA services
+
+- Enforce domain integrity boundaries for security-critical processes.
+
 For other CAs operating under this policy, the computer security functions listed below are required.
 These functions may be provided by the operating system, or through a combination of operating system, software, and physical safeguards.
-The CA and its ancillary parts shall include the following functionality:
+The CA and its ancillary parts shall include the following functionality (in a VME, these functions are applicable to both the VM and hypervisor):
 
 - authenticate the identity of users before permitting access to the system or applications;
 
@@ -3350,7 +3389,7 @@ The CA and its ancillary parts shall include the following functionality:
 
 - support recovery from key or system failure.
 
-For certificate status servers operating under this policy, the computer security functions listed below are required:
+For certificate status servers operating under this policy, the computer security functions listed below are required (in a VME, these functions are applicable to both the VM and hypervisor):
 
 - authenticate the identity of users before permitting access to the system or applications;
 
@@ -3391,9 +3430,12 @@ The system development controls for the CA and RA are as follows:
 - Hardware and software developed specifically for the CA shall be developed in a controlled environment, and the development process shall be defined and documented.
 This requirement does not apply to commercial off-the-shelf hardware or software.
 
-- The CA hardware and software shall be dedicated to performing one task: the CA.
+- The CA hardware and software, including the VME hypervisor, shall be dedicated to operating and supporting the CA (i.e., the systems and services dedicated to the issuance and management of certificates).
 There shall be no other applications, hardware devices, network connections, or component software installed that are not parts of the CA operation.
 Where the CA operation supports multiple CAs, the hardware platform may support multiple CAs.
+In a VME, a single hypervisor may support multiple CAs and their supporting systems, provided all systems have comparable security controls and are dedicated to the support of the CA.
+
+- In a VME, all VM systems must operate in the same security zone as the CA.
 
 - Proper care shall be taken to prevent malicious software from being loaded onto the CA equipment.
 All applications required to perform the operation of the CA shall be obtained from documented sources.
@@ -3596,6 +3638,8 @@ Critical OCSP extensions shall not be used.
 
 #  Compliance Audit and Other Assessments
 
+CAs operating under this policy are subject to an annual review by the FPKIPA to ensure their policies and operations remain compliant with this policy.
+
 CAs operating under this policy shall have a compliance audit mechanism in place to ensure that the requirements of their CPS are being implemented and enforced.
 The SSP PMA shall be responsible for ensuring audits are conducted for all PKI functions regardless of how or by whom the PKI components are managed and operated.
 
@@ -3605,8 +3649,7 @@ This specification does not impose a requirement for any particular assessment m
 
 ## Frequency or Circumstances of Assessment
 
-CAs and RAs operating under this policy shall be subject to a periodic compliance audit at least once per year in accordance with the [*FPKI Compliance Audit Requirements*]
-(http://www.idmanagement.gov/fpkipa/documents/FPKI%20Compliance%20Audit%20Requirements.doc) document \[AUDIT\].
+CAs and RAs operating under this policy shall be subject to a periodic compliance audit at least once per year in accordance with the *FPKI Annual Review Requirements* document \[AUDIT\].
 
 Further, the FPKIPA has the right to require aperiodic compliance audits of CAs operating under this policy.
 The FPKIPA shall state the reason for any aperiodic compliance audit.
@@ -3650,13 +3693,11 @@ In accordance with section 8.1, a compliance audit may be required to confirm th
 
 ## Communication of Results
 
-On an annual basis, an Auditor Letter of Compliance, prepared in accordance with the [*FPKI Compliance Audit Requirements*]
-(http://www.idmanagement.gov/fpkipa/documents/FPKI%20Compliance%20Audit%20Requirements.doc) document, on behalf of an Agency PMA shall be provided to the SSP.
+On an annual basis, an Auditor Letter of Compliance, prepared in accordance with the *FPKI Annual Review Requirements* document, on behalf of an Agency PMA shall be provided to the SSP.
 
-On an annual basis, the SSP PMA shall submit an audit compliance package to the FPKIPA.
-This package shall be prepared in accordance with the [*FPKI Compliance Audit Requirements*]
-(http://www.idmanagement.gov/fpkipa/documents/FPKI%20Compliance%20Audit%20Requirements.doc) document and includes an assertion from the SSP PMA that all PKI components have been audited - including any components that may be separately managed and operated.
-The report shall identify the versions of this CP and CPS used in the assessment.
+On an annual basis, the SSP PMA shall submit an annual review package to the FPKIPA.
+This package shall be prepared by the SSP PMA, in accordance with the *FPKI Annual Review Requirements* document and include an assertion that all PKI components have been audited - including any components that may be separately managed and operated.
+The report shall identify the versions of this CP and the CPS used in the assessment.
 Additionally, where necessary, the results shall be communicated as set forth in section 8.5 above.
 
 #  Other Business and Legal Matters
@@ -3951,8 +3992,8 @@ The following documents were used in part to develop this CP:
 <tbody>
 <tr class="odd">
 <td>ABADSG</td>
-<td>Digital Signature Guidelines, 1996-08-01. <a href="http://www.abanet.org/scitech/ec/isc/dsgfree.html"
->http://www.abanet.org/scitech/ec/isc/dsgfree.html</a></td>
+<td>Digital Signature Guidelines, 1996-08-01. <a href="http://itlaw.wikia.com/wiki/American_Bar_Association_(ABA)_Digital_Signature_Guidelines"
+>http://itlaw.wikia.com/wiki/American_Bar_Association_(ABA)_Digital_Signature_Guidelines</a></td>
 </tr>
 <tr class="even">
 <td>APL</td>
@@ -3961,7 +4002,8 @@ The following documents were used in part to develop this CP:
 </tr>
 <tr class="odd">
 <td>AUDIT</td>
-<td>FPKI Compliance Audit Requirements <a href="http://www.idmanagement.gov/fpkipa/documents/FPKI%20Compliance%20Audit%20Requirements.doc">http://www.idmanagement.gov/fpkipa/documents/FPKI%20Compliance%20Audit%20Requirements.doc</a></td>
+<td><a href="https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/annual-review-requirements.pdf">FPKI
+Annual Review Requirements</a></td>
 </tr>
 <tr class="even">
 <td>CCP-PROF</td>
@@ -4185,6 +4227,8 @@ or <a href="http://csrc.nist.gov/publications/drafts/800-157/sp800_157_draft.pdf
 | URL      | Uniform Resource Locator                                                          |
 | U.S.C.   | United States Code                                                                |
 | UUID     | Universal Unique Identifier                                                       |
+| VM       | Virtual Machine                                                                   |
+| VME      | Virtual Machine Environment                                                       |
 | WWW      | World Wide Web                                                                    |
 
 # 
@@ -4232,6 +4276,7 @@ or <a href="http://csrc.nist.gov/publications/drafts/800-157/sp800_157_draft.pdf
 | Federal Public Key Infrastructure Policy Authority (FPKIPA) | The FPKIPA is a Federal Government body responsible for setting, implementing, and administering policy decisions regarding the Federal PKI Architecture.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Firewall                                                    | Gateway that limits access between networks in accordance with local security policy. \[NS4009\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | High Assurance Guard (HAG)                                  | An enclave boundary protection device that controls access between a local area network that an enterprise system has a requirement to protect, and an external network that is outside the control of the enterprise system, with a high degree of assurance.                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Hypervisor                                                  | Computer software, firmware or hardware that creates and runs virtual machines. A [hypervisor](https://en.wikipedia.org/wiki/Hypervisor) uses [native execution](https://en.wikipedia.org/wiki/Native_code) to share and manage hardware, allowing for multiple environments which are isolated from one another, yet exist on the same physical machine. Also known as an isolation kernel or virtual machine monitor.                                                                                                                                                                                                                                                            |
 | Information Systems Security Officer (ISSO)                 | Person responsible to the Designated Approving Authority for ensuring the security of an information system throughout its life-cycle, from design through disposal. \[NS4009\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Inside Threat                                               | An entity with authorized access that has the potential to harm an information system through destruction, disclosure, modification of data, and/or denial of service.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | Integrity                                                   | Protection against unauthorized modification or destruction of information. \[NS4009\]. A state in which information has remained unaltered from the point it was produced by a source, during transmission, storage, and eventual receipt by the destination.                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -4284,6 +4329,7 @@ or <a href="http://csrc.nist.gov/publications/drafts/800-157/sp800_157_draft.pdf
 | Trusted Timestamp                                           | A digitally signed assertion by a trusted authority that a specific digital object existed at a particular time.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Trustworthy System                                          | Computer hardware, software, and procedures that: (1) are reasonably secure from intrusion and misuse; (2) provide a reasonable level of availability, reliability, and correct operation; (3) are reasonably suited to performing their intended functions; and (4) adhere to generally accepted security procedures.                                                                                                                                                                                                                                                                                                                                                             |
 | Two-Person Control                                          | Continuous surveillance and control of positive control material at all times by a minimum of two authorized individuals, each capable of detecting incorrect and/or unauthorized procedures with respect to the task being performed and each familiar with established security and safety requirements. \[NS4009\]                                                                                                                                                                                                                                                                                                                                                              |
+| Virtual Machine Environment                                 | An emulation of a computer system (in this case, a CA) that provides the functionality of a physical machine in a platform-independent environment. They provide functionality needed to execute entire operating systems. At this time, allowed VMEs are limited to Hypervisor type virtual environments.  Other technology, such as Docker Containers, is not permitted.                                                                                                                                                                                                                                                                                                         |
 | Zeroize                                                     | A method of erasing electronically stored data by altering the contents of the data storage so as to prevent the recovery of the data. \[FIPS 140-2\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 
 # 
@@ -4291,3 +4337,5 @@ or <a href="http://csrc.nist.gov/publications/drafts/800-157/sp800_157_draft.pdf
 #  Acknowledgments
 
 The Certificate Policy Working Group developed this CP based on RFC 3647 and the original U.S. Federal PKI Common Policy Framework Certificate Policy.
+
+[^1]: For the purposes of this policy, the definition of a virtual machine environment does not include cloud-based solutions (e.g. platform-as-a-service) or container-type solutions (e.g. Docker), which are not permitted for any CA operating under this policy.
